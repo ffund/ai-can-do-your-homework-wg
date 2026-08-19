@@ -1,0 +1,533 @@
+[
+  {
+    "name": "Open-ended task defined by what students must demonstrate",
+    "description": "Specify a technical target or capability while leaving students responsible for deciding what to build and how.",
+    "quote": "Assignments that specify what a student must demonstrate rather than what they must build.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-open-ended-task-defined-by-what-students-must-demonstrate"
+  },
+  {
+    "name": "Grade technical explanation rather than code alone",
+    "description": "Assess students through a written account of how their design meets technical requirements, optionally accompanied by a demonstration.",
+    "quote": "Rather than grade code, the instructor set technical specifications—a multi-process design using either pipes or sockets with select—and graded a written document in which students explained how they met them, identified their communication protocol and their source of concurrency, and described how they tested, accompanied by a demo video under five minutes.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-grade-technical-explanation-rather-than-code-alone"
+  },
+  {
+    "name": "Deliberately over-scope a project assuming AI use",
+    "description": "Assign work that students could not finish unaided and make AI collaboration an explicit premise of the assignment.",
+    "quote": "An advanced programming course deliberately assigned more than students could finish, on the explicit understanding that they would use AI.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-deliberately-over-scope-a-project-assuming-ai-use"
+  },
+  {
+    "name": "Require decomposition before delegation to AI",
+    "description": "Design project structure so students must break the problem into parts before AI can successfully handle delegated work.",
+    "quote": "The design exploited a limitation the instructor had observed—that models handled two coupled concerns poorly—so a single well-formed request would not produce a solution and students had to decompose before delegating.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-require-decomposition-before-delegation-to-ai"
+  },
+  {
+    "name": "Make project scoping a student responsibility",
+    "description": "Have students participate in deciding what to cut or retain while maintaining a coherent final system.",
+    "quote": "Ten minutes of each class became a recurring negotiation over what could be cut, with the instructor holding the line that whatever remained had to hang together as a working system—putting students inside the scoping decision rather than receiving it.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-make-project-scoping-a-student-responsibility"
+  },
+  {
+    "name": "Require AI disclosure and citation",
+    "description": "Require students to disclose AI use and cite AI contributions as they would other sources.",
+    "quote": "Every assignment carries an AI disclosure at the top, and any AI use must be cited like a book or article.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-require-ai-disclosure-and-citation"
+  },
+  {
+    "name": "Open-ended data investigation with student-written tests",
+    "description": "Give students an unstructured corpus and require them to determine the structure, comparisons, story, and tests.",
+    "quote": "An open-ended CS3 text-processing assignment gives students an unstructured corpus—the CIA World Factbook, or a historical dataset—and asks them to find the structure, choose which entities and categories to compare, and decide what story to tell, writing their own tests along the way.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-open-ended-data-investigation-with-student-written-tests"
+  },
+  {
+    "name": "Compare multiple AI-generated designs",
+    "description": "Have a model implement the same project in multiple design patterns and ask students to analyze and diagram the differences.",
+    "quote": "A second idea was a comparative design assignment: have a model implement the same project in several design patterns, then ask students to analyze the differences and draw the design diagrams.",
+    "rooms": [
+      "Open-Ended & Authentic Task Design"
+    ],
+    "id": "workshop-compare-multiple-ai-generated-designs"
+  },
+  {
+    "name": "Use AI for ambitious authentic projects",
+    "description": "Use AI assistance to let students work with large codebases, specifications, open-source software, or research reproduction.",
+    "quote": "Participants are guiding students in using AI assistance to undertake ambitious projects, such as working with large codebases, implementing software from specifications, modifying existing open-source software, and reproducing published research.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-use-ai-for-ambitious-authentic-projects"
+  },
+  {
+    "name": "Use AI to handle unfamiliar experimental tooling",
+    "description": "Let students delegate setup and tooling work to AI so they can engage with higher-level research tasks.",
+    "quote": "A networking course had students use AI to set up experiments so they could engage with current research without full mastery of the tooling.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-use-ai-to-handle-unfamiliar-experimental-tooling"
+  },
+  {
+    "name": "Derive specifications and implement them with coding agents",
+    "description": "Have students perform requirements work and then use coding agents for implementation.",
+    "quote": "A requirements engineering course had students derive specifications and then implement them with coding agents.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-derive-specifications-and-implement-them-with-coding-agents"
+  },
+  {
+    "name": "Provide provider-independent or institution-supported AI access",
+    "description": "Mitigate access and cost differences using provider-independent harnesses, institutional models, free models, or shared research infrastructure.",
+    "quote": "Participants discussed several strategies, including using “bring your own provider” agent harnesses rather than tools tied to specific subscription plans, arranging access to institutionally supported models or showing students how to access high-quality free models, and using research infrastructure such as CloudLab, FABRIC, and Chameleon.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-provide-provider-independent-or-institution-supported-ai-access"
+  },
+  {
+    "name": "Offer small self-hosted models for ethical or privacy concerns",
+    "description": "Provide alternative model options to students who object to commercial GenAI on ethical, sustainability, or privacy grounds.",
+    "quote": "These students may be directed toward more acceptable alternatives, such as small, self-hosted models trained on open data.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-offer-small-self-hosted-models-for-ethical-or-privacy-concerns"
+  },
+  {
+    "name": "Grade problem framing, prompting, and model guidance",
+    "description": "Assess how effectively students frame problems, construct prompts, and critically direct models rather than primarily grading model output quality.",
+    "quote": "This makes it especially important to evaluate students on how effectively they frame problems, construct prompts, and critically guide the models, rather than primarily on the quality of the models’ outputs.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-grade-problem-framing-prompting-and-model-guidance"
+  },
+  {
+    "name": "Combine project deliverables with oral and qualitative verification",
+    "description": "Supplement final artifacts with presentations, oral exams, demonstrations, peer feedback, or qualitative reports.",
+    "quote": "Participants described combining assessment of final deliverables with presentations, oral examinations, demonstrations, peer-review-style feedback, and qualitative reports.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-combine-project-deliverables-with-oral-and-qualitative-verification"
+  },
+  {
+    "name": "Use explanation, alternatives, and counterfactual questions",
+    "description": "Ask students to explain code, justify decisions, identify alternatives, and respond to changed requirements to verify meaningful engagement.",
+    "quote": "Several emphasized asking students to explain how their code works, justify key decisions, identify alternatives, and respond to counterfactual questions in order to assess whether they had meaningfully engaged with the project rather than simply produced a strong artifact.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-use-explanation-alternatives-and-counterfactual-questions"
+  },
+  {
+    "name": "Use recurring presentations for project checkpoints",
+    "description": "Have students present progress regularly to instructional staff or mentors so understanding can be checked throughout the project.",
+    "quote": "One vertically integrated project program runs weekly presentations to sub-teams of TAs and mentors, correcting course throughout the semester rather than at the end.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-use-recurring-presentations-for-project-checkpoints"
+  },
+  {
+    "name": "Assess agent-management skills",
+    "description": "Treat articulation of goals, delegation, evaluation, feedback, and integration of AI contributions as skills students may need to demonstrate.",
+    "quote": "Using AI effectively is not simply a way to avoid work; it requires substantial effort to articulate goals, delegate tasks, evaluate results, provide feedback, and integrate AI-generated contributions.",
+    "rooms": [
+      "Ambitious, AI-Leveraged Projects"
+    ],
+    "id": "workshop-assess-agent-management-skills"
+  },
+  {
+    "name": "Scaffold responsibility for prompting and evaluation",
+    "description": "Begin with instructor-supplied prompts and gradually transfer responsibility for prompting and evaluating AI results to students.",
+    "quote": "Scaffold AI use across the curriculum, beginning with a supplied prompt and gradually shifting responsibility for formulating prompts and evaluating results onto the student.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-scaffold-responsibility-for-prompting-and-evaluation"
+  },
+  {
+    "name": "Give students AI-generated solutions to critique, improve, or test",
+    "description": "Use generated solutions as the object of assessment, asking students to validate behavior, find defects, simplify, test, or compare alternatives.",
+    "quote": "Give students AI-generated solutions to critique, improve, or test: validating behavior, finding defects or unnecessary complexity, identifying missing edge cases, designing unit tests, arguing why one implementation beats another.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-give-students-ai-generated-solutions-to-critique-improve-or-test"
+  },
+  {
+    "name": "Use peer review of AI co-produced work",
+    "description": "Use peer code review of AI-assisted work as a scalable assessment mechanism.",
+    "quote": "Use peer review of AI co-produced work, mirroring industry code review, as a route to scale.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-use-peer-review-of-ai-co-produced-work"
+  },
+  {
+    "name": "Assess analysis of generated work rather than code production",
+    "description": "Grade students' analysis of generated code, tests, and software quality instead of grading the code itself.",
+    "quote": "Assess the student’s analysis of generated code, tests, and software quality rather than the code itself.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-assess-analysis-of-generated-work-rather-than-code-production"
+  },
+  {
+    "name": "Use a difficult critique task to motivate fundamentals",
+    "description": "Start with a critique problem students cannot yet solve and use that difficulty to motivate foundational instruction.",
+    "quote": "Open with a critique task students find hard, using the difficulty to motivate the underlying programming skills.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-use-a-difficult-critique-task-to-motivate-fundamentals"
+  },
+  {
+    "name": "Pair AI-supported coursework with independent verification",
+    "description": "Combine open AI-supported assignments with in-class quizzes or examinations that verify individual understanding.",
+    "quote": "Pair AI-supported coursework with in-class quizzes or examinations that verify individual understanding.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-pair-ai-supported-coursework-with-independent-verification"
+  },
+  {
+    "name": "Retain a final proctored fundamentals assessment",
+    "description": "Preserve a controlled final assessment to verify foundational knowledge independently of AI.",
+    "quote": "Retain a final proctored assessment of fundamentals.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-retain-a-final-proctored-fundamentals-assessment"
+  },
+  {
+    "name": "Deliberately generate flawed AI code for critique",
+    "description": "Prompt AI to create poor-quality or flawed solutions that students must analyze and improve.",
+    "quote": "One suggestion was to deliberately prompt AI to generate flawed or poor-quality code that students could then analyse and improve.",
+    "rooms": [
+      "Evaluating & Fixing AI-Produced Work"
+    ],
+    "id": "workshop-deliberately-generate-flawed-ai-code-for-critique"
+  },
+  {
+    "name": "Move compromised learning outcomes to proctored AI-free assessment",
+    "description": "When AI use undermines a learning outcome, assess that outcome in a controlled AI-free setting.",
+    "quote": "The operating rule several described is conditional: where a learning outcome is compromised by AI use, move that outcome to a proctored AI-free assessment.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-move-compromised-learning-outcomes-to-proctored-ai-free-assessment"
+  },
+  {
+    "name": "Use post-submission interviews",
+    "description": "Interview students after submission to verify understanding of submitted work.",
+    "quote": "On what a model would still fail, participants offered four approaches they had already deployed. Larger projects and higher-order thinking assessments, used in software projects and research methods courses. In-person interviews conducted after submission.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-use-post-submission-interviews"
+  },
+  {
+    "name": "Require diagrams or video instead of written text",
+    "description": "Move some assessment evidence out of the text modality by requiring visual or video artifacts.",
+    "quote": "Assessments that move out of the text modality—two participants now require a diagram or a video in place of written text.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-require-diagrams-or-video-instead-of-written-text"
+  },
+  {
+    "name": "Assess innovation, originality, and novelty",
+    "description": "Use assessments where novelty or the absence of precedent is central to the task.",
+    "quote": "And assessments targeting innovation, originality, and novelty, used in research methods and startup courses, where the absence of precedent is the point.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-assess-innovation-originality-and-novelty"
+  },
+  {
+    "name": "Use controlled digital entry for machine-grading",
+    "description": "Keep the assessment proctored while allowing laptop entry so responses can be typed and machine-graded.",
+    "quote": "One participant had moved to proctoring with digital entry, having students bring laptops so the work is typed and machine-gradable while the environment stays controlled.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-use-controlled-digital-entry-for-machine-grading"
+  },
+  {
+    "name": "Use a flipped classroom for supervised assignment work",
+    "description": "Move assignment work into lecture time so students complete it under supervision.",
+    "quote": "Using a flipped classroom so lecture time can be spent working on assignments under supervision.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-use-a-flipped-classroom-for-supervised-assignment-work"
+  },
+  {
+    "name": "Require students to begin without AI",
+    "description": "Make the early phase of an assignment AI-free before allowing AI assistance.",
+    "quote": "Requiring students to begin without AI, done in evolutionary computing and machine learning courses.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-require-students-to-begin-without-ai"
+  },
+  {
+    "name": "Use micro-milestones and version-control history",
+    "description": "Break assignments into small checkpoints and inspect version history to make development patterns visible.",
+    "quote": "And micro-sized milestones combined with version control history to surface the large sudden changes characteristic of pasted generated code—used in software projects and evolutionary computing courses, with one participant applying version control this way on their assignments directly.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-use-micro-milestones-and-version-control-history"
+  },
+  {
+    "name": "Use self-reflection as a preliminary authenticity check",
+    "description": "Use student reflection to help assess authenticity without necessarily grading the reflection itself.",
+    "quote": "For verifying that a student can work unaided, participants listed controlled AI-free environments for small assessments, micro-scaffolding, interviews, presentations, oral examinations, and self-reflections used as a preliminary authenticity check rather than as a graded artifact.",
+    "rooms": [
+      "Controlled & AI-Free Assessment"
+    ],
+    "id": "workshop-use-self-reflection-as-a-preliminary-authenticity-check"
+  },
+  {
+    "name": "Collect process evidence",
+    "description": "Collect evidence such as AI interaction logs, drafts, commit history, prompt portfolios, time on task, and reflections as alternatives to relying only on the final artifact.",
+    "quote": "The evidence discussed ranged widely: AI interaction logs and transcripts, drafts and commit history, prompt and iteration portfolios, time on task, and reflective commentary on AI use.",
+    "rooms": [
+      "Process Evidence & Effort Signals"
+    ],
+    "id": "workshop-collect-process-evidence"
+  },
+  {
+    "name": "Use a three-part deliverable, interaction-log, and reflection submission",
+    "description": "Require a final artifact, selected AI interaction evidence, and a reflective account of the student's contribution.",
+    "quote": "The most concrete proposal came from a participant: a three-part submission consisting of the code or other deliverable; AI interaction logs, with the student directed to show how they contributed to the result rather than simply dumping a transcript; and a reflection document, submitted as video specifically to make it harder to generate.",
+    "rooms": [
+      "Process Evidence & Effort Signals"
+    ],
+    "id": "workshop-use-a-three-part-deliverable-interaction-log-and-reflection-submission"
+  },
+  {
+    "name": "Embed process in an engineering design lifecycle",
+    "description": "Use a larger engineering lifecycle to create structural places where smaller learning objectives and process evidence can be observed.",
+    "quote": "Its aim is not to assess fundamental learning objectives directly but to integrate smaller learning objectives into a larger engineering design lifecycle, so that process has somewhere to live structurally.",
+    "rooms": [
+      "Process Evidence & Effort Signals"
+    ],
+    "id": "workshop-embed-process-in-an-engineering-design-lifecycle"
+  },
+  {
+    "name": "Assess structured decomposition explicitly",
+    "description": "Treat structured decomposition itself as a candidate competence to assess.",
+    "quote": "Participants pointed to the AI-Enhanced Developer profile in the appendix of Kam et al. (2025) as one attempt to characterize what that competence consists of, and raised structured decomposition as a candidate skill to assess in its own right.",
+    "rooms": [
+      "Process Evidence & Effort Signals"
+    ],
+    "id": "workshop-assess-structured-decomposition-explicitly"
+  },
+  {
+    "name": "Use standards-, mastery-, or specifications-based grading",
+    "description": "Use grading frameworks that provide multiple opportunities to demonstrate understanding and reduce emphasis on a single final deliverable.",
+    "quote": "Standards-based, mastery-based and specs-based grading emerged as promising frameworks.",
+    "rooms": [
+      "Rubric & Grading Redesign"
+    ],
+    "id": "workshop-use-standards-mastery-or-specifications-based-grading"
+  },
+  {
+    "name": "Use mastery or fluency checks",
+    "description": "Ask students to demonstrate understanding on demand through lightweight mastery or fluency checks.",
+    "quote": "Mastery checks and fluency checks, which need not be oral, were proposed as lighter-weight alternatives where students demonstrate understanding on demand.",
+    "rooms": [
+      "Rubric & Grading Redesign"
+    ],
+    "id": "workshop-use-mastery-or-fluency-checks"
+  },
+  {
+    "name": "Reserve high-stakes credit for directly verifiable work",
+    "description": "Use take-home assignments primarily as practice while weighting directly verified assessments more heavily.",
+    "quote": "A broader principle emerged: high-stakes credit should rely primarily on work that can be directly verified, while take-home assignments can function as practice for those assessments.",
+    "rooms": [
+      "Rubric & Grading Redesign"
+    ],
+    "id": "workshop-reserve-high-stakes-credit-for-directly-verifiable-work"
+  },
+  {
+    "name": "Make AI-aware submission requirements part of the rubric",
+    "description": "Require evidence such as AI citations, prompts, output comparisons, reflections, design reasoning, or diagrams so grading focuses on thinking behind the product.",
+    "quote": "Possible requirements included citing AI sources, submitting prompts, comparing outputs from different AI tools, and documenting decisions through reflections, analytical questions, design reasoning, or non-code artifacts such as diagrams.",
+    "rooms": [
+      "Rubric & Grading Redesign"
+    ],
+    "id": "workshop-make-ai-aware-submission-requirements-part-of-the-rubric"
+  },
+  {
+    "name": "Use hidden rubric criteria",
+    "description": "Keep some evaluation criteria undisclosed so students cannot simply give the full rubric to an AI system as a specification.",
+    "quote": "One participant raised the idea of “hidden rubrics”: undisclosed evaluation criteria that make it harder for students to optimize their work directly against the rubric.",
+    "rooms": [
+      "Rubric & Grading Redesign"
+    ],
+    "id": "workshop-use-hidden-rubric-criteria"
+  },
+  {
+    "name": "Use tiered grading with optional AI-integrated work",
+    "description": "Use a baseline rubric for a grade ceiling and optional additional assessments, potentially including AI-integrated work, for higher grades.",
+    "quote": "A baseline rubric could bring everyone to a defined grade ceiling, while optional additional assessments—including potentially AI-integrated work—could allow students to reach higher grades.",
+    "rooms": [
+      "Rubric & Grading Redesign"
+    ],
+    "id": "workshop-use-tiered-grading-with-optional-ai-integrated-work"
+  },
+  {
+    "name": "Use scripted oral assessments with question-level rubrics",
+    "description": "Prepare oral questions and attach grading criteria to each question, focusing on the student's account rather than directly grading code.",
+    "quote": "One participant running monthly oral assessments with twenty students prepares a script in advance with a rubric attached to each question, and does not grade code directly at all.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-use-scripted-oral-assessments-with-question-level-rubrics"
+  },
+  {
+    "name": "Use small-group oral assessment",
+    "description": "Assess students in small groups while scoring how independently and precisely each student can explain the problem.",
+    "quote": "A CS2 course assesses students in groups of three on a five-point scale where five means working through the problem with no prompting from the proctor and one means getting through it with substantial help from teammates—the dimensions being how well a student can explain the problem without help, and how precisely.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-use-small-group-oral-assessment"
+  },
+  {
+    "name": "Generate oral questions from each student's implementation",
+    "description": "Tailor verification questions to the student's own submitted artifact.",
+    "quote": "Where code is involved, questions are generated from the student’s own implementation.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-generate-oral-questions-from-each-student-s-implementation"
+  },
+  {
+    "name": "Distribute oral or code-review assessment across calibrated TAs",
+    "description": "Scale interactive assessment by using multiple TAs who calibrate together before conducting reviews independently.",
+    "quote": "A pre-GenAI software engineering course ran in-person code reviews for two hundred students, interviewing each team member about their individual contributions; scaling it meant distributing reviews across ten to fifteen TAs who first sat in together on the opening round and sample-reviewed prior years’ projects to calibrate, then handled three or four teams each with a staff debrief afterward.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-distribute-oral-or-code-review-assessment-across-calibrated-tas"
+  },
+  {
+    "name": "Sample students for unpredictable oral verification",
+    "description": "Call only a subset of students for oral assessment at a given time so the workload is distributed and students do not know in advance who will be assessed.",
+    "quote": "Sampling was the other lever: one participant keeps small-group work but makes the deliverable an in-person oral assessment taken without the team, calling only a subset of students in any given week so no one knows in advance whether it is their turn.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-sample-students-for-unpredictable-oral-verification"
+  },
+  {
+    "name": "Require real-time modification or extension during oral assessment",
+    "description": "Ask students to change or extend their submitted work live rather than only rehearse an explanation of it.",
+    "quote": "An oral assessment should not consist only of explaining a submitted artifact, because that can be rehearsed; it should require extending the code or making a change in real time, or at minimum asking what the student would do to accommodate a new requirement.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-require-real-time-modification-or-extension-during-oral-assessment"
+  },
+  {
+    "name": "Downweight the artifact and upweight oral verification",
+    "description": "When authorship cannot be established, shift grade weight from the submitted artifact toward interactive evidence of understanding.",
+    "quote": "And where misconduct cannot be established, the workable response is structural rather than punitive: downweight the artifact, increase the weight on the oral assessment.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-downweight-the-artifact-and-upweight-oral-verification"
+  },
+  {
+    "name": "Generate personalized assessment questions with local AI models",
+    "description": "Use a model to analyze a student's artifact and generate individualized questions for a human assessor.",
+    "quote": "Some described local models generating per-student assessments, and question generators that analyze a student’s artifact and produce questions from it with TAs marking the answers—not implemented, on grounds of time and risk.",
+    "rooms": [
+      "Oral & Interactive Assessment"
+    ],
+    "id": "workshop-generate-personalized-assessment-questions-with-local-ai-models"
+  },
+  {
+    "name": "Shift greater weight toward controlled assessments",
+    "description": "Increase the contribution of exams, quizzes, testing facilities, oral exams, demonstrations, or individual meetings when stronger evidence of individual understanding is needed.",
+    "quote": "In response, some instructors are shifting greater weight toward controlled assessments, including handwritten exams, in-class quizzes, computer-based testing facilities, oral examinations, demonstrations, and individual meetings.",
+    "rooms": [
+      "Fairness & Trust"
+    ],
+    "id": "workshop-shift-greater-weight-toward-controlled-assessments"
+  },
+  {
+    "name": "Use open-book exams, retakes, or application-focused questions",
+    "description": "Reduce stress while preserving integrity through open resources, retakes, or questions requiring application rather than lookup.",
+    "quote": "Open-book exams, retakes, and application-focused questions were discussed as ways to reduce stress without sacrificing integrity.",
+    "rooms": [
+      "Fairness & Trust"
+    ],
+    "id": "workshop-use-open-book-exams-retakes-or-application-focused-questions"
+  },
+  {
+    "name": "Clearly communicate permitted and prohibited AI uses",
+    "description": "Make AI-use boundaries explicit while trying to preserve a collaborative rather than adversarial relationship.",
+    "quote": "Participants emphasized clearly communicating permitted and prohibited uses, beginning from an assumption of trust, responding transparently when that trust is broken, and holding students accountable without turning assessment into an adversarial process.",
+    "rooms": [
+      "Fairness & Trust"
+    ],
+    "id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses"
+  },
+  {
+    "name": "Use exam questions that mirror job interviews",
+    "description": "Connect assessment to employment by using questions resembling those students may encounter in hiring.",
+    "quote": "Employment and career prospects came up first and most often, along with a concrete tactic—giving students exam questions that mirror job interview questions, so the connection between coursework and hiring is visible rather than asserted.",
+    "rooms": [
+      "Motivation"
+    ],
+    "id": "workshop-use-exam-questions-that-mirror-job-interviews"
+  },
+  {
+    "name": "Build student ownership through explicit purpose and reflection",
+    "description": "Explain why material is being taught and create opportunities for students to reflect on learning through individual conversations.",
+    "quote": "Asked how ownership is actually built, the suggestions were small and personal rather than structural: explicitly explaining the purpose of what is being taught, and creating room for reflection through brief private conversations with individual students.",
+    "rooms": [
+      "Motivation"
+    ],
+    "id": "workshop-build-student-ownership-through-explicit-purpose-and-reflection"
+  },
+  {
+    "name": "Use small-group meta-conversations about learning",
+    "description": "Have students discuss the value and purpose of learning itself in small groups.",
+    "quote": "One in-person strategy discussed was breaking students into small groups for meta conversations about the value of learning itself, rather than addressing the topic only from the front of the room.",
+    "rooms": [
+      "Motivation"
+    ],
+    "id": "workshop-use-small-group-meta-conversations-about-learning"
+  }
+]

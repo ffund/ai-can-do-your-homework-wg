@@ -1,0 +1,1674 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-aware-assessment-catalogue.example/schema/assessment-0.2.0.json",
+  "title": "AI-Aware Assessment Catalogue Record",
+  "description": "One catalogue record for one distinct student-facing assessment, assessment component, or assessment variant.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "record_type",
+    "record_granularity",
+    "title",
+    "summary",
+    "implementation_status",
+    "sources",
+    "context",
+    "purpose_and_stakes",
+    "assessment",
+    "genai",
+    "grading",
+    "related_assessments",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.0"
+    },
+    "id": {
+      "$ref": "#/$defs/identifier",
+      "description": "Stable identifier for this assessment record. Do not reuse it for a different assessment."
+    },
+    "record_type": {
+      "type": "string",
+      "const": "assessment"
+    },
+    "record_granularity": {
+      "type": "string",
+      "enum": [
+        "single_assessment",
+        "assessment_component",
+        "assessment_variant",
+        "assessment_series"
+      ],
+      "description": "Use assessment_series only when the paper reports a set of assessments that cannot be separated without inventing details."
+    },
+    "title": {
+      "$ref": "#/$defs/nonEmptyString"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 80,
+      "description": "A concise 2-4 sentence catalogue summary covering what students do and how GenAI is used, permitted, prohibited, or evaluated."
+    },
+    "implementation_status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "designed",
+        "piloted",
+        "implemented",
+        "retired",
+        "unknown"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "description": "Papers or other sources that describe this record. The same source_id may occur in several records."
+    },
+    "context": {
+      "$ref": "#/$defs/context"
+    },
+    "purpose_and_stakes": {
+      "$ref": "#/$defs/purposeAndStakes"
+    },
+    "learning_objectives": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/learningObjective"
+      }
+    },
+    "submission_requirements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/submissionRequirement"
+      }
+    },
+    "assessment": {
+      "$ref": "#/$defs/assessment"
+    },
+    "genai": {
+      "$ref": "#/$defs/genai"
+    },
+    "scaffolding": {
+      "$ref": "#/$defs/scaffolding"
+    },
+    "authenticity_integrity": {
+      "$ref": "#/$defs/authenticityIntegrity"
+    },
+    "grading": {
+      "$ref": "#/$defs/grading"
+    },
+    "implementation": {
+      "$ref": "#/$defs/implementation"
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidence"
+    },
+    "evidence_excerpts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidenceExcerpt"
+      },
+      "description": "Short, exact public excerpts from a source, each linked to the catalogue claim it supports. Keep excerpts rights-aware and under 320 characters."
+    },
+    "catalogue_synthesis": {
+      "$ref": "#/$defs/catalogueSynthesis"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      }
+    },
+    "reuse": {
+      "$ref": "#/$defs/reuse"
+    },
+    "reuse_artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reuseArtifact"
+      }
+    },
+    "related_assessments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relatedAssessment"
+      },
+      "description": "Links to other records in the catalogue. Use an empty array when this record has no known related record."
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "catalog_metadata": {
+      "$ref": "#/$defs/catalogMetadata"
+    },
+    "workshop_practice_mappings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/workshopPracticeMapping"
+      },
+      "description": "Zero or more concrete practices from the workshop-derived practice inventory instantiated by this assessment. Populate this field after the mapping step; an empty array means the assessment was reviewed and no practice match was identified."
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/#-]*$"
+    },
+    "unknownableString": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Use unknown, not_reported, or not_applicable when this required value cannot be established from the source."
+    },
+    "levelCategory": {
+      "type": "string",
+      "enum": [
+        "pre_introductory",
+        "introductory",
+        "post_introductory",
+        "advanced",
+        "graduate",
+        "mixed",
+        "unknown"
+      ],
+      "description": "Normalized course or learner stage. Use the source wording in the corresponding level field as the reported value."
+    },
+    "levelCategoryBasis": {
+      "type": "string",
+      "enum": [
+        "reported",
+        "inferred",
+        "mixed",
+        "unknown"
+      ],
+      "description": "Whether the normalized level category was stated by the source or mapped from reported wording, prerequisites, or course content."
+    },
+    "numberOrUnknown": {
+      "oneOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "not_reported",
+            "not_applicable"
+          ]
+        }
+      ]
+    },
+    "booleanOrUnknown": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "not_reported",
+            "not_applicable"
+          ]
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "relationship_to_assessment",
+        "source_assessment_id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/identifier",
+          "description": "Stable source identifier, such as doi:10.1145/... or arxiv:2403.08396."
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "journal_article",
+            "conference_paper",
+            "workshop_paper",
+            "working_group_report",
+            "preprint",
+            "book",
+            "thesis",
+            "web_page",
+            "blog_post",
+            "dataset",
+            "other"
+          ]
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "publication_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2200
+        },
+        "identifier": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "peer_reviewed": {
+          "type": "boolean"
+        },
+        "license": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "relationship_to_assessment": {
+          "type": "string",
+          "enum": [
+            "primary_report",
+            "secondary_report",
+            "expanded_report",
+            "comparison",
+            "background",
+            "methodological_reference",
+            "unknown"
+          ]
+        },
+        "source_assessment_id": {
+          "$ref": "#/$defs/identifier",
+          "description": "Assessment label assigned within this source, for example paper-xyz-assessment-2. Use the same value in every record derived from that assessment."
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        },
+        "evidence_quote": {
+          "$ref": "#/$defs/publicQuote"
+        }
+      }
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pages": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "section": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "table": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "figure": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "discipline",
+        "course",
+        "learner_level"
+      ],
+      "properties": {
+        "discipline": {
+          "$ref": "#/$defs/unknownableString"
+        },
+        "course": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "level"
+          ],
+          "properties": {
+            "name": {
+              "$ref": "#/$defs/unknownableString"
+            },
+            "code": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "level": {
+              "$ref": "#/$defs/unknownableString"
+            },
+            "level_category": {
+              "$ref": "#/$defs/levelCategory"
+            },
+            "level_category_basis": {
+              "$ref": "#/$defs/levelCategoryBasis"
+            },
+            "institution": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "program": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "term": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "academic_year": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "delivery_language": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "learner_level": {
+          "$ref": "#/$defs/unknownableString"
+        },
+        "learner_level_category": {
+          "$ref": "#/$defs/levelCategory"
+        },
+        "learner_level_category_basis": {
+          "$ref": "#/$defs/levelCategoryBasis"
+        },
+        "cohort_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "research_sample_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "purposeAndStakes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purposes",
+        "mandatory"
+      ],
+      "properties": {
+        "purposes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "formative",
+              "summative",
+              "diagnostic",
+              "practice",
+              "research_only",
+              "other",
+              "unknown"
+            ]
+          }
+        },
+        "mandatory": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "course_grade_weight_percent": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "string",
+              "enum": [
+                "unknown",
+                "not_reported",
+                "not_applicable"
+              ]
+            }
+          ]
+        },
+        "pass_requirement": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "learningObjective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "reported",
+            "inferred",
+            "not_reported"
+          ]
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "summary",
+        "student_actions",
+        "outputs",
+        "individual_or_group"
+      ],
+      "properties": {
+        "type": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "assignment",
+              "homework",
+              "exercise",
+              "problem_set",
+              "quiz",
+              "exam",
+              "oral_exam",
+              "project",
+              "capstone",
+              "lab",
+              "design_task",
+              "reflection",
+              "presentation",
+              "peer_assessment",
+              "portfolio",
+              "case_based_assessment",
+              "project_defense",
+              "other",
+              "unknown"
+            ]
+          }
+        },
+        "summary": {
+          "$ref": "#/$defs/nonEmptyString",
+          "description": "Short student-facing description of the task. Report a paraphrase when the original instructions are unavailable."
+        },
+        "instructions": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "verbatim",
+                "paraphrase",
+                "summary"
+              ]
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/identifier"
+              }
+            },
+            "locator": {
+              "$ref": "#/$defs/locator"
+            }
+          }
+        },
+        "student_actions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resource"
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/output"
+          }
+        },
+        "individual_or_group": {
+          "type": "string",
+          "enum": [
+            "individual",
+            "pairs",
+            "group",
+            "varies",
+            "unknown"
+          ]
+        },
+        "group_size": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "minimum": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "maximum": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "reported": {
+                  "$ref": "#/$defs/nonEmptyString"
+                }
+              }
+            },
+            {
+              "type": "string",
+              "enum": [
+                "unknown",
+                "not_reported",
+                "not_applicable"
+              ]
+            }
+          ]
+        },
+        "duration_minutes": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "mean": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "minimum": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "maximum": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            },
+            {
+              "type": "string",
+              "enum": [
+                "unknown",
+                "not_reported",
+                "not_applicable"
+              ]
+            }
+          ]
+        },
+        "timing": {
+          "$ref": "#/$defs/timing"
+        },
+        "delivery": {
+          "$ref": "#/$defs/delivery"
+        },
+        "structure": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/structurePart"
+          }
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/component"
+          },
+          "description": "Use components for stages that form one coherent assessment. Create separate records when stages have independent briefs, outputs, grading, or AI permissions."
+        },
+        "question_or_item_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "kind": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "provided_by": {
+          "type": "string",
+          "enum": [
+            "instructor",
+            "institution",
+            "student",
+            "external",
+            "unknown"
+          ]
+        },
+        "required": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          }
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact"
+      ],
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "format": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "required": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "purpose": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "destination": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "submissionRequirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact",
+        "required"
+      ],
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "purpose": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "synchronous",
+            "asynchronous",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "release": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "deadline": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "duration_minutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "workload_hours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "attempts": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modality",
+        "setting"
+      ],
+      "properties": {
+        "modality": {
+          "type": "string",
+          "enum": [
+            "in_person",
+            "online",
+            "hybrid",
+            "unknown"
+          ]
+        },
+        "setting": {
+          "type": "string",
+          "enum": [
+            "take_home",
+            "invigilated",
+            "open_book",
+            "open_web",
+            "lab",
+            "studio",
+            "unknown"
+          ]
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "accessibility_alternatives": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "structurePart": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "part",
+        "description"
+      ],
+      "properties": {
+        "part": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          ]
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "weight_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "weight_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/output"
+          }
+        },
+        "genai_policy": {
+          "$ref": "#/$defs/genaiPolicy"
+        }
+      }
+    },
+    "genai": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "student_role"
+      ],
+      "properties": {
+        "student_role": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "during_assessment",
+            "external_ai_use_permitted"
+          ],
+          "properties": {
+            "during_assessment": {
+              "type": "string",
+              "enum": [
+                "no_ai",
+                "uses_ai",
+                "interacts_with_ai",
+                "evaluates_ai_output",
+                "ai_not_student_facing",
+                "unknown"
+              ]
+            },
+            "external_ai_use_permitted": {
+              "$ref": "#/$defs/booleanOrUnknown"
+            },
+            "description": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "policy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/genaiPolicy"
+          },
+          "description": "Use more than one entry when permission changes by component or phase."
+        },
+        "assessment_system_role": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "provider": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "model": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "version": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "taxonomy_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "genaiPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "permission"
+      ],
+      "properties": {
+        "scope": {
+          "type": "string",
+          "enum": [
+            "assessment",
+            "component",
+            "phase",
+            "output"
+          ]
+        },
+        "component_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "phase": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "permission": {
+          "type": "string",
+          "enum": [
+            "required",
+            "permitted",
+            "optional",
+            "prohibited",
+            "unknown"
+          ]
+        },
+        "allowed_purposes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "prohibited_actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "disclosure_required": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "disclosure_artifact": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "citation_required": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "transcript_required": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "validation_required": {
+          "$ref": "#/$defs/booleanOrUnknown"
+        },
+        "privacy_or_retention": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "scaffolding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "supports": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "stages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "feedback_points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "authenticityIntegrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "professional_scenario": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "intended_audience": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "controls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "threat_model": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "process_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "grading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "reported",
+            "not_reported",
+            "not_applicable",
+            "inferred"
+          ]
+        },
+        "scale": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "kind": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "course_weight_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "method": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "criterion"
+            ],
+            "properties": {
+              "criterion": {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              "description": {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              "weight_percent": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              }
+            }
+          }
+        },
+        "assessors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "process": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "feedback": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "resubmission": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "models": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "human_validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "performed"
+          ],
+          "properties": {
+            "performed": {
+              "$ref": "#/$defs/booleanOrUnknown"
+            },
+            "description": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "human_review_trigger": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "implemented": {
+              "$ref": "#/$defs/booleanOrUnknown"
+            },
+            "recommended": {
+              "$ref": "#/$defs/booleanOrUnknown"
+            },
+            "description": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        }
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "architecture": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "staffing": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "personalization_inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "student_workload_hours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "instructor_workload_hours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reported_cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "total_usd": {
+              "type": "number",
+              "minimum": 0
+            },
+            "cost_per_student_usd": {
+              "type": "number",
+              "minimum": 0
+            },
+            "subscription_cost_excluded": {
+              "type": "boolean"
+            }
+          }
+        },
+        "failure_modes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "design_changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "study_type": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "comparator": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "sample": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "invited": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "participating": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "analyzed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unit_of_analysis": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "instruments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "reported_results": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "metric",
+                  "value"
+                ],
+                "properties": {
+                  "metric": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "value": {},
+                  "unit": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "condition": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/identifier"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "reported_failures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "recommended_changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "evidenceExcerpt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "quote",
+        "source_id",
+        "supports"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "assessment_description",
+            "context",
+            "learning_objective",
+            "ai_policy",
+            "verification",
+            "grading",
+            "outcome",
+            "limitation",
+            "source_context"
+          ]
+        },
+        "quote": {
+          "$ref": "#/$defs/publicQuote"
+        },
+        "source_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        },
+        "supports": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "context": {
+          "type": "string",
+          "enum": [
+            "assignment_instructions",
+            "authors_report",
+            "student_report",
+            "instructor_report",
+            "study_result",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "publicQuote": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 320,
+      "description": "A short exact quotation suitable for a public catalogue. Use an ellipsis only where text has been intentionally omitted."
+    },
+    "catalogueSynthesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "design_move": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "why_it_may_help": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "adaptation_notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "cautions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      },
+      "description": "Clearly labelled catalogue interpretation. Do not present synthesis as a finding reported by the source."
+    },
+    "reuse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "demo_available": {
+          "type": "boolean"
+        },
+        "examiner_prompt_available": {
+          "type": "boolean"
+        },
+        "grading_prompt_available": {
+          "type": "boolean"
+        },
+        "hosted_system_available": {
+          "type": "boolean"
+        },
+        "assessment_artifact_license": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "reuseArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "availability"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "brief",
+            "prompt",
+            "rubric",
+            "dataset",
+            "code",
+            "template",
+            "example",
+            "survey",
+            "other"
+          ]
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "license": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "availability": {
+          "type": "string",
+          "enum": [
+            "public",
+            "restricted",
+            "upon_request",
+            "not_available",
+            "unknown"
+          ]
+        },
+        "accessed": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "relatedAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "relationship"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "part_of_sequence",
+            "precedes",
+            "follows",
+            "component_of",
+            "variant_of",
+            "compared_with",
+            "supported_by",
+            "same_assessment_as"
+          ]
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "full_text_verified",
+            "abstract_verified",
+            "metadata_only",
+            "inferred",
+            "unknown"
+          ]
+        },
+        "extraction_method": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "workshopPracticeMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "practice_id",
+        "practice_name",
+        "rationale",
+        "supporting_passages"
+      ],
+      "properties": {
+        "practice_id": {
+          "$ref": "#/$defs/identifier",
+          "description": "Stable identifier from workshop-practices.json."
+        },
+        "practice_name": {
+          "$ref": "#/$defs/nonEmptyString",
+          "description": "Human-readable practice name copied from the inventory."
+        },
+        "rationale": {
+          "$ref": "#/$defs/nonEmptyString",
+          "description": "Why the concrete assessment design instantiates the workshop practice."
+        },
+        "supporting_passages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/workshopPracticePassage"
+          }
+        },
+        "match_status": {
+          "type": "string",
+          "enum": [
+            "candidate",
+            "confirmed"
+          ],
+          "description": "Whether the mapping remains an LLM-generated candidate or has been reviewed and confirmed."
+        }
+      }
+    },
+    "workshopPracticePassage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "quote"
+      ],
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "quote": {
+          "$ref": "#/$defs/publicQuote"
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        }
+      }
+    },
+    "catalogMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_quality": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "verification_status": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "strategy_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          },
+          "description": "Controlled assessment-design lenses used for browsing and retrieval."
+        },
+        "notes": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    }
+  }
+}
