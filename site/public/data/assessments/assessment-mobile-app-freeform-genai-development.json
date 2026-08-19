@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:mobile-app-freeform-genai-development",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Freeform GenAI-assisted mobile application development task",
+  "summary": "Final-year degree-apprenticeship students independently design and build an ambitious Flutter mobile application over seven weeks. GenAI may be used freely during development, but generated code must be cited and students must explain their product and understanding in a viva and reflection.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3702212.3702214",
+      "type": "conference_paper",
+      "title": "Learning without Limits: Analysing the Usage of Generative AI in a Summative Assessment",
+      "authors": [
+        "Lee Clift",
+        "Olga Petrovska"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3702212.3702214",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "mobile-app-development-task",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Learners were instructed beforehand that they may use it as they wish, and were given particular rules on how to cite generated code."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and mobile application development",
+    "course": {
+      "name": "Mobile Application Development",
+      "level": "final year",
+      "institution": "Swansea University",
+      "program": "Applied Software Engineering Degree Apprenticeship",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "final-year undergraduate degree apprentices",
+    "cohort_size": 13,
+    "research_sample_size": 12,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "project_defense",
+      "reflection"
+    ],
+    "summary": "Develop a self-selected mobile application in Dart and Flutter, submit the product, disclose GenAI use, and defend understanding in a viva.",
+    "student_actions": [
+      "Design and incrementally develop a mobile application.",
+      "Choose whether and how much GenAI to use.",
+      "Cite generated code.",
+      "Complete a self-reflection on what GenAI was used, when, why, and how.",
+      "Defend the completed application in a viva."
+    ],
+    "outputs": [
+      {
+        "artifact": "Completed mobile application",
+        "required": true
+      },
+      {
+        "artifact": "Viva responses",
+        "required": true
+      },
+      {
+        "artifact": "GenAI self-reflection form",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "mixed"
+    },
+    "duration_minutes": "not_reported"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use any available GenAI tools as much or as little as they wish during development."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "component_id": "development",
+        "permission": "optional",
+        "allowed_purposes": [
+          "ideation",
+          "code generation",
+          "debugging",
+          "error explanation",
+          "test generation"
+        ],
+        "disclosure_required": true,
+        "citation_required": true,
+        "transcript_required": false,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "student-selected GenAI tools"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Students were marked on the end product and understanding demonstrated in the viva, not on the written code itself.",
+    "criteria": [
+      {
+        "criterion": "End-product quality"
+      },
+      {
+        "criterion": "Understanding of application components"
+      }
+    ],
+    "assessors": [
+      "course instructors"
+    ]
+  },
+  "evidence": {
+    "study_type": "implemented assessment with post-assessment survey",
+    "sample": {
+      "participating": 13,
+      "analyzed": 12,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "All 13 learners used GenAI to some extent.",
+      "More than 80% described GenAI inclusion as a positive learning experience."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5167a2c4450a_learning-without-limits-analysing-the-usage-of-generative-ai-in-a-summative-assessment.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Learners were instructed beforehand that they may use it as they wish, and were given particular rules on how to cite generated code.",
+      "source_id": "doi:10.1145/3702212.3702214",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3702212.3702214"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "Students receive explicit permission and citation rules for generated code.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3702212.3702214",
+          "quote": "Learners were instructed beforehand that they may use it as they wish, and were given particular rules on how to cite generated code.",
+          "locator": {
+            "section": "3. Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-require-ai-disclosure-and-citation",
+      "practice_name": "Require AI disclosure and citation",
+      "rationale": "Students must cite generated code under the assessment rules.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3702212.3702214",
+          "quote": "Learners were instructed beforehand that they may use it as they wish, and were given particular rules on how to cite generated code.",
+          "locator": {
+            "section": "3. Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "Citation of AI contributions is required.",
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "GenAI self-reflection form"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

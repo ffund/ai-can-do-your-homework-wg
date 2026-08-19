@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:gpt4-contextual-programming-exercise-bank",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "GPT-4 contextualized programming exercise bank",
+  "summary": "The authors generated 500 short Python exercises with contextual narratives, problem statements, and code solutions across programming concepts and 25 contexts. A rubric checks completeness, sensibility, correctness, and code quality before the exercises can be used with introductory students.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630863",
+      "type": "conference_paper",
+      "title": "Evaluating Automatically Generated Contextualised Programming Exercises",
+      "authors": [
+        "Andre Del Carpio Gutierrez",
+        "Paul Denny",
+        "Andrew Luxton-Reilly"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630863",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "gpt4-contextual-programming-exercise-bank",
+      "locator": {
+        "section": "2. Methodology"
+      },
+      "evidence_quote": "In total, 500 programming exercises were evaluated."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "introductory programming",
+      "level": "CS1",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "CS1",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "The authors generated 500 short Python exercises with contextual narratives, problem statements, and code solutions across programming concepts and 25 contexts.",
+    "student_actions": [
+      "Read a contextualized problem statement.",
+      "Write a Python solution using the specified concepts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python program",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "A rubric checks completeness, sensibility, correctness, and code quality before the exercises can be used with introductory students."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e8bf38636bfe_evaluating-automatically-generated-contextualised-programming-exercises.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "In total, 500 programming exercises were evaluated.",
+      "source_id": "doi:10.1145/3626252.3630863",
+      "locator": {
+        "section": "2. Methodology"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

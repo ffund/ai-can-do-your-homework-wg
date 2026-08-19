@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:idlelib-go-to-definition-copilot",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Large-code-base feature assignment with GitHub Copilot",
+  "summary": "Students add a Go to Definition feature to Python's 24,000-line idlelib code base after instruction on GitHub Copilot. They must use and document Copilot features, retain a process journal, and submit the complete chat transcript as process evidence.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701800",
+      "type": "conference_paper",
+      "title": "Students' Use of GitHub Copilot for Working with Large Code Bases",
+      "authors": [
+        "Anshul Shah",
+        "Anya Chernova",
+        "Elena Tomson",
+        "Leo Porter",
+        "William G. Griswold",
+        "Adalbert Gerald Soosai Raj"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701800",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "idlelib-go-to-definition-copilot",
+      "locator": {
+        "section": "3.2 Programming Task"
+      },
+      "evidence_quote": "add a 'Go to Definition' feature to the idlelib IDE"
+    }
+  ],
+  "context": {
+    "discipline": "Software engineering and Python",
+    "course": {
+      "name": "Working with Large Code Bases",
+      "level": "upper-division undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "mostly third- and fourth-year computer science students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Add context-menu navigation from a method use to its definition in idlelib.",
+    "student_actions": [
+      "Find and understand relevant code.",
+      "Use Copilot chat, explanation, fix, test, documentation, or generation features.",
+      "Implement and test the feature.",
+      "Document feature use and submit the chat transcript."
+    ],
+    "outputs": [
+      {
+        "artifact": "idlelib code changes, process journal, and Copilot transcript",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GitHub Copilot use was required and explicitly taught; the process journal had to account for seven Copilot features."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Full credit required submission of the process journal and chat transcript; the feature rubric was not reported."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a918274db112_students-use-of-github-copilot-for-working-with-large-code-bases.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "48 process journals and 47 chat transcripts were analyzed; 63% attempted a one-shot whole-feature prompt."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "add a 'Go to Definition' feature to the idlelib IDE",
+      "source_id": "doi:10.1145/3641554.3701800",
+      "locator": {
+        "section": "3.2 Programming Task"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

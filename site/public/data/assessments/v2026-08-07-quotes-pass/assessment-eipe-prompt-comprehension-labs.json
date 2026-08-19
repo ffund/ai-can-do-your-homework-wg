@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:eipe-prompt-comprehension-labs",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Explain-in-Plain-English prompt comprehension labs",
+  "summary": "Students inspect Python-like functions and describe them in natural language so GPT-3.5 generates functionally equivalent code. PrairieLearn runs instructor tests on the generated code and returns both code and test results for iterative prompt revision.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3657604.3662039",
+      "type": "conference_paper",
+      "title": "Prompting for Comprehension: Exploring the Intersection of Explain in Plain English Questions and Prompt Writing",
+      "authors": [
+        "David H. Smith",
+        "Paul Denny",
+        "Max Fowler"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3657604.3662039",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "eipe-prompt-comprehension-labs",
+      "locator": {
+        "section": "3.1 Exercise Design"
+      },
+      "evidence_quote": "A total of eight questions were used across two separate lab assignments"
+    }
+  ],
+  "context": {
+    "discipline": "C and MATLAB programming",
+    "course": {
+      "name": "First-year introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "engineering undergraduates",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exercise"
+    ],
+    "summary": "Complete eight code-comprehension questions across two labs.",
+    "student_actions": [
+      "Read a function with generic names.",
+      "Write a plain-English description of its purpose.",
+      "Inspect LLM-generated code and unit-test feedback.",
+      "Revise the description for up to 20 attempts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Natural-language code descriptions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3.5 generated code from every submitted description as the core grading mechanism."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "PrairieLearn graded functional equivalence with unit tests; incorrect attempts were not penalized."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-baf880dfb25e_prompting-for-comprehension-exploring-the-intersection-of-explain-in-plain-english-questions-and.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "841 of 889 enrolled students participated; completion rates across eight tasks ranged from 96.3% to 99.8%."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "A total of eight questions were used across two separate lab assignments",
+      "source_id": "doi:10.1145/3657604.3662039",
+      "locator": {
+        "section": "3.1 Exercise Design"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

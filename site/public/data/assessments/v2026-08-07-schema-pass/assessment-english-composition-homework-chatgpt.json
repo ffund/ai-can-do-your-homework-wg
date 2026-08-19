@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:english-composition-homework-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "English composition essay homework",
+  "summary": "Students write an essay on how social media affects individuals and society. ChatGPT was evaluated offline against student essays, demonstrating high exposure to AI-written submissions; no student AI-use policy was reported.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/mis.2023.3255599",
+      "type": "journal_article",
+      "title": "Rethinking Homework in the Age of Artificial Intelligence",
+      "authors": [
+        "Hazem Ibrahim",
+        "Rohail Asim",
+        "Fareed Zaffar",
+        "Talal Rahwan",
+        "Yasir Zaki"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/mis.2023.3255599",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "english-composition-homework-chatgpt",
+      "locator": {
+        "section": "Results"
+      },
+      "evidence_quote": "How does social media affect individuals and society?"
+    }
+  ],
+  "context": {
+    "discipline": "English composition",
+    "course": {
+      "name": "English Composition I",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "university students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Write an English composition essay addressing a supplied social-media prompt.",
+    "student_actions": [
+      "Develop and submit an essay responding to the prompt."
+    ],
+    "outputs": [
+      {
+        "artifact": "Essay",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers generated matched-length ChatGPT essays for blind grading."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Three professional graders blindly evaluated student and ChatGPT essays."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:intro-cs-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:discrete-math-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:computer-networks-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1c2fd749f8f0_rethinking-homework-in-the-age-of-artificial-intelligence.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Thirty student essays from the ZAEBUC dataset were compared with generated counterparts."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "How does social media affect individuals and society?",
+      "source_id": "doi:10.1109/mis.2023.3255599",
+      "locator": {
+        "section": "Results"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-robotics-lab-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Robotics lab project series for CS1",
+  "summary": "Students complete individual and team robotics labs that replace three web-development labs and culminate in public demonstrations and reflection. GenAI is treated like peer collaboration: high-level help is permitted, but generating a complete solution is plagiarism.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701810",
+      "type": "conference_paper",
+      "title": "Enhancing CS1 Education through Experiential Learning with Robotics Projects",
+      "authors": [
+        "Rodrigo Borela",
+        "Zhixian Liding",
+        "Melinda McDaniel"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701810",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-robotics-lab-series",
+      "locator": {
+        "section": "3. Curriculum and 4. Robotics Curriculum"
+      },
+      "evidence_quote": "Assignments are to be completed individually, with high-level collaboration encouraged. In this course, no distinction is made between collaboration with peers and the use of LLM-based chatbots."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming and robotics",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "project"
+    ],
+    "summary": "Students complete individual and team robotics labs that replace three web-development labs and culminate in public demonstrations and reflection.",
+    "student_actions": [
+      "Program robot behaviors in Python.",
+      "Test and troubleshoot physical robot behavior.",
+      "Demonstrate project outcomes.",
+      "Write a career-oriented reflection."
+    ],
+    "outputs": [
+      {
+        "artifact": "robotics programs",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "live robot demonstrations",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "resume bullet point or LinkedIn reflection",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GenAI is treated like peer collaboration: high-level help is permitted, but generating a complete solution is plagiarism."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-362e9a3d7a24_enhancing-cs1-education-through-experiential-learning-with-robotics-projects.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "Assignments are to be completed individually, with high-level collaboration encouraged. In this course, no distinction is made between collaboration with peers and the use of LLM-based chatbots.",
+      "source_id": "doi:10.1145/3641554.3701810",
+      "locator": {
+        "section": "3. Curriculum and 4. Robotics Curriculum"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701810"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "resume bullet point or LinkedIn reflection"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

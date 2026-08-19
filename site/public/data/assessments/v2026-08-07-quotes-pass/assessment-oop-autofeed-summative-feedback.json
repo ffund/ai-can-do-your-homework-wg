@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:oop-autofeed-summative-feedback",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Postgraduate Java assignment with AI-generated summative feedback",
+  "summary": "Postgraduate students complete a compulsory end-of-course Java assignment worth 60% of the module. Lecturers grade the work with a rubric, then AutoFeed uses the marks and comments to generate a second feedback script with ChatGPT 3.5 for human review.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3660853.3660863",
+      "type": "conference_paper",
+      "title": "The use of ChatGPT to generate Summative Feedback in Programming Assessments that is Consistent, Prompt, without Bias and Scalable",
+      "authors": [
+        "Aidan McGowan",
+        "Neil Anderson",
+        "Christopher Smith"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3660853.3660863",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "postgraduate-java-end-course-assessment",
+      "locator": {
+        "section": "2 Methodology"
+      },
+      "evidence_quote": "The normal marking and feedback process for the end-of-course assessment, weighted at 60% was carried out as per tradition ... in parallel the course lecturers provided an alternative feedback analysis generated via ChatGPT."
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "compulsory Java programming module",
+      "level": "postgraduate",
+      "institution": "Queen's University Belfast",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "postgraduate students",
+    "cohort_size": 108,
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 60
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Complete the end-of-course Java programming assignment and receive human-authored and AI-drafted summative feedback.",
+    "student_actions": [
+      "Submit a complex Java programming assignment.",
+      "Review two feedback scripts and report views on them."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java program",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "unknown",
+      "description": "AutoFeed drafts narrative feedback after lecturers complete grading."
+    },
+    "assessment_system_role": [
+      "summative feedback generation"
+    ],
+    "tools": [
+      "ChatGPT 3.5",
+      "AutoFeed"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Human markers applied a calibrated rubric; lecturers checked and amended AI-generated narrative feedback.",
+    "human_validation": {
+      "performed": true,
+      "description": "Lecturers checked every generated response; 15-20% required amendment."
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-cfcf8e3711b3_the-use-of-chatgpt-to-generate-summative-feedback-in-programming-assessments-that-is-consistent.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "The normal marking and feedback process for the end-of-course assessment, weighted at 60% was carried out as per tradition ... in parallel the course lecturers provided an alternative feedback analysis generated via ChatGPT.",
+      "source_id": "doi:10.1145/3660853.3660863",
+      "locator": {
+        "section": "2 Methodology"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "The normal marking and feedback process for the end-of-course assessment, weighted at 60% was carried out as per tradition ... in parallel the course lecturers provided an alternative feedback analysis generated via ChatGPT.",
+      "source_id": "doi:10.1145/3660853.3660863",
+      "locator": {
+        "section": "2 Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    },
+    {
+      "kind": "grading",
+      "quote": "The normal marking and feedback process for the end-of-course assessment, weighted at 60% was carried out as per tradition ... in parallel the course lecturers provided an alternative feedback analysis generated via ChatGPT.",
+      "source_id": "doi:10.1145/3660853.3660863",
+      "locator": {
+        "section": "2 Methodology"
+      },
+      "supports": "Grading and stakes",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

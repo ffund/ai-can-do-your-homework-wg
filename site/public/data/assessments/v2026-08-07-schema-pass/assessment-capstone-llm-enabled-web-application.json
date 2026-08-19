@@ -1,0 +1,186 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:capstone-llm-enabled-web-application",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Agile capstone with an LLM-enabled web application",
+  "summary": "Senior computer science students work in teams of six to propose and build a semester-long web application using Agile roles and professional tools. During requirements and implementation they identify an appropriate LLM-enabled feature and integrate it through the ChatGPT API.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893284",
+      "type": "conference_paper",
+      "title": "WIP: Enhancing Career Preparedness Through a Software Engineering Capstone Course Design",
+      "authors": [
+        "Isabel Hyo Jung Song",
+        "Jingyi Wang",
+        "Rafael Sunico",
+        "Andrew Dahlstrom"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893284",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "llm-enabled-capstone",
+      "locator": {
+        "section": "III. Proposed Course Design"
+      },
+      "evidence_quote": "During the implementation phase, they gain hands-on experience by implementing these features into their applications, utilizing ChatGPT APIs to embed advanced functionalities."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "Software Engineering Capstone",
+      "level": "senior undergraduate",
+      "institution": "San Francisco State University",
+      "program": "Computer Science",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "senior undergraduate students",
+    "cohort_size": 42,
+    "research_sample_size": 42,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "capstone",
+      "project"
+    ],
+    "summary": "Propose, design, implement, test, and present a team web application using Agile practices, professional tools, and an appropriate LLM-enabled feature.",
+    "student_actions": [
+      "Propose a meaningful project theme and gather requirements.",
+      "Work in assigned Agile roles.",
+      "Produce requirements, UX, architecture, implementation, and testing deliverables.",
+      "Investigate an LLM-supported feature such as personalization, recommendation, or generated content.",
+      "Integrate the feature using the ChatGPT API.",
+      "Document the project for use in a professional resume."
+    ],
+    "outputs": [
+      {
+        "artifact": "Semester-long web application",
+        "required": true
+      },
+      {
+        "artifact": "Requirements and UX deliverables",
+        "required": true
+      },
+      {
+        "artifact": "Software architecture and source repository",
+        "required": true
+      },
+      {
+        "artifact": "Tests and continuous-integration workflow",
+        "required": true
+      },
+      {
+        "artifact": "Resume content describing the capstone",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": 6,
+    "timing": {
+      "mode": "mixed",
+      "deadline": "Semester-long project"
+    },
+    "delivery": {
+      "modality": "hybrid",
+      "setting": "studio",
+      "platforms": [
+        "Figma",
+        "UML",
+        "GitHub",
+        "Jest",
+        "GitHub Actions",
+        "ChatGPT API",
+        "Notion or Jira"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students are trained to identify and implement an LLM-enabled feature within their application."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "application functionality",
+          "personalization",
+          "recommendation",
+          "generative content"
+        ],
+        "disclosure_required": "not_reported",
+        "transcript_required": false,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT API",
+        "provider": "OpenAI"
+      },
+      "ML-based resume builder"
+    ]
+  },
+  "grading": {
+    "status": "not_reported",
+    "method": "The paper reports milestone deliverables but not the assessment rubric or grade weights."
+  },
+  "evidence": {
+    "study_type": "work-in-progress pre/post career-adaptability evaluation",
+    "sample": {
+      "participating": 42,
+      "unit_of_analysis": "student"
+    },
+    "instruments": [
+      "25-question Career Construction Theory adaptability survey"
+    ],
+    "reported_results": [
+      "Concern, curiosity, and confidence measures increased significantly; control did not show a significant improvement."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-0a9806e5910a_wip-enhancing-career-preparedness-through-a-software-engineering-capstone-course-design.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "During the implementation phase, they gain hands-on experience by implementing these features into their applications, utilizing ChatGPT APIs to embed advanced functionalities.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893284",
+      "locator": {
+        "section": "III. Proposed Course Design"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "During the implementation phase, they gain hands-on experience by implementing these features into their applications, utilizing ChatGPT APIs to embed advanced functionalities.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893284",
+      "locator": {
+        "section": "III. Proposed Course Design"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

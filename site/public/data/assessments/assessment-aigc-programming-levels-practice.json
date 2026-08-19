@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:aigc-programming-levels-practice",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "AIGC programming levels and practice exercises",
+  "summary": "Learners complete contextualized programming levels and follow-up practical coding exercises in an AIGC platform. ChatGPT provides a personalized plan, learning partner, code processing, interaction, assessment, and feedback throughout the learning process.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3629296.3629298",
+      "type": "conference_paper",
+      "title": "Research on the Construction of Intelligent Programming Platform Based on AI-generated Content",
+      "authors": [
+        "Hao Wu",
+        "Daidong Fa",
+        "Xiaoling Wu",
+        "Weijun Tan",
+        "Xiwen Chang",
+        "Ying Gao",
+        "Jinta Weng"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3629296.3629298",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "aigc-programming-levels-practice",
+      "locator": {
+        "section": "2 AIGC-based programming learning model"
+      },
+      "evidence_quote": "the learner needs to fully utilize the knowledge and skills of this learning process to pass the level"
+    }
+  ],
+  "context": {
+    "discipline": "Programming education",
+    "course": {
+      "name": "not_reported",
+      "level": "unknown",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "programming learners",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Progress through generated programming-learning contexts, a final level, and practical exercises.",
+    "student_actions": [
+      "Follow and refine a personalized learning plan.",
+      "Solve contextualized programming tasks.",
+      "Interact with the AIGC partner for guidance and code support.",
+      "Pass a final level and complete practical coding exercises."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming solutions and platform interaction records",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3.5 generated content, code support, assessment, and feedback inside the platform."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-29469daab6de_research-on-the-construction-of-intelligent-programming-platform-based-on-ai-generated-content.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Thirty-nine valid user questionnaires compared the platform with traditional learning and practice approaches."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "the learner needs to fully utilize the knowledge and skills of this learning process to pass the level",
+      "source_id": "doi:10.1145/3629296.3629298",
+      "locator": {
+        "section": "2 AIGC-based programming learning model"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3629296.3629298"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Programming solutions and platform interaction records"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

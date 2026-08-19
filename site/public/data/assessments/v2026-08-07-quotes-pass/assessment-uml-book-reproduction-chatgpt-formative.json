@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:uml-book-reproduction-chatgpt-formative",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "ChatGPT reproduction of a supplied books UML diagram",
+  "summary": "Second-year students receive a four-class UML diagram about books, copies, and authorship and try to reproduce it through prompts to ChatGPT. They refine or manually repair the response and submit the transcript, final diagram, and a critical account of problems encountered.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/MS.2024.3385309",
+      "type": "journal_article",
+      "title": "Generative AI in the Software Modeling Classroom: An Experience Report with ChatGPT and Unified Modeling Language",
+      "authors": [
+        "Javier Cámara",
+        "Javier Troya",
+        "Julio Montes-Torres",
+        "Francisco J. Jaime"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/MS.2024.3385309",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "uml-book-reproduction-chatgpt-formative",
+      "locator": {
+        "section": "Teaching and Assessment Methods"
+      },
+      "evidence_quote": "They were asked to try to obtain the same class diagram by entering a prompt into ChatGPT."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and UML modeling",
+    "course": {
+      "name": "Introduction to Software Engineering",
+      "level": "second-year undergraduate",
+      "institution": "University of Malaga",
+      "academic_year": "2022-2023",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "second-year undergraduate",
+    "research_sample_size": 72,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "design_task",
+      "reflection"
+    ],
+    "summary": "Prompt ChatGPT to reproduce a supplied four-class books-and-authorship UML diagram and critically repair the result.",
+    "student_actions": [
+      "Translate the supplied diagram into prompts.",
+      "Iterate with ChatGPT and manually improve the result.",
+      "Document errors and required improvements."
+    ],
+    "inputs": [
+      {
+        "description": "Four-class diagram about books, copies, and authorship",
+        "provided_by": "instructor",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "ChatGPT conversation transcript",
+        "required": true
+      },
+      {
+        "artifact": "Final UML class diagram",
+        "required": true
+      },
+      {
+        "artifact": "Description of problems and improvements",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "asynchronous",
+      "deadline": "Three weeks after release"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students must use ChatGPT and assess how closely its diagram matches the target."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "PlantUML"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Instructors checked genuine effort and students' detection of errors in six UML element categories."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:uml-theater-chatgpt-formative",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-d77c9234f15b_generative-ai-in-the-software-modeling-classroom-an-experience-report-with-chatgpt-and-unified-m.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "They were asked to try to obtain the same class diagram by entering a prompt into ChatGPT.",
+      "source_id": "doi:10.1109/MS.2024.3385309",
+      "locator": {
+        "section": "Teaching and Assessment Methods"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "They were asked to try to obtain the same class diagram by entering a prompt into ChatGPT.",
+      "source_id": "doi:10.1109/MS.2024.3385309",
+      "locator": {
+        "section": "Teaching and Assessment Methods"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "They were asked to try to obtain the same class diagram by entering a prompt into ChatGPT.",
+      "source_id": "doi:10.1109/MS.2024.3385309",
+      "locator": {
+        "section": "Teaching and Assessment Methods"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

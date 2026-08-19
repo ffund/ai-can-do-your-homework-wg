@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:machine-learning-final-exam-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "University machine-learning final exam series",
+  "summary": "Students solve multi-part final-exam questions spanning machine-learning theory, mathematics, natural language, and code implementation. Researchers used 646 authentic question parts from MIT, Harvard, and Cornell to test language-model solving and question generation, showing that these exams are also vulnerable to external AI assistance.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3580305.3599827",
+      "type": "conference_paper",
+      "title": "From Human Days to Machine Seconds: Automatically Answering and Generating Machine Learning Final Exams",
+      "authors": [
+        "Iddo Drori",
+        "Sarah J. Zhang",
+        "Reece Shuttleworth",
+        "Sarah Zhang",
+        "Keith Tyser",
+        "Zad Chin",
+        "Pedro Lantigua",
+        "Saisamrit Surbehera",
+        "Gregory Hunter",
+        "Derek Austin",
+        "Leonard Tang",
+        "Yann Hicke",
+        "Sage Simhon",
+        "Sathwik Karnik",
+        "Darnell Granberry",
+        "Madeleine Udell"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3580305.3599827",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "machine-learning-final-exam-series",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "evidence_quote": "One contribution of this work is the dataset of final questions derived from three courses: Introduction to Machine Learning at MIT and Cornell and Machine Learning at Harvard."
+    }
+  ],
+  "context": {
+    "discipline": "machine learning",
+    "course": {
+      "name": "Introduction to Machine Learning",
+      "level": "undergraduate",
+      "institution": "MIT, Harvard University, and Cornell University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "prerequisites": [
+      "Linear algebra",
+      "Programming fundamentals or introduction to algorithms"
+    ],
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Solve cumulative, timed machine-learning final questions that combine theory, mathematics, code, and multi-step reasoning.",
+    "student_actions": [
+      "Solve open-ended and selected-response questions across a semester of machine learning.",
+      "Provide theory, mathematical, and code-implementation answers."
+    ],
+    "outputs": [
+      {
+        "artifact": "Final-exam answers",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 646
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The authentic exams predate or do not report student AI use; the researchers submitted their questions to GPT-3, OPT, Codex, and ChatGPT as an assessment-security benchmark."
+    },
+    "assessment_system_role": [
+      "research_benchmark_exam_solving",
+      "generate_exam_questions"
+    ],
+    "tools": [
+      "GPT-3",
+      "OPT",
+      "Codex",
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 100,
+      "kind": "percentage"
+    },
+    "method": "Human and automatic grading, depending on question type."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-801ec043a340_from-human-days-to-machine-seconds-automatically-answering-and-generating-machine-learning-final.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "One contribution of this work is the dataset of final questions derived from three courses: Introduction to Machine Learning at MIT and Cornell and Machine Learning at Harvard.",
+      "source_id": "doi:10.1145/3580305.3599827",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3580305.3599827"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

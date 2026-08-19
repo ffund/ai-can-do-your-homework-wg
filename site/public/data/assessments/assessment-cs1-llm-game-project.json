@@ -1,0 +1,120 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-llm-game-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Copilot-assisted text game project",
+  "summary": "Design and implement either an interactive text game or a simulation that estimates the probability of winning a game. Students use GenAI while producing the assessed work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653584",
+      "type": "conference_paper",
+      "title": "CS1-LLM: Integrating LLMs into CS1 Instruction",
+      "authors": [
+        "Vadaparty, Annapurna",
+        "Zingaro, Daniel",
+        "Smith IV, David H.",
+        "Padala, Mounika",
+        "Alvarado, Christine",
+        "Gorson Benario, Jamie",
+        "Porter, Leo"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653584",
+      "url": "https://doi.org/10.1145/3649217.3653584",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-llm-game-project",
+      "locator": {
+        "section": "5.4 Assessments - Projects"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python and game programming",
+    "course": {
+      "name": "CS1-LLM",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Design and implement either an interactive text game or a simulation that estimates the probability of winning a game.",
+    "student_actions": [
+      "Design and implement either an interactive text game or a simulation that estimates the probability of winning a game."
+    ],
+    "outputs": [
+      {
+        "artifact": "Code, supporting files, function diagram, and five-minute explanation video",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use GenAI while producing the assessed work."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GitHub Copilot and VS Code"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1657f74af9c5_cs1-llm-integrating-llms-into-cs1-instruction.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3649217.3653584"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

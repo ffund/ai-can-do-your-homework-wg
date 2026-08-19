@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-data-analysis-llm-reflection",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Python data-analysis assignment with LLM-guided reflection",
+  "summary": "Students implement four Python functions for file I/O and introductory data manipulation, then may complete an optional randomized reflection activity. One condition uses GPT-3.5 to connect concepts, implications, and challenges before a related proctored exam.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3657604.3662042",
+      "type": "conference_paper",
+      "title": "Supporting Self-Reflection at Scale with Large Language Models: Insights from Randomized Field Experiments in Classrooms",
+      "authors": [
+        "Harsh Kumar",
+        "Ruiwei Xiao",
+        "Benjamin Lawson",
+        "Ilya Musabirov",
+        "Jiakai Shi",
+        "Xinyuan Wang",
+        "Huayin Luo",
+        "Joseph Jay Williams",
+        "Anna N. Rafferty",
+        "John Stamper",
+        "Michael Liut"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3657604.3662042",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-data-analysis-llm-reflection",
+      "locator": {
+        "section": "4.1 Experimental Design"
+      },
+      "evidence_quote": "The assignment required students to program four Python functions."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming and data analysis",
+    "course": {
+      "name": "Introduction to Computer Programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "CS1 students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Implement four Python functions that read, write, and manipulate file data.",
+    "student_actions": [
+      "Complete the take-home programming assignment.",
+      "Optionally reflect using an LLM, questionnaire, or curated slides.",
+      "Complete similar problems in a proctored exam two weeks later."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python functions and optional reflection response",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "AI was not available for assignment completion; GPT-3.5 was used only in one post-assignment reflection condition."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Assignment and proctored-exam performance were recorded; course weighting was not reported."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:database-mcq-llm-reflection",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2af0b253bdc2_supporting-self-reflection-at-scale-with-large-language-models-insights-from-randomized-field-ex.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "112 of 1,068 enrolled students entered the optional reflection activity; LLM and questionnaire groups had similar later exam means."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The assignment required students to program four Python functions.",
+      "source_id": "doi:10.1145/3657604.3662042",
+      "locator": {
+        "section": "4.1 Experimental Design"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3657604.3662042"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Python functions and optional reflection response"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-chatgpt-detection-assignment-set",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Ten CS1 programming assignments tested for ChatGPT use detection",
+  "summary": "Submit programs for ten introductory assignments in the autograder IDE; the study simulated repeated ChatGPT use and evaluated anomaly flags. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653558",
+      "type": "conference_paper",
+      "title": "ChatGPT and Cheat Detection in CS1 Using a Program Autograding System",
+      "authors": [
+        "Pang, Ashley",
+        "Vahid, Frank"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653558",
+      "url": "https://doi.org/10.1145/3649217.3653558",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-chatgpt-detection-assignment-set",
+      "locator": {
+        "section": "Experiment Method"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "CS1 using zyBooks zyLabs",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "lab"
+    ],
+    "summary": "Submit programs for ten introductory assignments in the autograder IDE; the study simulated repeated ChatGPT use and evaluated anomaly flags.",
+    "student_actions": [
+      "Submit programs for ten introductory assignments in the autograder IDE; the study simulated repeated ChatGPT use and evaluated anomaly flags."
+    ],
+    "outputs": [
+      {
+        "artifact": "Autograded program submissions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT and zyBooks APEX"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-40a45bd8e3e7_chatgpt-and-cheat-detection-in-cs1-using-a-program-autograding-system.pdf"
+  }
+}
+
+

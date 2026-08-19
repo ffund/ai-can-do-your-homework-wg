@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-resistant-java-final-exam",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "AI-resistant Java programming final exam",
+  "summary": "Students complete an onsite supervised final containing one quiz and three programming exercises. Concise briefs, PNG/GIF requirements, partial templates, TODOs, hidden tests, and plagiarism checks make direct ChatGPT use impractical and the invigilated setting prohibits it.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/cseet58097.2023.00031",
+      "type": "conference_paper",
+      "title": "Recommendations to Create Programming Exercises to Overcome ChatGPT",
+      "authors": [
+        "Jonnathan Berrezueta-Guzman",
+        "Stephan Krusche"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/cseet58097.2023.00031",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ai-resistant-java-final-exam",
+      "locator": {
+        "section": "VI.B Application of the recommendations"
+      },
+      "evidence_quote": "conducted onsite under supervision to prevent any form of academic dishonesty"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "Introductory programming",
+      "level": "first-semester undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "Information Engineering bachelor's students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Complete quiz, object-oriented programming, GUI, and streams exercises under supervision.",
+    "student_actions": [
+      "Answer quiz questions.",
+      "Complete supplied Java templates from textual and visual requirements.",
+      "Compile and submit code without real-time test feedback."
+    ],
+    "outputs": [
+      {
+        "artifact": "Quiz answers and Java programs",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "The exam was onsite and supervised to prevent ChatGPT and other academic dishonesty."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Quiz 20%; OOP 18%; GUI 35%; streams 27%. Only compilation status was shown during the exam."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:java-homework-series-chatgpt-exposure",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-687813b12b3e_recommendations-to-create-programming-exercises-to-overcome-chatgpt.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "The reported final-exam pass rate was 54.4%."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "conducted onsite under supervision to prevent any form of academic dishonesty",
+      "source_id": "doi:10.1109/cseet58097.2023.00031",
+      "locator": {
+        "section": "VI.B Application of the recommendations"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-llm-quizzes",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Four primarily no-Copilot CS1 quizzes",
+  "summary": "Complete four 50-minute quizzes with tracing, explaining, Parsons problems, code writing, testing, debugging, and decomposition questions, mostly without Copilot. GenAI use is prohibited during this assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653584",
+      "type": "conference_paper",
+      "title": "CS1-LLM: Integrating LLMs into CS1 Instruction",
+      "authors": [
+        "Vadaparty, Annapurna",
+        "Zingaro, Daniel",
+        "Smith IV, David H.",
+        "Padala, Mounika",
+        "Alvarado, Christine",
+        "Gorson Benario, Jamie",
+        "Porter, Leo"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653584",
+      "url": "https://doi.org/10.1145/3649217.3653584",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-llm-quizzes",
+      "locator": {
+        "section": "5.4 Assessments - Quizzes"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "CS1-LLM",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Complete four 50-minute quizzes with tracing, explaining, Parsons problems, code writing, testing, debugging, and decomposition questions, mostly without Copilot.",
+    "student_actions": [
+      "Complete four 50-minute quizzes with tracing, explaining, Parsons problems, code writing, testing, debugging, and decomposition questions, mostly without Copilot."
+    ],
+    "outputs": [
+      {
+        "artifact": "Quiz responses and small code solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "GenAI use is prohibited during this assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "PrairieLearn"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1657f74af9c5_cs1-llm-integrating-llms-into-cs1-instruction.pdf"
+  }
+}
+

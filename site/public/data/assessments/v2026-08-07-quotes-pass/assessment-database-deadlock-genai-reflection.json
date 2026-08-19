@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:database-deadlock-genai-reflection",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Deadlock-prevention analysis with optional GenAI reflection",
+  "summary": "Third-year database students analyze and compare two deadlock-prevention schemes in a graded assignment question. They may use GenAI for this question, but must disclose the tool and explain in no more than six sentences why it helped more than course materials; non-users explain their choice and learning source.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701785",
+      "type": "conference_paper",
+      "title": "Understanding the Impact of Using Generative AI Tools in a Database Course",
+      "authors": [
+        "Valeria Ramirez Osorio",
+        "Angela Zavaleta Bernuy",
+        "Bogdan Simion",
+        "Michael Liut"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701785",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "assignment-3-question-5",
+      "locator": {
+        "section": "3.1 Course Context"
+      },
+      "evidence_quote": "They were also not permitted to use any GenAI to complete their assignments, with the exception of Assignment 3 (A3) Question 5 (Q5)."
+    }
+  ],
+  "context": {
+    "discipline": "database systems",
+    "course": {
+      "name": "introductory databases",
+      "level": "third-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "third-year undergraduate students",
+    "cohort_size": 226,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 1.8
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Analyze two deadlock-prevention schemes and explain whether and how GenAI or course materials supported learning.",
+    "student_actions": [
+      "Analyze, compare, and report on two deadlock-prevention schemes.",
+      "Choose whether to use GenAI.",
+      "Write a six-sentence-maximum reflection that discloses and justifies the chosen support."
+    ],
+    "outputs": [
+      {
+        "artifact": "Deadlock-prevention analysis",
+        "required": true
+      },
+      {
+        "artifact": "GenAI-use or non-use reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GenAI is optional for this question and prohibited on the other assignments."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "component_id": "assignment-3-question-5",
+        "permission": "optional",
+        "disclosure_required": true,
+        "disclosure_artifact": "brief paragraph explaining tool use or non-use"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "course_weight_percent": 1.8
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-21455b3819d8_understanding-the-impact-of-using-generative-ai-tools-in-a-database-course.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "They were also not permitted to use any GenAI to complete their assignments, with the exception of Assignment 3 (A3) Question 5 (Q5).",
+      "source_id": "doi:10.1145/3641554.3701785",
+      "locator": {
+        "section": "3.1 Course Context"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "They were also not permitted to use any GenAI to complete their assignments, with the exception of Assignment 3 (A3) Question 5 (Q5).",
+      "source_id": "doi:10.1145/3641554.3701785",
+      "locator": {
+        "section": "3.1 Course Context"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

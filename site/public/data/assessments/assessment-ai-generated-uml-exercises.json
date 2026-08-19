@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-generated-uml-exercises",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "UML modeling exercises generated from course diagrams",
+  "summary": "Complete modeling exercises synthesized from textual or graphical UML class and sequence diagrams. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "proposed",
+  "sources": [
+    {
+      "id": "doi:10.1109/cseet62301.2024.10663027",
+      "type": "conference_paper",
+      "title": "ChatGPT's Aptitude in Utilizing UML Diagrams for Software Engineering Exercise Generation",
+      "authors": [
+        "Speth, Sandro",
+        "Meißner, Niklas",
+        "Becker, Steffen"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/cseet62301.2024.10663027",
+      "url": "https://doi.org/10.1109/cseet62301.2024.10663027",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ai-generated-uml-exercises",
+      "locator": {
+        "section": "II General Process"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and UML modeling",
+    "course": {
+      "name": "Software engineering courses",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "design_task"
+    ],
+    "summary": "Complete modeling exercises synthesized from textual or graphical UML class and sequence diagrams.",
+    "student_actions": [
+      "Complete modeling exercises synthesized from textual or graphical UML class and sequence diagrams."
+    ],
+    "outputs": [
+      {
+        "artifact": "UML modeling responses and diagrams",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT GPT-4 and DALL-E"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-cbebf957a25c_chatgpt-s-aptitude-in-utilizing-uml-diagrams-for-software-engineering-exercise-generation.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/cseet62301.2024.10663027"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-platform-entrance-exam",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "AI-graded Python placement entrance exam",
+  "summary": "Answer and explain Python questions through chapter six, with blank responses allowed, to receive recommended chapters and sections for review. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/uemcon62879.2024.10754661",
+      "type": "conference_paper",
+      "title": "Development and Evaluation of an AI-Enhanced Python Programming Education System",
+      "authors": [
+        "Zabala, Eric",
+        "Narman, Husnu S."
+      ],
+      "year": 2024,
+      "identifier": "10.1109/uemcon62879.2024.10754661",
+      "url": "https://doi.org/10.1109/uemcon62879.2024.10754661",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-platform-entrance-exam",
+      "locator": {
+        "section": "III Implementation - Entrance Exam"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "AI-enhanced Python learning platform",
+      "level": "beginner learners of any age",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "beginner learners of any age",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "diagnostic"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Answer and explain Python questions through chapter six, with blank responses allowed, to receive recommended chapters and sections for review.",
+    "student_actions": [
+      "Answer and explain Python questions through chapter six, with blank responses allowed, to receive recommended chapters and sections for review."
+    ],
+    "outputs": [
+      {
+        "artifact": "Entrance-exam answers and explanations",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-3.5 Turbo grading and recommendation system"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bc8603b8edba_development-and-evaluation-of-an-ai-enhanced-python-programming-education-system.pdf"
+  }
+}
+
+

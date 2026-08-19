@@ -1,0 +1,114 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-refute-questions",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 refute questions from buggy student code",
+  "summary": "Students receive a programming task and a plausible but incorrect code fragment, then provide a counterexample input that demonstrates the mismatch. The item format develops code comprehension and critique skills needed to evaluate plausible but faulty code, including code produced by generative AI.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3576882.3617916",
+      "type": "conference_paper",
+      "title": "A Bug's New Life: Creating Refute Questions from Filtered CS1 Student Code Snapshots",
+      "authors": [
+        "Nimisha Agarwal",
+        "Viraj Kumar",
+        "Arun Raman",
+        "Amey Karkare"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3576882.3617916",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-refute-questions",
+      "locator": {
+        "section": "1. Introduction"
+      },
+      "evidence_quote": "A Refute question presents students with code that fails to achieve a stated task. Students must provide a counter-example input."
+    }
+  ],
+  "context": {
+    "discipline": "introductory C programming",
+    "course": {
+      "name": "CS1 programming",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "quiz",
+      "exam"
+    ],
+    "summary": "Find an input that proves a supplied buggy implementation does not satisfy its stated programming task.",
+    "student_actions": [
+      "Comprehend the task and supplied code.",
+      "Trace the code and produce a counterexample input."
+    ],
+    "outputs": [
+      {
+        "artifact": "Counterexample input",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "delivery": {
+      "modality": "unknown",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "AI is not part of the reported student workflow; the format prepares students to critique plausible faulty code such as LLM output."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported"
+      }
+    ],
+    "assessment_system_role": [
+      "Buggy historical student submissions are filtered to seed assessment items."
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a6c92b7c01e5_a-bug-s-new-life-creating-refute-questions-from-filtered-cs1-student-code-snapshots.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "A Refute question presents students with code that fails to achieve a stated task. Students must provide a counter-example input.",
+      "source_id": "doi:10.1145/3576882.3617916",
+      "locator": {
+        "section": "1. Introduction"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:c-programming-chatgpt-practice-items",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "ChatGPT-generated C programming practice assessment items",
+  "summary": "Educators use ChatGPT to generate short-answer and multiple-choice practice questions for an introductory C programming course. Specialists review each item for alignment with course objectives, cognitive level, validity, clarity, and technical correctness before student use.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/iceed62316.2024.10923780",
+      "type": "conference_paper",
+      "title": "Enhancing STEM Education with ChatGPT: A Case Study on Developing Practice Assessments for C Programming",
+      "authors": [
+        "Shereen Ismail",
+        "Jenice Lynch",
+        "Runna Alghazo"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/iceed62316.2024.10923780",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "c-programming-chatgpt-practice-items",
+      "locator": {
+        "section": "III. Case Study"
+      },
+      "evidence_quote": "An experiment was designed using ChatGPT to generate practice problems aligned with specific course objectives for a Computer Science introductory programming course."
+    }
+  ],
+  "context": {
+    "discipline": "C programming",
+    "course": {
+      "name": "C programming fundamentals",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "introductory undergraduate",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz",
+      "problem_set"
+    ],
+    "summary": "Educators use ChatGPT to generate short-answer and multiple-choice practice questions for an introductory C programming course.",
+    "student_actions": [
+      "Answer short-answer and multiple-choice C programming questions."
+    ],
+    "outputs": [
+      {
+        "artifact": "short-answer responses",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "multiple-choice responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Specialists review each item for alignment with course objectives, cognitive level, validity, clarity, and technical correctness before student use."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-17c858e4bec9_enhancing-stem-education-with-chatgpt-a-case-study-on-developing-practice-assessments-for-c-prog.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "An experiment was designed using ChatGPT to generate practice problems aligned with specific course objectives for a Computer Science introductory programming course.",
+      "source_id": "doi:10.1109/iceed62316.2024.10923780",
+      "locator": {
+        "section": "III. Case Study"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "An experiment was designed using ChatGPT to generate practice problems aligned with specific course objectives for a Computer Science introductory programming course.",
+      "source_id": "doi:10.1109/iceed62316.2024.10923780",
+      "locator": {
+        "section": "III. Case Study"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

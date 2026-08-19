@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:web-accessibility-repair-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Website accessibility evaluation and ChatGPT repair assignment",
+  "summary": "Evaluate a previously developed website with WAVE and AChecker, analyze violations, prompt ChatGPT to repair the code, and rerun both checkers to evaluate the result. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701841",
+      "type": "conference_paper",
+      "title": "Enhancing Accessibility in Software Engineering Projects with Large Language Models (LLMs)",
+      "authors": [
+        "Aljedaani, Wajdi",
+        "Eler, Marcelo Medeiros",
+        "Parthasarathy, P D"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701841",
+      "url": "https://doi.org/10.1145/3641554.3701841",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "web-accessibility-repair-chatgpt",
+      "locator": {
+        "section": "Study Design - Assignment Steps 1-3"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and web accessibility",
+    "course": {
+      "name": "Software engineering courses",
+      "level": "undergraduate and graduate",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate and graduate",
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "project"
+    ],
+    "summary": "Evaluate a previously developed website with WAVE and AChecker, analyze violations, prompt ChatGPT to repair the code, and rerun both checkers to evaluate the result.",
+    "student_actions": [
+      "Evaluate a previously developed website with WAVE and AChecker, analyze violations, prompt ChatGPT to repair the code, and rerun both checkers to evaluate the result."
+    ],
+    "outputs": [
+      {
+        "artifact": "Accessibility reports, prompts, and repaired website code",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT 3.5, WAVE, and AChecker"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ada668afc873_enhancing-accessibility-in-software-engineering-projects-with-large-language-models-llms.pdf"
+  }
+}
+

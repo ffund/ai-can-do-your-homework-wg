@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:scaled-cs1-exercise-problem-set-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "At-scale CS1 exercises and problem sets",
+  "summary": "Students complete chapter exercises and problem sets containing multiple-choice, fill-in-the-blank, and live coding questions with unlimited attempts. ChatGPT was tested offline on these tasks; for-credit students are expected to rely on proctored quizzes and tests as separate evidence of understanding.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/democon63027.2024.10748200",
+      "type": "conference_paper",
+      "title": "Novelty, Rigidity, and Complexity: Toward Developing AI-Resistant Assessments in an Introductory Computer Science Class",
+      "authors": [
+        "Diana M. Popescu",
+        "David A. Joyner"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/democon63027.2024.10748200",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "scaled-cs1-exercise-problem-set-series",
+      "locator": {
+        "section": "I.B Class Overview"
+      },
+      "evidence_quote": "Exercises and problem sets are both made of a number of multiple choice, fill-in-the-blank, and live coding questions"
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "Introductory computer science offered on campus and as a MOOC",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "for-credit and MOOC introductory learners",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "practice"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "Complete exercises and problem sets for introductory Python topics across the course chapters.",
+    "student_actions": [
+      "Answer conceptual questions.",
+      "Write Python code and test it against unit tests.",
+      "Revise answers using unlimited attempts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Question responses and Python code",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers copied tasks to ChatGPT 4o without interaction; the paper does not state a student policy for take-home exercises."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Automated evaluation with no partial credit and unlimited attempts."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7b6c7ece8283_novelty-rigidity-and-complexity-toward-developing-ai-resistant-assessments-in-an-introductory-co.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "ChatGPT 4o was evaluated across exercises and problem sets in 11 main chapters and compared with GPT-3.5."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "Exercises and problem sets are both made of a number of multiple choice, fill-in-the-blank, and live coding questions",
+      "source_id": "doi:10.1109/democon63027.2024.10748200",
+      "locator": {
+        "section": "I.B Class Overview"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

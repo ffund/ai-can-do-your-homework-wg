@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:at-scale-cs-problem-sets",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Thirteen autograded introductory computing problem sets",
+  "summary": "Complete thirteen problem sets of 10 to 15 coding problems with randomized server-side tests and unlimited attempts. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3657604.3664701",
+      "type": "conference_paper",
+      "title": "ChatGPT's Performance on Problem Sets in an At-Scale Introductory Computer Science Course",
+      "authors": [
+        "Popescu, Diana M.",
+        "Joyner, David A."
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3657604.3664701",
+      "url": "https://doi.org/10.1145/3657604.3664701",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "at-scale-cs-problem-sets",
+      "locator": {
+        "section": "1.2 Class Overview"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory computing",
+    "course": {
+      "name": "At-scale introductory computer science course and MOOC",
+      "level": "undergraduate and MOOC learners",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate and MOOC learners",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "problem_set",
+      "assignment"
+    ],
+    "summary": "Complete thirteen problem sets of 10 to 15 coding problems with randomized server-side tests and unlimited attempts.",
+    "student_actions": [
+      "Complete thirteen problem sets of 10 to 15 coding problems with randomized server-side tests and unlimited attempts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Autograded coding-problem solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT 3.5 research evaluation"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c4c887085f70_chatgpt-s-performance-on-problem-sets-in-an-at-scale-introductory-computer-science-course.pdf"
+  }
+}
+
+

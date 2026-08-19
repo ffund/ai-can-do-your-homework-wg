@@ -1,0 +1,342 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:network-ipv6-genai-authentic-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Exploring the Transition from IPv4 to IPv6",
+  "summary": "First-year network engineering students act as engineers for a multinational ISP and use GenAI plus authoritative sources to evaluate a full IPv4-to-IPv6 transition. Teams submit a process log, video presentation, and oral defense, with marks emphasizing critical validation and accountable AI use.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/EDUCON62633.2025.11016382",
+      "type": "conference_paper",
+      "title": "GenAI-Empowered Group-Based Authentic Assessment for Network Engineering Courses",
+      "authors": [
+        "Yue Chen",
+        "Kok Keong Chai",
+        "Jonathan Loo",
+        "Reza Moosaei",
+        "Joel Obstfeld"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/EDUCON62633.2025.11016382",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ipv4-ipv6-authentic-project",
+      "locator": {
+        "section": "IV. Implementation"
+      },
+      "evidence_quote": "We designed a GenAI-empowered, group-based authentic assessment, titled Exploring the Transition from IPv4 to IPv6, which accounts for 30% of the course grade."
+    }
+  ],
+  "context": {
+    "discipline": "network engineering",
+    "course": {
+      "name": "Network Engineering",
+      "level": "first year",
+      "institution": "Queen Mary University of London",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 30
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation",
+      "oral_exam",
+      "peer_assessment"
+    ],
+    "summary": "Research the technical, economic, and social implications of IPv6 adoption and recommend a transition position to the Internet Engineering Steering Group.",
+    "student_actions": [
+      "Form a team and assign project roles.",
+      "Use GenAI and authoritative sources to collect information.",
+      "Validate AI-generated information and document prompts and responses.",
+      "Develop and justify a consolidated recommendation.",
+      "Present and defend the recommendation in an oral examination.",
+      "Assess peer contributions."
+    ],
+    "inputs": [
+      {
+        "description": "Authoritative networking sources, including IETF material",
+        "provided_by": "external",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Interim Project Progress Log",
+        "required": true
+      },
+      {
+        "artifact": "Three-minute video presentation",
+        "required": true
+      },
+      {
+        "artifact": "Oral examination responses",
+        "required": true
+      },
+      {
+        "artifact": "Peer assessment",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "timing": {
+      "mode": "mixed"
+    },
+    "structure": [
+      {
+        "part": 1,
+        "name": "Mid-term assessment",
+        "description": "Progress log plus oral assessment.",
+        "weight_percent": 50
+      },
+      {
+        "part": 2,
+        "name": "Final assessment",
+        "description": "Video presentation and oral examination.",
+        "weight_percent": 50
+      }
+    ]
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Teams use GenAI for inquiry and alternative perspectives, then validate its relevance, accuracy, reliability, and possible hallucinations."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "research",
+          "data collection",
+          "idea generation",
+          "alternative perspectives"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "other GenAI tools"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Group rubric with peer adjustment for individual contribution.",
+    "criteria": [
+      {
+        "criterion": "Interim depth of discussion and prompt quality",
+        "weight_percent": 25
+      },
+      {
+        "criterion": "Interim engagement with and critical evaluation of AI",
+        "weight_percent": 25
+      },
+      {
+        "criterion": "Interim discussion and Q&A",
+        "weight_percent": 50
+      },
+      {
+        "criterion": "Final analysis and critical thinking",
+        "weight_percent": 40
+      },
+      {
+        "criterion": "Final consolidated view",
+        "weight_percent": 30
+      },
+      {
+        "criterion": "Final video presentation",
+        "weight_percent": 10
+      },
+      {
+        "criterion": "Final discussion and Q&A",
+        "weight_percent": 20
+      }
+    ],
+    "assessors": [
+      "course staff",
+      "peers"
+    ],
+    "process": [
+      "Peer assessment adjusts the group mark to reflect individual effort.",
+      "Every member is expected to answer at least one panel question."
+    ]
+  },
+  "evidence": {
+    "study_type": "trial and initial evaluation",
+    "instruments": [
+      "student feedback",
+      "assessment outputs"
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7084051db1b7_genai-empowered-group-based-authentic-assessment-for-network-engineering-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "grading",
+      "quote": "We designed a GenAI-empowered, group-based authentic assessment, titled Exploring the Transition from IPv4 to IPv6, which accounts for 30% of the course grade.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+      "locator": {
+        "section": "IV. Implementation"
+      },
+      "supports": "Grading and stakes",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "We designed a GenAI-empowered, group-based authentic assessment, titled Exploring the Transition from IPv4 to IPv6, which accounts for 30% of the course grade.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+      "locator": {
+        "section": "IV. Implementation"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "This log should include summaries of key discussion points, lists of prompts and responses, critical analyses of GenAI outputs, and validation of information through credible sources.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+      "locator": {
+        "section": "IV.B Assessments"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "verification",
+      "quote": "The final assessment consists of a 3-minute video presentation followed by an oral examination.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+      "locator": {
+        "section": "IV.B Assessments"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    },
+    {
+      "kind": "grading",
+      "quote": "In this assessment, 25% of the interim marks are awarded based on the quality of discussion and prompt formulation, while an additional 25% is allocated for AI tool engagement and critical evaluation of AI-generated responses.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+      "locator": {
+        "section": "IV.C Marking Criteria"
+      },
+      "supports": "Grading and stakes",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported study details, sample information, or instruments."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/EDUCON62633.2025.11016382"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-collect-process-evidence",
+      "practice_name": "Collect process evidence",
+      "rationale": "The progress log records prompts, responses, critical analysis, and validation.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+          "quote": "This log should include summaries of key discussion points, lists of prompts and responses, critical analyses of GenAI outputs, and validation of information through credible sources.",
+          "locator": {
+            "section": "IV.B Assessments"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-combine-project-deliverables-with-oral-and-qualitative-verification",
+      "practice_name": "Combine project deliverables with oral and qualitative verification",
+      "rationale": "The final assessment combines a video deliverable with an oral examination.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+          "quote": "The final assessment consists of a 3-minute video presentation followed by an oral examination.",
+          "locator": {
+            "section": "IV.B Assessments"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-grade-problem-framing-prompting-and-model-guidance",
+      "practice_name": "Grade problem framing, prompting, and model guidance",
+      "rationale": "Half of the interim marks reward prompt formulation, AI engagement, and critical evaluation.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+          "quote": "In this assessment, 25% of the interim marks are awarded based on the quality of discussion and prompt formulation, while an additional 25% is allocated for AI tool engagement and critical evaluation of AI-generated responses.",
+          "locator": {
+            "section": "IV.C Marking Criteria"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-make-ai-aware-submission-requirements-part-of-the-rubric",
+      "practice_name": "Make AI-aware submission requirements part of the rubric",
+      "rationale": "The marked progress log requires prompts, responses, critical analysis, and source validation.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+          "quote": "This log should include summaries of key discussion points, lists of prompts and responses, critical analyses of GenAI outputs, and validation of information through credible sources.",
+          "locator": {
+            "section": "IV.B Assessments"
+          }
+        },
+        {
+          "source_id": "doi:10.1109/EDUCON62633.2025.11016382",
+          "quote": "In this assessment, 25% of the interim marks are awarded based on the quality of discussion and prompt formulation, while an additional 25% is allocated for AI tool engagement and critical evaluation of AI-generated responses.",
+          "locator": {
+            "section": "IV.C Marking Criteria"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "An AI interaction transcript is required.",
+      "Validation of AI output is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

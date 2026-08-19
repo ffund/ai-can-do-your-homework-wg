@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:pwn-college-sensai-challenges",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Applied cybersecurity challenges with SENSAI",
+  "summary": "Learners solve browser-based Linux cybersecurity challenges that culminate in reading a protected flag. SENSAI observes active terminals and files and provides Socratic, context-sensitive guidance while withholding direct solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701801",
+      "type": "conference_paper",
+      "title": "SENSAI: Large Language Models as Applied Cybersecurity Tutors",
+      "authors": [
+        "Connor Nelson",
+        "Adam Doupé",
+        "Yan Shoshitaishvili"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701801",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "pwn-college-sensai-challenges",
+      "locator": {
+        "section": "Course Design; 3 SENSAI Design"
+      },
+      "evidence_quote": "demonstrate and deepen their understanding ... by solving a series of applied educational challenges"
+    }
+  ],
+  "context": {
+    "discipline": "Applied cybersecurity",
+    "course": {
+      "name": "pwn.college applied cybersecurity curriculum",
+      "level": "undergraduate and open online",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "university students and global online learners",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "summative"
+    ],
+    "mandatory": "unknown"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Complete progressively difficult applied cybersecurity challenge modules.",
+    "student_actions": [
+      "Watch short topic videos.",
+      "Investigate and exploit challenge programs in a Linux environment.",
+      "Ask SENSAI for contextual guidance when stuck.",
+      "Recover each challenge flag independently."
+    ],
+    "outputs": [
+      {
+        "artifact": "Challenge flags and solution activity",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-4o used terminal and file context to guide problem solving without direct answers or hidden solution context."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Challenge completion was demonstrated by obtaining flags; university course stakes were not fully reported."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8e42cf847b54_sensai-large-language-models-as-applied-cybersecurity-tutors.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "2,742 learners exchanged 178,074 messages across 15,413 sessions; active context was associated with faster challenge completion."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "demonstrate and deepen their understanding ... by solving a series of applied educational challenges",
+      "source_id": "doi:10.1145/3641554.3701801",
+      "locator": {
+        "section": "Course Design; 3 SENSAI Design"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

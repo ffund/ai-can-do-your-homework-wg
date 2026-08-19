@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:hci-written-exam-chatgpt-consultation",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Open-book HCI written exam with ChatGPT consultation",
+  "summary": "Undergraduate HCI students complete a written exam while permitted to consult ChatGPT, textbooks, slides, and other materials. Questions emphasize application, analysis, and links to students' practical projects rather than direct recall or definitions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3638067.3638100",
+      "type": "conference_paper",
+      "title": "May We Consult ChatGPT in Our Human-Computer Interaction Written Exam? An Experience Report After a Professor Answered Yes",
+      "authors": [
+        "André Pimenta Freire",
+        "Paula Christina Figueira Cardoso",
+        "André de Lima Salgado"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3638067.3638100",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "hci-chatgpt-written-exam",
+      "locator": {
+        "section": "3. The HCI Course at the Federal University of Lavras"
+      },
+      "evidence_quote": "The semester in which the written exams with consultation to ChatGPT took place was in the second academic semester of 2022."
+    }
+  ],
+  "context": {
+    "discipline": "human-computer interaction",
+    "course": {
+      "name": "Human-Computer Interaction",
+      "level": "undergraduate",
+      "institution": "Federal University of Lavras",
+      "program": "Computer Science and Information Systems",
+      "term": "second academic semester of 2022",
+      "delivery_language": "Portuguese",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "fourth- and fifth-semester undergraduate students",
+    "cohort_size": 53,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Answer written HCI questions requiring applied reasoning and interpretation while consulting course resources and ChatGPT.",
+    "student_actions": [
+      "Interpret scenario-based HCI questions.",
+      "Consult ChatGPT and other open-book resources.",
+      "Apply course concepts to practical design and evaluation contexts.",
+      "Produce written answers."
+    ],
+    "outputs": [
+      {
+        "artifact": "Written exam answers",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "in_person",
+      "setting": "open_book",
+      "platforms": [
+        "ChatGPT"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT was explicitly available as a consultation resource during the written exam."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "allowed_purposes": [
+          "consultation while answering exam questions"
+        ],
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": false,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Instructor grading of written exam answers; the detailed scoring rubric is not reported.",
+    "criteria": [
+      {
+        "criterion": "Applied HCI knowledge"
+      },
+      {
+        "criterion": "Critical reasoning and analysis"
+      },
+      {
+        "criterion": "Connection to practical course experience"
+      }
+    ],
+    "assessors": [
+      "course professor"
+    ]
+  },
+  "evidence": {
+    "study_type": "professor experience report and thematic analysis",
+    "sample": {
+      "invited": 53,
+      "unit_of_analysis": "exam question and ChatGPT response"
+    },
+    "reported_failures": [
+      "ChatGPT produced incomplete answers, incorrect nudges, prompt-biased answers, and verbose generic content."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-917d37eb4082_may-we-consult-chatgpt-in-our-human-computer-interaction-written-exam-an-experience-report-after.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "The semester in which the written exams with consultation to ChatGPT took place was in the second academic semester of 2022.",
+      "source_id": "doi:10.1145/3638067.3638100",
+      "locator": {
+        "section": "3. The HCI Course at the Federal University of Lavras"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "The semester in which the written exams with consultation to ChatGPT took place was in the second academic semester of 2022.",
+      "source_id": "doi:10.1145/3638067.3638100",
+      "locator": {
+        "section": "3. The HCI Course at the Federal University of Lavras"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-science-chatgpt-practice-scenarios",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Seven ChatGPT practice scenarios for data science",
+  "summary": "Complete seven scenarios covering programming, concepts, data analysis, problem solving, data-science coding, learning resources, and career advice, then rate each experience. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3585059.3611431",
+      "type": "conference_paper",
+      "title": "ChatGPT for Teaching and Learning: An Experience from Data Science Education",
+      "authors": [
+        "Zheng, Yong"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3585059.3611431",
+      "url": "https://doi.org/10.1145/3585059.3611431",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-science-chatgpt-practice-scenarios",
+      "locator": {
+        "section": "3.2 The Design of Our Studies"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "data analytics and data science",
+    "course": {
+      "name": "Graduate data analytics and data science courses",
+      "level": "graduate",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "graduate",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "reflection"
+    ],
+    "summary": "Complete seven scenarios covering programming, concepts, data analysis, problem solving, data-science coding, learning resources, and career advice, then rate each experience.",
+    "student_actions": [
+      "Complete seven scenarios covering programming, concepts, data analysis, problem solving, data-science coding, learning resources, and career advice, then rate each experience."
+    ],
+    "outputs": [
+      {
+        "artifact": "ChatGPT interactions and ten-item questionnaire",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT based on GPT-3.5"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-719a3b7b7c71_chatgpt-for-teaching-and-learning-an-experience-from-data-science-education.pdf"
+  }
+}
+

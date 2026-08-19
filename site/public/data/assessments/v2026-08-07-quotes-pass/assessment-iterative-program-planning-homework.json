@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:iterative-program-planning-homework",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Iterative program-planning homework with transformer-driven test feedback",
+  "summary": "CS1 students write to-do-list plans for nine functions across theater seating, music playlists, and restaurant ordering. For two functions, a GPT-4 pipeline translates each plan into Python and returns test results so students can revise up to five times.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653607",
+      "type": "conference_paper",
+      "title": "Iterative Student Program Planning using Transformer-Driven Feedback",
+      "authors": [
+        "Elijah Rivera",
+        "Alexander Steinmaurer",
+        "Kathi Fisler",
+        "Shriram Krishnamurthi"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653607",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "iterative-program-planning-homework",
+      "locator": {
+        "section": "4 Gathering Student Plans"
+      },
+      "evidence_quote": "We developed three problem scenarios, each with three functions for which students had to write plans."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming and program planning",
+    "course": {
+      "name": "CS1",
+      "level": "early undergraduate",
+      "institution": "Graz University of Technology",
+      "term": "not_reported",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice programmers in week three of CS1",
+    "cohort_size": 736,
+    "research_sample_size": 544,
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "homework"
+    ],
+    "summary": "Write natural-language plans for nine programming functions before learning enough syntax to implement them.",
+    "student_actions": [
+      "Decompose each function into an ordered to-do-list plan.",
+      "Submit plans for theater, playlist, and restaurant scenarios.",
+      "Use test-case feedback on two designated functions to revise a plan up to five times."
+    ],
+    "outputs": [
+      {
+        "artifact": "Plans for nine programming functions",
+        "required": true
+      },
+      {
+        "artifact": "Likert response before each revised feedback-plan submission",
+        "required": true
+      },
+      {
+        "artifact": "Free-response reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students receive test outcomes from code that GPT-4 generates from their plans; they do not see the generated code or direct LLM commentary."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "permission": "required",
+        "allowed_purposes": [
+          "Translate plans into hidden executable code for test feedback"
+        ],
+        "prohibited_actions": [
+          "Direct LLM feedback or repair suggestions on the plan"
+        ],
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "assessment_system_role": [
+      "Translate a student plan step by step into Python without correcting plan errors",
+      "Run staff tests and return pass/fail feedback"
+    ],
+    "tools": [
+      {
+        "name": "Plan-feedback tool",
+        "model": "GPT-4-0613"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "large-course experience report",
+    "sample": {
+      "participating": 544,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bf692af83a8f_iterative-student-program-planning-using-transformer-driven-feedback.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "We developed three problem scenarios, each with three functions for which students had to write plans.",
+      "source_id": "doi:10.1145/3649217.3653607",
+      "locator": {
+        "section": "4 Gathering Student Plans"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:gpt4-cs1-python-exercise-bank",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "GPT-4 Turbo CS1 Python exercise bank",
+  "summary": "A generated bank of 11,700 Python exercises spans 78 CS1 subtopics, three difficulty levels, and coding, Parsons, troubleshooting, multiple-choice, and fill-in-the-blank formats. Students and instructors evaluated sampled items for difficulty, relevance, hint usefulness, and overall quality before proposed use on coding platforms.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/DSAA61799.2024.10722841",
+      "type": "conference_paper",
+      "title": "Human Evaluation of GPT for Scalable Python Programming Exercise Generation",
+      "authors": [
+        "Muhammad Fawad Akbar Khan",
+        "Max Ramsdell",
+        "Ha Nguyen",
+        "Hamid Karimi"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/DSAA61799.2024.10722841",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "gpt4-cs1-python-exercise-bank",
+      "locator": {
+        "section": "III. Automated Exercise Generation"
+      },
+      "evidence_quote": "We generated a total of 11,700 exercises across five types and three levels of difficulty"
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "Introduction to Computer Science",
+      "level": "CS1",
+      "institution": "Utah State University",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "CS1 undergraduate students",
+    "research_sample_size": 36,
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set",
+      "quiz"
+    ],
+    "summary": "Complete generated Python exercises selected by topic, subtopic, format, and easy, medium, or hard difficulty.",
+    "student_actions": [
+      "Write Python code, arrange Parsons blocks, troubleshoot erroneous code, choose MCQ answers, or fill blanks.",
+      "Use generated hints where supplied."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python exercise responses or programs",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 11700
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GPT-4 Turbo generates the exercise bank; the proposed learner role is to solve curated exercises rather than interact with the model."
+    },
+    "assessment_system_role": [
+      "Generate exercises, solutions, test cases, and hints"
+    ],
+    "tools": [
+      {
+        "name": "OpenAI Assistants API",
+        "model": "GPT-4 Turbo gpt-4-1106-preview"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ac1198af309c_human-evaluation-of-gpt-for-scalable-python-programming-exercise-generation.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "We generated a total of 11,700 exercises across five types and three levels of difficulty",
+      "source_id": "doi:10.1109/DSAA61799.2024.10722841",
+      "locator": {
+        "section": "III. Automated Exercise Generation"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/DSAA61799.2024.10722841"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "scaffolding": {
+    "supports": [
+      "Generate exercises, solutions, test cases, and hints"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

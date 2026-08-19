@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:gpt3-story-its-code-quizzes",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "GPT-3 story-based programming quizzes",
+  "summary": "Students submit code for gamified programming quizzes in a story-based intelligent tutoring system. Four GPT-3 agents explain code, mark progress, provide immediate tailored feedback, and ask follow-up questions intended to support inquiry and belonging.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3581754.3584111",
+      "type": "conference_paper",
+      "title": "Scaffolding CS1 Courses with a Large Language Model-Powered Intelligent Tutoring System",
+      "authors": [
+        "Chen Cao"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3581754.3584111",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "gpt3-story-its-code-quizzes",
+      "locator": {
+        "section": "5.3 Study 3"
+      },
+      "evidence_quote": "students can submit the codes for quizzes and get real-time and tailored feedback"
+    }
+  ],
+  "context": {
+    "discipline": "Introductory programming",
+    "course": {
+      "name": "CS1 intelligent tutoring pilot",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "Chinese international students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz",
+      "exercise"
+    ],
+    "summary": "Solve code quizzes and learning exercises in a gamified CS1 environment.",
+    "student_actions": [
+      "Work through story-based learning content and challenges.",
+      "Submit code for quiz marking.",
+      "Use feedback and converse with specialized AI agents."
+    ],
+    "outputs": [
+      {
+        "artifact": "Quiz code and chat interactions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3 powered tutoring, peer, career, and emotional-support agents and generated code explanations."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "The system marked progress and returned real-time tailored quiz feedback; details were not reported."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-931ca5c10c7e_scaffolding-cs1-courses-with-a-large-language-model-powered-intelligent-tutoring-system.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "The GPT-3 ITS had computer simulation and stakeholder pilot evaluations; a preceding non-LLM story prototype involved 34 students."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "students can submit the codes for quizzes and get real-time and tailored feedback",
+      "source_id": "doi:10.1145/3581754.3584111",
+      "locator": {
+        "section": "5.3 Study 3"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3581754.3584111"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Quiz code and chat interactions"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:workedgen-programming-examples",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "WorkedGen interactive programming examples",
+  "summary": "First-year Python students request or select a programming question and study an LLM-generated worked example one step at a time. They can ask follow-up questions or select code and keywords for explanations, then rate the resource's usefulness.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3636243.3636252",
+      "type": "conference_paper",
+      "title": "Evaluating LLM-generated Worked Examples in an Introductory Programming Course",
+      "authors": [
+        "Breanna Jury",
+        "Angela Lorusso",
+        "Juho Leinonen",
+        "Paul Denny",
+        "Andrew Luxton-Reilly"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3636243.3636252",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "workedgen-programming-examples",
+      "locator": {
+        "section": "3. WorkedGen"
+      },
+      "evidence_quote": "WorkedGen allows the user to enter a programming language and a question for which a worked example is generated."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "first-year programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "research_only"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "other"
+    ],
+    "summary": "First-year Python students request or select a programming question and study an LLM-generated worked example one step at a time.",
+    "student_actions": [
+      "Choose or enter a programming question.",
+      "Review an LLM-generated worked example step by step.",
+      "Ask follow-up questions about code or concepts."
+    ],
+    "outputs": [
+      {
+        "artifact": "tool interaction records",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "usefulness ratings",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "They can ask follow-up questions or select code and keywords for explanations, then rate the resource's usefulness."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-639ddf8900a3_evaluating-llm-generated-worked-examples-in-an-introductory-programming-course.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "WorkedGen allows the user to enter a programming language and a question for which a worked example is generated.",
+      "source_id": "doi:10.1145/3636243.3636252",
+      "locator": {
+        "section": "3. WorkedGen"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:personalized-parsons-problems",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "LLM-personalized Parsons programming problems",
+  "summary": "Students solve Parsons problems whose surface context and programming concepts are customized through a large language model. They arrange shuffled code blocks into a correct solution, allowing instructors to offer varied practice while retaining the structural constraints of the underlying problem.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653568",
+      "type": "conference_paper",
+      "title": "Automating Personalized Parsons Problems with Customized Contexts and Concepts",
+      "authors": [
+        "Andre del Carpio Gutierrez",
+        "Paul Denny",
+        "Andrew Luxton-Reilly"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653568",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "personalized-parsons-problems"
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "not_reported",
+      "level": "introductory",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Arrange shuffled code blocks to solve an LLM-customized Parsons programming problem.",
+    "student_actions": [
+      "Read a personalized problem context.",
+      "Order and, where required, indent code blocks to form a correct program."
+    ],
+    "outputs": [
+      {
+        "artifact": "Ordered Parsons-problem solution",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The LLM customizes the problem before delivery; students solve the resulting Parsons problem."
+    },
+    "assessment_system_role": [
+      "Customize problem contexts and targeted programming concepts."
+    ],
+    "tools": [
+      "large language model"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "The Parsons environment checks the assembled solution."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9ec54dcd36b0_automating-personalized-parsons-problems-with-customized-contexts-and-concepts.pdf"
+  }
+}
+
+

@@ -1,0 +1,169 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:fictional-genai-user-interviews",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "GenAI fictional field study and user interviews",
+  "summary": "Design teams conduct simulated user interviews with GenAI midway through a tangible-interaction project set in the fictional world Rheta. Students define the world, product, scenario, and persona, conduct the interview, generate an accompanying image, and use the responses to reflect on their design.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3677045.3685439",
+      "type": "conference_paper",
+      "title": "Use of Generative AI for Fictional Field Studies in Design Courses",
+      "authors": [
+        "Niklas Rönnberg",
+        "Ahmet Börütecene"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3677045.3685439",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "fictional-field-study",
+      "locator": {
+        "section": "2. The Exercise of Using Generative AI for Field Studies"
+      },
+      "evidence_quote": "The students got the exercise to do field study and user interviews half-way through the larger project work."
+    }
+  ],
+  "context": {
+    "discipline": "tangible interaction design",
+    "course": {
+      "name": "Tangible Interaction Design",
+      "level": "master's",
+      "institution": "Linköping University",
+      "delivery_language": "English",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "master's students",
+    "cohort_size": 20,
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "design_task",
+      "project"
+    ],
+    "summary": "Use a GenAI persona to simulate a field-study interview about a physical-digital object being developed by the team.",
+    "student_actions": [
+      "Describe the fictional world and physical-digital object to GenAI.",
+      "Specify a user scenario and persona.",
+      "Conduct a simulated user interview.",
+      "Generate an image of the user scenario or interview.",
+      "Use the feedback to reflect on and refine the design."
+    ],
+    "outputs": [
+      {
+        "artifact": "GenAI user-interview dialogue",
+        "required": true
+      },
+      {
+        "artifact": "AI-generated scenario image",
+        "required": true
+      },
+      {
+        "artifact": "Design reflections or revisions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "duration_minutes": {
+      "minimum": 120,
+      "maximum": 240
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students prompt GenAI to role-play a persona and answer interview questions about the team's design."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "persona simulation",
+          "user interview",
+          "scenario visualization",
+          "design feedback"
+        ],
+        "validation_required": "not_reported",
+        "disclosure_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "Student-selected GenAI tools",
+      "ChatGPT 4.0",
+      "Clip Drop"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "classroom experience report",
+    "sample": {
+      "analyzed": 4,
+      "unit_of_analysis": "design team"
+    },
+    "reported_results": [
+      "All four teams completed the activity.",
+      "Teams reported new design perspectives, but also overly positive and sometimes inconsistent AI responses."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-eb22c30f3747_use-of-generative-ai-for-fictional-field-studies-in-design-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The students got the exercise to do field study and user interviews half-way through the larger project work.",
+      "source_id": "doi:10.1145/3677045.3685439",
+      "locator": {
+        "section": "2. The Exercise of Using Generative AI for Field Studies"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3677045.3685439"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Design reflections or revisions"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

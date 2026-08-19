@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:copilot-programming-homework",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Programming homework with GitHub Copilot as tutor",
+  "summary": "Complete regular Unity and C# homework while using Copilot for coding help and explaining the meaning of generated code. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/ithet61869.2024.10837624",
+      "type": "conference_paper",
+      "title": "Case Study: Using Artificial Intelligence as a Tutor for a Programming Course",
+      "authors": [
+        "Timcenko, Olga"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/ithet61869.2024.10837624",
+      "url": "https://doi.org/10.1109/ithet61869.2024.10837624",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "copilot-programming-homework",
+      "locator": {
+        "section": "Course Structure"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "C# game programming",
+    "course": {
+      "name": "Second-semester programming for Media Technology",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "assignment"
+    ],
+    "summary": "Complete regular Unity and C# homework while using Copilot for coding help and explaining the meaning of generated code.",
+    "student_actions": [
+      "Complete regular Unity and C# homework while using Copilot for coding help and explaining the meaning of generated code."
+    ],
+    "outputs": [
+      {
+        "artifact": "C# homework programs",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GitHub Copilot"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-d2237af70121_case-study-using-artificial-intelligence-as-a-tutor-for-a-programming-course.pdf"
+  }
+}
+
+

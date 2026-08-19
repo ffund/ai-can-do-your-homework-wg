@@ -1,0 +1,162 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:iris-supported-programming-exercises",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 programming exercises with the Iris virtual tutor",
+  "summary": "Students in three CS1 courses solve Artemis programming exercises with optional access to Iris, a context-aware tutor that reads the exercise statement, code, tests, and build output. Iris gives hints and counter-questions while withholding code and complete solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653543",
+      "type": "conference_paper",
+      "title": "Iris: An AI-Driven Virtual Tutor For Computer Science Education",
+      "authors": [
+        "Patrick Bassner",
+        "Eduard Frankford",
+        "Stephan Krusche"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653543",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "iris-supported-programming-exercises",
+      "locator": {
+        "section": "4.2 Data Collection"
+      },
+      "evidence_quote": "We surveyed students enrolled in three distinct CS1-level courses at the Technical University of Munich."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "Three CS1-level courses",
+      "level": "first-semester undergraduate",
+      "institution": "Technical University of Munich",
+      "term": "Winter 2023/2024",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-semester students",
+    "cohort_size": 1655,
+    "research_sample_size": 121,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "homework"
+    ],
+    "summary": "Solve course programming exercises in Artemis while requesting context-aware tutoring when needed.",
+    "student_actions": [
+      "Develop and submit code for programming exercises.",
+      "Review automated test and build feedback.",
+      "Ask Iris questions and use its hints to continue problem solving."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming-exercise code submissions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students can ask Iris for private, exercise-aware support during practice and homework; instructors prohibit Iris in exams."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Receive subtle hints and counter-questions",
+          "Clarify programming concepts and exercise issues"
+        ],
+        "prohibited_actions": [
+          "Receive code, pseudocode, concrete implementation steps, or complete solutions"
+        ],
+        "validation_required": "not_reported"
+      }
+    ],
+    "assessment_system_role": [
+      "Select relevant code and build context",
+      "Generate calibrated tutoring responses",
+      "Reject off-topic requests",
+      "Self-check responses for solution disclosure"
+    ],
+    "tools": [
+      {
+        "name": "Iris",
+        "model": "GPT-3.5-Turbo"
+      },
+      {
+        "name": "Artemis"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "multi-course deployment survey",
+    "sample": {
+      "participating": 121,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9553c63b0ee5_iris-an-ai-driven-virtual-tutor-for-computer-science-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "We surveyed students enrolled in three distinct CS1-level courses at the Technical University of Munich.",
+      "source_id": "doi:10.1145/3649217.3653543",
+      "locator": {
+        "section": "4.2 Data Collection"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported study details, sample information, or instruments."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3649217.3653543"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "scaffolding": {
+    "supports": [
+      "Generate calibrated tutoring responses"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

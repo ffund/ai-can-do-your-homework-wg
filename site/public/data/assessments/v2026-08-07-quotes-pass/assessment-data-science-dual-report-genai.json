@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-science-dual-report-genai",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Data science project with prompt-engineering report",
+  "summary": "Postgraduate students complete an individual Python data-analysis project using GenAI and evidence from an industry expert. They submit a project report and a prompt-engineering report documenting prompts, responses, limitations, source provenance, and critical synthesis.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893452",
+      "type": "conference_paper",
+      "title": "A Data Science Course Utilizing GenAI",
+      "authors": [
+        "Jonathan W. Browning",
+        "John Bustard",
+        "Neil Anderson",
+        "Leo Galway"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893452",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-science-dual-report",
+      "locator": {
+        "section": "III. Updated Course Design, B. Assessment"
+      },
+      "evidence_quote": "As part of the course assessment, students must create two reports."
+    }
+  ],
+  "context": {
+    "discipline": "data science",
+    "course": {
+      "name": "Data analysis",
+      "level": "postgraduate",
+      "institution": "Queen's University Belfast",
+      "program": "MSc Software Development",
+      "term": "summer semester",
+      "delivery_language": "English",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "postgraduate master's students",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "reflection"
+    ],
+    "summary": "Investigate a business or industry context, conduct Python data analysis, consult an expert and GenAI, and submit linked project and prompt-engineering reports.",
+    "student_actions": [
+      "Interview an industry expert.",
+      "Use GenAI iteratively to investigate and analyze the selected context.",
+      "Document prompts and evaluate advantages and disadvantages of responses.",
+      "Synthesize expert, AI, and personal contributions using source color-coding.",
+      "Submit both reports and the Python code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Data-analysis project report",
+        "required": true
+      },
+      {
+        "artifact": "Prompt-engineering report with GenAI responses in an appendix",
+        "required": true
+      },
+      {
+        "artifact": "Python code",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "take_home",
+      "platforms": [
+        "Python",
+        "GenAI tool selected by student"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "GenAI use is mandatory; students prompt it, compare its output with expert evidence, and critically evaluate each response."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "research",
+          "data-analysis planning",
+          "prompt engineering",
+          "critical comparison"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT or another GenAI model"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Rubric-based joint assessment of corresponding chapters in the two reports.",
+    "criteria": [
+      {
+        "criterion": "Cohesion and synthesis"
+      },
+      {
+        "criterion": "Prompt engineering"
+      },
+      {
+        "criterion": "Critical evaluation of GenAI responses"
+      },
+      {
+        "criterion": "Data-analysis insight and conclusions"
+      }
+    ],
+    "assessors": [
+      "course instructors"
+    ],
+    "feedback": "Proficiency-scale comments are averaged by chapter and returned as summative feedback."
+  },
+  "evidence": {
+    "study_type": "qualitative implementation evaluation",
+    "instruments": [
+      "student interviews",
+      "project outcomes",
+      "student and instructor comments"
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e70f7bceda49_a-data-science-course-utilizing-genai.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "As part of the course assessment, students must create two reports.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893452",
+      "locator": {
+        "section": "III. Updated Course Design, B. Assessment"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "As part of the course assessment, students must create two reports.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893452",
+      "locator": {
+        "section": "III. Updated Course Design, B. Assessment"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

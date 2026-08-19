@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:binary-search-learning-by-teaching",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Binary-search learning-by-teaching with AlgoBo",
+  "summary": "Learners first study binary search and solve a Parsons problem, then teach an LLM-based novice to understand and implement the algorithm. TeachYou prompts why/how explanations, simulates misconceptions, and gives metacognitive feedback on teaching behaviors.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613904.3642349",
+      "type": "conference_paper",
+      "title": "Teach AI How to Code: Using Large Language Models as Teachable Agents for Programming Education",
+      "authors": [
+        "Hyoungwook Jin",
+        "Seonghee Lee",
+        "Hyungyu Shin",
+        "Juho Kim"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3613904.3642349",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "binary-search-learning-by-teaching",
+      "locator": {
+        "section": "6.3 User Study"
+      },
+      "evidence_quote": "participants taught different versions of AlgoBo and TeachYou"
+    }
+  ],
+  "context": {
+    "discipline": "Python algorithms",
+    "course": {
+      "name": "Research learning-by-teaching activity",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "Python novices without recent binary-search mastery",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "practice"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Teach AlgoBo binary search concepts, implementation, complexity, and applications.",
+    "student_actions": [
+      "Study binary search and reorder a Parsons solution.",
+      "Explain concepts and help AlgoBo fix and test code.",
+      "Answer thought-provoking follow-up questions.",
+      "Discuss applications and reflect on teaching quality."
+    ],
+    "outputs": [
+      {
+        "artifact": "Teaching dialogue, AlgoBo code, Parsons response, and questionnaires",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-4 powered a constrained teachable agent and metacognitive Teaching Helper."
+    }
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e8cd53ddc8e1_teach-ai-how-to-code-using-large-language-models-as-teachable-agents-for-programming-education.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "A 15-person formative study informed the design; a 40-person between-subjects user study compared TeachYou with a baseline."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "participants taught different versions of AlgoBo and TeachYou",
+      "source_id": "doi:10.1145/3613904.3642349",
+      "locator": {
+        "section": "6.3 User Study"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

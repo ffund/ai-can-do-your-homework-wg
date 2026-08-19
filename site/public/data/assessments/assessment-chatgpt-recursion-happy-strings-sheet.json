@@ -1,0 +1,179 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-recursion-happy-strings-sheet",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Recursion and happy-strings exercise sheet with ChatGPT",
+  "summary": "First-year students individually complete a two-week exercise sheet using free ChatGPT-3.5. They interpret four recursive snippets, implement a more difficult happy-strings algorithm, and submit every prompt and response alongside their work; correct submissions can improve the exam grade.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893442",
+      "type": "conference_paper",
+      "title": "How Novice Programmers Use and Experience ChatGPT when Solving Programming Exercises in an Introductory Course",
+      "authors": [
+        "Andreas Scholl",
+        "Natalie Kiesler"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893442",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "recursion-happy-strings-sheet",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "evidence_quote": "Students were instructed to complete the tasks using ChatGPT via the free version and to submit all prompts and responses"
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "Introductory Programming",
+      "level": "first-year undergraduate",
+      "institution": "Goethe University Frankfurt",
+      "term": "Winter 2023/24",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year computing students",
+    "cohort_size": 790,
+    "research_sample_size": 298,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "Interpret recursive code and implement happy-string functions while using ChatGPT-3.5 and recording the complete interaction.",
+    "student_actions": [
+      "Determine outputs, call counts, and recursion types for four snippets.",
+      "Implement checks for happy strings and their substrings.",
+      "Use ChatGPT-3.5 for support and submit all prompts and responses."
+    ],
+    "outputs": [
+      {
+        "artifact": "Exercise solutions",
+        "required": true
+      },
+      {
+        "artifact": "Spreadsheet of all ChatGPT prompts and responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "asynchronous",
+      "deadline": "Two weeks after release"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Use of free ChatGPT-3.5 is required, but students receive only a link to a prompting guide rather than task-specific prompting instructions."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "transcript_required": true,
+        "disclosure_required": true,
+        "disclosure_artifact": "Prompt-response spreadsheet",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "model": "GPT-3.5"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Correct submissions earn points that can improve the examination grade."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a5281d5bcb11_how-novice-programmers-use-and-experience-chatgpt-when-solving-programming-exercises-in-an-intro.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were instructed to complete the tasks using ChatGPT via the free version and to submit all prompts and responses",
+      "source_id": "doi:10.1109/FIE61694.2024.10893442",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students were instructed to complete the tasks using ChatGPT via the free version and to submit all prompts and responses",
+      "source_id": "doi:10.1109/FIE61694.2024.10893442",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/FIE61694.2024.10893442"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-collect-process-evidence",
+      "practice_name": "Collect process evidence",
+      "rationale": "Students submit all prompts and responses from their ChatGPT work.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10893442",
+          "quote": "Students were instructed to complete the tasks using ChatGPT via the free version and to submit all prompts and responses",
+          "locator": {
+            "section": "III. Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "An AI interaction transcript is required."
+    ],
+    "process_evidence": [
+      "Spreadsheet of all ChatGPT prompts and responses"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:professional-ethics-llm-discussion",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Professional ethics case analysis with an LLM discussion partner",
+  "summary": "Groups analyze a fictional professional ethics dilemma in class and then with an LLM of their choice. They submit a report documenting both discussions, prompts and outputs, evaluate the LLM's analysis and writing, and choose their own ethical action.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653624",
+      "type": "conference_paper",
+      "title": "Student Perspectives on Using a Large Language Model (LLM) for an Assignment on Professional Ethics",
+      "authors": [
+        "Virginia Grande",
+        "Natalie Kiesler",
+        "María Andreína Francisco R."
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653624",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "professional-ethics-llm-discussion",
+      "locator": {
+        "section": "3.2 The Group Assignment"
+      },
+      "evidence_quote": "make use of an LLM of their choice as a discussion partner"
+    }
+  ],
+  "context": {
+    "discipline": "Computing ethics and academic writing",
+    "course": {
+      "name": "Professional competencies for computing master's programs",
+      "level": "master's",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "computer science and embedded systems master's students",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "case_based_assessment",
+      "reflection"
+    ],
+    "summary": "Analyze whether a fictional researcher should attend CHI 2024 in Hawaii using an ethical-process framework.",
+    "student_actions": [
+      "Discuss the case in class and take notes.",
+      "Analyze the case with an LLM using assigned ethical theories.",
+      "Document prompts and LLM output.",
+      "Critique the analysis and writing and select a course of action."
+    ],
+    "outputs": [
+      {
+        "artifact": "Group report with discussion notes, prompts, AI output, citations, and reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "An LLM was required as a discussion partner; all groups used ChatGPT and had to report and critique its output."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Pass/fail with feedback and resubmission; every course assignment had to pass."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5f88a9f41f70_student-perspectives-on-using-a-large-language-model-llm-for-an-assignment-on-professional-ethic.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Twelve consenting reports from 16 four-person groups were thematically analyzed."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "make use of an LLM of their choice as a discussion partner",
+      "source_id": "doi:10.1145/3649217.3653624",
+      "locator": {
+        "section": "3.2 The Group Assignment"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

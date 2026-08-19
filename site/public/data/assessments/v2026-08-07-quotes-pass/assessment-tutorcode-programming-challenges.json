@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:tutorcode-programming-challenges",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "TutorCode C++ programming challenges",
+  "summary": "Solve 35 C++ programming challenges across 12 difficulty levels and request debugging help when code fails. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3650212.3680328",
+      "type": "conference_paper",
+      "title": "CREF: An LLM-Based Conversational Software Repair Framework for Programming Tutors",
+      "authors": [
+        "Yang, Boyang",
+        "Tian, Haoye",
+        "Pian, Weiguo",
+        "Yu, Haoran",
+        "Wang, Haitao",
+        "Klein, Jacques",
+        "Bissyandé, Tegawendé F.",
+        "Jin, Shunfu"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3650212.3680328",
+      "url": "https://doi.org/10.1145/3650212.3680328",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "tutorcode-programming-challenges",
+      "locator": {
+        "section": "TutorCode Dataset and Deployment"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "data structures and algorithms",
+    "course": {
+      "name": "Novice developer training courses",
+      "level": "novice programmers",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Solve 35 C++ programming challenges across 12 difficulty levels and request debugging help when code fails.",
+    "student_actions": [
+      "Solve 35 C++ programming challenges across 12 difficulty levels and request debugging help when code fails."
+    ],
+    "outputs": [
+      {
+        "artifact": "C++ solutions and debugging conversations",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "CREF tutor-assistance framework"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f85a25a3a581_cref-an-llm-based-conversational-software-repair-framework-for-programming-tutors.pdf"
+  }
+}
+
+

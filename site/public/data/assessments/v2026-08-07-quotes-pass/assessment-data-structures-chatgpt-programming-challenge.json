@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-structures-chatgpt-programming-challenge",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Timed data-structures programming challenge with and without ChatGPT",
+  "summary": "Work in a team to solve timed Java programming challenges and pass test cases in PC2, with ChatGPT access in the experimental variant. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613944.3613946",
+      "type": "conference_paper",
+      "title": "ChatGPT in Computer Science Curriculum Assessment: An analysis of Its Successes and Shortcomings",
+      "authors": [
+        "Qureshi, Basit"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3613944.3613946",
+      "url": "https://doi.org/10.1145/3613944.3613946",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-structures-chatgpt-programming-challenge",
+      "locator": {
+        "section": "Methodology"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "data structures and algorithms",
+    "course": {
+      "name": "CS210 Data Structures and Algorithms",
+      "level": "sophomore undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "sophomore undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "assignment"
+    ],
+    "summary": "Work in a team to solve timed Java programming challenges and pass test cases in PC2, with ChatGPT access in the experimental variant.",
+    "student_actions": [
+      "Work in a team to solve timed Java programming challenges and pass test cases in PC2, with ChatGPT access in the experimental variant."
+    ],
+    "outputs": [
+      {
+        "artifact": "Executable Java solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT and PC2"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-83098ee39a79_chatgpt-in-computer-science-curriculum-assessment-an-analysis-of-its-successes-and-shortcomings.pdf"
+  }
+}
+
+

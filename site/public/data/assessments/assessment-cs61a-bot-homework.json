@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs61a-bot-homework",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS 61A homework with embedded 61A Bot feedback",
+  "summary": "Students complete individual Python homework and may request one-shot, contextual hints from 61A Bot through the course autograder. The GPT-4 assistant receives the problem, student code, error output, and prior hint history but is prompted to support planning and debugging without giving complete solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701864",
+      "type": "conference_paper",
+      "title": "61A Bot Report: AI Assistants in CS1 Save Students Homework Time and Reduce Demands on Staff. (Now What?)",
+      "authors": [
+        "J.D. Zamfirescu-Pereira",
+        "Laryn Qi",
+        "Björn Hartmann",
+        "John DeNero",
+        "Narges Norouzi"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701864",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs61a-bot-homework",
+      "locator": {
+        "section": "3. Design & Deployment"
+      },
+      "evidence_quote": "These are followed by homework, which students complete individually with access to 61A Bot."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "CS 61A",
+      "level": "undergraduate",
+      "institution": "University of California, Berkeley",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "cohort_size": 2000,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Complete individual Python homework with optional contextual AI hints available through the autograder.",
+    "student_actions": [
+      "Write and test Python solutions.",
+      "Request and act on contextual planning, conceptual, or debugging hints."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python homework solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "take_home"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use 61A Bot on homework; course policy prohibits external systems such as ChatGPT."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Conceptual, planning, and debugging support from 61A Bot"
+        ],
+        "prohibited_actions": [
+          "Using ChatGPT or similar external AI systems"
+        ],
+        "disclosure_required": "not_reported"
+      }
+    ],
+    "tools": [
+      {
+        "name": "61A Bot",
+        "model": "GPT-4"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f33215a6e53d_61a-bot-report-ai-assistants-in-cs1-save-students-homework-time-and-reduce-demands-on-staff-now.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "These are followed by homework, which students complete individually with access to 61A Bot.",
+      "source_id": "doi:10.1145/3641554.3701864",
+      "locator": {
+        "section": "3. Design & Deployment"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701864"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

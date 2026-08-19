@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-assisted-weekly-standups",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "AI-assisted weekly capstone StandUp reports",
+  "summary": "Capstone teams submit weekly StandUp reports about completed work, plans, obstacles, and responses. A Slack bot returns GPT-3.5 and GPT-4 revisions; students choose whether to incorporate them, and instructors retain original, suggested, and final versions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630854",
+      "type": "conference_paper",
+      "title": "Exploring the Impact of Generative AI for StandUp Report Recommendations in Software Capstone Project Development",
+      "authors": [
+        "Andres Neyem",
+        "Juan Pablo Sandoval Alcocer",
+        "Marcelo Mendoza",
+        "Leonardo Centellas-Claros",
+        "Luis A. Gonzalez",
+        "Carlos Paredes-Robles"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630854",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ai-assisted-weekly-standups",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Throughout the course, students submitted weekly StandUp Reports, with the AI-powered Slack bot to assist them in writing StandUp reports."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "software engineering capstone",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "reflection",
+      "other"
+    ],
+    "summary": "Capstone teams submit weekly StandUp reports about completed work, plans, obstacles, and responses.",
+    "student_actions": [
+      "Draft a weekly StandUp report.",
+      "Compare two AI-generated revision suggestions.",
+      "Choose and edit recommendations.",
+      "Submit the revised report."
+    ],
+    "outputs": [
+      {
+        "artifact": "original weekly StandUp report",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "AI recommendations",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "revised weekly StandUp report",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "A Slack bot returns GPT-3.5 and GPT-4 revisions; students choose whether to incorporate them, and instructors retain original, suggested, and final versions."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-cf561e02a255_exploring-the-impact-of-generative-ai-for-standup-report-recommendations-in-software-capstone-pr.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Throughout the course, students submitted weekly StandUp Reports, with the AI-powered Slack bot to assist them in writing StandUp reports.",
+      "source_id": "doi:10.1145/3626252.3630854",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Throughout the course, students submitted weekly StandUp Reports, with the AI-powered Slack bot to assist them in writing StandUp reports.",
+      "source_id": "doi:10.1145/3626252.3630854",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Throughout the course, students submitted weekly StandUp Reports, with the AI-powered Slack bot to assist them in writing StandUp reports.",
+      "source_id": "doi:10.1145/3626252.3630854",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

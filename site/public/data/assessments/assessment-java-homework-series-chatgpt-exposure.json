@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-homework-series-chatgpt-exposure",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Java homework series evaluated for ChatGPT exposure",
+  "summary": "Students independently complete 22 auto-graded Java homework exercises in a first-semester programming course. ChatGPT was tested offline on the same briefs, motivating assessment features such as template TODOs, non-textual requirements, hidden and dynamic tests, documentation, and code-quality checks.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/cseet58097.2023.00031",
+      "type": "conference_paper",
+      "title": "Recommendations to Create Programming Exercises to Overcome ChatGPT",
+      "authors": [
+        "Jonnathan Berrezueta-Guzman",
+        "Stephan Krusche"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/cseet58097.2023.00031",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-homework-series-chatgpt-exposure",
+      "locator": {
+        "section": "IV Methodology"
+      },
+      "evidence_quote": "22 exercises from an introductory programming course"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "Introductory programming",
+      "level": "first-semester undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "Information Engineering bachelor's students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "practice"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Solve 22 Java programming homework exercises in Artemis.",
+    "student_actions": [
+      "Implement solutions independently.",
+      "Submit code to the automated assessment platform.",
+      "Use feedback and revise solutions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java programs",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The instructor evaluated ChatGPT on the assignments; student AI permission was not reported."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Artemis auto-grading; the homework series formed the practical course component."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:ai-resistant-java-final-exam",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-687813b12b3e_recommendations-to-create-programming-exercises-to-overcome-chatgpt.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Sixty-five students completed the 12-week course; ChatGPT averaged 55% on one-shot attempts across the 22 exercises."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "22 exercises from an introductory programming course",
+      "source_id": "doi:10.1109/cseet58097.2023.00031",
+      "locator": {
+        "section": "IV Methodology"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1109/cseet58097.2023.00031"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

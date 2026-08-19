@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search published and unpublished records of computing assignments created or adapted for the GenAI era." />
+    <title>AI-Aware Assessment Catalogue</title>
+  </head>
+  <body>
+    <div class="site-frame">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="AI-Aware Assessment Catalogue home">
+          <span>AI-Aware Assessment Catalogue</span>
+        </a>
+        <div class="header-meta">
+          <span>SIGCSE Virtual 2026 working group</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <h1 id="page-title">AI Can Do Your Homework. Now What?</h1>
+            <p class="hero-intro">
+              Explore how computing educators are rethinking assignments, grading, and evidence of learning for the GenAI era.
+            </p>
+          </div>
+        </section>
+
+        <section class="search-panel" aria-labelledby="search-title">
+          <div class="section-kicker">
+            <h2 id="search-title">Search the record</h2>
+          </div>
+          <form id="search-form" class="search-form" role="search">
+            <label class="sr-only" for="query">Describe the teaching practice you need</label>
+            <div class="search-input-wrap">
+              <input id="query" name="query" type="search" autocomplete="off" placeholder="Try: an oral assessment that checks genuine understanding" />
+              <button class="clear-button" id="clear-query" type="button" aria-label="Clear search" hidden>&times;</button>
+            </div>
+            <button class="search-button" id="search-button" type="submit">
+              <span>Run search</span>
+            </button>
+          </form>
+          <div class="suggestions" aria-label="Suggested searches">
+            <span class="suggestions-label">Suggested:</span>
+            <div id="suggestion-list" class="suggestion-list"></div>
+          </div>
+          <div class="catalogue-filters" id="catalogue-filters" hidden>
+            <div class="filter-heading">
+              <span>Refine the catalogue</span>
+              <span id="filter-count" aria-live="polite"></span>
+            </div>
+            <div class="filter-controls" id="filter-controls"></div>
+            <button class="clear-filters" id="clear-filters" type="button" hidden>Clear filters</button>
+          </div>
+          <div class="search-feedback" id="search-feedback" role="status" aria-live="polite">
+             <span id="feedback-text">Search by teaching challenge, course context, or assessment approach.</span>
+          </div>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-title">
+          <div class="results-heading">
+            <div class="section-kicker">
+              <h2 id="results-title">Matched practice</h2>
+            </div>
+            <span class="result-count" id="result-count">Awaiting a query</span>
+          </div>
+          <div id="results" class="results" aria-busy="false">
+            <div class="empty-state">
+              <p>Search the catalogue to see structured task details, source excerpts, and the evidence behind each record.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-credit">
+          <p><strong>AI-Aware Assessment Catalogue</strong> &middot; a project of the <cite>AI Can Do Your Homework. Now What?</cite> working group at SIGCSE Virtual 2026</p>
+          <p class="working-group-members"><span class="sr-only">Working group members: </span>Muhammad Sajjad Akbar, Geoffrey Challen, Fraida Fund, Casey Hopkins, Oscar Karnalim, Kevin Lin, James W. McGuffee, Shubbhi Taneja, and Ranysha Ware</p>
+        </div>
+        <p class="footer-model" id="model-status" aria-live="polite">Semantic model has not loaded</p>
+      </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

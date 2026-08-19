@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-java-weekly-exercise-sample",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "CS1 Java weekly programming exercise series",
+  "summary": "Students complete weekly Java exercises including thermal equations, triangle classification, and negative Fibonacci tasks. Researchers later supplied erroneous submissions to ChatGPT for feedback analysis; the source does not report that students received this AI feedback.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/fie58773.2023.10343457",
+      "type": "conference_paper",
+      "title": "Exploring the Potential of Large Language Models to Generate Formative Programming Feedback",
+      "authors": [
+        "Natalie Kiesler",
+        "Dominic Lohr",
+        "Hieke Keuning"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/fie58773.2023.10343457",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-java-weekly-exercise-sample",
+      "locator": {
+        "section": "III. Method"
+      },
+      "evidence_quote": "We selected four tasks and respective submissions to the weekly exercises."
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Students complete weekly Java exercises including thermal equations, triangle classification, and negative Fibonacci tasks.",
+    "student_actions": [
+      "Implement small Java methods and classes.",
+      "Use calculations, conditionals, enums, or recursion as required.",
+      "Submit solutions to weekly exercises."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java program submissions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers later supplied erroneous submissions to ChatGPT for feedback analysis; the source does not report that students received this AI feedback."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1ed12d06dd0a_exploring-the-potential-of-large-language-models-to-generate-formative-programming-feedback.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "We selected four tasks and respective submissions to the weekly exercises.",
+      "source_id": "doi:10.1109/fie58773.2023.10343457",
+      "locator": {
+        "section": "III. Method"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

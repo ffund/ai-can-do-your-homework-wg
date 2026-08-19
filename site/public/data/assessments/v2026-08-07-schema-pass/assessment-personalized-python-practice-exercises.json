@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:personalized-python-practice-exercises",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Personalized ChatGPT-supported Python practice exercises",
+  "summary": "High-school students in the intervention group use a read-only platform to request predefined, profile-adapted explanations, examples, exercises, and solutions across an introductory Python syllabus. A teacher remains present to resolve errors and misconceptions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613905.3637148",
+      "type": "conference_paper",
+      "title": "Leveraging ChatGPT for Adaptive Learning through Personalized Prompt-based Instruction: A CS1 Education Case Study",
+      "authors": [
+        "Mohammad Abolnejadian",
+        "Sharareh Alipour",
+        "Kamyar Taeb"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3613905.3637148",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "personalized-python-practice-exercises",
+      "locator": {
+        "section": "4.2 Prompts Generation"
+      },
+      "evidence_quote": "within each subsection, a triad of prompts was designed to encompass various dimensions of learning: explanation, example, and exercise"
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "ChatGPT-assisted introductory Python course",
+      "level": "high school",
+      "institution": "not_reported",
+      "term": "not_reported",
+      "level_category": "pre_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "high-school students",
+    "cohort_size": 49,
+    "learner_level_category": "pre_introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve personalized Python exercises generated through predefined prompts after reviewing tailored explanations and examples.",
+    "student_actions": [
+      "Select syllabus topics and request predefined explanations or examples.",
+      "Request a programming exercise without its answer.",
+      "Solve the exercise, then request the separate solution when needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python exercise solutions",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "synchronous"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use a course platform that sends predefined, profile-personalized prompts to GPT-3.5-Turbo; free-form prompting is unavailable."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Receive explanations and examples",
+          "Generate practice exercises",
+          "View exercise solutions after attempting them"
+        ],
+        "validation_required": true
+      }
+    ],
+    "assessment_system_role": [
+      "Personalize explanations, examples, exercises, and solutions from anonymized learner-profile data"
+    ],
+    "tools": [
+      {
+        "name": "Learn Programming with GPT",
+        "model": "GPT-3.5-Turbo"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "comparative classroom experiment",
+    "sample": {
+      "participating": 49,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:no-ai-python-section-quizzes",
+      "relationship": "precedes"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-046292f40fea_leveraging-chatgpt-for-adaptive-learning-through-personalized-prompt-based-instruction-a-cs1-edu.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "within each subsection, a triad of prompts was designed to encompass various dimensions of learning: explanation, example, and exercise",
+      "source_id": "doi:10.1145/3613905.3637148",
+      "locator": {
+        "section": "4.2 Prompts Generation"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

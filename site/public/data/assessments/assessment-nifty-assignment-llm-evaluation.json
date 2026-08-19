@@ -1,0 +1,115 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:nifty-assignment-llm-evaluation",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Multi-part Nifty programming assignment set",
+  "summary": "Complete full-scope, multi-part Python assignments involving text, data, interaction, and visual elements; researchers evaluated passive copy-paste LLM solution strategies. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701872",
+      "type": "conference_paper",
+      "title": "Designing LLM-Resistant Programming Assignments: Insights and Strategies for CS Educators",
+      "authors": [
+        "McDanel, Bradley",
+        "Novak, Ed"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701872",
+      "url": "https://doi.org/10.1145/3641554.3701872",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "nifty-assignment-llm-evaluation",
+      "locator": {
+        "section": "3 Qualitative Analysis"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "undergraduate programming",
+    "course": {
+      "name": "SIGCSE Nifty Assignments collection",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "project"
+    ],
+    "summary": "Complete full-scope, multi-part Python assignments involving text, data, interaction, and visual elements; researchers evaluated passive copy-paste LLM solution strategies.",
+    "student_actions": [
+      "Complete full-scope, multi-part Python assignments involving text, data, interaction, and visual elements; researchers evaluated passive copy-paste LLM solution strategies."
+    ],
+    "outputs": [
+      {
+        "artifact": "Complete Python project solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-3.5, GPT-4o, and Claude Sonnet research evaluation"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a3af3e2d86bd_designing-llm-resistant-programming-assignments-insights-and-strategies-for-cs-educators.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701872"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

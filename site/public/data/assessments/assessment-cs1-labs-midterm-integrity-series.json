@@ -1,0 +1,145 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-labs-midterm-integrity-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 labs and midterm used for early integrity review",
+  "summary": "Students complete weekly take-home C++ labs and an in-person paper midterm. AI and other external tools are prohibited for lab programming; instructors compare lab and midterm coding performance to prioritize manual academic-integrity review.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701883",
+      "type": "conference_paper",
+      "title": "Midterm Exam Outliers Efficiently Highlight Potential Cheaters on Programming Assignments",
+      "authors": [
+        "Shirin Haji Amin Shirazi",
+        "Ashley Pang",
+        "Allan Knight",
+        "Mariam Salloum",
+        "Frank Vahid"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701883",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-labs-midterm-integrity-series",
+      "locator": {
+        "section": "3 Our Course; 4 Methodology"
+      },
+      "evidence_quote": "all programming is conducted within the zyBooks platform, with no external tools allowed"
+    }
+  ],
+  "context": {
+    "discipline": "Introductory C++ programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "introductory undergraduate students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exam"
+    ],
+    "summary": "Complete auto-graded weekly C++ lab programs and write code during a proctored midterm exam.",
+    "student_actions": [
+      "Develop and repeatedly submit C++ lab solutions.",
+      "Write code on paper in the midterm free-response section."
+    ],
+    "outputs": [
+      {
+        "artifact": "C++ lab submissions and paper exam responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "All lab programming had to occur in zyBooks with no external tools; the paper exam was proctored."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Auto-grading with immediate feedback, partial credit, and resubmissions for labs; TAs graded exam code with an instructor rubric."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fa34db43a791_midterm-exam-outliers-efficiently-highlight-potential-cheaters-on-programming-assignments.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Two course offerings totaling 177 students; the outlier approach flagged 23 students and averaged 83% precision after instructor review."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "all programming is conducted within the zyBooks platform, with no external tools allowed",
+      "source_id": "doi:10.1145/3641554.3701883",
+      "locator": {
+        "section": "3 Our Course; 4 Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701883"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The assessment confines programming to zyBooks and prohibits external tools.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701883",
+          "quote": "all programming is conducted within the zyBooks platform, with no external tools allowed",
+          "locator": {
+            "section": "3 Our Course; 4 Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "External AI use is not permitted during the assessment."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:apprentice-java-chatgpt-replay",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Novice apprentice Java assignment replay with ChatGPT",
+  "summary": "First-year software engineering degree apprentices use ChatGPT to repeat a previously completed Java programming assignment. They inspect whether the generated program works and consider its coding style, conventions, and value as a support tool.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3610969.3611132",
+      "type": "conference_paper",
+      "title": "Generative AI in Software Development Education: Insights from a Degree Apprenticeship Programme",
+      "authors": [
+        "Olga Petrovska",
+        "Lee Clift",
+        "Faron Moller"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3610969.3611132",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "novice-java-chatgpt-replay",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "evidence_quote": "we assigned tasks to both first-year and final-year apprentices ... which required them to use ChatGPT to solve programming tasks which the learners had already completed in earlier assignments"
+    }
+  ],
+  "context": {
+    "discipline": "software development and Java programming",
+    "course": {
+      "name": "Software Engineering Degree Apprenticeship programme",
+      "level": "first year",
+      "institution": "Swansea University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year degree apprentices",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Repeat an earlier Java programming assignment using ChatGPT and evaluate the generated solution.",
+    "student_actions": [
+      "Prompt ChatGPT to solve a previously completed Java assignment.",
+      "Inspect and, where needed, modify the generated Java program.",
+      "Evaluate the output's functionality and coding quality."
+    ],
+    "outputs": [
+      {
+        "artifact": "ChatGPT-assisted Java program",
+        "required": true
+      },
+      {
+        "artifact": "Survey responses about the experience",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT use is required to generate a solution that apprentices inspect and evaluate."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Generate a solution to the prior Java assignment"
+        ],
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:apprentice-dart-chatgpt-replay",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ac860fe9a28a_generative-ai-in-software-development-education-insights-from-a-degree-apprenticeship-programme.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "we assigned tasks to both first-year and final-year apprentices ... which required them to use ChatGPT to solve programming tasks which the learners had already completed in earlier assignments",
+      "source_id": "doi:10.1145/3610969.3611132",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "we assigned tasks to both first-year and final-year apprentices ... which required them to use ChatGPT to solve programming tasks which the learners had already completed in earlier assignments",
+      "source_id": "doi:10.1145/3610969.3611132",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3610969.3611132"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The assessment states the applicable AI-use condition.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3610969.3611132",
+          "quote": "we assigned tasks to both first-year and final-year apprentices ... which required them to use ChatGPT to solve programming tasks which the learners had already completed in earlier assignments",
+          "locator": {
+            "section": "1 Introduction"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "ChatGPT-assisted Java program"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:athena-programming-tutor-tasks",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Programming tasks supported by the Athena GenAI tutor",
+  "summary": "Students solve programming tasks with support from Athena, a tutor built on an open-source large language model. Athena provides conversational explanations and programming guidance intended to support learning while avoiding dependence on a commercial closed model.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/icct-pacific63901.2025.11012850",
+      "type": "conference_paper",
+      "title": "Athena: A GenAI-Powered Programming Tutor Based on Open-Source LLM",
+      "authors": [
+        "Yadanar Lin",
+        "M. Fahim Ferdous Khan",
+        "Ken Sakamura"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/ICCT-Pacific63901.2025.11012850",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "athena-programming-tutor-tasks"
+    }
+  ],
+  "context": {
+    "discipline": "programming",
+    "course": {
+      "name": "not_reported",
+      "level": "unknown",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "programming students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Solve programming tasks while interacting with the Athena open-source-LLM tutor.",
+    "student_actions": [
+      "Develop programming-task solutions.",
+      "Ask Athena for explanations and guidance."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming-task solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students interact with Athena while learning and solving programming tasks."
+    },
+    "assessment_system_role": [
+      "Provide conversational programming tutoring."
+    ],
+    "tools": [
+      {
+        "name": "Athena",
+        "model": "open-source LLM"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-eadefefeb181_athena-a-genai-powered-programming-tutor-based-on-open-source-llm.pdf"
+  }
+}
+

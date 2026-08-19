@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:codehelp-linked-list-quiz",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Dynamic-memory quiz with safeguarded CodeHelp support",
+  "summary": "Students complete a 2.5-hour formative C++ quiz on dynamic memory and linked lists with access to a safeguarded LLM chatbot. The quiz combines ten multiple-choice items with an open programming task, unlimited attempts, autograder feedback, and optional CodeHelp questions that do not reveal solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/WSC63780.2024.10838799",
+      "type": "conference_paper",
+      "title": "Understanding Optimal Interactions Between Students and A Chatbot During A Programming Task",
+      "authors": [
+        "Jinnie Shin",
+        "Laura Cruz-Castro",
+        "Zhenlin Yang",
+        "Gabriel Castelblanco",
+        "Ashish Aggarwal",
+        "Walter L. Leite",
+        "Bruce F. Carroll"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/WSC63780.2024.10838799",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "quiz-5-codehelp",
+      "locator": {
+        "section": "3.1 Context and Participants"
+      },
+      "evidence_quote": "The quizzes occur before the corresponding lab is due; students are given 2.5 hours to complete the quiz, they have unlimited attempts in open-ended questions."
+    }
+  ],
+  "context": {
+    "discipline": "C++ programming",
+    "course": {
+      "name": "second introductory programming course",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "primarily sophomore undergraduate students",
+    "cohort_size": 669,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Answer ten multiple-choice questions and implement the Big Three for a class that owns a dynamically allocated array.",
+    "student_actions": [
+      "Answer ten multiple-choice questions.",
+      "Implement a copy constructor, assignment operator, and destructor.",
+      "Run tests and revise over unlimited attempts.",
+      "Ask CodeHelp for guidance when needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "Quiz responses and C++ implementation",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 150,
+    "question_or_item_count": 11
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may ask CodeHelp for guidance; safeguards remove direct code solutions."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "prohibited_actions": [
+          "obtaining direct solutions"
+        ]
+      }
+    ],
+    "tools": [
+      "CodeHelp",
+      "gpt-3.5-turbo-0301",
+      "text-davinci-003"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Codio test cases report whether the open programming response passes."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-d6754aab2581_understanding-optimal-interactions-between-students-and-a-chatbot-during-a-programming-task.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The quizzes occur before the corresponding lab is due; students are given 2.5 hours to complete the quiz, they have unlimited attempts in open-ended questions.",
+      "source_id": "doi:10.1109/WSC63780.2024.10838799",
+      "locator": {
+        "section": "3.1 Context and Participants"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "The quizzes occur before the corresponding lab is due; students are given 2.5 hours to complete the quiz, they have unlimited attempts in open-ended questions.",
+      "source_id": "doi:10.1109/WSC63780.2024.10838799",
+      "locator": {
+        "section": "3.1 Context and Participants"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

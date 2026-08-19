@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-ai-assistant-python-homework",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Python assignment work with a course AI Assistant",
+  "summary": "Complete Python programming assignments while asking a course-specific AI Assistant questions about content and problem solving. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653554",
+      "type": "conference_paper",
+      "title": "Can Small Language Models With Retrieval-Augmented Generation Replace Large Language Models When Learning Computer Science?",
+      "authors": [
+        "Liu, Suqing",
+        "Yu, Zezhu",
+        "Huang, Feiran",
+        "Bulbulia, Yousef",
+        "Bergen, Andreas",
+        "Liut, Michael"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653554",
+      "url": "https://doi.org/10.1145/3649217.3653554",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-ai-assistant-python-homework",
+      "locator": {
+        "section": "Methodology"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "homework"
+    ],
+    "summary": "Complete Python programming assignments while asking a course-specific AI Assistant questions about content and problem solving.",
+    "student_actions": [
+      "Complete Python programming assignments while asking a course-specific AI Assistant questions about content and problem solving."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python assignment solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-3.5-turbo AI Assistant"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1b216d587baf_can-small-language-models-with-retrieval-augmented-generation-replace-large-language-models-when.pdf"
+  }
+}
+

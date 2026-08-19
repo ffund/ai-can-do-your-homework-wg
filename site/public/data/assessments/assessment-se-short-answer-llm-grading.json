@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:se-short-answer-llm-grading",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Software engineering short-answer assessment with LLM grading",
+  "summary": "Students answer short-response questions in software engineering courses. Large language models compare responses against assessment criteria or reference material to produce grades, and the study evaluates those grades against human judgments rather than exposing the model to students during the task.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/educon60312.2024.10578839",
+      "type": "conference_paper",
+      "title": "Automatic Grading of Short Answers Using Large Language Models in Software Engineering Courses",
+      "authors": [
+        "Ta Nguyen Binh Duong",
+        "Chai Yi Meng"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/EDUCON60312.2024.10578839",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "se-short-answer-llm-grading"
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "software engineering courses",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz",
+      "exam"
+    ],
+    "summary": "Write short answers to software engineering questions for automated LLM-supported grading.",
+    "student_actions": [
+      "Compose and submit short-answer responses."
+    ],
+    "outputs": [
+      {
+        "artifact": "Short-answer responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "LLMs grade responses after submission; AI use while answering is not reported."
+    },
+    "assessment_system_role": [
+      "Assign grades to short answers from criteria or reference answers."
+    ],
+    "tools": [
+      "large language models"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "LLM-generated grades are compared with human grading.",
+    "human_validation": {
+      "performed": true,
+      "description": "Researchers compare model grades against human judgments."
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-96ce47c8b870_automatic-grading-of-short-answers-using-large-language-models-in-software-engineering-courses.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/educon60312.2024.10578839"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

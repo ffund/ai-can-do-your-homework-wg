@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:se-ai-enabled-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Component-based software project with AI tools",
+  "summary": "Students in a project-based software-engineering course create a component-based product with APIs and may add machine learning. They can use open-source and generative development tools such as ChatDev IDE and Devika while producing the software project.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/CSEET62301.2024.10663042",
+      "type": "conference_paper",
+      "title": "Using Generative Artificial Intelligence Tools in Software Engineering Courses",
+      "authors": [
+        "Soma Datta"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CSEET62301.2024.10663042",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "component-based-ai-enabled-project",
+      "locator": {
+        "section": "main text"
+      },
+      "evidence_quote": "Students create their project component-based and use APIs to build the project ... Some of the tools they have started using are ChatDev IDE and Devika."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "project-based software engineering course",
+      "level": "undergraduate or graduate",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate or graduate students",
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Develop a component-based software product using APIs, with open-source and AI development tools available.",
+    "student_actions": [
+      "Design and develop a component-based software product.",
+      "Integrate APIs.",
+      "Use development tools, including optional AI tools."
+    ],
+    "outputs": [
+      {
+        "artifact": "Software product",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use ChatDev IDE, Devika, and other tools during project development."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted"
+      }
+    ],
+    "tools": [
+      "ChatDev IDE",
+      "Devika"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:se-lightning-talk",
+      "relationship": "compared_with"
+    },
+    {
+      "id": "assessment:se-inclass-writing-defense",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2373d0896fbc_using-generative-artificial-intelligence-tools-in-software-engineering-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students create their project component-based and use APIs to build the project ... Some of the tools they have started using are ChatDev IDE and Devika.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10663042",
+      "locator": {
+        "section": "main text"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/CSEET62301.2024.10663042"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

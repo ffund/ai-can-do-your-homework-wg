@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:codehelp-supported-coursework",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "CodeHelp-supported programming coursework",
+  "summary": "Students use the guarded CodeHelp assistant while debugging and writing programs in introductory courses. The assistant provides high-level guidance rather than full code, and students apply that support to their existing laboratory and take-home programming tasks.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716658",
+      "type": "conference_paper",
+      "title": "From Automation to Cognition: Redefining the Roles of Educators and Generative AI in Computing Education",
+      "authors": [
+        "Tony Haoran Feng",
+        "Andrew Luxton-Reilly",
+        "Burkhard C Wünsche",
+        "Paul Denny"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716658",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "codehelp-supported-coursework",
+      "locator": {
+        "section": "2.3.6 Teaching Students to Use AI Teaching Assistants"
+      },
+      "evidence_quote": "In our courses we have deployed a digital assistant based on CodeHelp to support students in debugging and code-writing tasks."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "first-year introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "lab",
+      "exercise"
+    ],
+    "summary": "Students use the guarded CodeHelp assistant while debugging and writing programs in introductory courses.",
+    "student_actions": [
+      "Work on course programming tasks.",
+      "Ask CodeHelp for debugging or code-writing guidance.",
+      "Apply high-level suggestions without receiving a full solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "programming task submissions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "CodeHelp query history",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "The assistant provides high-level guidance rather than full code, and students apply that support to their existing laboratory and take-home programming tasks."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8ff40b8f621f_from-automation-to-cognition-redefining-the-roles-of-educators-and-generative-ai-in-computing-ed.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In our courses we have deployed a digital assistant based on CodeHelp to support students in debugging and code-writing tasks.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "2.3.6 Teaching Students to Use AI Teaching Assistants"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "In our courses we have deployed a digital assistant based on CodeHelp to support students in debugging and code-writing tasks.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "2.3.6 Teaching Students to Use AI Teaching Assistants"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

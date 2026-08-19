@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cmpt276-genai-take-home-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CMPT 276 take-home assessments with AI disclosure",
+  "summary": "Students may use GenAI in weekly labs, biweekly assignments, and a final group software project, but must submit an AI-use disclosure with prompts and responses. Closed-book quizzes and the midterm prohibit AI and provide a secure comparison point.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3660650.3660668",
+      "type": "conference_paper",
+      "title": "Experience Report: Adopting AI-Usage Policy in Software Engineering Education",
+      "authors": [
+        "Parsa Rajabi"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3660650.3660668",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cmpt276-genai-take-home-series",
+      "locator": {
+        "section": "3. AI-Usage Policy"
+      },
+      "evidence_quote": "In CMPT 276, students were permitted to use genAI for take-home tasks (labs, assignments and final group project)."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "CMPT 276",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "assignment",
+      "project"
+    ],
+    "summary": "Students may use GenAI in weekly labs, biweekly assignments, and a final group software project, but must submit an AI-use disclosure with prompts and responses.",
+    "student_actions": [
+      "Complete take-home software engineering work.",
+      "Choose whether to use GenAI.",
+      "Submit prompts and AI responses in a disclosure form when applicable."
+    ],
+    "outputs": [
+      {
+        "artifact": "lab submissions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "assignment submissions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "final group project",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "AI-use disclosure form",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Closed-book quizzes and the midterm prohibit AI and provide a secure comparison point."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f896f4935e72_experience-report-adopting-ai-usage-policy-in-software-engineering-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "In CMPT 276, students were permitted to use genAI for take-home tasks (labs, assignments and final group project).",
+      "source_id": "doi:10.1145/3660650.3660668",
+      "locator": {
+        "section": "3. AI-Usage Policy"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3660650.3660668"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The course policy explicitly permits GenAI for named take-home tasks.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3660650.3660668",
+          "quote": "In CMPT 276, students were permitted to use genAI for take-home tasks (labs, assignments and final group project).",
+          "locator": {
+            "section": "3. AI-Usage Policy"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

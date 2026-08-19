@@ -1,0 +1,195 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-oriented-python-midterms-no-ai",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Data-Oriented Programming proctored midterms without AI",
+  "summary": "Students take two in-person proctored Python midterms through a Runestone e-book. Single- and multiple-select questions, fill-in-the-blanks, Parsons problems, and code-writing items assess lecture and homework concepts without internet, generative AI, or other outside resources beyond one double-sided note sheet.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3632620.3671098",
+      "type": "conference_paper",
+      "title": "Insights from Social Shaping Theory: The Appropriation of Large Language Models in an Undergraduate Programming Course",
+      "authors": [
+        "Aadarsh Padiyath",
+        "Xinying Hou",
+        "Amy Pang",
+        "Diego Viramontes Vargas",
+        "Xingjian Gu",
+        "Tamara Nelson-Fromm",
+        "Zihan Wu",
+        "Mark Guzdial",
+        "Barbara Ericson"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3632620.3671098",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-oriented-python-midterms",
+      "locator": {
+        "section": "3.1.2 Course Homework and Midterms"
+      },
+      "evidence_quote": "Students were not allowed to use any outside resources (such as the internet and generative AI) while taking the exam"
+    }
+  ],
+  "context": {
+    "discipline": "intermediate Python and data-oriented programming",
+    "course": {
+      "name": "Data-Oriented Programming",
+      "level": "undergraduate",
+      "institution": "University of Michigan",
+      "term": "Fall 2023",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "intermediate undergraduate",
+    "cohort_size": 203,
+    "learner_level_category": "post_introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Complete two proctored mixed-format Python midterms without external resources or generative AI.",
+    "student_actions": [
+      "Answer selected-response and fill-in-the-blank questions.",
+      "Reorder Parsons code blocks.",
+      "Write code for course concepts."
+    ],
+    "inputs": [
+      {
+        "description": "One double-sided 8.5 by 11 inch note sheet",
+        "provided_by": "student",
+        "required": false
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Runestone midterm responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "in_person",
+      "setting": "invigilated",
+      "platforms": [
+        "Runestone e-book"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "Generative AI and internet use are explicitly prohibited during both proctored midterms."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "prohibited_actions": [
+          "Use generative AI or internet resources"
+        ]
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 200,
+      "kind": "points per midterm"
+    },
+    "method": "Questions are autograded by percent correct."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:data-oriented-python-homework-ai-permitted",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8cf839b332b4_insights-from-social-shaping-theory-the-appropriation-of-large-language-models-in-an-undergradua.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were not allowed to use any outside resources (such as the internet and generative AI) while taking the exam",
+      "source_id": "doi:10.1145/3632620.3671098",
+      "locator": {
+        "section": "3.1.2 Course Homework and Midterms"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students were not allowed to use any outside resources (such as the internet and generative AI) while taking the exam",
+      "source_id": "doi:10.1145/3632620.3671098",
+      "locator": {
+        "section": "3.1.2 Course Homework and Midterms"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3632620.3671098"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The exam rules prohibit internet and generative-AI resources.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3632620.3671098",
+          "quote": "Students were not allowed to use any outside resources (such as the internet and generative AI) while taking the exam",
+          "locator": {
+            "section": "3.1.2 Course Homework and Midterms"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI use is prohibited for the recorded assessment.",
+      "External AI use is not permitted during the assessment."
+    ]
+  },
+  "implementation": {
+    "platforms": [
+      "Runestone e-book"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

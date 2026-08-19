@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:gpt4-python-mcq-bank",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Learning-objective-aligned Python MCQs generated with GPT-4",
+  "summary": "Students can answer multiple-choice programming questions generated from course context and module learning objectives. GPT-4 generates each stem, answer key, and distractors; the reported work evaluates the items before classroom use rather than reporting a student administration.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3636243.3636256",
+      "type": "conference_paper",
+      "title": "A Comparative Study of AI-Generated (GPT-4) and Human-crafted MCQs in Programming Education",
+      "authors": [
+        "Jacob Doughty",
+        "Zipiao Wan",
+        "Anishka Bompelli",
+        "Jubahed Qayum",
+        "Taozhi Wang",
+        "Juran Zhang",
+        "Yujia Zheng",
+        "Aidan Doyle",
+        "Pragnya Sridhar",
+        "Arav Agarwal",
+        "Christopher Bogart",
+        "Eric Keylor",
+        "Can Kultur",
+        "Jaromir Savelka",
+        "Majd Sakr"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3636243.3636256",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "gpt4-python-mcq-bank",
+      "locator": {
+        "section": "4. MCQ Generation Pipeline"
+      },
+      "evidence_quote": "Our work generates the stem, distractors, and key in a single generation step through GPT-4."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming and introductory data science",
+    "course": {
+      "name": "Six higher-education Python and data science courses",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Answer MCQs aligned to module-level programming learning objectives.",
+    "student_actions": [
+      "Read a programming question and select one answer from the supplied choices."
+    ],
+    "outputs": [
+      {
+        "artifact": "Selected MCQ answers",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 651
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GPT-4 authors the assessment items; the paper does not report student use of AI while answering them."
+    },
+    "assessment_system_role": [
+      "Generate MCQ stems, keys, and distractors from course context and learning objectives."
+    ],
+    "tools": [
+      {
+        "name": "GPT-4",
+        "provider": "OpenAI"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c2c2f132eced_a-comparative-study-of-ai-generated-gpt-4-and-human-crafted-mcqs-in-programming-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "Our work generates the stem, distractors, and key in a single generation step through GPT-4.",
+      "source_id": "doi:10.1145/3636243.3636256",
+      "locator": {
+        "section": "4. MCQ Generation Pipeline"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3636243.3636256"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

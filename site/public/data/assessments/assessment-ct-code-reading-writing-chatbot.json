@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ct-code-reading-writing-chatbot",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Code comprehension and writing assessment with a strategy-guiding chatbot",
+  "summary": "Students solve ten Explain-in-Plain-English questions and five Python code-writing questions while using a GPT-4o chatbot, debugger, and execution tool. The chatbot avoids direct answers and instead prompts decomposition, diverse tests, and tool-assisted reasoning.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701906",
+      "type": "conference_paper",
+      "title": "On Teaching Novices Computational Thinking by Utilizing Large Language Models Within Assessments",
+      "authors": [
+        "Mohammed Hassan",
+        "Yuxuan Chen",
+        "Paul Denny",
+        "Craig Zilles"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701906",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ct-code-reading-writing-chatbot",
+      "locator": {
+        "section": "3 Method"
+      },
+      "evidence_quote": "participants solved 10 Python EiPE questions and 5 code-writing questions using a chatbot"
+    }
+  ],
+  "context": {
+    "discipline": "Python programming and computational thinking",
+    "course": {
+      "name": "Introductory Python programming for non-technical majors",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "students who completed an introductory course",
+    "learner_level_category": "post_introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Explain Python code in plain English and implement solutions to code-writing questions.",
+    "student_actions": [
+      "Explain the purpose of supplied code.",
+      "Write Python solutions.",
+      "Use a debugger, interpreter, and chatbot to investigate and revise answers."
+    ],
+    "outputs": [
+      {
+        "artifact": "Natural-language explanations and Python code",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "A GPT-4o tutor embedded in the assessment guided strategies while attempting not to reveal code-specific answers."
+    }
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-11676279a1e5_on-teaching-novices-computational-thinking-by-utilizing-large-language-models-within-assessments.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Seventeen undergraduates completed one-hour think-aloud interviews."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "participants solved 10 Python EiPE questions and 5 code-writing questions using a chatbot",
+      "source_id": "doi:10.1145/3641554.3701906",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "participants solved 10 Python EiPE questions and 5 code-writing questions using a chatbot",
+      "source_id": "doi:10.1145/3641554.3701906",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701906"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

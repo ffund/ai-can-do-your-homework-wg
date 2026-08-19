@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-radar-chart-project",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "ChatGPT-facilitated Python radar-chart project",
+  "summary": "Educational-technology students complete a 100-minute Python radar-chart project after four programming sessions. In the experimental variant, students use a gpt-3.5-turbo chat platform as the primary support while coding and debugging a simplified chart and an advanced Holland radar chart.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1186/s41239-024-00446-5",
+      "type": "journal_article",
+      "title": "Would ChatGPT-facilitated programming mode impact college students' programming behaviors, performances, and perceptions? An empirical study",
+      "authors": [
+        "Dan Sun",
+        "Azzeddine Boudouaia",
+        "Chengcong Zhu",
+        "Yan Li"
+      ],
+      "year": 2024,
+      "identifier": "10.1186/s41239-024-00446-5",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "chatgpt-radar-chart-variant",
+      "locator": {
+        "section": "Research methodology"
+      },
+      "evidence_quote": "Students were required to complete a radar chart task within 100 min ... ChatGPT Next ... was adopted as a major tool to facilitate students' problem-solving process."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "Python Programming",
+      "level": "undergraduate",
+      "program": "Educational Technology",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "research_sample_size": 43,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Develop a Python radar chart, with a simplified chart as the base requirement and a Holland radar chart as the advanced requirement.",
+    "student_actions": [
+      "Interpret the radar-chart brief.",
+      "Write and debug Python code.",
+      "Ask ChatGPT questions and evaluate or test its responses.",
+      "Produce and inspect the chart output."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python radar-chart program and output",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 100
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use ChatGPT Next with gpt-3.5-turbo as their main problem-solving support."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT Next",
+      "gpt-3.5-turbo"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 100,
+      "kind": "points"
+    },
+    "criteria": [
+      {
+        "criterion": "Code correctness"
+      },
+      {
+        "criterion": "Project aesthetics"
+      },
+      {
+        "criterion": "Functional integrity"
+      }
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-205bedf21534_would-chatgpt-facilitated-programming-mode-impact-college-students-programming-behaviors-perform.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were required to complete a radar chart task within 100 min ... ChatGPT Next ... was adopted as a major tool to facilitate students' problem-solving process.",
+      "source_id": "doi:10.1186/s41239-024-00446-5",
+      "locator": {
+        "section": "Research methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students were required to complete a radar chart task within 100 min ... ChatGPT Next ... was adopted as a major tool to facilitate students' problem-solving process.",
+      "source_id": "doi:10.1186/s41239-024-00446-5",
+      "locator": {
+        "section": "Research methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1186/s41239-024-00446-5"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "Validation of AI output is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

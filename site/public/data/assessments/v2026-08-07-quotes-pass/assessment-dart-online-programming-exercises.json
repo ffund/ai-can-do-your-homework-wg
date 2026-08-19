@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:dart-online-programming-exercises",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Self-paced Dart programming exercise series",
+  "summary": "Students solve 64 browser-based Dart exercises in a self-paced online course with automated tests and exercise-specific feedback. They can request human help after a failed submission; researchers later tested LLM responses on 15 high-request exercises without exposing those responses to students.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3568813.3600139",
+      "type": "conference_paper",
+      "title": "Exploring the Responses of Large Language Models to Beginner Programmers’ Help Requests",
+      "authors": [
+        "Arto Hellas",
+        "Juho Leinonen",
+        "Sami Sarsa",
+        "Charles Koutcheme",
+        "Lilja Kujanpää",
+        "Juha Sorva"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3568813.3600139",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "dart-online-programming-exercises",
+      "locator": {
+        "section": "3.1 Course Context and Data"
+      },
+      "evidence_quote": "The exercises are automatically assessed, the platform provides exercise-specific feedback, and there is no limit on the number of submissions."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Dart programming",
+    "course": {
+      "name": "online introductory programming",
+      "level": "undergraduate and lifelong learner",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate and lifelong learner",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "Students solve 64 browser-based Dart exercises in a self-paced online course with automated tests and exercise-specific feedback.",
+    "student_actions": [
+      "Read online course material.",
+      "Write and run Dart programs in the browser.",
+      "Submit solutions to automated tests.",
+      "Request staff help after failed tests when needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "Dart program submissions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "optional help request",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "They can request human help after a failed submission; researchers later tested LLM responses on 15 high-request exercises without exposing those responses to students."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8ef4bb375f12_exploring-the-responses-of-large-language-models-to-beginner-programmers-help-requests.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "The exercises are automatically assessed, the platform provides exercise-specific feedback, and there is no limit on the number of submissions.",
+      "source_id": "doi:10.1145/3568813.3600139",
+      "locator": {
+        "section": "3.1 Course Context and Data"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

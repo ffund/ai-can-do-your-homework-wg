@@ -1,0 +1,120 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:introductory-gis-exam",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Balanced introductory GIS exam",
+  "summary": "An introductory geographic-information-systems exam contains 60 balanced textbook-derived questions across mapping, data, surveying, terrain analysis, spatial statistics, and analytical GIS. The paper evaluates GPT-3.5 and GPT-4 on the text-only exam, providing evidence about the exposure of this assessment format.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3615886.3627745",
+      "type": "conference_paper",
+      "title": "Towards Understanding the Geospatial Skills of ChatGPT: Taking a Geographic Information Systems (GIS) Exam",
+      "authors": [
+        "Peter Mooney",
+        "Wencong Cui",
+        "Boyuan Guan",
+        "Levente Juhasz"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3615886.3627745",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "introductory-gis-60-question-exam",
+      "locator": {
+        "section": "3 Exam Implementation"
+      },
+      "evidence_quote": "A balanced set of 60 questions were selected manually to simulate a real exam that covers most topics students of an introductory GIS course are expected to be familiar with."
+    }
+  ],
+  "context": {
+    "discipline": "geographic information systems",
+    "course": {
+      "name": "introductory GIS",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "introductory GIS students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_applicable",
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Answer 38 true-or-false, 17 single-choice, and five multiple-choice questions across introductory GIS topics.",
+    "student_actions": [
+      "Answer 60 text-based GIS questions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Exam responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 60
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_applicable",
+      "description": "The exam was designed as a model benchmark rather than administered to students."
+    },
+    "assessment_system_role": [
+      "benchmark subject"
+    ],
+    "tools": [
+      "GPT-3.5",
+      "GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 60,
+      "kind": "points"
+    },
+    "method": "Each question is worth one point."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-01e6cdd894c9_towards-understanding-the-geospatial-skills-of-chatgpt-taking-a-geographic-information-systems-g.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "A balanced set of 60 questions were selected manually to simulate a real exam that covers most topics students of an introductory GIS course are expected to be familiar with.",
+      "source_id": "doi:10.1145/3615886.3627745",
+      "locator": {
+        "section": "3 Exam Implementation"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "A balanced set of 60 questions were selected manually to simulate a real exam that covers most topics students of an introductory GIS course are expected to be familiar with.",
+      "source_id": "doi:10.1145/3615886.3627745",
+      "locator": {
+        "section": "3 Exam Implementation"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:logic-error-detection-task",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Three-item logic-error detection task",
+  "summary": "Inspect three code examples and identify and explain an out-of-bounds error, expression error, or operator error; GPT-3 and GPT-4 completed the same task. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3636243.3636245",
+      "type": "conference_paper",
+      "title": "Decoding Logic Errors: A Comparative Study on Bug Detection by Students and Large Language Models",
+      "authors": [
+        "Macneil, Stephen",
+        "Denny, Paul",
+        "Tran, Andrew",
+        "Leinonen, Juho",
+        "Bernstein, Seth",
+        "Hellas, Arto",
+        "Sarsa, Sami",
+        "Kim, Joanne"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3636243.3636245",
+      "url": "https://doi.org/10.1145/3636243.3636245",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "logic-error-detection-task",
+      "locator": {
+        "section": "3 Method"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory C programming",
+    "course": {
+      "name": "Large introductory C programming course",
+      "level": "undergraduate novices",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate novices",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "quiz"
+    ],
+    "summary": "Inspect three code examples and identify and explain an out-of-bounds error, expression error, or operator error; GPT-3 and GPT-4 completed the same task.",
+    "student_actions": [
+      "Inspect three code examples and identify and explain an out-of-bounds error, expression error, or operator error; GPT-3 and GPT-4 completed the same task."
+    ],
+    "outputs": [
+      {
+        "artifact": "Bug identifications and novice-friendly explanations",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-3 and GPT-4 research comparison"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-02820d229d1a_decoding-logic-errors-a-comparative-study-on-bug-detection-by-students-and-large-language-models.pdf"
+  }
+}
+
+

@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:oop-forum-questions-aida",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "OOP coursework supported by instructor-moderated AI forum responses",
+  "summary": "Students complete Java object-oriented programming coursework and post questions to an asynchronous discussion forum. AIDA drafts course-grounded responses, but the instructor reviews, edits, and approves them before students see them.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716651",
+      "type": "conference_paper",
+      "title": "Oversight in Action: Experiences with Instructor-Moderated LLM Responses in an Online Discussion Forum",
+      "authors": [
+        "Shuying Qiao",
+        "Paul Denny",
+        "Nasser Giacaman"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716651",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "oop-forum-questions-aida",
+      "locator": {
+        "section": "4 Evaluation"
+      },
+      "evidence_quote": "AIDA to respond to 95 of them"
+    }
+  ],
+  "context": {
+    "discipline": "Java and software engineering",
+    "course": {
+      "name": "SOFTENG 281 Object-Oriented Programming",
+      "level": "second-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "engineering undergraduates",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Complete course programming work while seeking help through the Ed Discussion forum.",
+    "student_actions": [
+      "Work on Java OOP coursework.",
+      "Post questions to the course forum.",
+      "Use instructor-approved responses to continue the work."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java coursework and forum questions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students received selected GPT-4 drafts only after instructor moderation; some posts appeared anonymously."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2d06df974c62_oversight-in-action-experiences-with-instructor-moderated-llm-responses-in-an-online-discussion.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "AIDA was deployed for six weeks in a 307-student course and used for 95 of 253 retained forum posts."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "AIDA to respond to 95 of them",
+      "source_id": "doi:10.1145/3716640.3716651",
+      "locator": {
+        "section": "4 Evaluation"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3716640.3716651"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

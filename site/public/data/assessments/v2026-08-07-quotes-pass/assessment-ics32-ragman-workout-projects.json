@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ics32-ragman-workout-projects",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "ICS 32 Workout Projects with optional RAGMan tutors",
+  "summary": "Students may complete five optional Python Workout Projects on large files, cursors, web visualization, and arithmetic expressions, with the best three counting toward the course grade. A homework-specific RAGMan tutor offers conversational guidance grounded in project descriptions and prior discussions while refusing to provide code or solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649165.3690094",
+      "type": "conference_paper",
+      "title": "Integrating AI Tutors in a Programming Course",
+      "authors": [
+        "Iris Ma",
+        "Alberto Krone Martins",
+        "Cristina Videira Lopes"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649165.3690094",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ics32-ragman-workout-projects",
+      "locator": {
+        "section": "4 Integration of AI Tutors"
+      },
+      "evidence_quote": "we limited the use of AI tutors to the 5 WPs"
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "ICS 32",
+      "level": "undergraduate",
+      "institution": "University of California, Irvine",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "early undergraduate",
+    "cohort_size": 455,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "summative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": 4.5
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "homework"
+    ],
+    "summary": "Complete up to five Python Workout Projects with optional, project-specific conversational AI guidance.",
+    "student_actions": [
+      "Implement Python project solutions.",
+      "Ask a RAG-grounded tutor for clarification or next-step support.",
+      "Validate and submit project code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python Workout Project submissions",
+        "required": false
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use a dedicated tutor for each Workout Project; tutor use is optional and available continuously."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Clarify project instructions",
+          "Explain concepts",
+          "Suggest next steps"
+        ],
+        "prohibited_actions": [
+          "Receive code or direct solutions"
+        ],
+        "transcript_required": true
+      }
+    ],
+    "tools": [
+      "RAGMan AI tutors",
+      "OpenAI models"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "course_weight_percent": 4.5,
+    "method": "The three highest Workout Project scores are combined; students need complete only three of five for full available credit."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-abba2897a8bb_integrating-ai-tutors-in-a-programming-course.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "we limited the use of AI tutors to the 5 WPs",
+      "source_id": "doi:10.1145/3649165.3690094",
+      "locator": {
+        "section": "4 Integration of AI Tutors"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

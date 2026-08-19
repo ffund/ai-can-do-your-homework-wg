@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-lab-tests-codex",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 uninvigilated programming lab tests",
+  "summary": "Students complete two timed, uninvigilated CS1 programming tests in CodeRunner, submitting function solutions against automated tests. The paper evaluated how readily Codex could solve these authentic assessments, indicating their exposure to direct AI-generated solutions rather than reporting permitted student AI use.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3576123.3576134",
+      "type": "conference_paper",
+      "title": "My AI Wants to Know if This Will Be on the Exam: Testing OpenAI’s Codex on CS2 Programming Exercises",
+      "authors": [
+        "James Finnie-Ansley",
+        "Paul Denny",
+        "Andrew Luxton-Reilly",
+        "Eddie Antonio Santos",
+        "James Prather",
+        "Brett A. Becker"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3576123.3576134",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-lab-tests-codex",
+      "locator": {
+        "section": "3.2 Codex performance in CS1 vs. CS2"
+      },
+      "evidence_quote": "28 CS1-type problems that were used as summative assessments on two un-invigilated lab-based tests"
+    }
+  ],
+  "context": {
+    "discipline": "Introductory programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "introductory undergraduate students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Solve 28 introductory programming questions across two two-hour lab tests.",
+    "student_actions": [
+      "Write code for each programming problem.",
+      "Run visible tests and resubmit solutions when needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "Submitted source code",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Codex was tested offline on the student-facing questions; the source does not report an AI-use policy for students."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "CodeRunner awarded all-or-nothing marks for passing all tests and applied resubmission penalties up to 50%."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:cs2-invigilated-programming-tests-codex",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-22543ce0ba6a_my-ai-wants-to-know-if-this-will-be-on-the-exam-testing-openais-codex-on-cs2-programming-exercis.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Two 14-question tests used in 2020; Codex responses were generated repeatedly for comparison."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "28 CS1-type problems that were used as summative assessments on two un-invigilated lab-based tests",
+      "source_id": "doi:10.1145/3576123.3576134",
+      "locator": {
+        "section": "3.2 Codex performance in CS1 vs. CS2"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

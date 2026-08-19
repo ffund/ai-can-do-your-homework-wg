@@ -1,0 +1,158 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:oop-diagram-video-variants",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Diagram- and video-specified OOP exercises and project",
+  "summary": "Object-oriented programming students implement Java programs from custom diagrams and a narrated video rather than conventional text specifications. The formats require students to infer structural and behavioral requirements and were intended to reduce copy-and-prompt reliance on LLMs.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.48550/arXiv.2403.08396",
+      "type": "preprint",
+      "title": "A Picture Is Worth a Thousand Words: Exploring Diagram and Video-Based OOP Exercises to Counter LLM Over-Reliance",
+      "authors": [
+        "Bruno Pereira Cipriano",
+        "Pedro Alves",
+        "Paul Denny"
+      ],
+      "year": 2024,
+      "identifier": "10.48550/arXiv.2403.08396",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "oop-diagram-video-series",
+      "locator": {
+        "section": "4. Method"
+      },
+      "evidence_quote": "Diagrams were used to describe the exercises, while the project was described in video."
+    }
+  ],
+  "context": {
+    "discipline": "object-oriented design and programming",
+    "course": {
+      "name": "Object-Oriented Design and Programming",
+      "level": "undergraduate",
+      "institution": "Lusófona University",
+      "academic_year": "2023/24",
+      "delivery_language": "Portuguese",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "research_sample_size": 56,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "project",
+      "design_task"
+    ],
+    "summary": "Infer OOP requirements from diagrams or video demonstrations and implement the specified classes, state changes, inheritance, and user-visible behavior.",
+    "student_actions": [
+      "Interpret diagrammatic input/output and state-change examples.",
+      "Infer omitted classes, relationships, and business rules.",
+      "Design and implement Java classes and methods.",
+      "Interpret a video demonstration for the larger project."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java solutions to nine diagram-based assignments",
+        "required": true
+      },
+      {
+        "artifact": "Object-oriented project specified by video",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "delivery": {
+      "modality": "unknown",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "unknown",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The specifications were designed to make direct copying into GPT or Bard less effective; no explicit student AI-use permission is reported."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "prohibited_actions": [
+          "Inappropriate reliance on an LLM to generate the complete solution"
+        ],
+        "disclosure_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT",
+      "Bard"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "semester classroom implementation and student survey",
+    "sample": {
+      "analyzed": 56,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "Students generally responded positively, with video-based projects preferred over diagram-based exercises.",
+      "Students reported being less inclined to rely on LLM code generation for the diagram- and video-based tasks."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-37dc9f0ae652_a-picture-is-worth-a-thousand-words-exploring-diagram-and-video-based-oop-exercises-to-counter-l.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Diagrams were used to describe the exercises, while the project was described in video.",
+      "source_id": "doi:10.48550/arXiv.2403.08396",
+      "locator": {
+        "section": "4. Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.48550/arXiv.2403.08396"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

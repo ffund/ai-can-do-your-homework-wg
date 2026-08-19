@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:software-engineering-course-project-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Software engineering course project with ChatGPT",
+  "summary": "Students develop a flexible software engineering course project using their chosen platforms and languages. ChatGPT use was widespread and unconstrained in practice for code generation, algorithms, debugging, defect detection, and other project work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/qrs60937.2023.00028",
+      "type": "conference_paper",
+      "title": "On ChatGPT: Perspectives from Software Engineering Students",
+      "authors": [
+        "Khadija Hanifi",
+        "Orcun Cetin",
+        "Cemal Yilmaz"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/qrs60937.2023.00028",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "software-engineering-course-project-chatgpt",
+      "locator": {
+        "section": "4 Experimental Setup; 6 Survey Responses"
+      },
+      "evidence_quote": "throughout the course project, students have the flexibility to choose platforms and programming languages"
+    }
+  ],
+  "context": {
+    "discipline": "Software engineering",
+    "course": {
+      "name": "CS 308 Software Engineering",
+      "level": "upper-division undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "mostly third- and fourth-year computing students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Develop a software engineering project using student-selected technologies.",
+    "student_actions": [
+      "Design and implement the course project.",
+      "Optionally prompt ChatGPT for code and software-engineering assistance.",
+      "Assess and modify generated output as needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "Software project",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "93.8% of surveyed students used ChatGPT during the project; the source does not report an explicit course policy."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9ab66f67ffc7_on-chatgpt-perspectives-from-software-engineering-students.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Survey of 113 students; 90.6% of users reported encountering hallucinations."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "throughout the course project, students have the flexibility to choose platforms and programming languages",
+      "source_id": "doi:10.1109/qrs60937.2023.00028",
+      "locator": {
+        "section": "4 Experimental Setup; 6 Survey Responses"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

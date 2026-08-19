@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:programming-its-rag-qa",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Programming exercises with a RAG question-answering tutor",
+  "summary": "Students work on programming-domain learning tasks in a web-based intelligent tutoring system and ask a mentor-like question-answering system for help. The system combines a large language model with retrieval-augmented generation to ground live responses in selected learning content.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/icaicta63815.2024.10763263",
+      "type": "conference_paper",
+      "title": "An Interactive Question-Answering System Using Large Language Model and Retrieval-Augmented Generation in an Intelligent Tutoring System on the Programming Domain",
+      "authors": [
+        "Owen Christian Wijaya",
+        "Ayu Purwarianti"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/ICAICTA63815.2024.10763263",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "programming-its-rag-qa"
+    }
+  ],
+  "context": {
+    "discipline": "programming",
+    "course": {
+      "name": "not_reported",
+      "level": "unknown",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "unknown",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Complete programming learning tasks while asking a retrieval-augmented tutor questions.",
+    "student_actions": [
+      "Work on programming tasks.",
+      "Ask questions and evaluate generated responses."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming-task responses",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students interact with the embedded QA tutor during programming learning activities."
+    },
+    "assessment_system_role": [
+      "Retrieve relevant material and generate mentor-like answers."
+    ],
+    "tools": [
+      "large language model",
+      "retrieval-augmented generation"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5bdd1676620d_an-interactive-question-answering-system-using-large-language-model-and-retrieval-augmented-gene.pdf"
+  }
+}
+
+

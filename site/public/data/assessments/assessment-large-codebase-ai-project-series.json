@@ -1,0 +1,182 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:large-codebase-ai-project-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CPython IDLE project series with permitted LLM support",
+  "summary": "Junior and senior software-engineering students build, modify, and extend the CPython IDLE codebase before completing a team-designed feature. Instructors permit and demonstrate ChatGPT and Copilot; students submit code through pull requests plus process journals and design documents that expose how they navigated and changed the system.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630755",
+      "type": "conference_paper",
+      "title": "Working with Large Code Bases: A Cognitive Apprenticeship Approach to Teaching Software Engineering",
+      "authors": [
+        "Anshul Shah",
+        "Jerry Yu",
+        "Thanh Tong",
+        "Adalbert Gerald Soosai Raj"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630755",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cpython-idle-project-series",
+      "locator": {
+        "section": "4.3 Projects"
+      },
+      "evidence_quote": "For the first half of the term, the students worked on three individual projects ... In the second half, they proposed their own project in teams of three."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "Working with Large Code Bases",
+      "level": "upper-level undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "junior and senior undergraduate students",
+    "cohort_size": 51,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Build CPython, modify an IDLE feature, add a code-outline feature, and implement and present a team-proposed IDLE feature.",
+    "student_actions": [
+      "Build CPython and configure the development environment.",
+      "Modify IDLE's Go To Line behavior.",
+      "Add a Show Code Outline feature.",
+      "Propose, implement, test, review, and present a team feature.",
+      "Document process and design decisions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Code and pull requests",
+        "required": true
+      },
+      {
+        "artifact": "Process journals",
+        "required": true
+      },
+      {
+        "artifact": "Design documents with diagrams",
+        "required": true
+      },
+      {
+        "artifact": "Final team presentation and Q&A",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies",
+    "group_size": 3
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use ChatGPT and Copilot as just-in-time resources; process journals document the tools used."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": true,
+        "disclosure_artifact": "process journal"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub Copilot"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Staff review pull requests, requirements, design documents, process journals, team code reviews, presentation, and Q&A; students may address review feedback within three days.",
+    "criteria": [
+      {
+        "criterion": "Project requirements"
+      },
+      {
+        "criterion": "Design document quality"
+      },
+      {
+        "criterion": "Process journal quality"
+      },
+      {
+        "criterion": "Pull-request and code-review quality"
+      }
+    ],
+    "resubmission": "Students can address TA code-review feedback within three days to recover points."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1c2bd72beae8_working-with-large-code-bases-a-cognitive-apprenticeship-approach-to-teaching-software-engineering.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "For the first half of the term, the students worked on three individual projects ... In the second half, they proposed their own project in teams of three.",
+      "source_id": "doi:10.1145/3626252.3630755",
+      "locator": {
+        "section": "4.3 Projects"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3626252.3630755"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-make-project-scoping-a-student-responsibility",
+      "practice_name": "Make project scoping a student responsibility",
+      "rationale": "Teams propose their own project in the second half of the course.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3626252.3630755",
+          "quote": "For the first half of the term, the students worked on three individual projects ... In the second half, they proposed their own project in teams of three.",
+          "locator": {
+            "section": "4.3 Projects"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

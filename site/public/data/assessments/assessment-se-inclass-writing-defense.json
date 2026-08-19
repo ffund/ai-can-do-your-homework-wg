@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:se-inclass-writing-defense",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "In-class writing assessment with oral defense",
+  "summary": "Software-engineering students complete a short in-class writing task, present it in no more than five minutes, and answer questions. The live presentation and question period let the instructor probe understanding when students may have used AI tools while preparing written work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/CSEET62301.2024.10663042",
+      "type": "conference_paper",
+      "title": "Using Generative Artificial Intelligence Tools in Software Engineering Courses",
+      "authors": [
+        "Soma Datta"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CSEET62301.2024.10663042",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "in-class-writing-presentation-qa",
+      "locator": {
+        "section": "main text"
+      },
+      "evidence_quote": "In a different in-class writing assessment, students had to be creative when asked to present their writing assessment in five minutes or shorter. These assessments also had a question-answer session."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "software engineering courses",
+      "level": "undergraduate and graduate",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate and graduate students",
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "presentation",
+      "oral_exam"
+    ],
+    "summary": "Write on an assigned topic, present the work in five minutes or less, and answer instructor questions.",
+    "student_actions": [
+      "Complete an in-class writing task.",
+      "Present the work in five minutes or less.",
+      "Answer questions that probe understanding."
+    ],
+    "outputs": [
+      {
+        "artifact": "Written response",
+        "required": true
+      },
+      {
+        "artifact": "Short presentation and question responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 5
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "unknown",
+      "external_ai_use_permitted": true,
+      "description": "The paper permits AI on writing assessments but does not report whether students used it during this in-class task."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "citation_required": true
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:se-lightning-talk",
+      "relationship": "compared_with"
+    },
+    {
+      "id": "assessment:se-ai-enabled-project",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2373d0896fbc_using-generative-artificial-intelligence-tools-in-software-engineering-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In a different in-class writing assessment, students had to be creative when asked to present their writing assessment in five minutes or shorter. These assessments also had a question-answer session.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10663042",
+      "locator": {
+        "section": "main text"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "verification",
+      "quote": "In a different in-class writing assessment, students had to be creative when asked to present their writing assessment in five minutes or shorter. These assessments also had a question-answer session.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10663042",
+      "locator": {
+        "section": "main text"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/CSEET62301.2024.10663042"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-combine-project-deliverables-with-oral-and-qualitative-verification",
+      "practice_name": "Combine project deliverables with oral and qualitative verification",
+      "rationale": "Students present the written assessment and answer questions in a live session.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/CSEET62301.2024.10663042",
+          "quote": "In a different in-class writing assessment, students had to be creative when asked to present their writing assessment in five minutes or shorter. These assessments also had a question-answer session.",
+          "locator": {
+            "section": "main text"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "Citation of AI contributions is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

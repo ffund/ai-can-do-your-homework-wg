@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-labs-postgrade-chatgpt-feedback",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Java labs with post-grade ChatGPT feedback variants",
+  "summary": "Students complete four selected Java lab assignments and, after grades are released, receive two ChatGPT feedback variants generated with and without their source code. They compare the variants and evaluate the feedback's formative qualities.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1609/aaai.v38i21.30372",
+      "type": "conference_paper",
+      "title": "Students’ perceptions and preferences of generative artificial intelligence feedback for programming",
+      "authors": [
+        "Zhengdong Zhang",
+        "Zihan Dong",
+        "Yang Shi",
+        "Thomas Price",
+        "Noboru Matsuda",
+        "Dongkuan Xu"
+      ],
+      "year": 2024,
+      "identifier": "10.1609/aaai.v38i21.30372",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-labs-postgrade-chatgpt-feedback",
+      "locator": {
+        "section": "Experimental Design"
+      },
+      "evidence_quote": "generated automated feedback using the ChatGPT API for four lab assignments"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "Introduction to Java (CS1)",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "mostly computer science majors",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "lab"
+    ],
+    "summary": "Complete Java labs involving strings, arithmetic, loops, and file processing, then review generated feedback.",
+    "student_actions": [
+      "Implement and submit each Java lab.",
+      "Review failed tests and two AI-generated feedback messages after grading.",
+      "Select and explain a feedback preference in a survey."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java code and feedback survey responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT generated personalized feedback after final grades; one prompt variant included student code and one excluded it."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Existing GitHub/Gradescope course grading preceded the experimental feedback."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-efbf6118c4f7_students-perceptions-and-preferences-of-generative-artificial-intelligence-feedback-for-programm.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "58 students consented; 23-28 answered each of four surveys, and 72.5% of responses preferred feedback grounded in their code."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "generated automated feedback using the ChatGPT API for four lab assignments",
+      "source_id": "doi:10.1609/aaai.v38i21.30372",
+      "locator": {
+        "section": "Experimental Design"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

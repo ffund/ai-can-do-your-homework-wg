@@ -1,0 +1,112 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-loop-queue-assignment-pair",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Simple loop and linked-queue Java assignments",
+  "summary": "Students in an introductory Java course write a simple while-loop program in week two and implement a linked-list Queue interface in week seven. Researchers later test GPT-4 Turbo feedback on authentic submissions; students did not receive that experimental feedback.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653594",
+      "type": "conference_paper",
+      "title": "Feedback-Generation for Programming Exercises With GPT-4",
+      "authors": [
+        "Imen Azaiz",
+        "Natalie Kiesler",
+        "Sven Strickroth"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653594",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-loop-queue-assignment-pair",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Two assignments from an introductory programming course were selected, and GPT-4 was asked to generate feedback for 55 randomly chosen, authentic student programming submissions."
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "first-year introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "homework"
+    ],
+    "summary": "Students in an introductory Java course write a simple while-loop program in week two and implement a linked-list Queue interface in week seven.",
+    "student_actions": [
+      "Write a while-loop application that prints odd numbers and Boom.",
+      "Implement a Queue interface with a singly linked list.",
+      "Submit work through the GATE e-assessment system."
+    ],
+    "outputs": [
+      {
+        "artifact": "SimpleWhileLoop Java application",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "QueueImpl Java class",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "Researchers later test GPT-4 Turbo feedback on authentic submissions; students did not receive that experimental feedback."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7669cea74e75_feedback-generation-for-programming-exercises-with-gpt-4.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Two assignments from an introductory programming course were selected, and GPT-4 was asked to generate feedback for 55 randomly chosen, authentic student programming submissions.",
+      "source_id": "doi:10.1145/3649217.3653594",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Two assignments from an introductory programming course were selected, and GPT-4 was asked to generate feedback for 55 randomly chosen, authentic student programming submissions.",
+      "source_id": "doi:10.1145/3649217.3653594",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

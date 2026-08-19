@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-feedback-programming-projects",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Programming projects with ChatGPT instructional feedback",
+  "summary": "Students submit programming-project work and receive instructional feedback generated through ChatGPT. The feedback intervention addresses code quality and project work, and the study evaluates its effect on student learning and motivation compared with the course's usual feedback process.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/iccit63348.2025.10989326",
+      "type": "conference_paper",
+      "title": "An Investigation into ChatGPT-Based Instructional Feedback on Programming Projects",
+      "authors": [
+        "Mohammad T. Alshammari"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/ICCIT63348.2025.10989326",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "chatgpt-feedback-programming-projects"
+    }
+  ],
+  "context": {
+    "discipline": "programming",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Develop a programming project and use ChatGPT-generated instructional feedback on the submitted work.",
+    "student_actions": [
+      "Develop and submit a programming project.",
+      "Review generated feedback and improve the work."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming project",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students receive ChatGPT-based instructional feedback on project work."
+    },
+    "assessment_system_role": [
+      "Generate personalized instructional feedback on programming projects."
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2f3efb626ad9_an-investigation-into-chatgpt-based-instructional-feedback-on-programming-projects.pdf"
+  }
+}
+

@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-structures-ipssc-labs",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Data structures coding labs with ChatGPT scaffolding",
+  "summary": "Students independently complete four coding labs and then complete three labs collaboratively. The IPSSC system structures ChatGPT interaction into solution assessment, code assessment, and free interaction so students iteratively refine algorithms and code.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/tlt.2024.3392896",
+      "type": "journal_article",
+      "title": "Scaffolding Computational Thinking With ChatGPT",
+      "authors": [
+        "Jian Liao",
+        "Linrong Zhong",
+        "Longting Zhe",
+        "Handan Xu",
+        "Ming Liu",
+        "Tao Xie"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/tlt.2024.3392896",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-structures-ipssc-labs",
+      "locator": {
+        "section": "IV Methodology"
+      },
+      "evidence_quote": "IPSSC was used to scaffold the students' programming during all computer lab sessions"
+    }
+  ],
+  "context": {
+    "discipline": "Programming and algorithms",
+    "course": {
+      "name": "Data Structures and Algorithms",
+      "level": "second-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "Educational Technology undergraduates",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "research_only"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "lab"
+    ],
+    "summary": "Complete seven Data Structures and Algorithms coding tasks.",
+    "student_actions": [
+      "Draft and submit a solution approach for AI feedback.",
+      "Implement and submit code for specific feedback.",
+      "Revise through free interaction.",
+      "Work alone for four labs and with a partner for three."
+    ],
+    "outputs": [
+      {
+        "artifact": "Algorithms and program code",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3.5 assessed solution plans and code through three scaffolded modules."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-004771bb59cf_scaffolding-computational-thinking-with-chatgpt.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Quasi-experiment with 26 students per condition across seven lab sessions; 22 matched pre/post records per group were analyzed."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "IPSSC was used to scaffold the students' programming during all computer lab sessions",
+      "source_id": "doi:10.1109/tlt.2024.3392896",
+      "locator": {
+        "section": "IV Methodology"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1109/tlt.2024.3392896"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

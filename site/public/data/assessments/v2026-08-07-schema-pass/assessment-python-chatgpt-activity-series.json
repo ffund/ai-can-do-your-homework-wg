@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-chatgpt-activity-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "ChatGPT-supported Python programming activities",
+  "summary": "First-year students complete programming exercises, concept-mastery work, and problem-solving activities during an eight-week Python course. Students may use a GPT-4 web interface without restriction, and the course records their dialogues and code submissions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.48550/arxiv.2403.15472",
+      "type": "preprint",
+      "title": "Enhancing Programming Education with ChatGPT: A Case Study on Student Perceptions and Interactions in a Python Course",
+      "authors": [
+        "Boxaun Ma",
+        "Li Chen",
+        "Shin'ichi Konomi"
+      ],
+      "year": 2024,
+      "identifier": "10.48550/arxiv.2403.15472",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-chatgpt-activity-series",
+      "locator": {
+        "section": "3. Method"
+      },
+      "evidence_quote": "The course has three different learning activities focused on programming exercises, concept mastery, and problem-solving. Students are allowed to use ChatGPT freely to complete these activities."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "Python programming exercises",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "First-year students complete programming exercises, concept-mastery work, and problem-solving activities during an eight-week Python course.",
+    "student_actions": [
+      "Complete weekly programming tasks.",
+      "Use ChatGPT for explanations, debugging, or code generation as desired.",
+      "Submit code through the learning management system."
+    ],
+    "outputs": [
+      {
+        "artifact": "programming exercise submissions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "ChatGPT dialogue history",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use a GPT-4 web interface without restriction, and the course records their dialogues and code submissions."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7c43041ee640_enhancing-programming-education-with-chatgpt-a-case-study-on-student-perceptions-and-interaction.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The course has three different learning activities focused on programming exercises, concept mastery, and problem-solving. Students are allowed to use ChatGPT freely to complete these activities.",
+      "source_id": "doi:10.48550/arxiv.2403.15472",
+      "locator": {
+        "section": "3. Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "The course has three different learning activities focused on programming exercises, concept mastery, and problem-solving. Students are allowed to use ChatGPT freely to complete these activities.",
+      "source_id": "doi:10.48550/arxiv.2403.15472",
+      "locator": {
+        "section": "3. Method"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "The course has three different learning activities focused on programming exercises, concept mastery, and problem-solving. Students are allowed to use ChatGPT freely to complete these activities.",
+      "source_id": "doi:10.48550/arxiv.2403.15472",
+      "locator": {
+        "section": "3. Method"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

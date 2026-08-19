@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:recursion-analogy-generation",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Student-generated recursion analogies",
+  "summary": "Students prompt ChatGPT to generate analogies for recursion using themes tied to their own interests. They critically evaluate the analogies and reflect on whether personalized examples improve their understanding of the concept.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716658",
+      "type": "conference_paper",
+      "title": "From Automation to Cognition: Redefining the Roles of Educators and Generative AI in Computing Education",
+      "authors": [
+        "Tony Haoran Feng",
+        "Andrew Luxton-Reilly",
+        "Burkhard C Wünsche",
+        "Paul Denny"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716658",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "recursion-analogy-generation",
+      "locator": {
+        "section": "2.3.4 Student-Generated Analogies"
+      },
+      "evidence_quote": "In a study involving over 350 students, participants used ChatGPT to create analogies for recursion."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "first-year introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "reflection"
+    ],
+    "summary": "Students prompt ChatGPT to generate analogies for recursion using themes tied to their own interests.",
+    "student_actions": [
+      "Choose a personally relevant theme.",
+      "Prompt ChatGPT for a recursion analogy.",
+      "Critically evaluate the generated analogy.",
+      "Reflect on its usefulness."
+    ],
+    "outputs": [
+      {
+        "artifact": "generated analogy",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "critical evaluation",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "reflection",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "They critically evaluate the analogies and reflect on whether personalized examples improve their understanding of the concept."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8ff40b8f621f_from-automation-to-cognition-redefining-the-roles-of-educators-and-generative-ai-in-computing-ed.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In a study involving over 350 students, participants used ChatGPT to create analogies for recursion.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "2.3.4 Student-Generated Analogies"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "In a study involving over 350 students, participants used ChatGPT to create analogies for recursion.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "2.3.4 Student-Generated Analogies"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3716640.3716658"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "reflection"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

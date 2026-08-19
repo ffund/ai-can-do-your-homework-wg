@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-testing-artifact-comparison",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Manual and ChatGPT testing-artifact comparison",
+  "summary": "Postgraduate software-testing students first create use cases, a requirements traceability matrix, test cases, and test scripts for a travel web application in teams. In week nine they regenerate the artifacts individually with ChatGPT, compare both sets, and answer eleven critical-reflection questions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893214",
+      "type": "conference_paper",
+      "title": "WIP: Assessing the Effectiveness of ChatGPT in Preparatory Testing Activities",
+      "authors": [
+        "Susmita Haldar",
+        "Mary Pierce",
+        "Luiz Fernando Capretz"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893214",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "travel-app-testing-artifact-comparison",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "evidence_quote": "In week 9, after manually completing all these activities, students are given an individual exercise to generate the same artifacts using ChatGPT."
+    }
+  ],
+  "context": {
+    "discipline": "software testing",
+    "course": {
+      "name": "Capstone Project",
+      "level": "postgraduate certificate",
+      "institution": "Fanshawe College",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "postgraduate certificate students",
+    "cohort_size": 61,
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Generate travel-application testing artifacts manually and with ChatGPT, then compare their quality and usefulness.",
+    "student_actions": [
+      "Create use cases, an RTM, test cases, and scripts manually in a team.",
+      "Generate the same artifacts individually with ChatGPT.",
+      "Compare both sets and answer eleven reflection questions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Manual and AI-generated testing artifacts",
+        "required": true
+      },
+      {
+        "artifact": "Eleven comparison responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies",
+    "group_size": {
+      "minimum": 4,
+      "maximum": 5
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "component_id": "week-9-comparison",
+        "permission": "required",
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Instructors evaluate the testing deliverables and the students' justified comparison findings."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e0c063312e72_wip-assessing-the-effectiveness-of-chatgpt-in-preparatory-testing-activities.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In week 9, after manually completing all these activities, students are given an individual exercise to generate the same artifacts using ChatGPT.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893214",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "In week 9, after manually completing all these activities, students are given an individual exercise to generate the same artifacts using ChatGPT.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893214",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/FIE61694.2024.10893214"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-require-students-to-begin-without-ai",
+      "practice_name": "Require students to begin without AI",
+      "rationale": "Students complete the testing activities manually before generating the same artifacts with ChatGPT.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10893214",
+          "quote": "In week 9, after manually completing all these activities, students are given an individual exercise to generate the same artifacts using ChatGPT.",
+          "locator": {
+            "section": "III. Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "Validation of AI output is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

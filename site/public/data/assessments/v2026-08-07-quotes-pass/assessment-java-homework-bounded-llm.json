@@ -1,0 +1,112 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-homework-bounded-llm",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Java homework projects with bounded LLM collaboration",
+  "summary": "Students complete six substantial Java homework projects under assignment-specific LLM permissions. They may use ChatGPT or GitHub Copilot only for listed subproblems, must cite that help, and may not copy AI-written code as their own.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626253.3635511",
+      "type": "conference_paper",
+      "title": "My Learnings from Allowing Large Language Models in Introductory Computer Science Classes",
+      "authors": [
+        "Rasika Bhalerao"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626253.3635511",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-homework-bounded-llm",
+      "locator": {
+        "section": "1.2.2 Assignment Instructions"
+      },
+      "evidence_quote": "This course had 6 substantial homework projects in Java."
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "Intensive introductory computer science, second course",
+      "level": "post-baccalaureate preparation",
+      "level_category": "post_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "students preparing to enter a master's program",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "project"
+    ],
+    "summary": "Develop six substantial Java homework projects.",
+    "student_actions": [
+      "Implement each Java project.",
+      "Use an LLM only for explicitly listed small tasks.",
+      "Cite any LLM assistance in the code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java project code with AI-use citations",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Each brief listed narrow permitted uses, such as writing up to three tests or a getter; copying AI code was treated as plagiarism."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:weekly-peer-quizzes-llm",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:open-web-midterm-final-no-llm",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bf928ffa78a3_my-learnings-from-allowing-large-language-models-in-introductory-computer-science-classes.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Eighteen students responded to the optional policy survey; 72% reported using an LLM for homework subproblems."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "This course had 6 substantial homework projects in Java.",
+      "source_id": "doi:10.1145/3626253.3635511",
+      "locator": {
+        "section": "1.2.2 Assignment Instructions"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

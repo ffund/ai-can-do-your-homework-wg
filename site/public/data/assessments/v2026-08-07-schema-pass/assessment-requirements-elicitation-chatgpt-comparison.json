@@ -1,0 +1,115 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:requirements-elicitation-chatgpt-comparison",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Traditional and ChatGPT requirements-elicitation project",
+  "summary": "Teams choose a real system, elicit and specify its requirements through standard techniques, then ask ChatGPT 3.5 to generate requirements for the same system. They compare both sets for equivalence, innovation, pertinence, and relevance and submit a technical report after 30 days.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3701625.3701687",
+      "type": "conference_paper",
+      "title": "Exploring the Use of Large Language Models in Requirements Engineering Education: An Experience Report with ChatGPT 3.5",
+      "authors": [
+        "Savio Sousa Sampaio",
+        "Márcia Sampaio Lima",
+        "Eriky Rodrigues de Souza",
+        "Maria Alcimar Meireles",
+        "Marcela Savia Pessoa",
+        "Tayana Uchoa Conte"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3701625.3701687",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "requirements-elicitation-chatgpt-comparison",
+      "locator": {
+        "section": "3.1 Execution of the Elicitation and Specification Process"
+      },
+      "evidence_quote": "The students had a period of 30 days to carry out the work."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and requirements engineering",
+    "course": {
+      "name": "Software Engineering",
+      "level": "fifth-semester undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "fifth-semester undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "assignment",
+      "design_task"
+    ],
+    "summary": "Teams choose a real system, elicit and specify its requirements through standard techniques, then ask ChatGPT 3.5 to generate requirements for the same system.",
+    "student_actions": [
+      "Define a real system and its users.",
+      "Elicit functional and non-functional requirements in teams.",
+      "Generate requirements with ChatGPT using defined prompts.",
+      "Compare and evaluate both requirement sets."
+    ],
+    "outputs": [
+      {
+        "artifact": "technical requirements report",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "ChatGPT-generated requirements",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "comparative evaluation",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "individual reflection",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "They compare both sets for equivalence, innovation, pertinence, and relevance and submit a technical report after 30 days."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f85997b3172d_exploring-the-use-of-large-language-models-in-requirements-engineering-education-an-experience-r.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "The students had a period of 30 days to carry out the work.",
+      "source_id": "doi:10.1145/3701625.3701687",
+      "locator": {
+        "section": "3.1 Execution of the Elicitation and Specification Process"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

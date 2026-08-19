@@ -1,0 +1,125 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:eipe-week8-formative-feedback",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Week-eight EiPE tasks with LLM-generated feedback",
+  "summary": "Students describe four obfuscated C functions in plain English during a programming lab. GPT-3.5 generates code from each explanation, PrairieLearn runs tests, and students inspect both the code and results before revising their response.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701934",
+      "type": "conference_paper",
+      "title": "Exploring Student Reactions to LLM-Generated Feedback on Explain in Plain English Problems",
+      "authors": [
+        "Chris Kerslake",
+        "Paul Denny",
+        "David H. Smith",
+        "Juho Leinonen",
+        "Stephen MacNeil",
+        "Andrew Luxton-Reilly",
+        "Brett A. Becker"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701934",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "eipe-week8-formative-feedback",
+      "locator": {
+        "section": "3.1 Explain in Plain English Questions"
+      },
+      "evidence_quote": "During their lab for the eighth week of the course, students were tasked to answer four code-related questions."
+    }
+  ],
+  "context": {
+    "discipline": "C programming",
+    "course": {
+      "name": "introduction to programming",
+      "level": "first-year engineering",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year engineering",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exercise"
+    ],
+    "summary": "Students describe four obfuscated C functions in plain English during a programming lab.",
+    "student_actions": [
+      "Read an obfuscated C function.",
+      "Explain its purpose in plain English.",
+      "Review generated code and test feedback.",
+      "Revise the explanation when needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "plain-English explanations",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "LLM-generated code",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "test results",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "post-lab reflection",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3.5 generates code from each explanation, PrairieLearn runs tests, and students inspect both the code and results before revising their response."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fee6a051e180_exploring-student-reactions-to-llm-generated-feedback-on-explain-in-plain-english-problems.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "During their lab for the eighth week of the course, students were tasked to answer four code-related questions.",
+      "source_id": "doi:10.1145/3641554.3701934",
+      "locator": {
+        "section": "3.1 Explain in Plain English Questions"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "During their lab for the eighth week of the course, students were tasked to answer four code-related questions.",
+      "source_id": "doi:10.1145/3641554.3701934",
+      "locator": {
+        "section": "3.1 Explain in Plain English Questions"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

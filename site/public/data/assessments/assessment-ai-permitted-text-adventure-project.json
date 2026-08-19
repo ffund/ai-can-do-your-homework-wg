@@ -1,0 +1,262 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-permitted-text-adventure-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Open-ended C text-adventure project with optional AI",
+  "summary": "Second-year electrical engineering students build an open-ended text-adventure game in C over three or four weeks. AI is allowed for the project but prohibited on weekly work; students must submit prompts and responses and record an eight-to-ten-minute code walkthrough and game demonstration.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10892956",
+      "type": "conference_paper",
+      "title": "Work in Progress: Integration of AI Tools on an Open-Ended Computer Programming Project",
+      "authors": [
+        "Emily Hammond",
+        "Courtney Faber"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10892956",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "c-text-adventure-project",
+      "locator": {
+        "section": "III. Innovative Practice"
+      },
+      "evidence_quote": "Their task was to implement a text-based adventure game ... Students could earn an 85% by completing the minimum qualifications."
+    }
+  ],
+  "context": {
+    "discipline": "introductory C programming",
+    "course": {
+      "name": "200-level introduction to programming",
+      "level": "second year",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "primarily second-year electrical engineering students",
+    "cohort_size": 35,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Build a map-based text adventure in C with movement, interactions, state tracking, and a win condition, then explain and demonstrate it on video.",
+    "student_actions": [
+      "Design and implement an open-ended text-adventure game in C.",
+      "Use functions, structs, arrays, comments, and course concepts.",
+      "Document all AI prompts and responses if AI is used.",
+      "Record a code walkthrough and game demonstration."
+    ],
+    "outputs": [
+      {
+        "artifact": "C text-adventure game",
+        "required": true
+      },
+      {
+        "artifact": "AI interaction documentation",
+        "required": "unknown"
+      },
+      {
+        "artifact": "Eight-to-ten-minute demonstration video",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "AI is optional for projects and prohibited for weekly assignments."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "disclosure_required": true,
+        "transcript_required": true
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "A rubric awards up to 85% for minimum requirements and 15% for a second map and work beyond the base brief.",
+    "criteria": [
+      {
+        "criterion": "Required gameplay and map features"
+      },
+      {
+        "criterion": "Use of C course concepts"
+      },
+      {
+        "criterion": "At least ten functions"
+      },
+      {
+        "criterion": "Comments and explanation"
+      },
+      {
+        "criterion": "Work beyond minimum requirements",
+        "weight_percent": 15
+      }
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-136aa9377ea6_work-in-progress-integration-of-ai-tools-on-an-open-ended-computer-programming-project.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Their task was to implement a text-based adventure game ... Students could earn an 85% by completing the minimum qualifications.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892956",
+      "locator": {
+        "section": "III. Innovative Practice"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "An open-ended project was given to students in an introduction to programming course allowing students to use AI throughout the project. Minimum requirements were provided with the opportunity to earn additional points by surpassing these requirements.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892956",
+      "locator": {
+        "section": "V. Connections to Research"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students were explicitly told in class and in the syllabus that no AI was allowed for weekly homework assignments; however, students were encouraged to use AI for the open-ended project.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892956",
+      "locator": {
+        "section": "abstract"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    },
+    {
+      "kind": "verification",
+      "quote": "With their final submission, they also needed to record an 8-to-10-minute video, where they describe their code and play a piece of their game to demonstrate how it works.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892956",
+      "locator": {
+        "section": "III. Innovative Practice"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "If students used AI tools, they were expected to submit documentation of their interactions (e.g., prompts and responses).",
+      "source_id": "doi:10.1109/FIE61694.2024.10892956",
+      "locator": {
+        "section": "III. Innovative Practice"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/FIE61694.2024.10892956"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The course explicitly prohibits AI on weekly homework and encourages it on the project.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10892956",
+          "quote": "Students were explicitly told in class and in the syllabus that no AI was allowed for weekly homework assignments; however, students were encouraged to use AI for the open-ended project.",
+          "locator": {
+            "section": "abstract"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-collect-process-evidence",
+      "practice_name": "Collect process evidence",
+      "rationale": "Students who use AI submit their prompts and responses.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10892956",
+          "quote": "If students used AI tools, they were expected to submit documentation of their interactions (e.g., prompts and responses).",
+          "locator": {
+            "section": "III. Innovative Practice"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-combine-project-deliverables-with-oral-and-qualitative-verification",
+      "practice_name": "Combine project deliverables with oral and qualitative verification",
+      "rationale": "The code submission is accompanied by a narrated walkthrough and game demonstration.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10892956",
+          "quote": "With their final submission, they also needed to record an 8-to-10-minute video, where they describe their code and play a piece of their game to demonstrate how it works.",
+          "locator": {
+            "section": "III. Innovative Practice"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-open-ended-task-defined-by-what-students-must-demonstrate",
+      "practice_name": "Open-ended task defined by what students must demonstrate",
+      "rationale": "The project specifies minimum requirements while awarding work beyond them in an open-ended design.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10892956",
+          "quote": "An open-ended project was given to students in an introduction to programming course allowing students to use AI throughout the project. Minimum requirements were provided with the opportunity to earn additional points by surpassing these requirements.",
+          "locator": {
+            "section": "V. Connections to Research"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "An AI interaction transcript is required."
+    ],
+    "process_evidence": [
+      "AI interaction documentation"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

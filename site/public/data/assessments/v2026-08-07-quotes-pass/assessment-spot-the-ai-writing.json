@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:spot-the-ai-writing",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Can You Spot the AI?",
+  "summary": "Students write two persuasive essays on the same topic, one independently and one with GenAI, and submit them anonymously for peer detection. They then analyze peers' guesses and reflect on AI writing, detection limits, ethical use, and their original prediction.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3660650.3660673",
+      "type": "conference_paper",
+      "title": "Can You Spot the AI? Incorporating GenAI into Technical Writing Assignments",
+      "authors": [
+        "Parsa Rajabi",
+        "Chris Kerslake"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3660650.3660673",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "spot-the-ai",
+      "locator": {
+        "section": "2. The Assignment"
+      },
+      "evidence_quote": "Students are tasked with writing two persuasive essays, one without the use of genAI and the other with the assistance of a genAI tool."
+    }
+  ],
+  "context": {
+    "discipline": "technical writing, professional responsibility, and ethics",
+    "course": {
+      "name": "Professional Responsibility and Technical Writing",
+      "level": "third year",
+      "institution": "Simon Fraser University",
+      "term": "Spring 2024",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "third-year undergraduate computer science students",
+    "cohort_size": 200,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "peer_assessment",
+      "reflection"
+    ],
+    "summary": "Produce matched human- and AI-assisted essays, detect AI assistance in peers' work, and reflect on the results.",
+    "student_actions": [
+      "Write a persuasive essay without GenAI.",
+      "Write a second essay with GenAI assistance.",
+      "Predict whether peers will identify the AI-assisted essay.",
+      "Review two peers' essay pairs and justify detection decisions.",
+      "Compare the prediction with peer guesses.",
+      "Submit a reflective report."
+    ],
+    "outputs": [
+      {
+        "artifact": "Unassisted persuasive essay",
+        "required": true
+      },
+      {
+        "artifact": "GenAI-assisted persuasive essay",
+        "required": true
+      },
+      {
+        "artifact": "Detection prediction and rationale",
+        "required": true
+      },
+      {
+        "artifact": "Two peer reviews",
+        "required": true
+      },
+      {
+        "artifact": "Reflective report",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "structure": [
+      {
+        "part": 1,
+        "name": "Can You Spot the AI?",
+        "description": "Essay writing and prediction."
+      },
+      {
+        "part": 2,
+        "name": "Peer Review",
+        "description": "Identify AI-assisted peer essays and explain the decision."
+      },
+      {
+        "part": 3,
+        "name": "Did They Spot the AI?",
+        "description": "Reflect on detection results and GenAI."
+      }
+    ]
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "GenAI is required for one essay and prohibited for the matched student-only essay."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "component_id": "ai-essay",
+        "permission": "required",
+        "allowed_purposes": [
+          "persuasive essay generation or assistance"
+        ],
+        "disclosure_required": true
+      },
+      {
+        "scope": "component",
+        "component_id": "human-essay",
+        "permission": "prohibited",
+        "prohibited_actions": [
+          "Using GenAI to write the student-only essay"
+        ]
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "other GenAI writing tools",
+      "Ollama as a local alternative"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Students are graded primarily on ethical GenAI use and critical reflection rather than writing quality.",
+    "criteria": [
+      {
+        "criterion": "Effective and ethical GenAI use"
+      },
+      {
+        "criterion": "Reasoning in peer detection"
+      },
+      {
+        "criterion": "Critical reflection"
+      }
+    ],
+    "assessors": [
+      "course instructors",
+      "peers"
+    ]
+  },
+  "evidence": {
+    "study_type": "implemented assignment experience report",
+    "sample": {
+      "participating": 200,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "Student feedback indicated that the activity was engaging and improved understanding of GenAI limitations and use cases."
+    ]
+  },
+  "reuse_artifacts": [
+    {
+      "kind": "brief",
+      "description": "Nifty Assignment Resources",
+      "url": "https://github.com/Parsa-Rajabi/WCCCE-Nifty-Assignment",
+      "availability": "public"
+    }
+  ],
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2f6054d75349_can-you-spot-the-ai-incorporating-genai-into-technical-writing-assignments.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students are tasked with writing two persuasive essays, one without the use of genAI and the other with the assistance of a genAI tool.",
+      "source_id": "doi:10.1145/3660650.3660673",
+      "locator": {
+        "section": "2. The Assignment"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students are tasked with writing two persuasive essays, one without the use of genAI and the other with the assistance of a genAI tool.",
+      "source_id": "doi:10.1145/3660650.3660673",
+      "locator": {
+        "section": "2. The Assignment"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

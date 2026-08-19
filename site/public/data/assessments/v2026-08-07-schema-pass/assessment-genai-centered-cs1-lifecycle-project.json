@@ -1,0 +1,117 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:genai-centered-cs1-lifecycle-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Proposed GenAI-centered CS1 software lifecycle project",
+  "summary": "In a proposed mastery-based CS1 course, students use GenAI to generate and compose small correct code units while focusing on analysis, requirements, design, testing, deployment, and maintenance. Students first master lifecycle stages in isolation and may then complete a larger authentic project.",
+  "implementation_status": "proposed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3699538.3699591",
+      "type": "conference_paper",
+      "title": "Goodbye Hello World - Research Questions for a Future CS1 Curriculum",
+      "authors": [
+        "Hieke Keuning",
+        "Andrew Luxton-Reilly",
+        "Claudia Ott",
+        "Andrew Petersen",
+        "Natalie Kiesler"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3699538.3699591",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "genai-centered-cs1-lifecycle-project",
+      "locator": {
+        "section": "2 Proposed Curriculum"
+      },
+      "evidence_quote": "Students’ activities are modeled after the standard software development lifecycle (analysis, design, development, testing, deployment, and maintenance)."
+    }
+  ],
+  "context": {
+    "discipline": "introductory computer science and software development",
+    "course": {
+      "name": "Proposed GenAI-centered CS1",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "CS1 students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "design_task"
+    ],
+    "summary": "Use GenAI-generated code units to build software while demonstrating mastery across the software-development lifecycle.",
+    "student_actions": [
+      "Elicit requirements and design a solution.",
+      "Decompose problems and prompt GenAI for small code units.",
+      "Compose, integrate, test, deploy, and maintain generated units.",
+      "Resolve integration problems and explain modifications."
+    ],
+    "outputs": [
+      {
+        "artifact": "Lifecycle artifacts and integrated software project",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "The imagined course assumes every student can use GenAI to generate and compose small correct code units."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Code generation and composition",
+          "guidance",
+          "modeling",
+          "explanations"
+        ],
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "unspecified GenAI tools"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-6b5eb2059579_goodbye-hello-world-research-questions-for-a-future-cs1-curriculum.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students’ activities are modeled after the standard software development lifecycle (analysis, design, development, testing, deployment, and maintenance).",
+      "source_id": "doi:10.1145/3699538.3699591",
+      "locator": {
+        "section": "2 Proposed Curriculum"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:codehelp-digital-ta-lab",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Structured CodeHelp debugging and code-writing lab",
+  "summary": "Ask CodeHelp for debugging and code-writing assistance on sample problems, assess its feedback, and reflect on desirable characteristics of a digital teaching assistant. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653574",
+      "type": "conference_paper",
+      "title": "Desirable Characteristics for AI Teaching Assistants in Programming Education",
+      "authors": [
+        "Denny, Paul",
+        "MacNeil, Stephen",
+        "Savelka, Jaromir",
+        "Porter, Leo",
+        "Luxton-Reilly, Andrew"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653574",
+      "url": "https://doi.org/10.1145/3649217.3653574",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "codehelp-digital-ta-lab",
+      "locator": {
+        "section": "3 Methods and 3.2 Lab Tasks"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "Introductory programming course",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "reflection"
+    ],
+    "summary": "Ask CodeHelp for debugging and code-writing assistance on sample problems, assess its feedback, and reflect on desirable characteristics of a digital teaching assistant.",
+    "student_actions": [
+      "Ask CodeHelp for debugging and code-writing assistance on sample problems, assess its feedback, and reflect on desirable characteristics of a digital teaching assistant."
+    ],
+    "outputs": [
+      {
+        "artifact": "Student queries, feedback ratings, and reflections",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "CodeHelp with GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4bcb46b5a02a_desirable-characteristics-for-ai-teaching-assistants-in-programming-education.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3649217.3653574"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Student queries, feedback ratings, and reflections"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

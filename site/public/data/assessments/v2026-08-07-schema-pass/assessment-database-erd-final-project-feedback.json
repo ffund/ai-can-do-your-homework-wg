@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:database-erd-final-project-feedback",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Database final-project ERD design with LLM feedback",
+  "summary": "Teams of up to five students create entity-relationship diagrams for a Database Systems final project. They isolate relationships in a text-based ERD tool, receive rubric-grounded LLM feedback and generated FAQs, revise their designs, and can discuss unclear feedback with course staff.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701940",
+      "type": "conference_paper",
+      "title": "LLM-Driven Feedback for Enhancing Conceptual Design Learning in Database Systems Courses",
+      "authors": [
+        "Sara Riazi",
+        "Pedram Rooshenas"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701940",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "database-erd-final-project-feedback",
+      "locator": {
+        "section": "5 Pilot Study"
+      },
+      "evidence_quote": "The system was piloted in a Database Systems course for the final project of the course. The course has an enrollment of 60 students, and students work in groups of at most five on their final project."
+    }
+  ],
+  "context": {
+    "discipline": "database systems and conceptual design",
+    "course": {
+      "name": "Database Systems",
+      "level": "undergraduate",
+      "institution": "University of Illinois Chicago",
+      "term": "not_reported",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate database students",
+    "cohort_size": 60,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "design_task"
+    ],
+    "summary": "Translate project requirements into an extended entity-relationship diagram and refine the design through relationship-level feedback.",
+    "student_actions": [
+      "Represent an ERD using the system's text grammar.",
+      "Select and isolate a relationship for review.",
+      "Interpret feedback about entities, attributes, cardinalities, keys, and relationship types.",
+      "Revise the ERD and discuss unclear or inaccurate feedback with staff."
+    ],
+    "inputs": [
+      {
+        "description": "Problem requirements augmented by educator-written rubrics and questions",
+        "provided_by": "instructor",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Final-project entity-relationship diagram",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": {
+      "maximum": 5
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students request relationship-level LLM feedback and tailored FAQs while developing the final-project ERD."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Evaluate a selected ERD relationship",
+          "Generate explanatory follow-up questions and answers"
+        ],
+        "validation_required": true
+      }
+    ],
+    "assessment_system_role": [
+      "Convert ERDs to JSON and isolate relationships",
+      "Match relationships to requirements and rubrics",
+      "Generate detailed feedback and FAQs"
+    ],
+    "tools": [
+      "large language model",
+      "Graphviz"
+    ]
+  },
+  "grading": {
+    "status": "not_reported",
+    "human_validation": {
+      "performed": true,
+      "description": "Teaching staff reviewed all 242 AI feedback items and intervened in 79 discussions when feedback was unclear, inaccurate, or prompted questions."
+    }
+  },
+  "evidence": {
+    "study_type": "course final-project pilot",
+    "sample": {
+      "participating": 60,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a7ad97ca2549_llm-driven-feedback-for-enhancing-conceptual-design-learning-in-database-systems-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "The system was piloted in a Database Systems course for the final project of the course. The course has an enrollment of 60 students, and students work in groups of at most five on their final project.",
+      "source_id": "doi:10.1145/3641554.3701940",
+      "locator": {
+        "section": "5 Pilot Study"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

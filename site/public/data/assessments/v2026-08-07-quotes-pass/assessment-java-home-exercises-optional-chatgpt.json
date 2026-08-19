@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-home-exercises-optional-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Java take-home exercises with optional ChatGPT",
+  "summary": "Part-time students complete five weekly Java exercises at home and may use ChatGPT for concepts, syntax, algorithm suggestions, implementation, or review. Submissions receive lecturer feedback and contribute points toward the practical course threshold.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/access.2024.3380909",
+      "type": "journal_article",
+      "title": "Students’ Experiences of Using ChatGPT in an Undergraduate Programming Course",
+      "authors": [
+        "Philipp Haindl",
+        "Gerald Weinberger"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/access.2024.3380909",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-home-exercises-optional-chatgpt",
+      "locator": {
+        "section": "III Method"
+      },
+      "evidence_quote": "Students were required to attend five on-campus lectures, complete the exercises at home"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "Java programming",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "part-time Information Security bachelor's students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Complete weekly Java exercises on OOP, exceptions, collections, I/O, streams, lambdas, and multithreading.",
+    "student_actions": [
+      "Implement each take-home exercise.",
+      "Optionally use ChatGPT for learning or implementation support.",
+      "Submit code for individual lecturer feedback.",
+      "Complete a survey after submission."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java implementations and optional survey responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT use was optional for each exercise; students used GPT-3.5 or GPT-4 and reported their use."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Each exercise was worth 50 points; 60% of total exercise points was the positive-grade threshold."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fa84f6acb6c5_students-experiences-of-using-chatgpt-in-an-undergraduate-programming-course.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Twenty-two students participated over five weeks; reported ChatGPT use ranged from 12 to 19 students per exercise."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were required to attend five on-campus lectures, complete the exercises at home",
+      "source_id": "doi:10.1109/access.2024.3380909",
+      "locator": {
+        "section": "III Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

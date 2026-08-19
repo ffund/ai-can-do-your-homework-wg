@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:intro-cs-homework-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Introduction to Computer Science homework",
+  "summary": "Students solve introductory computer science homework questions. ChatGPT was tested offline on the same questions and achieved performance comparable to students, indicating substantial exposure if external AI use is uncontrolled.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/mis.2023.3255599",
+      "type": "journal_article",
+      "title": "Rethinking Homework in the Age of Artificial Intelligence",
+      "authors": [
+        "Hazem Ibrahim",
+        "Rohail Asim",
+        "Fareed Zaffar",
+        "Talal Rahwan",
+        "Yasir Zaki"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/mis.2023.3255599",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "intro-cs-homework-chatgpt",
+      "locator": {
+        "section": "Results"
+      },
+      "evidence_quote": "selected 10 questions from homework assignments"
+    }
+  ],
+  "context": {
+    "discipline": "Computer science",
+    "course": {
+      "name": "Introduction to Computer Science",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "university students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Solve ten sampled homework questions from an introductory computer science course.",
+    "student_actions": [
+      "Develop and submit solutions to introductory computing questions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Homework solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers generated ChatGPT answers and had them blindly graded alongside student work."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Three professional graders evaluated the submissions."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:english-composition-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:discrete-math-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:computer-networks-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1c2fd749f8f0_rethinking-homework-in-the-age-of-artificial-intelligence.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Three student solutions and three ChatGPT answers were sampled for each of ten questions; ChatGPT averaged 80% versus students' 90%."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "selected 10 questions from homework assignments",
+      "source_id": "doi:10.1109/mis.2023.3255599",
+      "locator": {
+        "section": "Results"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

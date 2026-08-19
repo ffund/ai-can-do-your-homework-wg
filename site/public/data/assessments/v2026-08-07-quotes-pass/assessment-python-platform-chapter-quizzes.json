@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-platform-chapter-quizzes",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "AI-graded Python chapter quizzes",
+  "summary": "Complete chapter quizzes and receive an AI-generated grade, personalized feedback, and suggestions for improvement. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/uemcon62879.2024.10754661",
+      "type": "conference_paper",
+      "title": "Development and Evaluation of an AI-Enhanced Python Programming Education System",
+      "authors": [
+        "Zabala, Eric",
+        "Narman, Husnu S."
+      ],
+      "year": 2024,
+      "identifier": "10.1109/uemcon62879.2024.10754661",
+      "url": "https://doi.org/10.1109/uemcon62879.2024.10754661",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-platform-chapter-quizzes",
+      "locator": {
+        "section": "III Implementation - Chapter Quiz"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "AI-enhanced Python learning platform",
+      "level": "beginner learners of any age",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "beginner learners of any age",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Complete chapter quizzes and receive an AI-generated grade, personalized feedback, and suggestions for improvement.",
+    "student_actions": [
+      "Complete chapter quizzes and receive an AI-generated grade, personalized feedback, and suggestions for improvement."
+    ],
+    "outputs": [
+      {
+        "artifact": "Quiz responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-3.5 Turbo grading system"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bc8603b8edba_development-and-evaluation-of-an-ai-enhanced-python-programming-education-system.pdf"
+  }
+}
+
+

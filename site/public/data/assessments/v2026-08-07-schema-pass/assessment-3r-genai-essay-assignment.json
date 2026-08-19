@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:3r-genai-essay-assignment",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "3R-graded GenAI-assisted essay assignment example",
+  "summary": "In a proposed assessment example, students may use ChatGPT to draft an essay but must report their use and attach the original output, substantially revise it with their own contributions, and reflect on learning. A 3R rubric weights Report, Revise, and Reflect at 25%, 50%, and 25% and scales the essay grade by demonstrated contribution.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/TALE56641.2023.10398408",
+      "type": "conference_paper",
+      "title": "Grading Generative AI-based Assignments Using a 3R Framework",
+      "authors": [
+        "Henry C. B. Chan"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/TALE56641.2023.10398408",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "3r-genai-essay-example",
+      "locator": {
+        "section": "III. Case Discussion"
+      },
+      "evidence_quote": "For illustration purposes, we consider two types of assignments: essay assignments and programming assignments."
+    }
+  ],
+  "context": {
+    "discipline": "academic writing",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Write an essay with optional ChatGPT assistance and document, revise, and reflect on any generated content.",
+    "student_actions": [
+      "Report how GenAI was used and summarize its output.",
+      "Revise the output with original contributions.",
+      "Reflect specifically on learning."
+    ],
+    "outputs": [
+      {
+        "artifact": "Final essay",
+        "required": true
+      },
+      {
+        "artifact": "Original GenAI output",
+        "required": "unknown"
+      },
+      {
+        "artifact": "3R report form",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GenAI is optional, but use triggers reporting, attachment, revision, and reflection requirements."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "disclosure_required": true,
+        "disclosure_artifact": "3R report form",
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "other GenAI tools"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Artifact grade multiplied by a proportion term derived from the 3R rubric.",
+    "criteria": [
+      {
+        "criterion": "Report",
+        "weight_percent": 25
+      },
+      {
+        "criterion": "Revise",
+        "weight_percent": 50
+      },
+      {
+        "criterion": "Reflect",
+        "weight_percent": 25
+      }
+    ]
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:3r-genai-programming-assignment",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f63e1397246c_grading-generative-ai-based-assignments-using-a-3r-framework.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "For illustration purposes, we consider two types of assignments: essay assignments and programming assignments.",
+      "source_id": "doi:10.1109/TALE56641.2023.10398408",
+      "locator": {
+        "section": "III. Case Discussion"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

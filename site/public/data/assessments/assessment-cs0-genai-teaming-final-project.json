@@ -1,0 +1,328 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs0-genai-teaming-final-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Student-GenAI teaming final project",
+  "summary": "Freshman non-majors create a novel software, hardware, web, art, or other product by teaming with one or more GenAI tools. They submit the product, process evidence, full AI transcripts, a critical reflection, and a three-minute demonstration, with grading that rewards substantial personal contribution.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701853",
+      "type": "conference_paper",
+      "title": "Fostering Creativity: Student-Generative AI Teaming in an Open-Ended CS0 Assignment",
+      "authors": [
+        "Daniel Filcik",
+        "Edward Sobiesk",
+        "Suzanne J. Matthews"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701853",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs0-genai-final-project",
+      "locator": {
+        "section": "3.2. The Generative AI Final Project"
+      },
+      "evidence_quote": "The AI Final Project is your opportunity to explore and team up with an artificial intelligence tool to create something cool and inspiring."
+    }
+  ],
+  "context": {
+    "discipline": "general-education computing",
+    "course": {
+      "name": "CY105 Introduction to Computing",
+      "code": "CY105",
+      "level": "freshman",
+      "institution": "United States Military Academy",
+      "term": "Spring 2024",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate students, predominantly non-computing majors",
+    "cohort_size": 544,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 10
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "reflection",
+      "presentation"
+    ],
+    "summary": "Create a working product or prototype that demonstrates meaningful collaboration between the student and GenAI.",
+    "student_actions": [
+      "Propose a project and obtain instructor approval.",
+      "Use one or more GenAI tools to create a product.",
+      "Make a substantial personal contribution beyond raw AI output.",
+      "Document prompts, responses, and work in progress.",
+      "Reflect on AI contributions, copyright, strengths, and limitations.",
+      "Give a three-minute in-class demonstration."
+    ],
+    "outputs": [
+      {
+        "artifact": "Working product or prototype",
+        "required": true
+      },
+      {
+        "artifact": "Source files or other project artifacts",
+        "required": true
+      },
+      {
+        "artifact": "Full AI transcripts",
+        "required": true
+      },
+      {
+        "artifact": "Process screenshots or photographs",
+        "required": true
+      },
+      {
+        "artifact": "Critical written reflection",
+        "required": true
+      },
+      {
+        "artifact": "Three-minute presentation",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "mixed",
+      "deadline": "Approximately three weeks"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Teaming with GenAI is mandatory, but the project must require meaningful student work and not be achievable by AI in a few prompts."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "software development",
+          "hardware development",
+          "website creation",
+          "art creation",
+          "other approved creative work"
+        ],
+        "prohibited_actions": [
+          "Submitting a product produced essentially entirely by AI",
+          "Using AI as the only source of artistic expression"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Microsoft Copilot",
+      "Replit AI",
+      "Gemini",
+      "Stable Diffusion",
+      "DALL-E",
+      "student-selected tools"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "course_weight_percent": 10,
+    "method": "Instructor grading of product, presentation, reflection, creativity, and student contribution.",
+    "criteria": [
+      {
+        "criterion": "Overall project and presentation quality"
+      },
+      {
+        "criterion": "Creativity"
+      },
+      {
+        "criterion": "Strength of written reflection"
+      },
+      {
+        "criterion": "Personal contribution to the human-AI team"
+      }
+    ],
+    "assessors": [
+      "course instructors"
+    ]
+  },
+  "evidence": {
+    "study_type": "course redesign comparison",
+    "sample": {
+      "participating": 544,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "91% of students used ChatGPT, approximately 14% used two AI tools, and 2% used three.",
+      "Projects included software, hardware, websites, art, and other products."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-b8a62a2a637e_fostering-creativity-student-generative-ai-teaming-in-an-open-ended-cs0-assignment.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The AI Final Project is your opportunity to explore and team up with an artificial intelligence tool to create something cool and inspiring.",
+      "source_id": "doi:10.1145/3641554.3701853",
+      "locator": {
+        "section": "3.2. The Generative AI Final Project"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "The AI Final Project is your opportunity to explore and team up with an artificial intelligence tool to create something cool and inspiring.",
+      "source_id": "doi:10.1145/3641554.3701853",
+      "locator": {
+        "section": "3.2. The Generative AI Final Project"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "Students were required to team with generative AI to create something beyond what they alone (or the AI alone) could accomplish.",
+      "source_id": "doi:10.1145/3641554.3701853",
+      "locator": {
+        "section": "abstract"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "Regardless of their project choice, students were required to provide full transcripts of their conversations with AI, screenshots of work in progress, and turn in any source code or other artifacts they created.",
+      "source_id": "doi:10.1145/3641554.3701853",
+      "locator": {
+        "section": "3.2 The Generative AI Final Project"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "verification",
+      "quote": "Upon completion, students submitted a short written critical analysis documenting their experiences and presented a three-minute demonstration of their project in class.",
+      "source_id": "doi:10.1145/3641554.3701853",
+      "locator": {
+        "section": "abstract"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701853"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-collect-process-evidence",
+      "practice_name": "Collect process evidence",
+      "rationale": "Students submit complete AI transcripts and work-in-progress evidence.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701853",
+          "quote": "Regardless of their project choice, students were required to provide full transcripts of their conversations with AI, screenshots of work in progress, and turn in any source code or other artifacts they created.",
+          "locator": {
+            "section": "3.2 The Generative AI Final Project"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-combine-project-deliverables-with-oral-and-qualitative-verification",
+      "practice_name": "Combine project deliverables with oral and qualitative verification",
+      "rationale": "Students submit the project and critical analysis and present an in-class demonstration.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701853",
+          "quote": "Upon completion, students submitted a short written critical analysis documenting their experiences and presented a three-minute demonstration of their project in class.",
+          "locator": {
+            "section": "abstract"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-deliberately-over-scope-a-project-assuming-ai-use",
+      "practice_name": "Deliberately over-scope a project assuming AI use",
+      "rationale": "The project requires student-AI teaming on work beyond what either could accomplish alone.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701853",
+          "quote": "Students were required to team with generative AI to create something beyond what they alone (or the AI alone) could accomplish.",
+          "locator": {
+            "section": "abstract"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-use-a-three-part-deliverable-interaction-log-and-reflection-submission",
+      "practice_name": "Use a three-part deliverable, interaction-log, and reflection submission",
+      "rationale": "The submission combines the product, full AI transcripts, and a critical analysis.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701853",
+          "quote": "Regardless of their project choice, students were required to provide full transcripts of their conversations with AI, screenshots of work in progress, and turn in any source code or other artifacts they created.",
+          "locator": {
+            "section": "3.2 The Generative AI Final Project"
+          }
+        },
+        {
+          "source_id": "doi:10.1145/3641554.3701853",
+          "quote": "Upon completion, students submitted a short written critical analysis documenting their experiences and presented a three-minute demonstration of their project in class.",
+          "locator": {
+            "section": "abstract"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "An AI interaction transcript is required.",
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "Full AI transcripts",
+      "Critical written reflection"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

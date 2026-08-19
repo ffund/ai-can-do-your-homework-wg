@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:prompt-problems-promptly",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Prompt Problems in Promptly",
+  "summary": "CS1 and CS2 students infer programming requirements from visual examples and write a natural-language prompt that makes an LLM generate correct Python code. Generated code is automatically tested, and students iteratively revise only the prompt until all tests pass.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630909",
+      "type": "conference_paper",
+      "title": "Prompt Problems: A New Programming Exercise for the Generative AI Era",
+      "authors": [
+        "Paul Denny",
+        "Juho Leinonen",
+        "James Prather",
+        "Andrew Luxton-Reilly",
+        "Thezyrie Amarouche",
+        "Brett A. Becker",
+        "Brent N. Reeves"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630909",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "prompt-problems",
+      "locator": {
+        "section": "4. Practicing Prompt Problems"
+      },
+      "evidence_quote": "A student solves a Prompt Problem by crafting a natural language prompt which, when provided as input to an LLM, outputs code that successfully solves a specified programming task."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "Python CS1 and CS2 courses",
+      "level": "introductory undergraduate",
+      "institution": "University of Auckland",
+      "term": "July 2023",
+      "delivery_language": "English",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "CS1 and CS2 undergraduate students",
+    "cohort_size": 858,
+    "research_sample_size": 240,
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": 0
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Interpret a visual input/output specification and construct a prompt that causes ChatGPT to generate a passing Python program or function.",
+    "student_actions": [
+      "Infer the general computational task from visual examples.",
+      "Write a self-contained natural-language prompt.",
+      "Inspect generated code and test feedback.",
+      "Revise the prompt until the generated code passes."
+    ],
+    "outputs": [
+      {
+        "artifact": "Successful natural-language prompt",
+        "required": true
+      },
+      {
+        "artifact": "LLM-generated code passing the instructor tests",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 3,
+    "delivery": {
+      "modality": "online",
+      "setting": "lab",
+      "platforms": [
+        "Promptly",
+        "ChatGPT",
+        "CodeRunner/Jobe"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "The task is completed by writing prompts for the integrated LLM; students cannot edit the generated code."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "code generation from a student-authored prompt"
+        ],
+        "validation_required": true,
+        "disclosure_required": false,
+        "transcript_required": false
+      }
+    ],
+    "tools": [
+      "Promptly",
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable",
+    "method": "Ungraded optional lab; the system reports success when generated code passes the full test suite.",
+    "process": [
+      "Only the first failing test is shown after an unsuccessful attempt.",
+      "Students must solve each problem to progress to the next."
+    ],
+    "feedback": "Immediate automated test feedback."
+  },
+  "evidence": {
+    "study_type": "classroom pilot",
+    "sample": {
+      "invited": 858,
+      "participating": 240,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "58 of 414 CS1 students and 182 of 444 CS2 students attempted at least one problem.",
+      "Success rates for individual problems ranged from 65% to 99% among students attempting them."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c0727ca56f24_prompt-problems-a-new-programming-exercise-for-the-generative-ai-era.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "A student solves a Prompt Problem by crafting a natural language prompt which, when provided as input to an LLM, outputs code that successfully solves a specified programming task.",
+      "source_id": "doi:10.1145/3626252.3630909",
+      "locator": {
+        "section": "4. Practicing Prompt Problems"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "A student solves a Prompt Problem by crafting a natural language prompt which, when provided as input to an LLM, outputs code that successfully solves a specified programming task.",
+      "source_id": "doi:10.1145/3626252.3630909",
+      "locator": {
+        "section": "4. Practicing Prompt Problems"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

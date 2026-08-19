@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:tutor-kai-exam-preparation-tasks",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Tutor Kai programming tasks with lecture-grounded GPT-4 feedback",
+  "summary": "Students complete familiar and new programming tasks in a voluntary exam-preparation workshop. For each code submission, they can request fast GPT-4 feedback or slower RAG feedback linked to relevant timestamps in lecture videos.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/CSEET62301.2024.10663001",
+      "type": "conference_paper",
+      "title": "Leveraging Lecture Content for Improved Feedback: Explorations with GPT-4 and Retrieval Augmented Generation",
+      "authors": [
+        "Sven Jacobs",
+        "Steffen Jaschke"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CSEET62301.2024.10663001",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "tutor-kai-exam-preparation-tasks",
+      "locator": {
+        "section": "IV. Evaluation"
+      },
+      "evidence_quote": "As part of a voluntary exam preparation workshop, 15 students participated and used Tutor Kai for two to four hours in person and more online over the following three weeks."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "not_reported",
+      "level": "introductory undergraduate",
+      "institution": "University of Siegen",
+      "term": "not_reported",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "students preparing for a programming exam",
+    "cohort_size": 15,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "exam"
+    ],
+    "summary": "Solve programming tasks and revise code using generated feedback that may link to supporting lecture-video segments.",
+    "student_actions": [
+      "Write and submit code for familiar and ten new programming tasks.",
+      "Review compiler and unit-test results.",
+      "Choose feedback with or without retrieved lecture information.",
+      "Revise solutions without receiving code or the complete answer."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming-task code submissions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "mixed"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students choose between direct GPT-4 feedback and RAG-enhanced GPT-4 feedback linked to lecture recordings."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Receive concise feedback and links to relevant lecture content"
+        ],
+        "prohibited_actions": [
+          "Receive code or the assessment solution"
+        ],
+        "validation_required": "not_reported"
+      }
+    ],
+    "assessment_system_role": [
+      "Diagnose missing concepts from code, tests, and compiler output",
+      "Retrieve lecture transcript passages",
+      "Generate feedback with timestamped lecture links"
+    ],
+    "tools": [
+      {
+        "name": "Tutor Kai",
+        "model": "GPT-4-1106-preview"
+      },
+      {
+        "name": "Whisper"
+      },
+      {
+        "name": "Retrieval-augmented generation"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "exam-preparation workshop evaluation",
+    "sample": {
+      "participating": 15,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-cfefefec70f6_leveraging-lecture-content-for-improved-feedback-explorations-with-gpt-4-and-retrieval-augmented.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "As part of a voluntary exam preparation workshop, 15 students participated and used Tutor Kai for two to four hours in person and more online over the following three weeks.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10663001",
+      "locator": {
+        "section": "IV. Evaluation"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

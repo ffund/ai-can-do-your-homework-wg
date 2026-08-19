@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:capstone-ai-user-story-refinement",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "OpenAI-assisted capstone user-story refinement",
+  "summary": "Senior capstone teams first collect and write user stories through stakeholder brainstorming, then use OpenAI models and prompting techniques to refine those stories and discover omitted requirements. Industry experts assess the resulting stories for quality and comprehensiveness.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/fie61694.2024.10893343",
+      "type": "conference_paper",
+      "title": "Enhancing User Story Generation in Agile Software Development Through Open AI and Prompt Engineering",
+      "authors": [
+        "Vijayalakshmi Ramasamy",
+        "Suganya Ramamoorthy",
+        "Gursimran Singh Walia",
+        "Eli Kulpinski",
+        "Aaron Antreassian"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/fie61694.2024.10893343",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "capstone-ai-user-story-refinement",
+      "locator": {
+        "section": "III. Study Design"
+      },
+      "evidence_quote": "The students have been assigned Task 1 of developing applications using traditional brainstorming methods."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and requirements engineering",
+    "course": {
+      "name": "senior capstone project",
+      "level": "senior undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "senior undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "design_task"
+    ],
+    "summary": "Senior capstone teams first collect and write user stories through stakeholder brainstorming, then use OpenAI models and prompting techniques to refine those stories and discover omitted requirements.",
+    "student_actions": [
+      "Elicit stakeholder requirements.",
+      "Write user stories through traditional brainstorming.",
+      "Use OpenAI models to refine and extend the stories.",
+      "Review the resulting requirements."
+    ],
+    "outputs": [
+      {
+        "artifact": "human-authored user stories",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "AI-refined user stories",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "prompt records",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Industry experts assess the resulting stories for quality and comprehensiveness."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7a3346167c10_enhancing-user-story-generation-in-agile-software-development-through-open-ai-and-prompt-enginee.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The students have been assigned Task 1 of developing applications using traditional brainstorming methods.",
+      "source_id": "doi:10.1109/fie61694.2024.10893343",
+      "locator": {
+        "section": "III. Study Design"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

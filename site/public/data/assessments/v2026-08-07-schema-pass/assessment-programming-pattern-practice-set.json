@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:programming-pattern-practice-set",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Programming-pattern practice exercises",
+  "summary": "CS1 students complete eight ungraded Python exercises by translating step-by-step programming-pattern comments into code and submitting to CodeRunner. Students have unlimited attempts; the paper evaluates how readily GitHub Copilot can solve the same briefs and generate tests and explanations.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3545945.3569830",
+      "type": "conference_paper",
+      "title": "Using GitHub Copilot to Solve Simple Programming Problems",
+      "authors": [
+        "Michel Wermelinger"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3545945.3569830",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "eight-programming-pattern-exercises",
+      "locator": {
+        "section": "4.1 Programming Pattern Exercises"
+      },
+      "evidence_quote": "Students write the corresponding code line(s) after each comment. CodeRunner runs some tests and presents the results. Students have unlimited attempts: the exercises aren't graded."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "introductory programming students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "Implement eight Python programs from problem briefs and programming-pattern comments, using automated tests over unlimited attempts.",
+    "student_actions": [
+      "Translate programming-pattern comments into Python code.",
+      "Submit solutions to CodeRunner.",
+      "Use test feedback to revise solutions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Eight Python programs",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 8
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "unknown",
+      "description": "The author tested Copilot on existing student exercises; the source does not report student permission."
+    },
+    "assessment_system_role": [
+      "benchmark subject"
+    ],
+    "tools": [
+      "GitHub Copilot"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1e26ec5dc993_using-github-copilot-to-solve-simple-programming-problems.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students write the corresponding code line(s) after each comment. CodeRunner runs some tests and presents the results. Students have unlimited attempts: the exercises aren't graded.",
+      "source_id": "doi:10.1145/3545945.3569830",
+      "locator": {
+        "section": "4.1 Programming Pattern Exercises"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "grading",
+      "quote": "Students write the corresponding code line(s) after each comment. CodeRunner runs some tests and presents the results. Students have unlimited attempts: the exercises aren't graded.",
+      "source_id": "doi:10.1145/3545945.3569830",
+      "locator": {
+        "section": "4.1 Programming Pattern Exercises"
+      },
+      "supports": "Grading and stakes",
+      "context": "authors_report"
+    }
+  ]
+}
+

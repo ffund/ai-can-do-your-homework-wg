@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:no-ai-python-section-quizzes",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "No-AI introductory Python section quizzes",
+  "summary": "Students in conventional and ChatGPT-assisted course groups take a quiz after each of three 45-minute Python sessions. The quizzes assess programming concepts and coding problem solving without ChatGPT access.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613905.3637148",
+      "type": "conference_paper",
+      "title": "Leveraging ChatGPT for Adaptive Learning through Personalized Prompt-based Instruction: A CS1 Education Case Study",
+      "authors": [
+        "Mohammad Abolnejadian",
+        "Sharareh Alipour",
+        "Kamyar Taeb"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3613905.3637148",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "no-ai-python-section-quizzes",
+      "locator": {
+        "section": "5.2 Course Implementation and Evaluation"
+      },
+      "evidence_quote": "After each session, a quiz is administered to all the classes. These tests assess students' knowledge of the corresponding sections' content and ability to solve problems and code. Neither group of students was allowed to use ChatGPT during the quiz."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "Introductory Python course experiment",
+      "level": "high school",
+      "institution": "not_reported",
+      "term": "not_reported",
+      "level_category": "pre_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "high-school students",
+    "cohort_size": 85,
+    "learner_level_category": "pre_introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Answer programming-concept and coding problem-solving questions after each of three course sections.",
+    "student_actions": [
+      "Recall Python concepts taught in the session.",
+      "Solve programming and coding questions without ChatGPT."
+    ],
+    "outputs": [
+      {
+        "artifact": "Three quiz response sets",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "synchronous"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "Both experimental groups were prohibited from using ChatGPT during the quizzes."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "prohibited_actions": [
+          "Use ChatGPT during a quiz"
+        ]
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Researchers compared average quiz scores between the conventional and ChatGPT-assisted instruction groups."
+  },
+  "evidence": {
+    "study_type": "comparative classroom experiment",
+    "sample": {
+      "participating": 85,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:personalized-python-practice-exercises",
+      "relationship": "follows"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-046292f40fea_leveraging-chatgpt-for-adaptive-learning-through-personalized-prompt-based-instruction-a-cs1-edu.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "After each session, a quiz is administered to all the classes. These tests assess students' knowledge of the corresponding sections' content and ability to solve problems and code. Neither group of students was allowed to use ChatGPT during the quiz.",
+      "source_id": "doi:10.1145/3613905.3637148",
+      "locator": {
+        "section": "5.2 Course Implementation and Evaluation"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "After each session, a quiz is administered to all the classes. These tests assess students' knowledge of the corresponding sections' content and ability to solve problems and code. Neither group of students was allowed to use ChatGPT during the quiz.",
+      "source_id": "doi:10.1145/3613905.3637148",
+      "locator": {
+        "section": "5.2 Course Implementation and Evaluation"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:upper-level-semester-project-llm",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Upper-level computing semester project with LLM tools",
+  "summary": "Upper-level computing students complete a semester-long project while choosing how to use large language models across development tasks. The study records uses such as ideation, explanation, debugging, and code generation and examines how students verify and incorporate model output.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.48550/arXiv.2403.18679",
+      "type": "preprint",
+      "title": "An Exploratory Study on Upper-Level Computing Students' Use of Large Language Models as Tools in a Semester-Long Project",
+      "authors": [
+        "Ben Arie Tanay",
+        "Lexy Arinze",
+        "Siddhant S. Joshi",
+        "Kirsten A. Davis",
+        "James C. Davis"
+      ],
+      "year": 2024,
+      "identifier": "10.48550/arXiv.2403.18679",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "upper-level-semester-project-llm"
+    }
+  ],
+  "context": {
+    "discipline": "upper-level computing",
+    "course": {
+      "name": "not_reported",
+      "level": "upper-level undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "upper-level undergraduate",
+    "learner_level_category": "advanced",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Develop a semester-long computing project with discretionary use of LLM tools.",
+    "student_actions": [
+      "Plan and implement a computing project.",
+      "Choose, verify, and integrate LLM assistance across project tasks."
+    ],
+    "outputs": [
+      {
+        "artifact": "Semester-long computing project",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "timing": {
+      "mode": "asynchronous",
+      "release": "semester-long"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use LLMs for a range of project activities."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "unknown",
+        "validation_required": "unknown"
+      }
+    ],
+    "tools": [
+      "large language models"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c7940b5c03e0_an-exploratory-study-on-upper-level-computing-students-use-of-large-language-models-as-tools-in.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.48550/arXiv.2403.18679"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

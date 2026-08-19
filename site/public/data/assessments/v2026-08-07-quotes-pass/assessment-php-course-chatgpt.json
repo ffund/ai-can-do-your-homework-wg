@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:php-course-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "PHP programming tasks with ChatGPT support",
+  "summary": "Students in a PHP programming course complete programming tasks with access to ChatGPT in the intervention condition. The study compares learning or performance against conventional course support and examines the effect of incorporating ChatGPT into practical programming work.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/isas60782.2023.10391549",
+      "type": "conference_paper",
+      "title": "Assessing the Impact of ChatGPT in a PHP Programming Course",
+      "authors": [
+        "Jana Al Hajj",
+        "Melike Sah"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/ISAS60782.2023.10391549",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "php-course-chatgpt"
+    }
+  ],
+  "context": {
+    "discipline": "PHP programming",
+    "course": {
+      "name": "PHP programming course",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Complete PHP programming tasks with ChatGPT available as a learning and coding aid in the intervention condition.",
+    "student_actions": [
+      "Develop PHP solutions.",
+      "Prompt and evaluate ChatGPT responses when assigned access."
+    ],
+    "outputs": [
+      {
+        "artifact": "PHP programming-task solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students in the intervention condition may use ChatGPT during PHP tasks."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "disclosure_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Student performance was compared across study conditions."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4c1d52db7dae_assessing-the-impact-of-chatgpt-in-a-php-programming-course.pdf"
+  }
+}
+
+

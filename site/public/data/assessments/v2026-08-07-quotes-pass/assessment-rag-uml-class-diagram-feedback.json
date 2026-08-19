@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:rag-uml-class-diagram-feedback",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "UML class-diagram exercise with RAG feedback",
+  "summary": "Students construct UML class diagrams for software-modeling exercises and receive enriched feedback from a retrieval-augmented LLM integrated into the learning environment. The system uses accumulated domain knowledge to explain issues in a submitted diagram and support revision.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3652620.3687784",
+      "type": "conference_paper",
+      "title": "A RAG-based Feedback Tool to Augment UML Class Diagram Learning",
+      "authors": [
+        "Pasquale Ardimento",
+        "Mario Luca Bernardi",
+        "Marta Cimitile",
+        "Michele Scalera"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3652620.3687784",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "rag-uml-class-diagram-feedback"
+    }
+  ],
+  "context": {
+    "discipline": "software modeling and UML",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "design_task"
+    ],
+    "summary": "Create and revise a UML class diagram with automated retrieval-augmented feedback.",
+    "student_actions": [
+      "Construct a UML class diagram.",
+      "Review AI-generated feedback and revise the model."
+    ],
+    "outputs": [
+      {
+        "artifact": "UML class diagram",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "delivery": {
+      "modality": "online",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students receive LLM-generated feedback on their diagrams through the tool."
+    },
+    "assessment_system_role": [
+      "Generate feedback grounded in retrieved UML learning resources."
+    ],
+    "tools": [
+      "retrieval-augmented large language model"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7d7285a1ce49_a-rag-based-feedback-tool-to-augment-uml-class-diagram-learning.pdf"
+  }
+}
+
+

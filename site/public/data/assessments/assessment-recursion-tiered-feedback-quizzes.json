@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:recursion-tiered-feedback-quizzes",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Recursion quizzes with tiered GPT-4 feedback",
+  "summary": "CS3 students complete four low-stakes, 15-minute programming quizzes on recursion and algorithmic complexity. GPT-4 evaluates concept, syntax, and complexity, then chooses whether to build on the student's code, provide an efficient solution, or restart with guiding questions.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630960",
+      "type": "conference_paper",
+      "title": "Using GPT-4 to Provide Tiered, Formative Code Feedback",
+      "authors": [
+        "Ha Nguyen",
+        "Vicki Allan"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630960",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "four-recursion-practice-quizzes",
+      "locator": {
+        "section": "3 Context and Example GPT-4 Feedback"
+      },
+      "evidence_quote": "In this paper, we test the model's capacity with four programming questions focusing on recursion."
+    }
+  ],
+  "context": {
+    "discipline": "algorithms and data structures",
+    "course": {
+      "name": "CS3 algorithms and data structures",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "cohort_size": 80,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz",
+      "problem_set"
+    ],
+    "summary": "Solve four short recursion problems involving binary arrays, trees, median selection, and subset sum.",
+    "student_actions": [
+      "Write code or pseudocode for four recursion problems.",
+      "Explain algorithmic complexity where requested.",
+      "Review tiered feedback on concept, syntax, complexity, code, and next steps."
+    ],
+    "outputs": [
+      {
+        "artifact": "Four programming quiz responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 15,
+    "question_or_item_count": 4
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "The quiz format prevents outside help; the reported study generated GPT-4 feedback on prior submissions for instructor evaluation."
+    },
+    "assessment_system_role": [
+      "tiered formative feedback generation"
+    ],
+    "tools": [
+      "GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Completion points; the instructor grades a random third of submissions and provides detailed feedback."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ad9f782f3fa8_using-gpt-4-to-provide-tiered-formative-code-feedback.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "In this paper, we test the model's capacity with four programming questions focusing on recursion.",
+      "source_id": "doi:10.1145/3626252.3630960",
+      "locator": {
+        "section": "3 Context and Example GPT-4 Feedback"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3626252.3630960"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "scaffolding": {
+    "supports": [
+      "tiered formative feedback generation"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

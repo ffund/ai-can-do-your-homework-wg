@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:active-repos-genai-workflow",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 GitHub assignments with Active Repos GenAI workflows",
+  "summary": "Students complete introductory programming work in GitHub repositories configured with generative-AI workflows. Repository events provide a structured way to request AI support and retain the interaction alongside code changes, making the development process visible within the assignment workspace.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649405.3659517",
+      "type": "conference_paper",
+      "title": "Active Repos: Integrating Generative AI Workflows into GitHub",
+      "authors": [
+        "Richard Glassey",
+        "Alexander Baltatzis"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649405.3659517",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "active-repos-genai-workflow"
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "project"
+    ],
+    "summary": "Develop programming work in a GitHub repository with integrated generative-AI assistance.",
+    "student_actions": [
+      "Implement and revise code in GitHub.",
+      "Invoke repository-based AI workflows and evaluate their responses."
+    ],
+    "outputs": [
+      {
+        "artifact": "GitHub repository containing code and development history",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "delivery": {
+      "modality": "online",
+      "setting": "take_home",
+      "platforms": [
+        "GitHub"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use GenAI through workflows embedded in assignment repositories."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "unknown",
+        "transcript_required": "unknown",
+        "validation_required": "unknown"
+      }
+    ],
+    "assessment_system_role": [
+      "Respond to repository events with assignment-aware assistance."
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-833cba1d9b69_active-repos-integrating-generative-ai-workflows-into-github.pdf"
+  }
+}
+
+

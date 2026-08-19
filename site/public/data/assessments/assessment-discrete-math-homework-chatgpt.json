@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:discrete-math-homework-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Discrete Mathematics homework",
+  "summary": "Students solve advanced discrete mathematics homework questions. ChatGPT was evaluated offline on the same questions and substantially underperformed students; the source does not report student AI permissions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/mis.2023.3255599",
+      "type": "journal_article",
+      "title": "Rethinking Homework in the Age of Artificial Intelligence",
+      "authors": [
+        "Hazem Ibrahim",
+        "Rohail Asim",
+        "Fareed Zaffar",
+        "Talal Rahwan",
+        "Yasir Zaki"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/mis.2023.3255599",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "discrete-math-homework-chatgpt",
+      "locator": {
+        "section": "Results"
+      },
+      "evidence_quote": "two more advanced courses, namely, Discrete Mathematics"
+    }
+  ],
+  "context": {
+    "discipline": "Discrete mathematics",
+    "course": {
+      "name": "Discrete Mathematics",
+      "level": "advanced undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "university students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Solve ten sampled discrete mathematics homework questions.",
+    "student_actions": [
+      "Develop and submit mathematical solutions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Homework solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "ChatGPT answers were generated for blind comparison rather than provided to students."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Three professional graders evaluated submissions."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:english-composition-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:intro-cs-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:computer-networks-homework-chatgpt",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1c2fd749f8f0_rethinking-homework-in-the-age-of-artificial-intelligence.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "ChatGPT averaged 42% versus students' 85%."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "two more advanced courses, namely, Discrete Mathematics",
+      "source_id": "doi:10.1109/mis.2023.3255599",
+      "locator": {
+        "section": "Results"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1109/mis.2023.3255599"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

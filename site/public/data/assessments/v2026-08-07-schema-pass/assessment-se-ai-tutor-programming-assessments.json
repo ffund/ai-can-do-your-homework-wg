@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:se-ai-tutor-programming-assessments",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Software engineering programming assessments with an LLM tutor",
+  "summary": "Students work on programming assessments through an automated assessment system and can receive LLM-generated tutoring feedback. The study compares tutor configurations and examines whether feedback helps students progress without exposing a complete solution.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3639474.3640061",
+      "type": "conference_paper",
+      "title": "AI-Tutoring in Software Engineering Education",
+      "authors": [
+        "Eduard Frankford",
+        "Clemens Sauerwein",
+        "Patrick Bassner",
+        "Stephan Krusche",
+        "Ruth Breu"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3639474.3640061",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "se-ai-tutor-programming-assessments"
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and programming",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Solve programming assessment tasks with feedback from an LLM-based tutor in an automated assessment system.",
+    "student_actions": [
+      "Submit programming solutions.",
+      "Use generated tutoring feedback to revise a solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming solution",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "delivery": {
+      "modality": "online",
+      "setting": "unknown"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The LLM tutor supplies feedback within the programming assessment workflow."
+    },
+    "assessment_system_role": [
+      "Generate tutoring feedback from assessment context and student work."
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-504f08724e6d_ai-tutoring-in-software-engineering-education.pdf"
+  }
+}
+

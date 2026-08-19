@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cwgpt-usability-walkthrough",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "CWGPT-assisted cognitive walkthrough",
+  "summary": "Students evaluate the photo-upload task in a web application they authored, first unaided and then through a think-aloud cognitive walkthrough with CWGPT. They identify usability issues and discuss interface changes after reviewing the AI-guided evaluation.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3656650.3656676",
+      "type": "conference_paper",
+      "title": "Enhancing Interface Design with AI: An Exploratory Study on a ChatGPT-4-Based Tool for Cognitive Walkthrough Inspired Evaluations",
+      "authors": [
+        "Alba Bisante",
+        "Venkata Srikanth Varma Datla",
+        "Emanuele Panizzi",
+        "Gabriella Trasciatti",
+        "Stefano Zeppieri"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3656650.3656676",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cwgpt-usability-walkthrough",
+      "locator": {
+        "section": "4.2 User study of CWGPT"
+      },
+      "evidence_quote": "Each student, aged 20-25, evaluated the 'Upload a photo' task using CWGPT on their authored interface."
+    }
+  ],
+  "context": {
+    "discipline": "human-computer interaction and web interface design",
+    "course": {
+      "name": "Web and Software Architecture",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "design_task",
+      "reflection"
+    ],
+    "summary": "Students evaluate the photo-upload task in a web application they authored, first unaided and then through a think-aloud cognitive walkthrough with CWGPT.",
+    "student_actions": [
+      "Inspect the interface for usability issues.",
+      "Use CWGPT to conduct a cognitive walkthrough.",
+      "Think aloud while following AI-suggested subtasks.",
+      "Discuss changes to the interface."
+    ],
+    "outputs": [
+      {
+        "artifact": "usability observations",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "CWGPT conversation",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "post-task interview responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "They identify usability issues and discuss interface changes after reviewing the AI-guided evaluation."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-de81190b6c59_enhancing-interface-design-with-ai-an-exploratory-study-on-a-chatgpt-4-based-tool-for-cognitive.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "Each student, aged 20-25, evaluated the 'Upload a photo' task using CWGPT on their authored interface.",
+      "source_id": "doi:10.1145/3656650.3656676",
+      "locator": {
+        "section": "4.2 User study of CWGPT"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Each student, aged 20-25, evaluated the 'Upload a photo' task using CWGPT on their authored interface.",
+      "source_id": "doi:10.1145/3656650.3656676",
+      "locator": {
+        "section": "4.2 User study of CWGPT"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

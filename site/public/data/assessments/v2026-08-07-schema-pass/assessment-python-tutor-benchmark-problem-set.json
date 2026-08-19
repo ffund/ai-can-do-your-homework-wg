@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-tutor-benchmark-problem-set",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Introductory Python buggy-program problem set",
+  "summary": "Learners receive introductory Python problems and incomplete or buggy programs that require repair, hints, grading feedback, peer completion, or explanation. The paper uses five problems with five buggy submissions each to compare ChatGPT, GPT-4, and human tutors rather than deploying the models to students.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3568812.3603476",
+      "type": "conference_paper",
+      "title": "Generative AI for Programming Education: Benchmarking ChatGPT, GPT-4, and Human Tutors",
+      "authors": [
+        "Tung Phung",
+        "Victor-Alexandru Padurean",
+        "José Cambronero",
+        "Sumit Gulwani",
+        "Tobias Kohn",
+        "Rupak Majumdar",
+        "Adish Singla",
+        "Gustavo Soares"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3568812.3603476",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-tutor-benchmark-problem-set",
+      "locator": {
+        "section": "Abstract"
+      },
+      "evidence_quote": "We conduct our evaluation based on 5 introductory Python programming problems with a diverse set of input/output specifications."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "not_reported",
+      "level": "introductory",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "introductory programming students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_applicable",
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "problem_set",
+      "exercise"
+    ],
+    "summary": "Repair, explain, complete, or receive feedback on buggy Python programs drawn from public introductory examples.",
+    "student_actions": [
+      "Inspect a buggy Python program.",
+      "Repair or complete the program and reason about its defects."
+    ],
+    "inputs": [
+      {
+        "description": "Five Python problems and 25 buggy public submissions",
+        "provided_by": "external",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Corrected or explained Python solution",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 5
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_applicable",
+      "description": "The study benchmarks model outputs for tutor and peer roles; it does not report student use."
+    },
+    "assessment_system_role": [
+      "repair_program",
+      "generate_hint",
+      "generate_grading_feedback",
+      "complete_program",
+      "explain_program"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 20,
+      "kind": "rubric points"
+    },
+    "criteria": [
+      {
+        "criterion": "Correctness"
+      },
+      {
+        "criterion": "Time complexity"
+      },
+      {
+        "criterion": "Space complexity"
+      },
+      {
+        "criterion": "Function implementation"
+      },
+      {
+        "criterion": "Algorithm choice"
+      }
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-425fe5045c33_generative-ai-for-programming-education-benchmarking-chatgpt-gpt-4-and-human-tutors.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "We conduct our evaluation based on 5 introductory Python programming problems with a diverse set of input/output specifications.",
+      "source_id": "doi:10.1145/3568812.3603476",
+      "locator": {
+        "section": "Abstract"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

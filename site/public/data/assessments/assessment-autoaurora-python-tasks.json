@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:autoaurora-python-tasks",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Python programming tasks with AutoAurora code completion",
+  "summary": "Students complete two Python competitive-programming tasks with the StarCoder-based AutoAurora extension. They can accept or reject generated code and then discuss the benefits, risks, and desired educational behavior of AI code completion.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/compsac61105.2024.00252",
+      "type": "conference_paper",
+      "title": "Students' Perspectives on AI Code Completion: Benefits and Challenges",
+      "authors": [
+        "Wannita Takerngsaksiri",
+        "Cleshan Warusavitarne",
+        "Christian Yaacoub",
+        "Matthew Hee Keng Hou",
+        "Chakkrit Tantithamthavorn"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/compsac61105.2024.00252",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "autoaurora-python-tasks",
+      "locator": {
+        "section": "III.C Data Collection"
+      },
+      "evidence_quote": "complete two Python competitive programming tasks"
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "Research programming-task session",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "computer science students with at least one year of programming",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve file/text manipulation and matrix manipulation tasks using AI code completion.",
+    "student_actions": [
+      "Write Python solutions in VS Code.",
+      "Review, accept, reject, or modify AutoAurora suggestions.",
+      "Discuss the experience in a post-task interview."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python programs and interview responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "StarCoder generated in-editor code completions through AutoAurora."
+    }
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-120ba39d96e5_students-perspectives-on-ai-code-completion-benefits-and-challenges.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Ten undergraduate students participated in task sessions and interviews."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "complete two Python competitive programming tasks",
+      "source_id": "doi:10.1109/compsac61105.2024.00252",
+      "locator": {
+        "section": "III.C Data Collection"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1109/compsac61105.2024.00252"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:pbl-custom-genai-mini-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Host-course GenAI customization mini-project",
+  "summary": "Graduate AI students complete a two-week module on prompting, fine-tuning, and retrieval-augmented generation, then propose and build a GenAI tool related to the host course. Students validate model responses against reliable sources, customize the model where needed, and obtain peer reviews from classmates.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893118",
+      "type": "conference_paper",
+      "title": "A PBL-Based Mini Course Module for Teaching Computer Science Students to Utilize Generative AI for Enhanced Learning",
+      "authors": [
+        "Venkata Alekhya Kusam",
+        "Summit Shrestha",
+        "Khalid Kattan",
+        "Bruce Maxim",
+        "Zheng Song"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893118",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "pbl-genai-mini-project",
+      "locator": {
+        "section": "III. Course Structure and Implementation, 3. Mini-Project"
+      },
+      "evidence_quote": "After the lectures and hands-on labs, we require students to initiate a mini-project that they propose themselves."
+    }
+  ],
+  "context": {
+    "discipline": "artificial intelligence and generative AI",
+    "course": {
+      "name": "Graduate-level Artificial Intelligence",
+      "level": "graduate",
+      "institution": "University of Michigan-Dearborn",
+      "term": "Winter 2024",
+      "delivery_language": "English",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "graduate students",
+    "cohort_size": 42,
+    "research_sample_size": 42,
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "practice"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "lab",
+      "peer_assessment"
+    ],
+    "summary": "Design a GenAI application that applies host-course knowledge or helps other students learn it, validate its answers, and improve it using fine-tuning or RAG.",
+    "student_actions": [
+      "Propose a host-course problem.",
+      "Develop a GenAI tool or learning application.",
+      "Validate ChatGPT responses against books, videos, or articles.",
+      "Collect and preprocess grounding or fine-tuning data.",
+      "Apply fine-tuning or RAG when responses are deficient.",
+      "Have classmates use and peer-review the model."
+    ],
+    "outputs": [
+      {
+        "artifact": "Working GenAI tool or application",
+        "required": true
+      },
+      {
+        "artifact": "Validation evidence and processed data",
+        "required": true
+      },
+      {
+        "artifact": "Peer reviews",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "timing": {
+      "mode": "mixed",
+      "deadline": "Two-week mini-course module"
+    },
+    "delivery": {
+      "modality": "hybrid",
+      "setting": "lab",
+      "platforms": [
+        "ChatGPT",
+        "Google Colab",
+        "OpenAI fine-tuning",
+        "RAG"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students build, validate, and customize a GenAI system relevant to host-course content."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "prompt engineering",
+          "fine-tuning",
+          "retrieval-augmented generation",
+          "tool development"
+        ],
+        "validation_required": true,
+        "disclosure_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "OpenAI fine-tuning",
+      "Retrieval-Augmented Generation",
+      "Google Colab"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Projects are evaluated using peer reviews from classmates who use the customized model.",
+    "criteria": [
+      {
+        "criterion": "Relevance to host-course content"
+      },
+      {
+        "criterion": "Accuracy and validation"
+      },
+      {
+        "criterion": "Effectiveness for peer learning"
+      }
+    ],
+    "assessors": [
+      "peers",
+      "course instructors"
+    ]
+  },
+  "evidence": {
+    "study_type": "pre/post survey and interviews",
+    "sample": {
+      "participating": 42,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "Mean self-rating for prompt-engineering skill increased from 3.3 before the module to 4.9 afterward."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-635837fc13c9_a-pbl-based-mini-course-module-for-teaching-computer-science-students-to-utilize-generative-ai-f.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "After the lectures and hands-on labs, we require students to initiate a mini-project that they propose themselves.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893118",
+      "locator": {
+        "section": "III. Course Structure and Implementation, 3. Mini-Project"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

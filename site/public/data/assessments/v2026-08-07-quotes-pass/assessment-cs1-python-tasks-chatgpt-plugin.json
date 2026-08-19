@@ -1,0 +1,108 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-python-tasks-chatgpt-plugin",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 Python tasks with optional embedded ChatGPT",
+  "summary": "Students complete three CS1-level Python tasks in VS Code with optional GPT-3.5 assistance and no other help resources. The research assessment captures whether they offload whole tasks, prompt step by step, verify answers, and produce correct code.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3699538.3699567",
+      "type": "conference_paper",
+      "title": "Student-AI Interaction: A Case Study of CS1 students",
+      "authors": [
+        "Matin Amoozadeh",
+        "Daye Nam",
+        "Daniel Prol",
+        "Ali Alfageeh",
+        "James Prather",
+        "Michael Hilton",
+        "Sruti Srinivasa Ragavan",
+        "Amin Alipour"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3699538.3699567",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-python-tasks-chatgpt-plugin",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "Participants were asked to complete three programming tasks"
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "CS1",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "mostly first-year CS1 students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve three Python programming tasks in up to one hour.",
+    "student_actions": [
+      "Read input-output examples and implement solutions.",
+      "Optionally prompt embedded ChatGPT.",
+      "Run, debug, and revise code.",
+      "Complete pre/post self-efficacy surveys."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python programs and ChatGPT interaction logs",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3.5 use was optional and unrestricted through a VS Code plugin; web search and other aids were prohibited."
+    }
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-29f975f4a266_student-ai-interaction-a-case-study-of-cs1-students.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Fifteen students attempted 45 tasks; 29 of 40 completed solutions used AI and 65% of those were correct."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Participants were asked to complete three programming tasks",
+      "source_id": "doi:10.1145/3699538.3699567",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

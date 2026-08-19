@@ -1,0 +1,179 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:pmbok-plan-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "PMBOK project plan with documented ChatGPT support",
+  "summary": "Teams of four or five sixth-semester software engineering students create a detailed project plan covering scope, time, cost, people, communication, risk, and procurement. They use ChatGPT as a reference, identify its contributions, document prompts, responses, and modifications, and defend all artifacts in person.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3701625.3701684",
+      "type": "conference_paper",
+      "title": "Integrating ChatGPT in Project Management Education: Benefits and Challenges in the Academic Environment",
+      "authors": [
+        "Ana Carolina Oran",
+        "Letícia Braga Montenegro",
+        "Hellmut Alencar Schuster",
+        "José Carlos Duarte",
+        "Williamson Silva",
+        "Rayfran Rocha Lima"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3701625.3701684",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "pmbok-plan-chatgpt",
+      "locator": {
+        "section": "3 Method"
+      },
+      "evidence_quote": "In the first practical assignment, the students were challenged to design and document the detailed planning of a project"
+    }
+  ],
+  "context": {
+    "discipline": "software project management",
+    "course": {
+      "name": "Project Management",
+      "level": "sixth-semester undergraduate",
+      "institution": "Federal University of Amazonas",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "software engineering undergraduates",
+    "cohort_size": 35,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Create and defend a comprehensive PMBOK-aligned project plan using ChatGPT only as a documented reference.",
+    "student_actions": [
+      "Define a product and produce management artifacts.",
+      "Prompt ChatGPT for ideas and candidate artifacts.",
+      "Critically revise outputs into original team artifacts.",
+      "Document AI interactions and defend the work in person."
+    ],
+    "outputs": [
+      {
+        "artifact": "Project charter, scope, schedule, budget, resource, communication, risk, and procurement artifacts",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT prompts, responses, and modification record",
+        "required": true
+      },
+      {
+        "artifact": "In-person artifact defense",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": {
+      "minimum": 4,
+      "maximum": 5
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Teams use ChatGPT for planning references and idea generation, then create and defend their own versions."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Idea generation",
+          "Draft planning artifacts",
+          "Critical analysis"
+        ],
+        "prohibited_actions": [
+          "Submit ChatGPT artifacts unchanged"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "model": "3.5"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "assessors": [
+      "professor",
+      "course monitors"
+    ],
+    "process": [
+      "Teams defend every artifact during an in-person presentation."
+    ]
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:scrum-plan-chatgpt",
+      "relationship": "precedes"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-d32548f417ce_integrating-chatgpt-in-project-management-education-benefits-and-challenges-in-the-academic-envi.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In the first practical assignment, the students were challenged to design and document the detailed planning of a project",
+      "source_id": "doi:10.1145/3701625.3701684",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3701625.3701684"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "An AI interaction transcript is required.",
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "ChatGPT prompts, responses, and modification record"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

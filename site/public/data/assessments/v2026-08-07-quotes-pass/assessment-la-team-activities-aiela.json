@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:la-team-activities-aiela",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Weekly LA-facilitated team activities with AIELA support",
+  "summary": "Complete weekly in-class team activities guided by learning assistants and faculty, with a pilot AIELA chatbot supplying knowledge-reinforcing questions to assist the human LAs. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/fie61694.2024.10893294",
+      "type": "conference_paper",
+      "title": "Enhancing CS Education with LAs Using AI-Empowered AIELA Program",
+      "authors": [
+        "Ramasamy, Vijayalakshmi",
+        "Kulpinski, Eli",
+        "Beaupre, Thomas",
+        "Antreassian, Aaron",
+        "Jeong, Yunhwan",
+        "Clarke, Peter J.",
+        "Aiello, Anthony",
+        "Ray, Charles"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/fie61694.2024.10893294",
+      "url": "https://doi.org/10.1109/fie61694.2024.10893294",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "la-team-activities-aiela",
+      "locator": {
+        "section": "Pilot Study and AIELA Framework"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "computer science",
+    "course": {
+      "name": "Two computer science courses",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Complete weekly in-class team activities guided by learning assistants and faculty, with a pilot AIELA chatbot supplying knowledge-reinforcing questions to assist the human LAs.",
+    "student_actions": [
+      "Complete weekly in-class team activities guided by learning assistants and faculty, with a pilot AIELA chatbot supplying knowledge-reinforcing questions to assist the human LAs."
+    ],
+    "outputs": [
+      {
+        "artifact": "Team activity work and discussion-board reflections",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "AIELA with GPT-4-turbo"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1f9ccb70bfca_enhancing-cs-education-with-las-using-ai-empowered-aiela-program.pdf"
+  }
+}
+
+

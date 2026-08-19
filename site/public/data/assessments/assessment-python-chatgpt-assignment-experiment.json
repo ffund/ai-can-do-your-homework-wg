@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-chatgpt-assignment-experiment",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Python notebook assignments with optional experimental ChatGPT access",
+  "summary": "Solve standardized Python problems in Google Colab, with the experimental group using ChatGPT and submitting interaction transcripts. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/isec61299.2024.10665172",
+      "type": "conference_paper",
+      "title": "ChatGPT in the Classroom: Experimentation in a Python Class for Non-Computing Majors",
+      "authors": [
+        "Kaleemunnisa, FNU",
+        "Scharff, Christelle",
+        "Bathula, Krishna",
+        "Zhumakova, Begimai"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/isec61299.2024.10665172",
+      "url": "https://doi.org/10.1109/isec61299.2024.10665172",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-chatgpt-assignment-experiment",
+      "locator": {
+        "section": "Study"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "CIS 101 Introduction to Computing",
+      "level": "undergraduate non-computing majors",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate non-computing majors",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "lab"
+    ],
+    "summary": "Solve standardized Python problems in Google Colab, with the experimental group using ChatGPT and submitting interaction transcripts.",
+    "student_actions": [
+      "Solve standardized Python problems in Google Colab, with the experimental group using ChatGPT and submitting interaction transcripts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Google Colab notebook solutions and ChatGPT transcripts",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT and Google Colab"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4441077719ae_chatgpt-in-the-classroom-experimentation-in-a-python-class-for-non-computing-majors.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/isec61299.2024.10665172"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Google Colab notebook solutions and ChatGPT transcripts"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

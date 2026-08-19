@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:database-guided-llm-assignment",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Database multiple-choice assignment with guided GPT-3 support",
+  "summary": "Third-year database students solve multiple-choice problems about topics including transaction serializability while using a GPT-3 tutor that withholds explicit answers and SQL. Randomized variants provide combinations of suggestions, examples, metacognitive questions, and a solve-then-refine protocol before the same assignment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3687038",
+      "type": "journal_article",
+      "title": "Guiding Students in Using LLMs in Supported Learning Environments: Effects on Interaction Dynamics, Learner Performance, Confidence, and Trust",
+      "authors": [
+        "Harsh Kumar",
+        "Ilya Musabirov",
+        "Mohi Reza",
+        "Jiakai Shi",
+        "Xinyuan Wang",
+        "Joseph Jay Williams",
+        "Anastasia Kuzminykh",
+        "Michael Liut"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3687038",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "database-guided-llm-assignment",
+      "locator": {
+        "section": "4 Study-1"
+      },
+      "evidence_quote": "students attempted to solve multiple-choice problems (related to databases) while receiving support from LLMs"
+    }
+  ],
+  "context": {
+    "discipline": "database systems",
+    "course": {
+      "name": "Introduction to Databases",
+      "level": "third-year undergraduate",
+      "term": "Winter 2023",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "upper-year undergraduate",
+    "cohort_size": 218,
+    "research_sample_size": 145,
+    "learner_level_category": "advanced",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Solve database multiple-choice problems using a constrained GPT-3 tutor after receiving an assigned combination of LLM-use guidance.",
+    "student_actions": [
+      "Review assigned LLM-use guidance.",
+      "Solve database multiple-choice problems.",
+      "Ask the tutor for conceptual, planning, or refinement support."
+    ],
+    "outputs": [
+      {
+        "artifact": "Database assignment responses",
+        "required": true
+      },
+      {
+        "artifact": "Chatbot interaction log",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use a course GPT-3 tutor under one of sixteen combinations of four guidance strategies."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Brainstorm possible solutions",
+          "Conceptual clarification",
+          "Refine an initial solution"
+        ],
+        "prohibited_actions": [
+          "Requesting or receiving explicit solutions or SQL queries"
+        ],
+        "transcript_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "Course LLM chatbot",
+        "model": "GPT-3"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 100,
+      "kind": "homework percentage score"
+    },
+    "method": "Accuracy of assignment responses."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:guided-llm-math-problem-study",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-dfc534bec2ea_guiding-students-in-using-llms-in-supported-learning-environments-effects-on-interaction-dynamic.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "students attempted to solve multiple-choice problems (related to databases) while receiving support from LLMs",
+      "source_id": "doi:10.1145/3687038",
+      "locator": {
+        "section": "4 Study-1"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "students attempted to solve multiple-choice problems (related to databases) while receiving support from LLMs",
+      "source_id": "doi:10.1145/3687038",
+      "locator": {
+        "section": "4 Study-1"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3687038"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "An AI interaction transcript is required."
+    ],
+    "process_evidence": [
+      "Chatbot interaction log"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

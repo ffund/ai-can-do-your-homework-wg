@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:apprentice-dart-chatgpt-replay",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Experienced apprentice Dart assignment replay with ChatGPT",
+  "summary": "Final-year software engineering degree apprentices use ChatGPT to repeat an earlier programming assignment in the relatively uncommon Dart language. They work toward a correctly running program and assess the substantial modifications needed to make the generated output usable.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3610969.3611132",
+      "type": "conference_paper",
+      "title": "Generative AI in Software Development Education: Insights from a Degree Apprenticeship Programme",
+      "authors": [
+        "Olga Petrovska",
+        "Lee Clift",
+        "Faron Moller"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3610969.3611132",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "experienced-dart-chatgpt-replay",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "evidence_quote": "The experienced programmers were required to generate code in a relatively uncommon language (Dart) in order to complicate the task for ChatGPT"
+    }
+  ],
+  "context": {
+    "discipline": "software development and Dart programming",
+    "course": {
+      "name": "Software Engineering Degree Apprenticeship programme",
+      "level": "final year",
+      "institution": "Swansea University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "final-year degree apprentices",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Repeat an earlier programming assignment in Dart using ChatGPT and produce a correctly running program.",
+    "student_actions": [
+      "Prompt ChatGPT to solve a prior assignment in Dart.",
+      "Modify the generated code until it runs correctly.",
+      "Evaluate useful and problematic aspects of the output."
+    ],
+    "outputs": [
+      {
+        "artifact": "ChatGPT-assisted Dart program",
+        "required": true
+      },
+      {
+        "artifact": "Survey responses about the experience",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students must use ChatGPT, then substantially inspect and revise its Dart output."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Generate and refine a Dart solution"
+        ],
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:apprentice-java-chatgpt-replay",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ac860fe9a28a_generative-ai-in-software-development-education-insights-from-a-degree-apprenticeship-programme.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "The experienced programmers were required to generate code in a relatively uncommon language (Dart) in order to complicate the task for ChatGPT",
+      "source_id": "doi:10.1145/3610969.3611132",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

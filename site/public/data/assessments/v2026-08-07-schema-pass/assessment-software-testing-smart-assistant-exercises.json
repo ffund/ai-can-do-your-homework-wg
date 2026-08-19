@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:software-testing-smart-assistant-exercises",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Software testing exercises with an LLM smart assistant",
+  "summary": "Students complete software-testing exercises with access to an LLM-based smart assistant and compare that experience with conventional support. They ask for explanations, hints, or solutions while working; the study examines performance and students' tendency to trust generated responses.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3661167.3661273",
+      "type": "conference_paper",
+      "title": "An Empirical Study on How Large Language Models Impact Software Testing Learning",
+      "authors": [
+        "Simone Mezzaro",
+        "Alessio Gambi",
+        "Gordon Fraser"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3661167.3661273",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "software-testing-smart-assistant-exercises"
+    }
+  ],
+  "context": {
+    "discipline": "software testing",
+    "course": {
+      "name": "software testing",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Complete software-testing exercises while using an LLM smart assistant for help.",
+    "student_actions": [
+      "Solve software-testing tasks.",
+      "Request and evaluate AI-generated assistance."
+    ],
+    "outputs": [
+      {
+        "artifact": "Solutions to software-testing exercises",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students in the AI condition can query the smart assistant during the exercises."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_applicable",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "LLM-based smart assistant"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Exercise performance was measured for research comparison."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-83008a4d3918_an-empirical-study-on-how-large-language-models-impact-software-testing-learning.pdf"
+  }
+}
+

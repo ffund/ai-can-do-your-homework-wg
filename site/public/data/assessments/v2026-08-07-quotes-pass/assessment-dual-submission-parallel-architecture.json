@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:dual-submission-parallel-architecture",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Dual-submission parallel computer architecture problem set",
+  "summary": "Students first solve a parallel-computer-architecture problem set, receive instructor solutions, and then submit corrections and metacognitive explanations of their errors. Grading shifts emphasis from the initial answer to accurate self-assessment, correction, and reflection, reducing the incentive to outsource answers to an LLM.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3605507.3610629",
+      "type": "workshop_paper",
+      "title": "Dual-Submission Homework in Parallel Computer Architecture: An Exploratory Study in the Age of LLMs",
+      "authors": [
+        "Edward F. Gehringer",
+        "Jianxun Wang",
+        "Sharan Jilla"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3605507.3610629",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "dual-submission-problem-set-3",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "They would receive the solutions soon after submitting their work, and then have an opportunity to correct it and resubmit."
+    }
+  ],
+  "context": {
+    "discipline": "parallel computer architecture",
+    "course": {
+      "name": "CSC/ECE 506 Architecture of Parallel Computers",
+      "code": "CSC/ECE 506",
+      "level": "graduate with advanced undergraduates",
+      "institution": "North Carolina State University",
+      "term": "Spring 2023",
+      "delivery_language": "English",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "primarily master's students",
+    "cohort_size": 38,
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "problem_set",
+      "reflection"
+    ],
+    "summary": "Submit answers to Problem Set 3, inspect released solutions, then correct errors and explain the reasoning failures in a second submission.",
+    "student_actions": [
+      "Solve the architecture problem set.",
+      "Compare the first submission with instructor solutions.",
+      "Correct erroneous answers.",
+      "Explain errors and rephrase corrections to demonstrate understanding."
+    ],
+    "outputs": [
+      {
+        "artifact": "Initial problem-set submission",
+        "required": true
+      },
+      {
+        "artifact": "Corrected second submission",
+        "required": true
+      },
+      {
+        "artifact": "Metacognitive error reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "asynchronous",
+      "attempts": 2
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "unknown",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The variant is designed to reduce the reward for obtaining initial answers from the web or an LLM; no explicit AI-use rule is reported."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "validation_required": "not_applicable"
+      }
+    ],
+    "assessment_system_role": [
+      "Public solutions are deliberately released between submissions, moving assessed value to correction and reflection."
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Teaching assistants grade the two submissions together.",
+    "criteria": [
+      {
+        "criterion": "Correct initial answer",
+        "description": "A correct first answer receives full credit."
+      },
+      {
+        "criterion": "Accuracy of correction"
+      },
+      {
+        "criterion": "Quality of reflection"
+      }
+    ],
+    "assessors": [
+      "teaching assistants"
+    ]
+  },
+  "evidence": {
+    "study_type": "exploratory comparative study",
+    "sample": {
+      "participating": 38,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "93% wanted more homework using the dual-submission format.",
+      "Evidence of improved exam performance was inconclusive."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9a0c8744c018_dual-submission-homework-in-parallel-computer-architecture-an-exploratory-study-in-the-age-of-ll.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "They would receive the solutions soon after submitting their work, and then have an opportunity to correct it and resubmit.",
+      "source_id": "doi:10.1145/3605507.3610629",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

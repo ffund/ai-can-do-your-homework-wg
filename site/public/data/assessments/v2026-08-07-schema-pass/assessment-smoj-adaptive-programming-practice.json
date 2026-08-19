@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:smoj-adaptive-programming-practice",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "SMOJ adaptive introductory programming practice",
+  "summary": "First-year engineering students solve programming exercises across eight course units in an enhanced online judge. The system adapts exercise difficulty, checks problem understanding before unlocking coding, tests submissions, and uses ChatGPT to provide concise error feedback without code or explicit answers.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/CONCAPAN63470.2024.10933867",
+      "type": "conference_paper",
+      "title": "Improving the Efficacy of an Automated Judging System in an Introductory Programming Class using a Large Language Model",
+      "authors": [
+        "Federico Meza",
+        "Oscar Acevedo",
+        "Matías González"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CONCAPAN63470.2024.10933867",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "smoj-adaptive-programming-practice",
+      "locator": {
+        "section": "III. Extending the Automated Judging System"
+      },
+      "evidence_quote": "Students enrolled in the class must correctly solve at least one of the multiple exercises proposed in each of the eight units"
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "Introduction to Programming",
+      "level": "first-year undergraduate",
+      "institution": "Universidad Técnica Federico Santa María",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year engineering students",
+    "cohort_size": 1500,
+    "research_sample_size": 17,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 5,
+    "pass_requirement": "Correctly solve at least one exercise in each of eight units."
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Demonstrate understanding, implement Python solutions, and iterate on test and LLM feedback for adaptively selected programming exercises.",
+    "student_actions": [
+      "Select a unit and confidence-based difficulty.",
+      "Answer comprehension questions and manually predict test outputs.",
+      "Implement and submit a Python solution.",
+      "Use concise feedback to diagnose failed tests and revise code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Comprehension answers",
+        "required": true
+      },
+      {
+        "artifact": "Python exercise solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "lab",
+      "platforms": [
+        "SMOJ",
+        "Moodle"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "ChatGPT indirectly generates comprehension checks, exercises, recommendations, and feedback through the SMOJ platform."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Problem comprehension",
+          "Adaptive practice recommendations",
+          "Error diagnosis"
+        ],
+        "prohibited_actions": [
+          "Receiving code or explicit answers"
+        ],
+        "validation_required": true
+      }
+    ],
+    "assessment_system_role": [
+      "Generate exercises and tests",
+      "Verify understanding",
+      "Recommend difficulty",
+      "Provide enhanced feedback"
+    ],
+    "tools": [
+      "ChatGPT 3.5-turbo",
+      "ChatGPT 4-turbo"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "course_weight_percent": 5,
+    "method": "Automated judge requires all test cases to pass; activity contributes participation credit."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a6ec65b7ef64_improving-the-efficacy-of-an-automated-judging-system-in-an-introductory-programming-class-using.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students enrolled in the class must correctly solve at least one of the multiple exercises proposed in each of the eight units",
+      "source_id": "doi:10.1109/CONCAPAN63470.2024.10933867",
+      "locator": {
+        "section": "III. Extending the Automated Judging System"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Students enrolled in the class must correctly solve at least one of the multiple exercises proposed in each of the eight units",
+      "source_id": "doi:10.1109/CONCAPAN63470.2024.10933867",
+      "locator": {
+        "section": "III. Extending the Automated Judging System"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

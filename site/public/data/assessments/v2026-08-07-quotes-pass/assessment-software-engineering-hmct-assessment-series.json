@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:software-engineering-hmct-assessment-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Software engineering assessment series under human-machine teaching strategies",
+  "summary": "Students complete ten classroom tests, ten homework tasks, and a final exam after directive, guided-AI, or student-led GenAI-supported instruction. AI is used during guided and collaborative learning, while the assessment series measures immediate knowledge, independent exploration, and integrated problem solving.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/itcem65710.2024.00050",
+      "type": "conference_paper",
+      "title": "Research on the Effectiveness of Human-Machine Collaborative Teaching Based on Data Analysis in the Era of Digital Intelligence",
+      "authors": [
+        "Chunqiao Mi",
+        "Hongbo Xiao",
+        "Qingyou Deng",
+        "Changhua Zhao",
+        "Bo Tang"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/itcem65710.2024.00050",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "software-engineering-hmct-assessment-series",
+      "locator": {
+        "section": "II Materials and Methods"
+      },
+      "evidence_quote": "Classroom tests consisted primarily of objective questions"
+    }
+  ],
+  "context": {
+    "discipline": "Software engineering",
+    "course": {
+      "name": "Software Engineering",
+      "level": "third-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "Computer Science and Technology students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "quiz",
+      "homework",
+      "exam"
+    ],
+    "summary": "Complete classroom tests, homework, and a comprehensive final exam in software engineering.",
+    "student_actions": [
+      "Answer objective classroom test questions.",
+      "Explore and solve subjective homework tasks.",
+      "Integrate course concepts in a final exam."
+    ],
+    "outputs": [
+      {
+        "artifact": "Test answers, homework responses, and final-exam responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI supported learning in two treatment groups; the source does not state AI availability during tests or the final exam."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Online objective tests, instructor-graded homework, and mixed automated/human final-exam grading."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5a4705bdc4b6_research-on-the-effectiveness-of-human-machine-collaborative-teaching-based-on-data-analysis-in.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Quasi-experiment with 99 students across three intact classes."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "Classroom tests consisted primarily of objective questions",
+      "source_id": "doi:10.1109/itcem65710.2024.00050",
+      "locator": {
+        "section": "II Materials and Methods"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

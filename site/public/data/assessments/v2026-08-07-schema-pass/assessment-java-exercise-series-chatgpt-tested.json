@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-exercise-series-chatgpt-tested",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Eighty in-class Java programming exercises",
+  "summary": "Complete 80 asynchronous in-class exercises spanning Java basics, object orientation, classes, methods, exceptions, I/O, and packaging. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3587102.3588794",
+      "type": "conference_paper",
+      "title": "ChatGPT, Can You Generate Solutions for my Coding Exercises? An Evaluation on its Effectiveness in an undergraduate Java Programming Course.",
+      "authors": [
+        "Ouh, Eng Lieh",
+        "Gan, Benjamin Kok Siew",
+        "Jin Shim, Kyong",
+        "Wlodkowski, Swavek"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3587102.3588794",
+      "url": "https://doi.org/10.1145/3587102.3588794",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-exercise-series-chatgpt-tested",
+      "locator": {
+        "section": "3 Course Design and Conduct"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "Java and object-oriented programming",
+    "course": {
+      "name": "Undergraduate Java programming",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Complete 80 asynchronous in-class exercises spanning Java basics, object orientation, classes, methods, exceptions, I/O, and packaging.",
+    "student_actions": [
+      "Complete 80 asynchronous in-class exercises spanning Java basics, object orientation, classes, methods, exceptions, I/O, and packaging."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java programs",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT 3.5 and 4 research evaluation"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-146bcf1503b8_chatgpt-can-you-generate-solutions-for-my-coding-exercises-an-evaluation-on-its-effectiveness-in.pdf"
+  }
+}
+

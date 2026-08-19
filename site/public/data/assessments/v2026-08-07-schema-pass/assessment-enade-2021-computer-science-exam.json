@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:enade-2021-computer-science-exam",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "2021 ENADE Bachelor in Computer Science exam",
+  "summary": "Brazilian undergraduate computer science students answer open and multiple-choice questions containing text and visual material in the national ENADE examination. This paper tests ChatGPT-4 Vision on the same images; students did not use AI during the reported exam.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3674149",
+      "type": "journal_article",
+      "title": "Evaluating ChatGPT-4 Vision on Brazil's National Undergraduate Computer Science Exam",
+      "authors": [
+        "Nabor C. Mendonca"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3674149",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "enade-2021-computer-science-exam",
+      "locator": {
+        "section": "3. The ENADE Exam"
+      },
+      "evidence_quote": "The BCS exam comprised 40 questions: 10 questions assessed general education, while 30 questions assessed the specific knowledge of BCS students."
+    }
+  ],
+  "context": {
+    "discipline": "computer science",
+    "course": {
+      "name": "ENADE Bachelor in Computer Science section",
+      "level": "graduating undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "graduating undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Brazilian undergraduate computer science students answer open and multiple-choice questions containing text and visual material in the national ENADE examination.",
+    "student_actions": [
+      "Answer open-response and multiple-choice computer science questions.",
+      "Interpret diagrams, charts, tables, and other visual material."
+    ],
+    "outputs": [
+      {
+        "artifact": "open-question responses",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "multiple-choice responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "This paper tests ChatGPT-4 Vision on the same images; students did not use AI during the reported exam."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-539bc7c20dbc_evaluating-chatgpt-4-vision-on-brazil-s-national-undergraduate-computer-science-exam.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "The BCS exam comprised 40 questions: 10 questions assessed general education, while 30 questions assessed the specific knowledge of BCS students.",
+      "source_id": "doi:10.1145/3674149",
+      "locator": {
+        "section": "3. The ENADE Exam"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

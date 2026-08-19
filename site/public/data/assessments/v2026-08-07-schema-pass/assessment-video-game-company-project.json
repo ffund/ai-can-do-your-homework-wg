@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:video-game-company-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Fourteen-week video-game company project",
+  "summary": "Fourth-year teams simulate a video-game company, establish its online presence, develop a complete game and portfolio, and present their product to instructors, peers, and an expert panel. Students used GenAI for media and software artifacts under the course's professional-tool policy.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/educon60312.2024.10578869",
+      "type": "conference_paper",
+      "title": "Experiences and Proposals of Use of Generative AI in Advanced Software Courses",
+      "authors": [
+        "Daniel Palacios-Alonso",
+        "Jaime Urquiza-Fuentes",
+        "J. Ángel Velázquez-Iturbide",
+        "Julio Guillén-García"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/educon60312.2024.10578869",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "video-game-company-project",
+      "locator": {
+        "section": "III.A Use in a Video Games Project Course"
+      },
+      "evidence_quote": "The course focuses on the completion of a full video game in just fourteen weeks by each of the 'companies' or students' teams."
+    }
+  ],
+  "context": {
+    "discipline": "video game design and development",
+    "course": {
+      "name": "Games for Web and Social Networks",
+      "level": "fourth-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "fourth-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation",
+      "portfolio"
+    ],
+    "summary": "Fourth-year teams simulate a video-game company, establish its online presence, develop a complete game and portfolio, and present their product to instructors, peers, and an expert panel.",
+    "student_actions": [
+      "Create a simulated game-development company and online presence.",
+      "Design and implement a complete video game.",
+      "Produce a portfolio and postmortem.",
+      "Present the game for multi-party evaluation."
+    ],
+    "outputs": [
+      {
+        "artifact": "video game",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "business web presence",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "portfolio",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "postmortem",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "presentation",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students used GenAI for media and software artifacts under the course's professional-tool policy."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4b0912f0a8cb_experiences-and-proposals-of-use-of-generative-ai-in-advanced-software-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The course focuses on the completion of a full video game in just fourteen weeks by each of the 'companies' or students' teams.",
+      "source_id": "doi:10.1109/educon60312.2024.10578869",
+      "locator": {
+        "section": "III.A Use in a Video Games Project Course"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "The course focuses on the completion of a full video game in just fourteen weeks by each of the 'companies' or students' teams.",
+      "source_id": "doi:10.1109/educon60312.2024.10578869",
+      "locator": {
+        "section": "III.A Use in a Video Games Project Course"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

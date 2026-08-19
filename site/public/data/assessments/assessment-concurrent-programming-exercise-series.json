@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:concurrent-programming-exercise-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Concurrent and parallel programming exercise series",
+  "summary": "Third-year students complete five exercises on parallel processes, independent computation, synchronization, and code-template modification. The paper compares submissions from 2020-2023 for signs of GenAI influence but reports no explicit AI permission or disclosure rule.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3632621.3671424",
+      "type": "conference_paper",
+      "title": "Exploring Students Solutions to Concurrent and Parallel Programming Exercises – Impact of Generative AI",
+      "authors": [
+        "Maxim Mozgovoy",
+        "Calkin Suero Montero"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3632621.3671424",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "concurrent-programming-exercise-series",
+      "locator": {
+        "section": "Methodology"
+      },
+      "evidence_quote": "The analysis included five different exercises covering the basis of concurrency through various tasks and scenarios."
+    }
+  ],
+  "context": {
+    "discipline": "concurrent and parallel programming",
+    "course": {
+      "name": "concurrent and parallel programming",
+      "level": "third-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "third-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Third-year students complete five exercises on parallel processes, independent computation, synchronization, and code-template modification.",
+    "student_actions": [
+      "Create parallel processes.",
+      "Perform independent computations.",
+      "Synchronize parallel processes.",
+      "Modify a provided code template."
+    ],
+    "outputs": [
+      {
+        "artifact": "five program solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "unknown",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The paper compares submissions from 2020-2023 for signs of GenAI influence but reports no explicit AI permission or disclosure rule."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-72f6844a8ba9_exploring-students-solutions-to-concurrent-and-parallel-programming-exercises-impact-of-generati.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The analysis included five different exercises covering the basis of concurrency through various tasks and scenarios.",
+      "source_id": "doi:10.1145/3632621.3671424",
+      "locator": {
+        "section": "Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3632621.3671424"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

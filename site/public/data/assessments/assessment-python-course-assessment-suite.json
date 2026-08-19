@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-course-assessment-suite",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Three-course Python assessment suite",
+  "summary": "Three current postsecondary Python courses assess learners through 297 introductory multiple-choice questions plus an intermediate course with quizzes, tests, 32 projects, and 69 coding activities. The study submitted the same 599 assessment items to GPT models and used each course's automated grading rules.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3568813.3600142",
+      "type": "conference_paper",
+      "title": "Thrilled by Your Progress! Large Language Models (GPT-4) No Longer Struggle to Pass Assessments in Higher Education Programming Courses",
+      "authors": [
+        "Jaromir Savelka",
+        "Arav Agarwal",
+        "Marshall An",
+        "Chris Bogart",
+        "Majd Sakr"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3568813.3600142",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "three-python-courses-599-assessments",
+      "locator": {
+        "section": "3 Data"
+      },
+      "evidence_quote": "The researchers collected assessment exercises from three real-world currently running Python programming courses."
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "three introductory and intermediate Python courses",
+      "level": "postsecondary",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "postsecondary programming students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz",
+      "exam",
+      "project",
+      "exercise"
+    ],
+    "summary": "Complete course quizzes, tests, and coding projects spanning introductory and intermediate Python.",
+    "student_actions": [
+      "Answer multiple-choice questions.",
+      "Write Python programs for automatically assessed activities.",
+      "Revise code from autograder feedback where supported."
+    ],
+    "outputs": [
+      {
+        "artifact": "Multiple-choice responses and Python programs",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 599
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "unknown",
+      "description": "Researchers tested GPT models on the authentic assessment suite; student AI permission was not reported."
+    },
+    "assessment_system_role": [
+      "benchmark subject"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Course autograders evaluated multiple-choice answers, program tests, code style, and quality as applicable."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e9e13c781333_thrilled-by-your-progress-large-language-models-gpt-4-no-longer-struggle-to-pass-assessments-in.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "The researchers collected assessment exercises from three real-world currently running Python programming courses.",
+      "source_id": "doi:10.1145/3568813.3600142",
+      "locator": {
+        "section": "3 Data"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3568813.3600142"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

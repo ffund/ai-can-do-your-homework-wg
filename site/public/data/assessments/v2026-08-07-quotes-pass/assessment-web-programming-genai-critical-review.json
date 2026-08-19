@@ -1,0 +1,184 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:web-programming-genai-critical-review",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "GenAI critical-review lab and portfolio sorting task",
+  "summary": "First-year web-programming students use Copilot to generate HTML and ChatGPT to review it, then critique and improve the output for semantics and accessibility. A later portfolio component requires an AI-generated sorting algorithm plus an explanation of the prompting and algorithmic reasoning.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/EDUCON62633.2025.11016298",
+      "type": "conference_paper",
+      "title": "Stimulating Critical Thinking in a Web Programming Module with Generative AI Tools",
+      "authors": [
+        "Usman Naeem",
+        "Arne Styve",
+        "Outi T. Virkki"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/EDUCON62633.2025.11016298",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "web-genai-assessment-series",
+      "locator": {
+        "section": "III. Implementation, B. Lab Sessions and Projects Assessment"
+      },
+      "evidence_quote": "We created an assessment for this module that instructed learners to utilise GitHub CoPilot and ChatGPT."
+    }
+  ],
+  "context": {
+    "discipline": "web programming",
+    "course": {
+      "name": "Web Programming",
+      "level": "first year",
+      "institution": "Queen Mary University of London",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate students",
+    "cohort_size": 324,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "project",
+      "reflection"
+    ],
+    "summary": "Generate, review, critique, and improve web code with two AI tools, then apply AI prompting to a sorting component in a portfolio website.",
+    "student_actions": [
+      "Use Copilot to generate an HTML table.",
+      "Evaluate the generated markup for semantic correctness and accessibility.",
+      "Use ChatGPT to review the Copilot output.",
+      "Critique ChatGPT's review and identify agreements and omissions.",
+      "Improve the code using semantic and accessibility principles.",
+      "Use GenAI to develop a portfolio-site sorting algorithm and explain the process and algorithm."
+    ],
+    "outputs": [
+      {
+        "artifact": "Critiqued and improved HTML table",
+        "required": true
+      },
+      {
+        "artifact": "Portfolio website with sorting algorithm",
+        "required": true
+      },
+      {
+        "artifact": "Prompting and algorithm explanation",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "mixed",
+      "release": "Week 7 lab and later portfolio phase"
+    },
+    "delivery": {
+      "modality": "in_person",
+      "setting": "lab",
+      "platforms": [
+        "GitHub Copilot",
+        "ChatGPT"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Copilot acts as pair programmer and ChatGPT as peer reviewer; students must evaluate both outputs rather than accept them uncritically."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "HTML generation",
+          "code review",
+          "sorting-algorithm generation"
+        ],
+        "validation_required": true,
+        "disclosure_required": true
+      }
+    ],
+    "tools": [
+      "GitHub Copilot",
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Summative lab and portfolio assessment; no marks are awarded for a non-working algorithm or prompts too simple to reflect first-year taught content.",
+    "criteria": [
+      {
+        "criterion": "Semantic correctness"
+      },
+      {
+        "criterion": "Accessibility"
+      },
+      {
+        "criterion": "Critical evaluation of AI output"
+      },
+      {
+        "criterion": "Working sorting algorithm"
+      },
+      {
+        "criterion": "Prompt sophistication and algorithm understanding"
+      }
+    ],
+    "assessors": [
+      "course instructors"
+    ]
+  },
+  "evidence": {
+    "study_type": "pre/post questionnaire evaluation",
+    "sample": {
+      "invited": 324,
+      "unit_of_analysis": "student"
+    },
+    "instruments": [
+      "19-item critical-thinking practices questionnaire"
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-32ea358a9b5f_stimulating-critical-thinking-in-a-web-programming-module-with-generative-ai-tools.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "We created an assessment for this module that instructed learners to utilise GitHub CoPilot and ChatGPT.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016298",
+      "locator": {
+        "section": "III. Implementation, B. Lab Sessions and Projects Assessment"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "We created an assessment for this module that instructed learners to utilise GitHub CoPilot and ChatGPT.",
+      "source_id": "doi:10.1109/EDUCON62633.2025.11016298",
+      "locator": {
+        "section": "III. Implementation, B. Lab Sessions and Projects Assessment"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

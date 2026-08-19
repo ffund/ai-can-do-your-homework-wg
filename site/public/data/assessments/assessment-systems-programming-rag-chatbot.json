@@ -1,0 +1,133 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:systems-programming-rag-chatbot",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Java Systems Programming coursework with a RAG chatbot",
+  "summary": "First-year engineering students complete Java coursework and continuous assessments with optional access to a bilingual, course-grounded chatbot. The RAG assistant explains concepts and code and can support assignments and exam preparation, while students remain responsible for checking its responses.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/tale62452.2024.10834365",
+      "type": "conference_paper",
+      "title": "Tailoring Your Code Companion: Leveraging LLMs and RAG to Develop a Chatbot to Support Students in a Programming Course",
+      "authors": [
+        "Carlos Alario-Hoyos",
+        "Rebiha Kemcha",
+        "Carlos Delgado Kloos",
+        "Patricia Callejo",
+        "Iria Estévez-Ayres",
+        "David Santín-Cristóbal",
+        "Francisco Cruz-Argudo",
+        "José Luis López-Sánchez"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/tale62452.2024.10834365",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "systems-programming-rag-chatbot",
+      "locator": {
+        "section": "IV Methodology"
+      },
+      "evidence_quote": "chatbot was made available to students ... providing students with over a month to use the chatbot freely"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "Systems Programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "telecommunication engineering students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "exercise"
+    ],
+    "summary": "Complete Java programming exercises and assessments with optional course-specific chatbot support.",
+    "student_actions": [
+      "Study and solve Java coursework.",
+      "Ask the chatbot to clarify concepts or explain code.",
+      "Check, adapt, and apply responses to assignments or exam preparation."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java coursework and chatbot conversations",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "An anonymous GPT-3.5 RAG chatbot grounded in course videos, quizzes, exercises, and slides was freely available for over a month."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4dede93a9c2c_tailoring-your-code-companion-leveraging-llms-and-rag-to-develop-a-chatbot-to-support-students-i.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Students sent 1,059 messages; 30 survey respondents primarily used it for concepts and code explanations, and 36.7% reported directly using solutions without verification."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "chatbot was made available to students ... providing students with over a month to use the chatbot freely",
+      "source_id": "doi:10.1109/tale62452.2024.10834365",
+      "locator": {
+        "section": "IV Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1109/tale62452.2024.10834365"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Java coursework and chatbot conversations"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

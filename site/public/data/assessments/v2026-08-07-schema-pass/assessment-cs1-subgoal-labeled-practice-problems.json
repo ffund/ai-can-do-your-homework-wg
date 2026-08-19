@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-subgoal-labeled-practice-problems",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 Python and Java practice problems with AI-generated subgoal labels",
+  "summary": "Novice programmers work through 26 practice problems on variables, expressions, conditionals, loops, and arrays with concise subgoal labels that decompose each solution process without revealing code. ChatGPT-4 generates candidate labels for instructor review before they are incorporated into classroom materials.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641555.3705195",
+      "type": "conference_paper",
+      "title": "How Good are Large Language Models at Generating Subgoal Labels?",
+      "authors": [
+        "Samiha Marwan",
+        "Mohamed Ibrahim",
+        "Briana Morrison"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641555.3705195",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-subgoal-labeled-practice-problems",
+      "locator": {
+        "section": "1 Introduction & Methods"
+      },
+      "evidence_quote": "we prompted ChatGPT 4.0 to generate subgoal labels for 11 and 15 programming practice problems from Python and Java e-books, respectively"
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python and Java programming",
+    "course": {
+      "name": "CS1 programming",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve introductory programming practice problems using readable, non-code subgoal labels as process scaffolding.",
+    "student_actions": [
+      "Read a programming problem and its staged subgoal labels.",
+      "Translate each subgoal into code and complete the solution."
+    ],
+    "inputs": [
+      {
+        "description": "Python or Java problem statement with instructor-reviewed subgoal labels",
+        "provided_by": "instructor",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming problem solutions",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "unknown",
+    "question_or_item_count": 26
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "ChatGPT-4 generates candidate labels; researchers evaluate them before any proposed classroom use."
+    },
+    "assessment_system_role": [
+      "Generate subgoal labels that scaffold problem solving"
+    ],
+    "tools": [
+      "ChatGPT-4"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-b8fae1329cfa_how-good-are-large-language-models-at-generating-subgoal-labels.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "we prompted ChatGPT 4.0 to generate subgoal labels for 11 and 15 programming practice problems from Python and Java e-books, respectively",
+      "source_id": "doi:10.1145/3641555.3705195",
+      "locator": {
+        "section": "1 Introduction & Methods"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

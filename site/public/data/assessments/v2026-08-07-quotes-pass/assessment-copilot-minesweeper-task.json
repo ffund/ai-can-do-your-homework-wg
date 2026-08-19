@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:copilot-minesweeper-task",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Invigilated Minesweeper-style task with GitHub Copilot",
+  "summary": "CS1 novices have 30 minutes to solve a Minesweeper-style C++ programming task in VS Code with GitHub Copilot and other resources available. The task requires input, nested loops, two-dimensional storage, conditional updates, and output; researchers observe each student and follow with an interview.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3617367",
+      "type": "journal_article",
+      "title": "It's Weird That it Knows What I Want: Usability and Interactions with Copilot for Novice Programmers",
+      "authors": [
+        "James Prather",
+        "Brent N. Reeves",
+        "Paul Denny",
+        "Brett A. Becker",
+        "Juho Leinonen",
+        "Andrew Luxton-Reilly",
+        "Garrett Powell",
+        "James Finnie-Ansley",
+        "Eddie Antonio Santos"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3617367",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "copilot-minesweeper-study-task",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "Each participant had 30 minutes to complete the program and was allowed to utilize Copilot as well as any resource such as notes or the internet."
+    }
+  ],
+  "context": {
+    "discipline": "introductory C++ programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "term": "Spring 2022",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice undergraduate programmers",
+    "research_sample_size": 19,
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Implement a Minesweeper-style C++ program using nested loops and two-dimensional data within 30 minutes.",
+    "student_actions": [
+      "Read the programming brief.",
+      "Write and test C++ code in VS Code.",
+      "Accept, reject, or modify Copilot suggestions.",
+      "Complete a short post-task interview."
+    ],
+    "outputs": [
+      {
+        "artifact": "C++ program",
+        "required": true
+      },
+      {
+        "artifact": "Interview responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 30,
+    "delivery": {
+      "modality": "in_person",
+      "setting": "invigilated",
+      "platforms": [
+        "Visual Studio Code",
+        "GitHub Copilot"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Copilot offers inline code completions that students may accept, reject, or ignore."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required"
+      }
+    ],
+    "tools": [
+      "GitHub Copilot"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "evidence": {
+    "study_type": "observational user study with interviews",
+    "sample": {
+      "participating": 19,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-3a2d637bcdd7_its-weird-that-it-knows-what-i-want-usability-and-interactions-with-copilot-for-novice-programme.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Each participant had 30 minutes to complete the program and was allowed to utilize Copilot as well as any resource such as notes or the internet.",
+      "source_id": "doi:10.1145/3617367",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Each participant had 30 minutes to complete the program and was allowed to utilize Copilot as well as any resource such as notes or the internet.",
+      "source_id": "doi:10.1145/3617367",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Each participant had 30 minutes to complete the program and was allowed to utilize Copilot as well as any resource such as notes or the internet.",
+      "source_id": "doi:10.1145/3617367",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

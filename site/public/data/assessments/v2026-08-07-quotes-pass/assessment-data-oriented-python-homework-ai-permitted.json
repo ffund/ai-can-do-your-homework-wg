@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-oriented-python-homework-ai-permitted",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Data-Oriented Programming homework and projects with disclosed LLM use",
+  "summary": "Students complete eight Python homework assignments and two projects by fixing bugs and writing functions from scratch. They may use university-provided or external LLMs to explain and debug code, but must disclose the tool and its help, understand all submitted code, and remain responsible for correctness.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3632620.3671098",
+      "type": "conference_paper",
+      "title": "Insights from Social Shaping Theory: The Appropriation of Large Language Models in an Undergraduate Programming Course",
+      "authors": [
+        "Aadarsh Padiyath",
+        "Xinying Hou",
+        "Amy Pang",
+        "Diego Viramontes Vargas",
+        "Xingjian Gu",
+        "Tamara Nelson-Fromm",
+        "Zihan Wu",
+        "Mark Guzdial",
+        "Barbara Ericson"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3632620.3671098",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-oriented-python-homework",
+      "locator": {
+        "section": "3.1.2 Course Homework and Midterms"
+      },
+      "evidence_quote": "Each homework assignment (8 total) and project (2 total) asked students to fix bugs and/or create several functions from scratch"
+    }
+  ],
+  "context": {
+    "discipline": "intermediate Python and data-oriented programming",
+    "course": {
+      "name": "Data-Oriented Programming",
+      "level": "undergraduate",
+      "institution": "University of Michigan",
+      "term": "Fall 2023",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "intermediate undergraduate",
+    "cohort_size": 203,
+    "learner_level_category": "post_introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "project"
+    ],
+    "summary": "Fix Python bugs and implement functions across eight homework assignments and two projects with optional, disclosed LLM support.",
+    "student_actions": [
+      "Debug and implement Python code.",
+      "Use LLMs selectively for explanation or debugging.",
+      "Verify and understand submitted code.",
+      "Cite collaborators and AI assistance."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python homework and project code",
+        "required": true
+      },
+      {
+        "artifact": "Collaboration and LLM-use disclosure",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "LLMs are permitted as collaborators for explanation and debugging, but complete-answer generation is discouraged."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Explain code",
+          "Debug code"
+        ],
+        "prohibited_actions": [
+          "Generate a complete answer without understanding it"
+        ],
+        "disclosure_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "GPT-4",
+      "GPT-3.5",
+      "Llama 2",
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Course staff grade homework and projects; students are responsible for correctness and may receive zero for undisclosed copied work."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:data-oriented-python-midterms-no-ai",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8cf839b332b4_insights-from-social-shaping-theory-the-appropriation-of-large-language-models-in-an-undergradua.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Each homework assignment (8 total) and project (2 total) asked students to fix bugs and/or create several functions from scratch",
+      "source_id": "doi:10.1145/3632620.3671098",
+      "locator": {
+        "section": "3.1.2 Course Homework and Midterms"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

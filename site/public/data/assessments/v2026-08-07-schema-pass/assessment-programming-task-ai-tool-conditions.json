@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:programming-task-ai-tool-conditions",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Programming task under no-help, chatbot, and code-generation conditions",
+  "summary": "Students complete a programming task under one of three support conditions: no external help, an AI chatbot, or a generative coding tool such as GitHub Copilot. Pre- and post-task quizzes and an interview capture performance and experience for the research study.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/fie58773.2023.10343037",
+      "type": "conference_paper",
+      "title": "An Exploratory Study on the Impact of AI tools on the Student Experience in Programming Courses: an Intersectional Analysis Approach",
+      "authors": [
+        "Mary Lou Maher",
+        "Sri Yash Tadimalla",
+        "Dhruv Dhamani"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/FIE58773.2023.10343037",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "programming-task-ai-tool-conditions"
+    }
+  ],
+  "context": {
+    "discipline": "programming",
+    "course": {
+      "name": "programming courses",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "diagnostic"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "quiz"
+    ],
+    "summary": "Complete a programming task with assigned access to no help, an AI chatbot, or GitHub Copilot, alongside pre- and post-task quizzes.",
+    "student_actions": [
+      "Take a pre-task quiz.",
+      "Complete the assigned programming task under one support condition.",
+      "Take a post-task quiz and interview."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming-task solution",
+        "required": true
+      },
+      {
+        "artifact": "Pre- and post-task quiz responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "AI access depends on the assigned experimental condition."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Programming-task support in assigned AI conditions"
+        ],
+        "disclosure_required": "not_applicable"
+      }
+    ],
+    "tools": [
+      "AI chatbot",
+      "GitHub Copilot"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-13d1d033a3ed_an-exploratory-study-on-the-impact-of-ai-tools-on-the-student-experience-in-programming-courses.pdf"
+  }
+}
+

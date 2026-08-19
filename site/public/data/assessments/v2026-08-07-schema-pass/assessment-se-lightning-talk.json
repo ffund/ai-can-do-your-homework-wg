@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:se-lightning-talk",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Software-engineering lightning talk",
+  "summary": "Undergraduate and graduate software-engineering students prepare 15 auto-advancing slides and deliver a five-minute in-class presentation on an assigned topic. AI tools are allowed for writing assessments when students cite AI material, while the timed live delivery requires students to understand and rehearse their work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/CSEET62301.2024.10663042",
+      "type": "conference_paper",
+      "title": "Using Generative Artificial Intelligence Tools in Software Engineering Courses",
+      "authors": [
+        "Soma Datta"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CSEET62301.2024.10663042",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "lighting-talk-assessment",
+      "locator": {
+        "section": "main text"
+      },
+      "evidence_quote": "Students are given a topic ahead of time, and they prepare 15 slides along with a five-minute presentation."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "software engineering courses",
+      "level": "undergraduate and graduate",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate and graduate students",
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "presentation"
+    ],
+    "summary": "Prepare 15 auto-scrolling slides and present an assigned software-engineering topic in five minutes.",
+    "student_actions": [
+      "Research the assigned topic.",
+      "Prepare 15 auto-advancing slides.",
+      "Rehearse and deliver a five-minute presentation."
+    ],
+    "outputs": [
+      {
+        "artifact": "15-slide deck",
+        "required": true
+      },
+      {
+        "artifact": "Five-minute presentation",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 5
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students may use AI for writing but must cite AI-derived material."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "citation_required": true
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "The source reports the presentation as a summative assessment but does not provide a rubric."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:se-inclass-writing-defense",
+      "relationship": "compared_with"
+    },
+    {
+      "id": "assessment:se-ai-enabled-project",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2373d0896fbc_using-generative-artificial-intelligence-tools-in-software-engineering-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students are given a topic ahead of time, and they prepare 15 slides along with a five-minute presentation.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10663042",
+      "locator": {
+        "section": "main text"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Students are given a topic ahead of time, and they prepare 15 slides along with a five-minute presentation.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10663042",
+      "locator": {
+        "section": "main text"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

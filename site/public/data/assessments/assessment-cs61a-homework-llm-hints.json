@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs61a-homework-llm-hints",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS61A homework with student-rated LLM hints",
+  "summary": "Students repeatedly submit CS1 homework code to an autograder and can request an LLM-generated hint on each submission. They rate hint quality, including whether it is misleading, allowing inaccurate guidance and student reactions to be studied.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641555.3705253",
+      "type": "conference_paper",
+      "title": "Spotting AI Missteps: Students Take on LLM Errors in CS1",
+      "authors": [
+        "Samantha Boatright Smith",
+        "Heather Wei",
+        "Abby O'Neill",
+        "Aneesh Durai",
+        "John DeNero",
+        "J.D. Zamfirescu-Pereira",
+        "Narges Norouzi"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641555.3705253",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs61a-homework-llm-hints",
+      "locator": {
+        "section": "2 Method"
+      },
+      "evidence_quote": "Students can request feedback from an LLM-based bot with each submission"
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "COMPSCI 61A",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "CS1 students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "homework"
+    ],
+    "summary": "Solve CS61A programming homework with unlimited autograder submissions.",
+    "student_actions": [
+      "Write and submit homework code.",
+      "Optionally request a bot hint with a submission.",
+      "Rate the hint's usefulness or accuracy.",
+      "Revise and resubmit code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python homework code and hint ratings",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "An LLM homework tutor generated hints; students could flag misleading or incorrect responses."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Autograder accepted unlimited submissions; other grading details were not reported."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e8e1e2f44260_spotting-ai-missteps-students-take-on-llm-errors-in-cs1.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Dataset covered about 100,000 requests over three semesters in a roughly 2,000-student course; 40 flagged sequences were sampled."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students can request feedback from an LLM-based bot with each submission",
+      "source_id": "doi:10.1145/3641555.3705253",
+      "locator": {
+        "section": "2 Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students can request feedback from an LLM-based bot with each submission",
+      "source_id": "doi:10.1145/3641555.3705253",
+      "locator": {
+        "section": "2 Method"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641555.3705253"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

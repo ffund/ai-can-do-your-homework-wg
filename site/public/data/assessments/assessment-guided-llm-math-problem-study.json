@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:guided-llm-math-problem-study",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Guided LLM elementary and high-school math problem study",
+  "summary": "Adult online participants solve elementary- and high-school-level mathematics problems with either a prompted or unprompted LLM chatbot. Ten experimental variants combine five guidance conditions with two chatbot configurations to compare performance, confidence, and trust.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3687038",
+      "type": "journal_article",
+      "title": "Guiding Students in Using LLMs in Supported Learning Environments: Effects on Interaction Dynamics, Learner Performance, Confidence, and Trust",
+      "authors": [
+        "Harsh Kumar",
+        "Ilya Musabirov",
+        "Mohi Reza",
+        "Jiakai Shi",
+        "Xinyuan Wang",
+        "Joseph Jay Williams",
+        "Anastasia Kuzminykh",
+        "Michael Liut"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3687038",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "guided-llm-math-problem-study",
+      "locator": {
+        "section": "5 Study-2"
+      },
+      "evidence_quote": "crowdworkers (N=356) were asked to solve math problems at the elementary and high school level with the help of an LLM chatbot"
+    }
+  ],
+  "context": {
+    "discipline": "mathematics",
+    "course": {
+      "name": "Prolific controlled study",
+      "level": "elementary and high-school problem level",
+      "level_category": "pre_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "adult crowdworkers",
+    "research_sample_size": 356,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve standardized elementary- and high-school mathematics problems with an LLM chatbot under an assigned guidance and prompting condition.",
+    "student_actions": [
+      "Review assigned LLM-use guidance, if any.",
+      "Solve mathematics problems with chatbot support.",
+      "Rate confidence and trust before and after the task."
+    ],
+    "outputs": [
+      {
+        "artifact": "Mathematics problem responses",
+        "required": true
+      },
+      {
+        "artifact": "Chatbot interaction log and perception ratings",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Participants use either a prompted or unprompted LLM under one of five guidance conditions."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Problem-solving support and solution refinement"
+        ],
+        "transcript_required": true
+      }
+    ],
+    "tools": [
+      "LLM chatbot"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:database-guided-llm-assignment",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-dfc534bec2ea_guiding-students-in-using-llms-in-supported-learning-environments-effects-on-interaction-dynamic.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "crowdworkers (N=356) were asked to solve math problems at the elementary and high school level with the help of an LLM chatbot",
+      "source_id": "doi:10.1145/3687038",
+      "locator": {
+        "section": "5 Study-2"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "crowdworkers (N=356) were asked to solve math problems at the elementary and high school level with the help of an LLM chatbot",
+      "source_id": "doi:10.1145/3687038",
+      "locator": {
+        "section": "5 Study-2"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3687038"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "An AI interaction transcript is required."
+    ],
+    "process_evidence": [
+      "Chatbot interaction log and perception ratings"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

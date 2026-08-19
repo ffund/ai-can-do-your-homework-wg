@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:persian-conditional-programming-question-bank",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Persian conditional-programming question bank",
+  "summary": "Four language models generate 122 Persian questions and exercises for novice learners across Bloom's cognitive levels. Five Persian-speaking experts review the items for taxonomy alignment, relevance to conditional programming, and clarity before classroom use.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/ist64061.2024.10843532",
+      "type": "conference_paper",
+      "title": "Evaluating LLM-Generated Persian Questions for Teaching Conditional Programming Using Bloom’s Taxonomy",
+      "authors": [
+        "Marzieh Alidadi",
+        "Fattaneh Taghiyareh",
+        "Narges Shahhoseini"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/ist64061.2024.10843532",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "persian-conditional-programming-question-bank",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "evidence_quote": "This method provided us with a total of 122 distinct questions tagged across the different cognitive levels of Bloom's Taxonomy."
+    }
+  ],
+  "context": {
+    "discipline": "conditional programming",
+    "course": {
+      "name": "not_reported",
+      "level": "novice learner",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "novice learner",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "Four language models generate 122 Persian questions and exercises for novice learners across Bloom's cognitive levels.",
+    "student_actions": [
+      "Answer Persian-language questions about conditional structures in programming."
+    ],
+    "outputs": [
+      {
+        "artifact": "question responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Five Persian-speaking experts review the items for taxonomy alignment, relevance to conditional programming, and clarity before classroom use."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5afeb6817c7d_evaluating-llm-generated-persian-questions-for-teaching-conditional-programming-using-blooms-tax.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "This method provided us with a total of 122 distinct questions tagged across the different cognitive levels of Bloom's Taxonomy.",
+      "source_id": "doi:10.1109/ist64061.2024.10843532",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+

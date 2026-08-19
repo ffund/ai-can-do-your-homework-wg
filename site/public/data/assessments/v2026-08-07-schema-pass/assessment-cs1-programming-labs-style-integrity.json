@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-programming-labs-style-integrity",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS1 programming labs with style-anomaly integrity review",
+  "summary": "Students complete multiple weekly C++ labs in zyBooks with unlimited attempts and immediate tests. Instructors use style-anomaly and similarity scores, code histories, time-on-task, and follow-up discussion to investigate externally obtained or AI-generated solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653626",
+      "type": "conference_paper",
+      "title": "Style Anomalies Can Suggest Cheating in CS1 Programs",
+      "authors": [
+        "Benjamin Denzler",
+        "Frank Vahid",
+        "Ashley Pang",
+        "Mariam Salloum"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653626",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-programming-labs-style-integrity",
+      "locator": {
+        "section": "3 Our CS1 Course; 10 Instructor Use"
+      },
+      "evidence_quote": "Programming assignments typically contribute 15-25% of the course grade"
+    }
+  ],
+  "context": {
+    "discipline": "C++ programming",
+    "course": {
+      "name": "CS1",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "computing and science/engineering majors",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "practice"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "homework"
+    ],
+    "summary": "Complete four to seven C++ programming labs per week.",
+    "student_actions": [
+      "Write and repeatedly submit C++ programs.",
+      "Follow the coding style and constructs taught in the course.",
+      "Explain work if an instructor identifies a high-concern submission."
+    ],
+    "outputs": [
+      {
+        "artifact": "C++ lab programs and development histories",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "Externally obtained solutions, including ChatGPT code, were treated as possible cheating; style review was an instructor-side integrity control."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "zyBooks awarded 1-2 points per passed test with immediate feedback and unlimited attempts."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-3258fbe73f24_style-anomalies-can-suggest-cheating-in-cs1-programs.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Six labs from 2021-22 and three Spring 2023 labs were analyzed; style was a primary reason in 19 of 26 recent sanctions."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "grading",
+      "quote": "Programming assignments typically contribute 15-25% of the course grade",
+      "source_id": "doi:10.1145/3649217.3653626",
+      "locator": {
+        "section": "3 Our CS1 Course; 10 Instructor Use"
+      },
+      "supports": "Grading and stakes",
+      "context": "authors_report"
+    }
+  ]
+}
+

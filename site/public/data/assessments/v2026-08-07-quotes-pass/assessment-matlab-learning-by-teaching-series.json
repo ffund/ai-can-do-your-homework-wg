@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:matlab-learning-by-teaching-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "MATLAB learning-by-teaching sessions with MatlabTutee",
+  "summary": "Students teach MATLAB concepts to an LLM that simulates a novice learner, explaining concepts, examples, and code over repeated sessions. The activity uses teaching as the assessed learning process and compares the teachable agent with a human novice persona and an expert GPT-4 assistant.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3706598.3713644",
+      "type": "conference_paper",
+      "title": "Playing Dumb to Get Smart: Creating and Evaluating an LLM-based Teachable Agent within University Computer Science Classes",
+      "authors": [
+        "Kantwon Rogers",
+        "Michael Davis",
+        "Mallesh Maharana",
+        "Pete Etheredge",
+        "Sonia Chernova"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3706598.3713644",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "matlab-learning-by-teaching-series",
+      "locator": {
+        "section": "4 Developing an LLM as a learning partner"
+      },
+      "evidence_quote": "four studies that explored how the understanding of programming concepts by students evolved"
+    }
+  ],
+  "context": {
+    "discipline": "MATLAB programming",
+    "course": {
+      "name": "Introductory MATLAB programming for engineers",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate engineering students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "practice"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Teach a learning partner MATLAB topics including arrays, conditionals, loops, and file analysis.",
+    "student_actions": [
+      "Explain MATLAB concepts and provide examples.",
+      "Answer the partner's questions and correct misunderstandings.",
+      "Reflect on knowledge and teaching after each session."
+    ],
+    "outputs": [
+      {
+        "artifact": "Text-chat teaching transcripts and assessment responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students taught GPT-4-based MatlabTutee or interacted with MatlabGPT in study conditions."
+    }
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1401da06277c_playing-dumb-to-get-smart-creating-and-evaluating-an-llm-based-teachable-agent-within-university.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Four studies involved 119 students, ranging from a 30-minute formative session to month-long deployments."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "four studies that explored how the understanding of programming concepts by students evolved",
+      "source_id": "doi:10.1145/3706598.3713644",
+      "locator": {
+        "section": "4 Developing an LLM as a learning partner"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

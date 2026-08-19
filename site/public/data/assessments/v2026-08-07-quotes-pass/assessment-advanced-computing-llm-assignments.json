@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:advanced-computing-llm-assignments",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Advanced computing assignments with permitted LLM use",
+  "summary": "Undergraduate and graduate students complete advanced computing programming assignments while using large language models at their discretion. The study examines the tasks for which students use LLMs, their prompting and verification practices, and their perceptions of effects on assignment work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716657",
+      "type": "conference_paper",
+      "title": "Analyzing LLM Usage in an Advanced Computing Class in India",
+      "authors": [
+        "Utkarsh Arora",
+        "Anupam Garg",
+        "Aryan Gupta",
+        "Samyak Jain",
+        "Ronit Mehta",
+        "Rupin Oberoi",
+        "Prachi",
+        "Aryaman Raina",
+        "Manav Saini",
+        "Sachin Sharma",
+        "Jaskaran Singh",
+        "Sarthak Tyagi",
+        "Dhruv Kumar"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716657",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "advanced-computing-llm-assignments"
+    }
+  ],
+  "context": {
+    "discipline": "advanced computing and programming",
+    "course": {
+      "name": "advanced computing class",
+      "level": "undergraduate and graduate",
+      "institution": "institution in India",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate and graduate",
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Complete advanced computing programming assignments with discretionary LLM assistance.",
+    "student_actions": [
+      "Develop solutions to advanced computing assignments.",
+      "Prompt LLMs and evaluate or revise their output."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming assignment submissions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use LLMs for programming-assignment tasks."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "unknown",
+        "validation_required": "unknown"
+      }
+    ],
+    "tools": [
+      "large language models"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7f0e05cf358f_analyzing-llm-usage-in-an-advanced-computing-class-in-india.pdf"
+  }
+}
+
+

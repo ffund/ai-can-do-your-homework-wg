@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:team-java-game-project-ai-tools",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Team Java game project with encouraged AI-tool use",
+  "summary": "Teams of about seven students develop a networked multiplayer 3D Java game through preparation, analysis, design, coding, and testing phases. General-purpose AI tools are encouraged for selected tasks such as coding, documentation, and proofreading, while supervisors approve each milestone and the final product.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3723010.3723012",
+      "type": "conference_paper",
+      "title": "Generative AI in Student Software Development Projects: A User Study on Experiences and Self-Assessment",
+      "authors": [
+        "Uwe M. Borghoff",
+        "Mark Minas",
+        "Jannis Schopp"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3723010.3723012",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "team-java-game-project",
+      "locator": {
+        "section": "3 The Programming Project"
+      },
+      "evidence_quote": "about seven students work together in a team to create a computer game using a structured development process"
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and Java programming",
+    "course": {
+      "name": "Programming Project",
+      "level": "bachelor's",
+      "institution": "University of the Bundeswehr Munich",
+      "term": "October to December 2024",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "middle- and late-stage bachelor's students",
+    "cohort_size": 49,
+    "research_sample_size": 38,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "pass_requirement": "Supervisor approval of the final product and successful final team presentation."
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Design, implement, test, document, and present a complete networked multiplayer 3D Java game as a team.",
+    "student_actions": [
+      "Extend a supplied Battleship training project.",
+      "Produce requirements, use cases, diagrams, tests, and a user manual.",
+      "Implement and test a Java game.",
+      "Use and critically oversee AI tools where useful.",
+      "Present the game publicly and to the supervisor."
+    ],
+    "inputs": [
+      {
+        "description": "Assigned one-page game proposal and Battleship blueprint",
+        "provided_by": "instructor",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Requirements and software specification documents",
+        "required": true
+      },
+      {
+        "artifact": "Executable multiplayer 3D Java game",
+        "required": true
+      },
+      {
+        "artifact": "User manual and test artifacts",
+        "required": true
+      },
+      {
+        "artifact": "Public and final team presentations",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": {
+      "reported": "about seven students"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Freely available AI tools were encouraged, especially for coding, code documentation, and proofreading, but were not formally integrated into the curriculum."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Code comprehension and generation",
+          "requirements and use-case drafting",
+          "documentation",
+          "proofreading",
+          "testing and debugging"
+        ],
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Claude",
+      "Gemini",
+      "LLaMA"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Pass-credit decision based on supervisor approval and presentations; no differentiated grade was awarded.",
+    "assessors": [
+      "team supervisor"
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c42b7e215de6_generative-ai-in-student-software-development-projects-a-user-study-on-experiences-and-self-asse.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "about seven students work together in a team to create a computer game using a structured development process",
+      "source_id": "doi:10.1145/3723010.3723012",
+      "locator": {
+        "section": "3 The Programming Project"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

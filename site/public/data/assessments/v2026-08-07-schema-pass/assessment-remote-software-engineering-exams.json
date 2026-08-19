@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:remote-software-engineering-exams",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Remote oral and open-book software engineering exams",
+  "summary": "Third-year students in Reactive Programming and Artificial Intelligence complete either remote oral interviews or timed open-book home exams. GPT-4 can answer much of the written format, while oral exams use adaptive questioning, recorded video, and reflection to authenticate understanding.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3593663.3593695",
+      "type": "conference_paper",
+      "title": "Experiences with Remote Examination Formats in Light of GPT-4",
+      "authors": [
+        "Felix Dobslaw",
+        "Peter Bergh"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3593663.3593695",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "remote-software-engineering-exams",
+      "locator": {
+        "section": "3.2 Examination Conduct"
+      },
+      "evidence_quote": "An interview lasts 20 minutes and ends with a 10-minute reflection round."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering, reactive programming, and artificial intelligence",
+    "course": {
+      "name": "Reactive Programming and Artificial Intelligence",
+      "level": "third-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "third-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam",
+      "oral_exam"
+    ],
+    "summary": "Third-year students in Reactive Programming and Artificial Intelligence complete either remote oral interviews or timed open-book home exams.",
+    "student_actions": [
+      "Answer timed open-book questions from home.",
+      "Or answer adaptive questions in a recorded oral interview.",
+      "Explain code, figures, and course concepts."
+    ],
+    "outputs": [
+      {
+        "artifact": "written exam responses or recorded oral responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "GPT-4 can answer much of the written format, while oral exams use adaptive questioning, recorded video, and reflection to authenticate understanding."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9ad2f9ff2064_experiences-with-remote-examination-formats-in-light-of-gpt-4.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "An interview lasts 20 minutes and ends with a 10-minute reflection round.",
+      "source_id": "doi:10.1145/3593663.3593695",
+      "locator": {
+        "section": "3.2 Examination Conduct"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

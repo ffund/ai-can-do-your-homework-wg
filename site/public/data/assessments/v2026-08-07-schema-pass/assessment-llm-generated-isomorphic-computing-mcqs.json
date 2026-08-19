@@ -1,0 +1,108 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:llm-generated-isomorphic-computing-mcqs",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "LLM-generated isomorphic computing MCQs",
+  "summary": "An instructor supplies a question stem and uses GPT-3 or GPT-4 to draft a correct answer and plausible distractors for an isomorphic computing question. The paper proposes the resulting items for bespoke quizzes and in-class misconception checks, but requires instructor review because generated answers are not reliable in every case.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE58773.2023.10342898",
+      "type": "conference_paper",
+      "title": "Generating Multiple Choice Questions for Computing Courses Using Large Language Models",
+      "authors": [
+        "Andrew Tran",
+        "Kenneth Angelikas",
+        "Egi Rama",
+        "Chiku Okechukwu",
+        "David H. Smith",
+        "Stephen MacNeil"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/FIE58773.2023.10342898",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "llm-generated-isomorphic-computing-mcqs",
+      "locator": {
+        "section": "I. Introduction"
+      },
+      "evidence_quote": "The LLM generates a correct answer and three distractors."
+    }
+  ],
+  "context": {
+    "discipline": "introductory computing and C programming",
+    "course": {
+      "name": "Introductory C Programming",
+      "level": "introductory",
+      "institution": "Temple University",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Answer an instructor-reviewed isomorphic multiple-choice question aligned with a course concept or recent lab misconception.",
+    "student_actions": [
+      "Read a computing question stem.",
+      "Select an answer from one key and several plausible distractors."
+    ],
+    "outputs": [
+      {
+        "artifact": "Multiple-choice response",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GPT-3 or GPT-4 drafts answer choices for instructor review; no student-facing AI use is specified."
+    },
+    "assessment_system_role": [
+      "generate_correct_answer",
+      "generate_distractors",
+      "generate_isomorphic_question"
+    ],
+    "tools": [
+      "GPT-3",
+      "GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c06632678b6c_generating-multiple-choice-questions-for-computing-courses-using-large-language-models.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "The LLM generates a correct answer and three distractors.",
+      "source_id": "doi:10.1109/FIE58773.2023.10342898",
+      "locator": {
+        "section": "I. Introduction"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

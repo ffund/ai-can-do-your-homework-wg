@@ -1,0 +1,257 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:code-interviews",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Code interviews for weekly take-home programming assignments",
+  "summary": "Students attend short in-person oral assessments about five required take-home Python assignments. TAs ask students to trace, compare, debug, extend, or rewrite aspects of their own work, providing evidence of understanding when take-home code may have been AI-assisted.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701806",
+      "type": "conference_paper",
+      "title": "Code Interviews: Design and Evaluation of a More Authentic Assessment for Introductory Programming Assignments",
+      "authors": [
+        "Suhas Kannam",
+        "Yuri Yang",
+        "Aarya Dharm",
+        "Kevin Lin"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701806",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "code-interview-series",
+      "locator": {
+        "section": "2. Code Interviews"
+      },
+      "evidence_quote": "Code interviews are a type of live oral assessment for programming."
+    }
+  ],
+  "context": {
+    "discipline": "Python and data programming",
+    "course": {
+      "name": "Intermediate Data Programming",
+      "level": "undergraduate",
+      "institution": "University of Washington",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "early-career undergraduate students",
+    "cohort_size": 200,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "diagnostic"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "oral_exam",
+      "project_defense"
+    ],
+    "summary": "Explain and extend recently submitted take-home programming work in a brief live interview with a teaching assistant.",
+    "student_actions": [
+      "Trace a test case through their program.",
+      "Compare their approach with another solution.",
+      "Identify an alternative approach.",
+      "Find a bug in a supplied solution.",
+      "Write code for an isomorphic problem.",
+      "Explain the reasoning behind answers."
+    ],
+    "outputs": [
+      {
+        "artifact": "Live oral explanations",
+        "required": true
+      },
+      {
+        "artifact": "Live tracing, debugging, or coding response",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies",
+    "duration_minutes": 5,
+    "timing": {
+      "mode": "synchronous",
+      "release": "On the due date of each of five weekly programming assignments"
+    },
+    "delivery": {
+      "modality": "in_person",
+      "setting": "invigilated"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "unknown",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The live interview is an integrity-oriented supplement to take-home work in the GenAI era; the paper does not report an explicit AI-use rule for the interview itself."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "validation_required": "not_applicable"
+      }
+    ],
+    "assessment_system_role": [
+      "The oral assessment provides independent evidence that the student can explain and extend submitted code."
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Teaching assistants apply a four-level proficiency rubric.",
+    "criteria": [
+      {
+        "criterion": "Correctness"
+      },
+      {
+        "criterion": "Effectiveness of explanation"
+      },
+      {
+        "criterion": "Substantial contribution to discussion"
+      }
+    ],
+    "assessors": [
+      "teaching assistants"
+    ],
+    "models": [
+      "Exemplary",
+      "Satisfactory",
+      "Approaching",
+      "Unassessable"
+    ]
+  },
+  "evidence": {
+    "study_type": "two-quarter action-research study",
+    "instruments": [
+      "weekly surveys",
+      "observations",
+      "student focus groups",
+      "small-group instructional diagnosis",
+      "TA interviews"
+    ],
+    "reported_results": [
+      "Winter interviews were conducted in groups of three or four; spring variants used pairs or individual interviews.",
+      "Spring results were 30% Exemplary, 63% Satisfactory, and 7% Approaching."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fd27abc0064b_code-interviews-design-and-evaluation-of-a-more-authentic-assessment-for-introductory-programmin.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "verification",
+      "quote": "Code interviews are a type of live oral assessment for programming.",
+      "source_id": "doi:10.1145/3641554.3701806",
+      "locator": {
+        "section": "2. Code Interviews"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    },
+    {
+      "kind": "verification",
+      "quote": "Code interviews were offered only in-person and designed to evaluate students’ ability to explain and extend their weekly take-home programming work.",
+      "source_id": "doi:10.1145/3641554.3701806",
+      "locator": {
+        "section": "2. Code Interviews"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    },
+    {
+      "kind": "verification",
+      "quote": "Spring quarter code interviews focused on specific questions drawn from a selection of question types: tracing a test case, comparing approaches, identifying an alternative approach, finding a bug, and writing code to solve an isomorphic problem.",
+      "source_id": "doi:10.1145/3641554.3701806",
+      "locator": {
+        "section": "2.2 Spring Quarter"
+      },
+      "supports": "Independent verification of student understanding",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701806"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-combine-project-deliverables-with-oral-and-qualitative-verification",
+      "practice_name": "Combine project deliverables with oral and qualitative verification",
+      "rationale": "In-person oral interviews verify weekly take-home programming work.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701806",
+          "quote": "Code interviews were offered only in-person and designed to evaluate students’ ability to explain and extend their weekly take-home programming work.",
+          "locator": {
+            "section": "2. Code Interviews"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-require-real-time-modification-or-extension-during-oral-assessment",
+      "practice_name": "Require real-time modification or extension during oral assessment",
+      "rationale": "Students extend their work and write code for an isomorphic problem during the interview.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701806",
+          "quote": "Code interviews were offered only in-person and designed to evaluate students’ ability to explain and extend their weekly take-home programming work.",
+          "locator": {
+            "section": "2. Code Interviews"
+          }
+        },
+        {
+          "source_id": "doi:10.1145/3641554.3701806",
+          "quote": "Spring quarter code interviews focused on specific questions drawn from a selection of question types: tracing a test case, comparing approaches, identifying an alternative approach, finding a bug, and writing code to solve an isomorphic problem.",
+          "locator": {
+            "section": "2.2 Spring Quarter"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-use-explanation-alternatives-and-counterfactual-questions",
+      "practice_name": "Use explanation, alternatives, and counterfactual questions",
+      "rationale": "Interview questions require tracing, comparison, alternative approaches, debugging, and an isomorphic problem.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701806",
+          "quote": "Spring quarter code interviews focused on specific questions drawn from a selection of question types: tracing a test case, comparing approaches, identifying an alternative approach, finding a bug, and writing code to solve an isomorphic problem.",
+          "locator": {
+            "section": "2.2 Spring Quarter"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

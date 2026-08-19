@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:personalized-parsons-generation",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Student-personalized Parsons problem generation",
+  "summary": "Students use PuzzleMakerPy to generate Parsons problems by selecting a personal context and programming topic. They then arrange the generated code fragments into a correct sequence and evaluate the relevance of the tailored exercise.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716658",
+      "type": "conference_paper",
+      "title": "From Automation to Cognition: Redefining the Roles of Educators and Generative AI in Computing Education",
+      "authors": [
+        "Tony Haoran Feng",
+        "Andrew Luxton-Reilly",
+        "Burkhard C Wünsche",
+        "Paul Denny"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716658",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "personalized-parsons-generation",
+      "locator": {
+        "section": "2.3.5 Generating Contextualized Parsons Problems"
+      },
+      "evidence_quote": "Using a custom tool called PuzzleMakerPy, we allowed students to generate personalized Parsons Problems."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "first-year introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Students use PuzzleMakerPy to generate Parsons problems by selecting a personal context and programming topic.",
+    "student_actions": [
+      "Select a context and programming topic.",
+      "Generate a personalized Parsons problem.",
+      "Rearrange code fragments into a correct solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "ordered Parsons solution",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "exercise feedback",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "They then arrange the generated code fragments into a correct sequence and evaluate the relevance of the tailored exercise."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8ff40b8f621f_from-automation-to-cognition-redefining-the-roles-of-educators-and-generative-ai-in-computing-ed.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Using a custom tool called PuzzleMakerPy, we allowed students to generate personalized Parsons Problems.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "2.3.5 Generating Contextualized Parsons Problems"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

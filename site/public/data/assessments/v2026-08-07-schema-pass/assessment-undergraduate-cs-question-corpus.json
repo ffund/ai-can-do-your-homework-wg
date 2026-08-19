@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:undergraduate-cs-question-corpus",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Undergraduate computer science exam-question corpus",
+  "summary": "Answer true-false, multiple-choice, multi-select, short-answer, long-answer, design, and coding questions drawn from course exams and practice sources. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630803",
+      "type": "conference_paper",
+      "title": "ChatGPT in the Classroom: An Analysis of Its Strengths and Weaknesses for Solving Undergraduate Computer Science Questions",
+      "authors": [
+        "Joshi, Ishika",
+        "Budhiraja, Ritvik",
+        "Dev, Harshal",
+        "Kadia, Jahnvi",
+        "Ataullah, Mohammad Osama",
+        "Mitra, Sayan",
+        "Akolekar, Harshal D.",
+        "Kumar, Dhruv"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630803",
+      "url": "https://doi.org/10.1145/3626252.3630803",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "undergraduate-cs-question-corpus",
+      "locator": {
+        "section": "3 Research Contributions"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "data structures, databases, operating systems, and machine learning",
+    "course": {
+      "name": "Undergraduate computer science core courses",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam",
+      "quiz",
+      "exercise"
+    ],
+    "summary": "Answer true-false, multiple-choice, multi-select, short-answer, long-answer, design, and coding questions drawn from course exams and practice sources.",
+    "student_actions": [
+      "Answer true-false, multiple-choice, multi-select, short-answer, long-answer, design, and coding questions drawn from course exams and practice sources."
+    ],
+    "outputs": [
+      {
+        "artifact": "Answers and code solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT 3.5 research evaluation"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e64c42a207f8_chatgpt-in-the-classroom-an-analysis-of-its-strengths-and-weaknesses-for-solving-undergraduate-c.pdf"
+  }
+}
+

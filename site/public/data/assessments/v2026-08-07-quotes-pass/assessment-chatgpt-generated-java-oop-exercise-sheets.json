@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-generated-java-oop-exercise-sheets",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "ChatGPT-generated Java objects-first exercise sheets",
+  "summary": "Nine fifth-semester students solve 12 instructor-reviewed Java exercise sheets during a two-week objects-first programming course. Lecturers generated and revised the sheets with ChatGPT; students received the curated exercises rather than interacting with the model as part of the tasks.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/CSEET58097.2023.00030",
+      "type": "conference_paper",
+      "title": "Investigating the Use of AI-Generated Exercises for Beginner and Intermediate Programming Courses: A ChatGPT Case Study",
+      "authors": [
+        "Sandro Speth",
+        "Niklas Meissner",
+        "Steffen Becker"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/CSEET58097.2023.00030",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "chatgpt-generated-java-oop-exercise-sheets",
+      "locator": {
+        "section": "II. Course Background"
+      },
+      "evidence_quote": "For the exercise parts, we created in total 12 exercise sheets (sheets 0 to 11)"
+    }
+  ],
+  "context": {
+    "discipline": "object-oriented Java programming",
+    "course": {
+      "name": "not_reported",
+      "level": "fifth-semester undergraduate",
+      "institution": "University of Education Ludwigsburg",
+      "term": "not_reported",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "beginner to intermediate programming students preparing to become computer science teachers",
+    "cohort_size": 9,
+    "research_sample_size": 8,
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "problem_set"
+    ],
+    "summary": "Complete 12 practical exercise sheets spanning Java foundations, object use, control flow, APIs, class design, inheritance, UML, streams, testing, and error classification.",
+    "student_actions": [
+      "Identify objects, classes, attributes, methods, and relationships.",
+      "Write and extend Java operations and classes.",
+      "Model software with UML diagrams.",
+      "Test programs and identify errors."
+    ],
+    "outputs": [
+      {
+        "artifact": "Solutions to 12 Java exercise sheets",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown",
+    "timing": {
+      "mode": "synchronous"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Lecturers generated and manually revised the exercise sheets with ChatGPT before students received them."
+    },
+    "assessment_system_role": [
+      "Generate exercise drafts and solutions for lecturer review"
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "model": "GPT-3"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "classroom case study",
+    "sample": {
+      "participating": 9,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-94a9e0e4fdb4_investigating-the-use-of-ai-generated-exercises-for-beginner-and-intermediate-programming-course.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "For the exercise parts, we created in total 12 exercise sheets (sheets 0 to 11)",
+      "source_id": "doi:10.1109/CSEET58097.2023.00030",
+      "locator": {
+        "section": "II. Course Background"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

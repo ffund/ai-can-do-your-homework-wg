@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:database-course-llm-chatbot",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Database and information-systems coursework with an LMS chatbot",
+  "summary": "Students in database and information-systems education use an LLM-driven chatbot integrated with Moodle while working through course learning activities. The chatbot supports self-regulated learning and help seeking by answering course-related questions within the learning-management environment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/te.2024.3467912",
+      "type": "journal_article",
+      "title": "An LLM-Driven Chatbot in Higher Education for Databases and Information Systems",
+      "authors": [
+        "Alexander Tobias Neumann",
+        "Yue Yin",
+        "Sulayman Sowe",
+        "Stefan Decker",
+        "Matthias Jarke"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/TE.2024.3467912",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "database-course-llm-chatbot"
+    }
+  ],
+  "context": {
+    "discipline": "databases and information systems",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Complete database and information-systems coursework with an embedded Moodle chatbot available for help.",
+    "student_actions": [
+      "Work through course tasks.",
+      "Ask the chatbot course-related questions and apply its responses."
+    ],
+    "outputs": [
+      {
+        "artifact": "Course-task responses",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "unknown",
+      "platforms": [
+        "Moodle"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students interact with the LMS-integrated chatbot during course activities."
+    },
+    "assessment_system_role": [
+      "Provide contextual help and support self-regulated learning."
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-14c7aad17e50_an-llm-driven-chatbot-in-higher-education-for-databases-and-information-systems.pdf"
+  }
+}
+

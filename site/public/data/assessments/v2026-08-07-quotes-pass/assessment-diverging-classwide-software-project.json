@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:diverging-classwide-software-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Class-wide diverging software development project",
+  "summary": "Contribute a team-specific feature to one class-wide repository, collaborating and exchanging process knowledge while producing a necessarily unique code change. Students use GenAI while producing the assessed work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630832",
+      "type": "conference_paper",
+      "title": "Diverging assessments: What, Why, and Experiences",
+      "authors": [
+        "Sakzad, Amin",
+        "Paul, David",
+        "Sheard, Judithe",
+        "Brankovic, Ljiljana",
+        "Skerritt, Matthew P.",
+        "Li, Nan",
+        "Minagar, Sepehr",
+        "Simon",
+        "Billingsley, William"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630832",
+      "url": "https://doi.org/10.1145/3626252.3630832",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "diverging-classwide-software-project",
+      "locator": {
+        "section": "4.3 Software Development"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "software development",
+    "course": {
+      "name": "Software studio",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Contribute a team-specific feature to one class-wide repository, collaborating and exchanging process knowledge while producing a necessarily unique code change.",
+    "student_actions": [
+      "Contribute a team-specific feature to one class-wide repository, collaborating and exchanging process knowledge while producing a necessarily unique code change."
+    ],
+    "outputs": [
+      {
+        "artifact": "Team feature contribution to a class-wide repository",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use GenAI while producing the assessed work."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "Version control, development tools, and optional GenAI"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ed1027c3688f_diverging-assessments-what-why-and-experiences.pdf"
+  }
+}
+
+

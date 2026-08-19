@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:eipe-exam-llm-code-generation-grading",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Explain-in-Plain-English exam questions with LLM-based grading",
+  "summary": "Students explain the high-level purpose of code fragments in short natural-language exam responses. The proposed grading process asks GPT-4 to regenerate code from each explanation and runs instructor-authored unit tests, while the reported deployment used two teaching assistants and a rubric.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626253.3635542",
+      "type": "conference_paper",
+      "title": "Evaluating Large Language Model Code Generation as an Autograding Mechanism for \"Explain in Plain English\" Questions",
+      "authors": [
+        "David H. Smith",
+        "Craig Zilles"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626253.3635542",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "eipe-exam-llm-code-generation-grading",
+      "locator": {
+        "section": "3. Methods"
+      },
+      "evidence_quote": "A total of 6380 responses to 42 EiPE questions from past exams were subject to each of the three CGBG approaches."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "introductory Python course",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Students explain the high-level purpose of code fragments in short natural-language exam responses.",
+    "student_actions": [
+      "Read a code fragment.",
+      "Explain its purpose in plain English."
+    ],
+    "outputs": [
+      {
+        "artifact": "short natural-language code explanation",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "The proposed grading process asks GPT-4 to regenerate code from each explanation and runs instructor-authored unit tests, while the reported deployment used two teaching assistants and a rubric."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ec0fe5297643_evaluating-large-language-model-code-generation-as-an-autograding-mechanism-for-explain-in-plain.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "A total of 6380 responses to 42 EiPE questions from past exams were subject to each of the three CGBG approaches.",
+      "source_id": "doi:10.1145/3626253.3635542",
+      "locator": {
+        "section": "3. Methods"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3626253.3635542"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

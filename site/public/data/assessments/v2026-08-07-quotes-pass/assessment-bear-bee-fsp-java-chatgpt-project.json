@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:bear-bee-fsp-java-chatgpt-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Bear-and-bee FSP and concurrent Java project with ChatGPT",
+  "summary": "Students model a producer-consumer problem in Finite State Processes, implement and test the model in concurrent Java, and use ChatGPT 3.5 for clarification and feedback. They submit the model, code, ChatGPT transcript, and an experience survey for bonus credit.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893046",
+      "type": "conference_paper",
+      "title": "Integrating Conversational Large Language Models into Student Learning: A Case Study of ChatGPT in Software Engineering Education",
+      "authors": [
+        "Yi Liu"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893046",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "bear-bee-fsp-java-chatgpt-project",
+      "locator": {
+        "section": "III. The Design of the Study"
+      },
+      "evidence_quote": "The students were required to submit the designed FSP model for the problem, the Java source code that implemented the FSP model, the chat record with ChatGPT, and a completed survey of 10 questions."
+    }
+  ],
+  "context": {
+    "discipline": "formal methods and concurrent Java programming",
+    "course": {
+      "name": "CIS 461 Formal Methods for Software Engineering",
+      "level": "undergraduate and graduate",
+      "institution": "University of Massachusetts Dartmouth",
+      "term": "Fall 2023",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate and graduate computer science students",
+    "cohort_size": 30,
+    "research_sample_size": 27,
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative",
+      "research_only"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project"
+    ],
+    "summary": "Model the bear-and-bee producer-consumer problem in FSP, implement the model with concurrent Java constructs, and test the implementation.",
+    "student_actions": [
+      "Ask ChatGPT for problem clarification and examples.",
+      "Develop and refine an FSP model.",
+      "Design, implement, and test a concurrent Java solution.",
+      "Evaluate ChatGPT responses rather than requesting direct implementation."
+    ],
+    "outputs": [
+      {
+        "artifact": "FSP model",
+        "required": true
+      },
+      {
+        "artifact": "Java source code",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT chat record",
+        "required": true
+      },
+      {
+        "artifact": "Experience survey",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students were encouraged to use ChatGPT 3.5 for clarification, model and design feedback, code feedback, and debugging."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Problem clarification",
+          "FSP modeling feedback",
+          "System-design feedback",
+          "Code feedback and debugging"
+        ],
+        "prohibited_actions": [
+          "Seek direct implementation from ChatGPT"
+        ],
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "model": "GPT-3.5"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 100,
+      "kind": "points"
+    },
+    "method": "Modeling and implementation performance were scored; the department's satisfactory criterion was 80% of students earning at least 80/100 in each component."
+  },
+  "evidence": {
+    "study_type": "pilot case study",
+    "sample": {
+      "participating": 27,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ece898e45539_integrating-conversational-large-language-models-into-student-learning-a-case-study-of-chatgpt-i.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The students were required to submit the designed FSP model for the problem, the Java source code that implemented the FSP model, the chat record with ChatGPT, and a completed survey of 10 questions.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893046",
+      "locator": {
+        "section": "III. The Design of the Study"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "The students were required to submit the designed FSP model for the problem, the Java source code that implemented the FSP model, the chat record with ChatGPT, and a completed survey of 10 questions.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893046",
+      "locator": {
+        "section": "III. The Design of the Study"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

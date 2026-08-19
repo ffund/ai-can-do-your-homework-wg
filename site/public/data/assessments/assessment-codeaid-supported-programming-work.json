@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:codeaid-supported-programming-work",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Programming coursework supported by CodeAid",
+  "summary": "Complete programming coursework while optionally requesting conceptual guidance, pseudocode, explanations, and debugging support from CodeAid. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613904.3642773",
+      "type": "conference_paper",
+      "title": "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs",
+      "authors": [
+        "Kazemitabaar, Majeed",
+        "Ye, Runlong",
+        "Wang, Xiaoning",
+        "Henley, Austin Zachary",
+        "Denny, Paul",
+        "Craig, Michelle",
+        "Grossman, Tovi"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3613904.3642773",
+      "url": "https://doi.org/10.1145/3613904.3642773",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "codeaid-supported-programming-work",
+      "locator": {
+        "section": "Classroom Deployment"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "C and systems programming",
+    "course": {
+      "name": "Large introductory C and Systems Programming course",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Complete programming coursework while optionally requesting conceptual guidance, pseudocode, explanations, and debugging support from CodeAid.",
+    "student_actions": [
+      "Complete programming coursework while optionally requesting conceptual guidance, pseudocode, explanations, and debugging support from CodeAid."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming assignment solutions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "CodeAid"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-184f9b34d500_codeaid-evaluating-a-classroom-deployment-of-an-llm-based-programming-assistant-that-balances-st.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3613904.3642773"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

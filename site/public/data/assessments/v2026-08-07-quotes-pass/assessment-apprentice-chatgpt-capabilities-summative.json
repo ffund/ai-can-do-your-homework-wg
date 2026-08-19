@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:apprentice-chatgpt-capabilities-summative",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "First-year summative analysis of ChatGPT capabilities and ethics",
+  "summary": "First-year apprentices complete a four-part summative assessment on ChatGPT code generation, argumentation, bias, and professional ethics. They iteratively generate Java and Pep/8 Assembly, test opposing written arguments, document their prompting journey, and critically evaluate workplace and educational implications.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3633053.3633057",
+      "type": "conference_paper",
+      "title": "Incorporating Generative AI into Software Development Education",
+      "authors": [
+        "Olga Petrovska",
+        "Lee Clift",
+        "Faron Moller",
+        "Rebecca Pearsall"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3633053.3633057",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "chatgpt-capabilities-summative",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "The first two parts of the assessment required interacting with ChatGPT to generate well-formatted and functioning code in Java and Pep/8 Assembly"
+    }
+  ],
+  "context": {
+    "discipline": "software engineering, programming, and professional ethics",
+    "course": {
+      "name": "Professional Issues",
+      "level": "first-year degree apprenticeship",
+      "institution": "Swansea University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year degree apprentices",
+    "research_sample_size": 17,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Test ChatGPT's programming and argumentation abilities and critically evaluate its limitations, bias, and ethical implications.",
+    "student_actions": [
+      "Prompt and refine Java and Pep/8 Assembly programs.",
+      "Prompt arguments for cryptocurrency sustainability and opposing positions on a chosen topic.",
+      "Document the prompting journey and analyze output rigorously.",
+      "Discuss professional and ethical implications in education and work."
+    ],
+    "outputs": [
+      {
+        "artifact": "Generated and analyzed Java and Pep/8 code",
+        "required": true
+      },
+      {
+        "artifact": "Generated and analyzed argument texts",
+        "required": true
+      },
+      {
+        "artifact": "Prompting journey and ethical reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT interaction is required across programming and argumentation components."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "validation_required": true,
+        "disclosure_required": true,
+        "disclosure_artifact": "Prompting journey presentation"
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Rubric assesses prompt construction, rigor of output analysis and comparison, journey presentation, overall evaluation, and ethical analysis."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-0df7e3b00b0b_incorporating-generative-ai-into-software-development-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "The first two parts of the assessment required interacting with ChatGPT to generate well-formatted and functioning code in Java and Pep/8 Assembly",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ctfsolve-assisted-ctf-challenges",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CTFSolve-assisted capture-the-flag challenges",
+  "summary": "Cybersecurity participants work through capture-the-flag challenges with a web application that accepts challenge text or images and generates tailored hints. The authors deployed the tool during the Kosovo cyber team's preparation for the 2024 European Cyber Security Challenge.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/CIEES62939.2024.10811132",
+      "type": "conference_paper",
+      "title": "Leveraging AI for CTF Challenge Optimization",
+      "authors": [
+        "Alba Thaqi",
+        "Arbena Musa",
+        "Blerim Rexha"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CIEES62939.2024.10811132",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ctfsolve-assisted-ctf-challenges",
+      "locator": {
+        "section": "V. Conclusion"
+      },
+      "evidence_quote": "our tool was employed during the Kosovo cyber team's preparation for the European Cyber Security Challenge (ECSC) 2024"
+    }
+  ],
+  "context": {
+    "discipline": "cybersecurity",
+    "course": {
+      "name": "Kosovo cyber team ECSC preparation",
+      "level": "not_reported",
+      "institution": "not_reported",
+      "term": "September 2024",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "cybersecurity competition participants",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "other"
+    ],
+    "summary": "Solve practical capture-the-flag challenges with optional hints generated from submitted challenge descriptions or files.",
+    "student_actions": [
+      "Analyze and attempt CTF challenges.",
+      "Upload challenge text, documents, or images to request assistance.",
+      "Use generated hints and suggestions without receiving the complete solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "CTF challenge solutions or flags",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Participants use the deployed CTFSolve chat interface to request challenge-specific hints and solution strategies."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Receive hints and personalized suggestions for CTF challenges"
+        ],
+        "prohibited_actions": [
+          "Receive the complete challenge solution"
+        ],
+        "validation_required": "not_reported"
+      }
+    ],
+    "assessment_system_role": [
+      "Generate contextual hints from CTF challenge text and uploaded files"
+    ],
+    "tools": [
+      {
+        "name": "CTFSolve",
+        "model": "GPT-4"
+      },
+      {
+        "name": "CTFSolve",
+        "model": "GPT-2"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "competition-preparation deployment"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c831ad2776e2_leveraging-ai-for-ctf-challenge-optimization.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "our tool was employed during the Kosovo cyber team's preparation for the European Cyber Security Challenge (ECSC) 2024",
+      "source_id": "doi:10.1109/CIEES62939.2024.10811132",
+      "locator": {
+        "section": "V. Conclusion"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported study details, sample information, or instruments."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/CIEES62939.2024.10811132"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "scaffolding": {
+    "supports": [
+      "Generate contextual hints from CTF challenge text and uploaded files"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

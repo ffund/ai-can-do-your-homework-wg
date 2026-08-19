@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-knowledge-assisted-capstone",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Client software capstone with an AI Knowledge Assistant",
+  "summary": "Final-year students work in 19 teams on semester-long software projects for real clients using an agile initial phase and three monthly sprints. An AI Knowledge Assistant embedded in the Kanban platform answers project and assignment questions; teams submit sprint deliverables, documentation, and a functional product for client approval.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/TLT.2024.3396735",
+      "type": "journal_article",
+      "title": "Toward an AI Knowledge Assistant for Context-Aware Learning Experiences in Software Capstone Project Development",
+      "authors": [
+        "Andres Neyem",
+        "Luis A. Gonzalez",
+        "Marcelo Mendoza",
+        "Juan Pablo Sandoval Alcocer",
+        "Leonardo Centellas",
+        "Carlos Paredes"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/TLT.2024.3396735",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "client-software-capstone-ai-assistant",
+      "locator": {
+        "section": "IV. Capstone Courses"
+      },
+      "evidence_quote": "During a semester-long capstone course, 200 students were organized among 19 project groups, each charged with working on tangible software development projects with real clients."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "software development capstone",
+      "level": "final-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "final-year undergraduate students",
+    "cohort_size": 200,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported",
+    "pass_requirement": "Outright client disapproval of the proposed solution fails the course."
+  },
+  "assessment": {
+    "type": [
+      "capstone",
+      "project"
+    ],
+    "summary": "Develop a software solution for a real client through three agile sprints with an embedded context-aware AI assistant.",
+    "student_actions": [
+      "Work in a project team with a real client.",
+      "Create requirements and design documentation.",
+      "Plan and deliver a functional product increment each sprint.",
+      "Query the AI Knowledge Assistant for project support.",
+      "Present deliverables for staff and client assessment."
+    ],
+    "outputs": [
+      {
+        "artifact": "Requirements and design documents",
+        "required": true
+      },
+      {
+        "artifact": "Sprint deliverables and functional software",
+        "required": true
+      },
+      {
+        "artifact": "Final client-approved solution",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students query an assistant grounded in course lessons, prior projects, and Stack Overflow."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional"
+      }
+    ],
+    "tools": [
+      "AI Knowledge Assistant",
+      "GPT-3.5",
+      "GPT-4",
+      "LLaMA 2"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Staff assess process and product after each sprint with phase-dependent weights; clients approve or reject the final solution."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-669d0bd9079d_toward-an-ai-knowledge-assistant-for-context-aware-learning-experiences-in-software-capstone-pro.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "During a semester-long capstone course, 200 students were organized among 19 project groups, each charged with working on tangible software development projects with real clients.",
+      "source_id": "doi:10.1109/TLT.2024.3396735",
+      "locator": {
+        "section": "IV. Capstone Courses"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/TLT.2024.3396735"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

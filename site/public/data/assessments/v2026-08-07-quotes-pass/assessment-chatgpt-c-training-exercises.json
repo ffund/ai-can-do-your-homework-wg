@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-c-training-exercises",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "ChatGPT-supported C programming training exercises",
+  "summary": "First-year computer science students solve C programming exercises with ChatGPT during a training session. Half receive a guide for writing prompts about optimization, testing, and error handling, while the other half use the chatbot without that scaffold.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3631700.3665227",
+      "type": "conference_paper",
+      "title": "Exploring Student Interactions with AI in Programming Training",
+      "authors": [
+        "Gianni Fenu",
+        "Roberta Galici",
+        "Mirko Marras",
+        "Diego Reforgiato"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3631700.3665227",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "chatgpt-c-training-exercises",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Both groups engaged in a training session aimed at utilizing ChatGPT for C programming exercises."
+    }
+  ],
+  "context": {
+    "discipline": "C programming",
+    "course": {
+      "name": "first-year computer science",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "First-year computer science students solve C programming exercises with ChatGPT during a training session.",
+    "student_actions": [
+      "Solve C programming exercises.",
+      "Use ChatGPT for support.",
+      "Apply optional prompt-writing guidance when assigned."
+    ],
+    "outputs": [
+      {
+        "artifact": "C program solutions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "ChatGPT transcripts",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Half receive a guide for writing prompts about optimization, testing, and error handling, while the other half use the chatbot without that scaffold."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-0c40d4ac030f_exploring-student-interactions-with-ai-in-programming-training.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "Both groups engaged in a training session aimed at utilizing ChatGPT for C programming exercises.",
+      "source_id": "doi:10.1145/3631700.3665227",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

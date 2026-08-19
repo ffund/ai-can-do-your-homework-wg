@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:collaborative-hint-revision",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "AI-supported learnersourced hint revision",
+  "summary": "Compare an incorrect programming-assignment solution with a correct solution and revise a GPT-4-generated hint without revealing the answer. Students critically inspect, compare, or revise GenAI output as an assessed activity.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3636555.3636853",
+      "type": "conference_paper",
+      "title": "Bridging Learnersourcing and AI: Exploring the Dynamics of Student-AI Collaborative Feedback Generation",
+      "authors": [
+        "Singh, Anjali",
+        "Brooks, Christopher",
+        "Wang, Xu",
+        "Li, Warren",
+        "Kim, Juho",
+        "Wilson, Deepti"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3636555.3636853",
+      "url": "https://doi.org/10.1145/3636555.3636853",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "collaborative-hint-revision",
+      "locator": {
+        "section": "Experiment and Study Design"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "data visualization",
+    "course": {
+      "name": "Master's-level data visualization course",
+      "level": "graduate",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "graduate",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "peer_assessment"
+    ],
+    "summary": "Compare an incorrect programming-assignment solution with a correct solution and revise a GPT-4-generated hint without revealing the answer.",
+    "student_actions": [
+      "Compare an incorrect programming-assignment solution with a correct solution and revise a GPT-4-generated hint without revealing the answer."
+    ],
+    "outputs": [
+      {
+        "artifact": "Learnersourced formative hint",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students critically inspect, compare, or revise GenAI output as an assessed activity."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a99ef2792ec0_bridging-learnersourcing-and-ai-exploring-the-dynamics-of-student-ai-collaborative-feedback-gene.pdf"
+  }
+}
+

@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-code-quality-refactoring",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "AI-generated Java code quality and refactoring assignment",
+  "summary": "Generate a Java class with Copilot, independently critique it, compare that critique with ChatGPT's review, refactor the code, and explain quality and robustness improvements. Students critically inspect, compare, or revise GenAI output as an assessed activity.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/educon60312.2024.10578746",
+      "type": "conference_paper",
+      "title": "Developing Critical Thinking Practices Interwoven with Generative AI Usage in an Introductory Programming Course",
+      "authors": [
+        "Styve, Arne",
+        "Virkki, Outi T.",
+        "Naeem, Usman"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/educon60312.2024.10578746",
+      "url": "https://doi.org/10.1109/educon60312.2024.10578746",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ai-code-quality-refactoring",
+      "locator": {
+        "section": "Assignment Design"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Java programming",
+    "course": {
+      "name": "First-semester introductory programming",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Generate a Java class with Copilot, independently critique it, compare that critique with ChatGPT's review, refactor the code, and explain quality and robustness improvements.",
+    "student_actions": [
+      "Generate a Java class with Copilot, independently critique it, compare that critique with ChatGPT's review, refactor the code, and explain quality and robustness improvements."
+    ],
+    "outputs": [
+      {
+        "artifact": "Generated and refactored Java code plus written analyses and reflections",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students critically inspect, compare, or revise GenAI output as an assessed activity."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GitHub Copilot and ChatGPT 3.5"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a3a678cdd848_developing-critical-thinking-practices-interwoven-with-generative-ai-usage-in-an-introductory-pr.pdf"
+  }
+}
+

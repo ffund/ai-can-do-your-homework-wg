@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:automated-java-python-quiz-bank",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "LLM-generated Java and Python formative quiz bank",
+  "summary": "Instructors prompt four language models to create multiple-choice and fill-in-the-blank questions for introductory and intermediate Java and Python topics. The proposed formative quiz bank requires educator review for accuracy, relevance, clarity, and educational value before students receive any questions.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649409.3691090",
+      "type": "conference_paper",
+      "title": "From GPT to BERT: Benchmarking Large Language Models for Automated Quiz Generation",
+      "authors": [
+        "Yetunde Folajimi"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649409.3691090",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "automated-java-python-quiz-bank",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "Each model was asked to generate 200 unique questions for Java and Python, totaling 800 questions per programming language designed to test a range of cognitive skills."
+    }
+  ],
+  "context": {
+    "discipline": "introductory and intermediate programming",
+    "course": {
+      "name": "Java and Python programming courses",
+      "level": "introductory and intermediate",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "quiz"
+    ],
+    "summary": "Answer educator-approved Java and Python questions generated from a topic, difficulty level, and requested item format.",
+    "student_actions": [
+      "Answer multiple-choice or fill-in-the-blank programming questions."
+    ],
+    "inputs": [
+      {
+        "description": "Educator-reviewed LLM-generated quiz questions",
+        "provided_by": "instructor",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Quiz responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GPT-3, GPT-4, GPT-4o, and BERT generate candidate items for educator review; the paper does not give students an AI role."
+    },
+    "assessment_system_role": [
+      "generate_quiz_questions"
+    ],
+    "tools": [
+      "GPT-3",
+      "GPT-4",
+      "GPT-4o",
+      "BERT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-430266383932_from-gpt-to-bert-benchmarking-large-language-models-for-automated-quiz-generation.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "Each model was asked to generate 200 unique questions for Java and Python, totaling 800 questions per programming language designed to test a range of cognitive skills.",
+      "source_id": "doi:10.1145/3649409.3691090",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3649409.3691090"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

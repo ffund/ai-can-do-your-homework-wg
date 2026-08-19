@@ -1,0 +1,260 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:software-project-unrestricted-llm",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Individual software project with unrestricted LLM use except unit tests",
+  "summary": "Students independently conceptualize, design, implement, test, and document a Python application over seven weekly iterations. LLM use is unrestricted for code and documentation, but students must write unit tests themselves and report how they used AI.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3699538.3699541",
+      "type": "conference_paper",
+      "title": "Unrestricted Use of LLMs in a Software Project Course: Student Perceptions on Learning and Impact on Course Performance",
+      "authors": [
+        "Kai Korpimies",
+        "Antti Laaksonen",
+        "Matti Luukkainen"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3699538.3699541",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "individual-python-software-project",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Course participants are allowed to freely use LLMs, except that AI-generated unit tests are not allowed."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "Software Project",
+      "level": "second year",
+      "institution": "University of Helsinki",
+      "term": "Autumn 2023 and Spring 2024",
+      "delivery_language": "not_reported",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "primarily second-year undergraduate computer science students",
+    "research_sample_size": 41,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 100
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "reflection",
+      "peer_assessment"
+    ],
+    "summary": "Build an open-ended Python application with a user interface and persistent data, following a seven-week software-development process.",
+    "student_actions": [
+      "Conceptualize, design, implement, test, and document an application.",
+      "Advance the project through weekly goals.",
+      "Create unit and integration tests without AI generation.",
+      "Conduct a code peer review.",
+      "Report LLM use for code and documentation."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python application source code",
+        "required": true
+      },
+      {
+        "artifact": "Project documentation",
+        "required": true
+      },
+      {
+        "artifact": "Student-authored tests",
+        "required": true
+      },
+      {
+        "artifact": "Code peer review",
+        "required": true
+      },
+      {
+        "artifact": "LLM-use form",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "asynchronous",
+      "deadline": "Seven-week project",
+      "workload_hours": 60
+    },
+    "delivery": {
+      "modality": "online",
+      "setting": "take_home",
+      "platforms": [
+        "Python",
+        "GitHub"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "LLMs may be used freely except to generate unit tests."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "allowed_purposes": [
+          "code generation",
+          "debugging",
+          "refactoring",
+          "documentation"
+        ],
+        "prohibited_actions": [
+          "Generating unit tests with AI"
+        ],
+        "disclosure_required": true,
+        "transcript_required": false,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Google Gemini",
+      "Microsoft Copilot",
+      "GitHub Copilot"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "minimum": 0,
+      "maximum": 61,
+      "kind": "points"
+    },
+    "method": "Teaching-assistant assessment of code, documentation, tests, peer review, weekly goals, and required exercises.",
+    "criteria": [
+      {
+        "criterion": "Application source code",
+        "description": "User interface, storage, logic, scope, library use, release, code quality, and error management."
+      },
+      {
+        "criterion": "Project documentation"
+      },
+      {
+        "criterion": "Testing"
+      },
+      {
+        "criterion": "Code peer review"
+      },
+      {
+        "criterion": "Weekly goals"
+      }
+    ],
+    "assessors": [
+      "teaching assistants"
+    ],
+    "process": [
+      "A minimum of 28 of 61 points is required to pass.",
+      "Maximum testing points require at least 70% unit-test branch coverage plus appropriate unit and integration testing."
+    ]
+  },
+  "evidence": {
+    "study_type": "two-course-instance survey study",
+    "sample": {
+      "participating": 41,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "80.5% of spring 2024 respondents reported using an LLM.",
+      "LLM use patterns were compared with total project points and time spent."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-7d84272e1718_unrestricted-use-of-llms-in-a-software-project-course-student-perceptions-on-learning-and-impact.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Course participants are allowed to freely use LLMs, except that AI-generated unit tests are not allowed.",
+      "source_id": "doi:10.1145/3699538.3699541",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Course participants are allowed to freely use LLMs, except that AI-generated unit tests are not allowed.",
+      "source_id": "doi:10.1145/3699538.3699541",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3699538.3699541"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The project permits LLM use while explicitly excluding AI-generated unit tests.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3699538.3699541",
+          "quote": "Course participants are allowed to freely use LLMs, except that AI-generated unit tests are not allowed.",
+          "locator": {
+            "section": "3. Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "Code peer review"
+    ]
+  },
+  "implementation": {
+    "platforms": [
+      "Python",
+      "GitHub"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

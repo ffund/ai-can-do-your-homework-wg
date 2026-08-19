@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:software-testing-manual-ai-comparison",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Manual versus GenAI generation of preparatory testing artifacts",
+  "summary": "Postgraduate software-testing students first create use cases, traceability matrices, test cases, and scripts manually as a group. They then reproduce the artifacts individually with ChatGPT or Copilot and answer eleven questions comparing coverage, accuracy, efficiency, limitations, and the continuing need for human testing.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/ACCESS.2025.3545882",
+      "type": "journal_article",
+      "title": "Exploring the Integration of Generative AI Tools in Software Testing Education: A Case Study on ChatGPT and Copilot for Preparatory Testing Artifacts in Postgraduate Learning",
+      "authors": [
+        "Susmita Haldar",
+        "Mary Pierce",
+        "Luiz Fernando Capretz"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/ACCESS.2025.3545882",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "testing-artifacts-ai-comparison",
+      "locator": {
+        "section": "III. Methodology, B. Assignment Design and Study Framework"
+      },
+      "evidence_quote": "Students initially created preparatory testing artifacts manually as a group deliverable. Following this, they were assigned an individual assignment to generate the same artifacts using LLM tools."
+    }
+  ],
+  "context": {
+    "discipline": "software testing",
+    "course": {
+      "name": "Capstone Project",
+      "level": "postgraduate certificate",
+      "institution": "Fanshawe College",
+      "program": "Software Testing",
+      "term": "second four-month term",
+      "delivery_language": "English",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "postgraduate students",
+    "cohort_size": 96,
+    "research_sample_size": 47,
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "capstone",
+      "reflection"
+    ],
+    "summary": "Generate equivalent software-testing artifacts manually and with GenAI, then critically compare the two production methods.",
+    "student_actions": [
+      "Create testing artifacts manually with a group.",
+      "Individually prompt an LLM to generate equivalent artifacts.",
+      "Iteratively refine prompts using application-specific information.",
+      "Compare manual and AI outputs.",
+      "Answer eleven analytical questions."
+    ],
+    "inputs": [
+      {
+        "description": "Custom travel application in Term 1 or MoneyManagerEx documentation and application in Term 2",
+        "provided_by": "instructor",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Use cases",
+        "required": true
+      },
+      {
+        "artifact": "Requirements traceability matrix",
+        "required": true
+      },
+      {
+        "artifact": "Test cases and test scripts",
+        "required": true
+      },
+      {
+        "artifact": "Responses to eleven comparative questions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies",
+    "duration_minutes": 180,
+    "timing": {
+      "mode": "mixed",
+      "release": "Week 9"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students use an assigned LLM to reproduce testing artifacts and compare them with artifacts previously created manually."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "component_id": "ai-artifact-generation",
+        "permission": "required",
+        "allowed_purposes": [
+          "use-case generation",
+          "traceability-matrix generation",
+          "test-case generation",
+          "test-script generation"
+        ],
+        "validation_required": true,
+        "disclosure_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "model": "GPT-3.5",
+        "version": "Term 1"
+      },
+      {
+        "name": "Microsoft Copilot",
+        "provider": "Microsoft",
+        "version": "Term 2"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Assignment artifacts and analytical responses were assessed with question-specific rubrics; exact course weight and rubric values are not reported in extractable text.",
+    "criteria": [
+      {
+        "criterion": "Artifact coverage and completeness"
+      },
+      {
+        "criterion": "Accuracy"
+      },
+      {
+        "criterion": "Efficiency"
+      },
+      {
+        "criterion": "Critical analysis of AI strengths and limitations"
+      }
+    ],
+    "assessors": [
+      "course instructor"
+    ]
+  },
+  "evidence": {
+    "study_type": "two-cohort case study",
+    "sample": {
+      "invited": 96,
+      "analyzed": 47,
+      "unit_of_analysis": "high-scoring student assignment"
+    },
+    "reported_results": [
+      "The analysis included 26 of 61 Term 1 submissions and 21 of 35 Term 2 submissions that scored at least 90%.",
+      "Students concluded that LLMs can augment but not replace manual testing."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-00fe67cdcd7a_exploring-the-integration-of-generative-ai-tools-in-software-testing-education-a-case-study-on-c.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students initially created preparatory testing artifacts manually as a group deliverable. Following this, they were assigned an individual assignment to generate the same artifacts using LLM tools.",
+      "source_id": "doi:10.1109/ACCESS.2025.3545882",
+      "locator": {
+        "section": "III. Methodology, B. Assignment Design and Study Framework"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students initially created preparatory testing artifacts manually as a group deliverable. Following this, they were assigned an individual assignment to generate the same artifacts using LLM tools.",
+      "source_id": "doi:10.1109/ACCESS.2025.3545882",
+      "locator": {
+        "section": "III. Methodology, B. Assignment Design and Study Framework"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

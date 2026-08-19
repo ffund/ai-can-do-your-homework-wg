@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:it-security-weekly-assignments-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "IT Security weekly group assignments with disclosed ChatGPT use",
+  "summary": "Groups of two or three students complete 11 or 12 weekly IT Security exercise sheets containing graded and optional tasks. ChatGPT is permitted, but students must identify its use and include the prompt; an incorrect ChatGPT-assisted answer earns zero for the entire task.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3664476.3670446",
+      "type": "conference_paper",
+      "title": "Assessing the Impact of Large Language Models on Cybersecurity Education: A Study of ChatGPT's Influence on Student Performance",
+      "authors": [
+        "Marc Ohm",
+        "Christian Bungartz",
+        "Felix Boes",
+        "Michael Meier"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3664476.3670446",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "it-security-weekly-assignments-chatgpt",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Students are permitted to use it, but they must indicate this on their submissions, including the leveraged prompt."
+    }
+  ],
+  "context": {
+    "discipline": "IT security",
+    "course": {
+      "name": "IT-Sicherheit (IT Security)",
+      "level": "undergraduate",
+      "institution": "University of Bonn",
+      "term": "Winter Term 2023/24",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "bachelor's students",
+    "cohort_size": 121,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": true,
+    "pass_requirement": "Achieve 50% of graded-task points and present two solutions to qualify for the final exam."
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "problem_set"
+    ],
+    "summary": "Complete weekly IT Security exercise sheets in a small group and disclose any ChatGPT assistance and prompts.",
+    "student_actions": [
+      "Solve reproduction and transfer tasks.",
+      "Submit group answers and present two solutions.",
+      "Disclose ChatGPT use and prompts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Weekly exercise-sheet solutions",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT-use disclosure and prompts when used",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "timing": {
+      "mode": "asynchronous",
+      "deadline": "One week per sheet"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT is permitted under a mandatory disclosure and prompt-reporting policy."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": true,
+        "disclosure_artifact": "Submission indication and leveraged prompt",
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Tutors grade two required tasks per sheet; each task is worth 10 points. An incorrect ChatGPT-assisted answer receives zero for the whole task.",
+    "assessors": [
+      "tutors"
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-26a6ce5ac93d_assessing-the-impact-of-large-language-models-on-cybersecurity-education-a-study-of-chatgpt-s-in.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students are permitted to use it, but they must indicate this on their submissions, including the leveraged prompt.",
+      "source_id": "doi:10.1145/3664476.3670446",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

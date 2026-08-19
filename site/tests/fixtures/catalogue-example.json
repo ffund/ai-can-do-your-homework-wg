@@ -1,0 +1,289 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment-viva-voice-ai-oral-exam",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Viva: Personalized Voice-AI Oral Examination",
+  "summary": "Students defend decisions from a submitted project and respond to unfamiliar course cases in an individual oral examination. A voice-AI examiner authenticates the student, asks personalized follow-up questions, and records the conversation. Several language models then grade the transcript and generate feedback, with human grades used for comparison.",
+  "implementation_status": "implemented",
+
+  "sources": [
+    {
+      "id": "source-blog-2025",
+      "type": "blog_post",
+      "title": "Fighting Fire with Fire: Scalable Personalized Oral Exams with an ElevenLabs Voice AI Agent",
+      "authors": [
+        "Panos Ipeirotis"
+      ],
+      "publication_date": "2025-12-29",
+      "url": "https://www.behind-the-enemy-lines.com/2025/12/fighting-fire-with-fire-scalable-oral.html",
+      "peer_reviewed": false,
+       "relationship_to_assessment": "primary_report",
+       "source_assessment_id": "assessment-1",
+      "license": "CC BY-NC 3.0"
+    },
+    {
+      "id": "source-arxiv-2026",
+      "type": "preprint",
+      "title": "Scalable and Personalized Oral Assessments Using Voice AI",
+      "authors": [
+        "Panos Ipeirotis",
+        "Konstantinos Rizakos"
+      ],
+      "year": 2026,
+      "identifier": "arXiv:2603.18221",
+      "url": "https://arxiv.org/abs/2603.18221",
+      "peer_reviewed": false,
+       "relationship_to_assessment": "expanded_report",
+       "source_assessment_id": "assessment-1"
+    }
+  ],
+
+  "context": {
+    "discipline": "computing",
+    "course": {
+      "name": "AI/ML Product Management",
+      "level": "post-introductory",
+      "level_category": "post_introductory",
+      "level_category_basis": "reported",
+      "institution": "NYU Stern"
+    },
+    "learner_level": "post-introductory",
+    "learner_level_category": "post_introductory",
+    "learner_level_category_basis": "reported",
+    "cohort_size": 36
+  },
+
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+
+  "learning_objectives": [
+    {
+      "description": "Demonstrate understanding of decisions made in a submitted project.",
+      "source_ids": [
+        "source-blog-2025",
+        "source-arxiv-2026"
+      ]
+    },
+    {
+      "description": "Apply course concepts to unfamiliar case-based questions.",
+      "source_ids": [
+        "source-blog-2025"
+      ]
+    },
+    {
+      "description": "Reason aloud and defend analytical and design choices.",
+      "source_ids": [
+        "source-blog-2025",
+        "source-arxiv-2026"
+      ]
+    }
+  ],
+
+  "assessment": {
+    "type": [
+      "oral_exam",
+      "project_defense",
+      "case_based_assessment"
+    ],
+    "summary": "The student defends a submitted project and responds to course-related case questions in an oral examination.",
+    "student_actions": [
+      "Explain project decisions and failure modes.",
+      "Respond to unfamiliar case-based questions.",
+      "Defend analytical and design choices aloud."
+    ],
+    "outputs": [
+      {
+        "artifact": "oral conversation",
+        "format": "spoken response",
+        "required": true
+      },
+      {
+        "artifact": "conversation transcript",
+        "format": "text",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": {
+      "mean": 25,
+      "minimum": 9,
+      "maximum": 64
+    },
+    "structure": [
+      {
+        "part": 1,
+        "name": "Project discussion",
+        "description": "The student explains goals, data, modeling choices, evaluation decisions, and failure modes from their capstone project."
+      },
+      {
+        "part": 2,
+        "name": "Case discussion",
+        "description": "The student responds to questions about a case previously discussed in the course."
+      }
+    ]
+  },
+
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": false,
+      "description": "The student responds orally to an AI examiner but does not use a separate GenAI tool to construct answers."
+    },
+    "assessment_system_role": [
+      "authenticate_student",
+      "conduct_oral_exam",
+      "personalize_questions",
+      "generate_follow_up_questions",
+      "grade_transcript",
+      "generate_feedback"
+    ],
+    "tools": [
+      "ElevenLabs Conversational AI",
+      "Claude",
+      "Gemini",
+      "ChatGPT"
+    ],
+    "taxonomy_tags": [
+      "ai_as_examiner",
+      "ai_as_assessor",
+      "ai_feedback",
+      "personalized_assessment",
+      "authenticity_verification"
+    ]
+  },
+
+  "submission_requirements": [
+    {
+      "artifact": "oral conversation",
+      "required": true
+    },
+    {
+      "artifact": "audio and webcam recording",
+      "required": true,
+      "purpose": "identity and assessment-integrity verification"
+    },
+    {
+      "artifact": "conversation transcript",
+      "required": true
+    }
+  ],
+
+  "related_assessments": [],
+
+  "grading": {
+    "status": "reported",
+    "scale": {
+      "maximum": 20
+    },
+    "method": "multi_model_deliberation",
+    "models": [
+      "Claude",
+      "Gemini",
+      "ChatGPT"
+    ],
+    "process": [
+      "Models grade independently.",
+      "Models inspect one another's judgments and evidence.",
+      "Models revise their scores.",
+      "A chair model synthesizes the final grade and feedback."
+    ],
+    "human_validation": {
+      "performed": true,
+      "description": "The instructor and teaching assistant also graded the examinations and compared their judgments with the model council."
+    },
+    "human_review_trigger": {
+      "implemented": false,
+      "recommended": true,
+      "description": "Flag cases where model disagreement exceeds a threshold."
+    }
+  },
+
+  "implementation": {
+    "architecture": [
+      "authentication agent",
+      "project discussion agent",
+      "case discussion agent",
+      "separate grading system"
+    ],
+    "personalization_inputs": [
+      "student name",
+      "student identifier",
+      "project details"
+    ],
+    "reported_cost": {
+      "total_usd": 15,
+      "cost_per_student_usd": 0.42,
+      "subscription_cost_excluded": true
+    }
+  },
+
+  "evidence": {
+    "study_type": "experience_report",
+    "reported_results": [
+      {
+        "metric": "students examined",
+        "value": 36
+      },
+      {
+        "metric": "students agreeing the exam tested actual understanding",
+        "value": 0.70
+      },
+      {
+        "metric": "students preferring the AI oral format",
+        "value": 0.13
+      },
+      {
+        "metric": "students reporting greater stress than with a written exam",
+        "value": 0.83
+      },
+      {
+        "metric": "final model grades within one point",
+        "value": 0.62
+      }
+    ],
+    "reported_failures": [
+      "intimidating voice",
+      "multiple questions asked in one turn",
+      "questions paraphrased when students requested repetition",
+      "insufficient thinking time",
+      "failure of prompt-based randomization"
+    ],
+    "recommended_changes": [
+      "use a calmer voice and slower pacing",
+      "ask one question at a time",
+      "repeat questions verbatim",
+      "provide more thinking time",
+      "perform randomization in code",
+      "add retrieval over student artifacts",
+      "provide accessibility alternatives"
+    ]
+  },
+
+  "reuse": {
+    "demo_available": true,
+    "examiner_prompt_available": true,
+    "grading_prompt_available": true,
+    "hosted_system_available": true,
+    "assessment_artifact_license": "unknown"
+  },
+
+  "catalog_metadata": {
+    "source_quality": {
+      "source-blog-2025": "first_person_experience_report",
+      "source-arxiv-2026": "research_preprint"
+    },
+    "verification_status": "multiple_sources",
+    "notes": "The blog provides implementation detail, operational failures, costs, and student reactions. The preprint should be treated as the fuller research account."
+  },
+
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "reported source text",
+    "recorded_at": "2026-08-06"
+  }
+}

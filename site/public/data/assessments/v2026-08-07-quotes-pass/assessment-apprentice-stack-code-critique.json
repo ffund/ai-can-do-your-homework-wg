@@ -1,0 +1,141 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:apprentice-stack-code-critique",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "First-year critique of ChatGPT Java Stack code",
+  "summary": "First-year degree apprentices compare a pre-generated ChatGPT implementation of a Java Stack class with code they previously wrote. They answer open and selected questions and rate the generated code's correctness, efficiency, style, conventions, comments, and validation.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3633053.3633057",
+      "type": "conference_paper",
+      "title": "Incorporating Generative AI into Software Development Education",
+      "authors": [
+        "Olga Petrovska",
+        "Lee Clift",
+        "Faron Moller",
+        "Rebecca Pearsall"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3633053.3633057",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "stack-code-critique",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "first-year learners analysed a pre-generated ChatGPT output in Java for a Stack class, comparing it to their own code"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming and software engineering",
+    "course": {
+      "name": "Professional Issues",
+      "level": "first-year degree apprenticeship",
+      "institution": "Swansea University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year degree apprentices",
+    "research_sample_size": 12,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Compare a supplied ChatGPT Java Stack implementation with an earlier personal solution and critically rate its quality.",
+    "student_actions": [
+      "Inspect the generated Stack implementation.",
+      "Compare it with previously written code.",
+      "Answer critique questions and rate quality on a five-point scale."
+    ],
+    "inputs": [
+      {
+        "description": "Pre-generated ChatGPT Java Stack code",
+        "provided_by": "instructor",
+        "required": true
+      },
+      {
+        "description": "Student's prior Stack implementation",
+        "provided_by": "student",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Code critique and ratings",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students evaluate instructor-supplied ChatGPT output rather than prompting the tool."
+    },
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:apprentice-dart-snooker-chatgpt-critique",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-0df7e3b00b0b_incorporating-generative-ai-into-software-development-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "first-year learners analysed a pre-generated ChatGPT output in Java for a Stack class, comparing it to their own code",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "first-year learners analysed a pre-generated ChatGPT output in Java for a Stack class, comparing it to their own code",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "first-year learners analysed a pre-generated ChatGPT output in Java for a Stack class, comparing it to their own code",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

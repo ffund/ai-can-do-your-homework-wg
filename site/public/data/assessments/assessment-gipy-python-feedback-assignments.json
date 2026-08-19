@@ -1,0 +1,115 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:gipy-python-feedback-assignments",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Python MOOC assignments with Gipy feedback",
+  "summary": "Submit Python assignment code to Gipy, inspect LLM-generated feedback alongside automated test feedback, and revise or evaluate the solution. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3657604.3662040",
+      "type": "conference_paper",
+      "title": "Combining LLM-Generated and Test-Based Feedback in a MOOC for Programming",
+      "authors": [
+        "Gabbay, Hagit",
+        "Cohen, Anat"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3657604.3662040",
+      "url": "https://doi.org/10.1145/3657604.3662040",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "gipy-python-feedback-assignments",
+      "locator": {
+        "section": "Field Experiment"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "Python programming",
+    "course": {
+      "name": "Programming MOOC",
+      "level": "novice online learners",
+      "level_category": "introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "novice online learners",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "exercise"
+    ],
+    "summary": "Submit Python assignment code to Gipy, inspect LLM-generated feedback alongside automated test feedback, and revise or evaluate the solution.",
+    "student_actions": [
+      "Submit Python assignment code to Gipy, inspect LLM-generated feedback alongside automated test feedback, and revise or evaluate the solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python code submissions and feedback evaluations",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "Gipy with GPT-3.5-turbo or GPT-4"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-da60f2875ee9_combining-llm-generated-and-test-based-feedback-in-a-mooc-for-programming.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3657604.3662040"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

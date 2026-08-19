@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:apprentice-dart-snooker-chatgpt-critique",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Final-year ChatGPT Dart Snooker Scoring critique",
+  "summary": "Final-year degree apprentices prompt ChatGPT to generate a Dart Snooker Scoring application and compare it with an application they built for another module. They mark the generated result with the original rubric, rate it, analyze required modifications, and estimate time savings.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3633053.3633057",
+      "type": "conference_paper",
+      "title": "Incorporating Generative AI into Software Development Education",
+      "authors": [
+        "Olga Petrovska",
+        "Lee Clift",
+        "Faron Moller",
+        "Rebecca Pearsall"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3633053.3633057",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "dart-snooker-chatgpt-critique",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "final-year learners were asked to use their own prompts to ChatGPT to generate a Dart application for a Snooker Scoring app"
+    }
+  ],
+  "context": {
+    "discipline": "Dart programming and software engineering",
+    "course": {
+      "name": "AI module",
+      "level": "final-year degree apprenticeship",
+      "institution": "Swansea University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "final-year degree apprentices",
+    "research_sample_size": 12,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Generate a Dart Snooker Scoring app with ChatGPT and compare it against a previously completed personal implementation.",
+    "student_actions": [
+      "Prompt ChatGPT to generate the Dart application.",
+      "Analyze and modify the output.",
+      "Mark it with the original coursework rubric and estimate time saved."
+    ],
+    "outputs": [
+      {
+        "artifact": "ChatGPT-generated or revised Dart application",
+        "required": true
+      },
+      {
+        "artifact": "Comparative critique, rubric mark, and ratings",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students construct prompts, inspect the generated Dart application, and compare it with their own work."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Students apply the original Snooker Scoring coursework rubric as part of the critique."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:apprentice-stack-code-critique",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-0df7e3b00b0b_incorporating-generative-ai-into-software-development-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "final-year learners were asked to use their own prompts to ChatGPT to generate a Dart application for a Snooker Scoring app",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "final-year learners were asked to use their own prompts to ChatGPT to generate a Dart application for a Snooker Scoring app",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "They were then asked to analyse the output with respect to their own solution which they had done for another module, and rate it on a Likert scale. They had also to mark the output based on the original marking rubric for the coursework, using standard grade boundaries.",
+      "source_id": "doi:10.1145/3633053.3633057",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3633053.3633057"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-assess-analysis-of-generated-work-rather-than-code-production",
+      "practice_name": "Assess analysis of generated work rather than code production",
+      "rationale": "The formative task assesses analysis and rubric-based marking of generated code rather than a new student implementation.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3633053.3633057",
+          "quote": "They were then asked to analyse the output with respect to their own solution which they had done for another module, and rate it on a Likert scale. They had also to mark the output based on the original marking rubric for the coursework, using standard grade boundaries.",
+          "locator": {
+            "section": "3 Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-give-students-ai-generated-solutions-to-critique-improve-or-test",
+      "practice_name": "Give students AI-generated solutions to critique, improve, or test",
+      "rationale": "Students analyze and mark a ChatGPT-generated application against their own prior solution.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3633053.3633057",
+          "quote": "They were then asked to analyse the output with respect to their own solution which they had done for another module, and rate it on a Likert scale. They had also to mark the output based on the original marking rubric for the coursework, using standard grade boundaries.",
+          "locator": {
+            "section": "3 Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "ChatGPT-generated or revised Dart application"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

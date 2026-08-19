@@ -1,0 +1,125 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:intro-data-science-codehelp-coursework",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Introductory programming coursework with guardrailed CodeHelp",
+  "summary": "Students complete quizzes, assignments, and reading responses in an introductory computer and data science course. They may use CodeHelp for immediate programming support; the LLM assistant explains and guides but is designed not to output solution code.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3636243.3636249",
+      "type": "conference_paper",
+      "title": "Patterns of Student Help-Seeking When Using a Large Language Model-Powered Programming Assistant",
+      "authors": [
+        "Brad Sheese",
+        "Mark Liffiton",
+        "Jaromir Savelka",
+        "Paul Denny"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3636243.3636249",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "intro-data-science-codehelp-coursework",
+      "locator": {
+        "section": "4 Methods"
+      },
+      "evidence_quote": "Students were encouraged to use CodeHelp for assistance first before asking the instructor or TA"
+    }
+  ],
+  "context": {
+    "discipline": "Python programming and data science",
+    "course": {
+      "name": "Introductory computer and data science",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "introductory undergraduate students",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "quiz"
+    ],
+    "summary": "Complete semester-long introductory Python coursework with optional on-demand help.",
+    "student_actions": [
+      "Solve programming assignments and quizzes.",
+      "Submit code, errors, and questions to CodeHelp when stuck.",
+      "Apply conceptual or debugging guidance without receiving direct solution code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Course assignments, quizzes, and reading responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "CodeHelp was optional but recommended before human help and used guardrails to suppress generated solution code."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Course points came from quizzes, assignments, and reading responses."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5311333bd412_patterns-of-student-help-seeking-when-using-a-large-language-model-powered-programming-assistant.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "49 of 52 students submitted 2,591 queries over 12 weeks; tool usage correlated modestly with course performance."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "Students were encouraged to use CodeHelp for assistance first before asking the instructor or TA",
+      "source_id": "doi:10.1145/3636243.3636249",
+      "locator": {
+        "section": "4 Methods"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3636243.3636249"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

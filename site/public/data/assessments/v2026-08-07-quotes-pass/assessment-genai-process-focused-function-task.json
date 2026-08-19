@@ -1,0 +1,108 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:genai-process-focused-function-task",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "GenAI process-focused higher-order function task",
+  "summary": "Students identify the concepts in a higher-order function problem, ask ChatGPT for unrelated examples, write their own solution, and then request an AI solution. They submit both solutions with a critique of their similarities and differences.",
+  "implementation_status": "proposed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716658",
+      "type": "conference_paper",
+      "title": "From Automation to Cognition: Redefining the Roles of Educators and Generative AI in Computing Education",
+      "authors": [
+        "Tony Haoran Feng",
+        "Andrew Luxton-Reilly",
+        "Burkhard C Wünsche",
+        "Paul Denny"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716658",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "genai-process-focused-function-task",
+      "locator": {
+        "section": "3.1 Strategy 1: Redesign Assignments"
+      },
+      "evidence_quote": "Compare the solutions and comment on the similarities and differences. Submit both solutions and your critique of the main differences between them."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Students identify the concepts in a higher-order function problem, ask ChatGPT for unrelated examples, write their own solution, and then request an AI solution.",
+    "student_actions": [
+      "Ask ChatGPT to identify relevant concepts and give unrelated examples.",
+      "Write an independent program solution.",
+      "Generate a ChatGPT solution.",
+      "Compare and critique both solutions."
+    ],
+    "outputs": [
+      {
+        "artifact": "student-written solution",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "AI-generated solution",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "comparison and critique",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "They submit both solutions with a critique of their similarities and differences."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8ff40b8f621f_from-automation-to-cognition-redefining-the-roles-of-educators-and-generative-ai-in-computing-ed.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Compare the solutions and comment on the similarities and differences. Submit both solutions and your critique of the main differences between them.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "3.1 Strategy 1: Redesign Assignments"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

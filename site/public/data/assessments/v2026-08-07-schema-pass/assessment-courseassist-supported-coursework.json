@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:courseassist-supported-coursework",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Computer science coursework supported by CourseAssist",
+  "summary": "Work on computer science assignments while asking CourseAssist for course-specific guidance and hints rather than direct solutions. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649409.3691094",
+      "type": "conference_paper",
+      "title": "CourseAssist: Pedagogically Appropriate AI Tutor for Computer Science Education",
+      "authors": [
+        "Feng, Ty",
+        "Liu, Sa",
+        "Ghosal, Dipak"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649409.3691094",
+      "url": "https://doi.org/10.1145/3649409.3691094",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "courseassist-supported-coursework",
+      "locator": {
+        "section": "Introduction and CourseAssist"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "computer science",
+    "course": {
+      "name": "Six computer science courses",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Work on computer science assignments while asking CourseAssist for course-specific guidance and hints rather than direct solutions.",
+    "student_actions": [
+      "Work on computer science assignments while asking CourseAssist for course-specific guidance and hints rather than direct solutions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming coursework and tutor queries",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "CourseAssist with GPT-4 and retrieval augmentation"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a37a1d0c2f76_courseassist-pedagogically-appropriate-ai-tutor-for-computer-science-education.pdf"
+  }
+}
+

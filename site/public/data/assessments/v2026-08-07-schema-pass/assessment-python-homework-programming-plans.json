@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:python-homework-programming-plans",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Open-ended Python homework problems for programming plans",
+  "summary": "Solve 116 open-ended Python homework problems requiring common plans such as counting, filtering, searching, summing, and branching. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641555.3705166",
+      "type": "conference_paper",
+      "title": "Detecting Programming Plans in Open-ended Code Submissions",
+      "authors": [
+        "Demirtas, Mehmet Arif",
+        "Zheng, Claire",
+        "Cunningham, Kathryn"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641555.3705166",
+      "url": "https://doi.org/10.1145/3641555.3705166",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "python-homework-programming-plans",
+      "locator": {
+        "section": "2 Methods - Dataset"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "Introductory Python for non-CS majors",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "exercise"
+    ],
+    "summary": "Solve 116 open-ended Python homework problems requiring common plans such as counting, filtering, searching, summing, and branching.",
+    "student_actions": [
+      "Solve 116 open-ended Python homework problems requiring common plans such as counting, filtering, searching, summing, and branching."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python code submissions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GPT-4o plan-detection research analysis"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e6ea99876c3c_detecting-programming-plans-in-open-ended-code-submissions.pdf"
+  }
+}
+

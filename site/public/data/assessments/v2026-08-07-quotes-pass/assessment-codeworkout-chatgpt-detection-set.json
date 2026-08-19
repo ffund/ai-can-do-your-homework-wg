@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:codeworkout-chatgpt-detection-set",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Ten CodeWorkout Java exercises used for ChatGPT detection",
+  "summary": "Implement Java functions from ten introductory problem statements; researchers generated matching ChatGPT solutions to train detection models. GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630826",
+      "type": "conference_paper",
+      "title": "Detecting ChatGPT-Generated Code Submissions in a CS1 Course Using Machine Learning Models",
+      "authors": [
+        "Hoq, Muntasir",
+        "Shi, Yang",
+        "Leinonen, Juho",
+        "Babalola, Damilola",
+        "Lynch, Collin",
+        "Price, Thomas",
+        "Akram, Bita"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630826",
+      "url": "https://doi.org/10.1145/3626252.3630826",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "codeworkout-chatgpt-detection-set",
+      "locator": {
+        "section": "3 Method - Dataset"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Java programming",
+    "course": {
+      "name": "CS1 using CodeWorkout",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Implement Java functions from ten introductory problem statements; researchers generated matching ChatGPT solutions to train detection models.",
+    "student_actions": [
+      "Implement Java functions from ten introductory problem statements; researchers generated matching ChatGPT solutions to train detection models."
+    ],
+    "outputs": [
+      {
+        "artifact": "Correct Java function submissions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": "not_reported",
+      "description": "GenAI is used by researchers, educators, graders, or support staff rather than directly by students during the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT research comparison"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5cd1e41edd4a_detecting-chatgpt-generated-code-submissions-in-a-cs1-course-using-machine-learning-models.pdf"
+  }
+}
+
+

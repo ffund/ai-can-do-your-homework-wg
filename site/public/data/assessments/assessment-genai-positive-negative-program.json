@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:genai-positive-negative-program",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "More Positive or Negative with Copilot and ChatGPT",
+  "summary": "CS1 students have 35 minutes to write a C++ program that determines whether an input sequence contains more positive or negative integers. They may use GitHub Copilot and ChatGPT while an autograder compiles their code, runs tests, and returns feedback.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3632620.3671116",
+      "type": "conference_paper",
+      "title": "The Widening Gap: The Benefits and Harms of Generative AI for Novice Programmers",
+      "authors": [
+        "James Prather",
+        "Brent N. Reeves",
+        "Juho Leinonen",
+        "Stephen MacNeil",
+        "Arisoa S. Randrianasolo",
+        "Brett A. Becker",
+        "Bailey Kimmel",
+        "Jared Wright",
+        "Ben Briggs"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3632620.3671116",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "more-positive-or-negative-genai",
+      "locator": {
+        "section": "3 Methods"
+      },
+      "evidence_quote": "Students were provided the More Positive or Negative programming problem and asked to complete it in 35 minutes."
+    }
+  ],
+  "context": {
+    "discipline": "introductory C++ programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice undergraduate programmers",
+    "research_sample_size": 21,
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Read an indeterminate sequence of integers and report whether it contains more positive or negative values.",
+    "student_actions": [
+      "Write and test a C++ solution.",
+      "Use Copilot and ChatGPT as desired.",
+      "Respond to autograder feedback."
+    ],
+    "outputs": [
+      {
+        "artifact": "C++ program",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 35
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional"
+      }
+    ],
+    "tools": [
+      "GitHub Copilot",
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ce82e02f67b1_the-widening-gap-the-benefits-and-harms-of-generative-ai-for-novice-programmers.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were provided the More Positive or Negative programming problem and asked to complete it in 35 minutes.",
+      "source_id": "doi:10.1145/3632620.3671116",
+      "locator": {
+        "section": "3 Methods"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3632620.3671116"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

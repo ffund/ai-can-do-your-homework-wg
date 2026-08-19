@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:pointers-linked-lists-feedback-lab",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Pointers and linked-lists lab with AI and hybrid feedback",
+  "summary": "CS1 students complete two C programming questions on pointers and linked lists during a three-hour graded lab. Depending on condition, they receive direct or Socratic GPT-4 feedback, manual TA help, or AI suggestions reviewed by a TA after failed tests.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701972",
+      "type": "conference_paper",
+      "title": "Feasibility Study of Augmenting Teaching Assistants with AI for CS1 Programming Feedback",
+      "authors": [
+        "Umair Z. Ahmed",
+        "Shubham Sahai",
+        "Ben Leong",
+        "Amey Karkare"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701972",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "pointers-linked-lists-feedback-lab",
+      "locator": {
+        "section": "3. Experiment Design"
+      },
+      "evidence_quote": "The lab consisted of two questions on pointers and linked lists, which students had to complete within a 3-hour session."
+    }
+  ],
+  "context": {
+    "discipline": "C programming",
+    "course": {
+      "name": "CS1 programming lab",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exercise"
+    ],
+    "summary": "CS1 students complete two C programming questions on pointers and linked lists during a three-hour graded lab.",
+    "student_actions": [
+      "Solve two C programming questions.",
+      "Submit code to automated tests.",
+      "Request feedback after a failed test.",
+      "Revise code using assigned AI or human feedback."
+    ],
+    "outputs": [
+      {
+        "artifact": "C program solutions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "feedback requests",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "feedback ratings",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Depending on condition, they receive direct or Socratic GPT-4 feedback, manual TA help, or AI suggestions reviewed by a TA after failed tests."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8f172c4df0ef_feasibility-study-of-augmenting-teaching-assistants-with-ai-for-cs1-programming-feedback.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The lab consisted of two questions on pointers and linked lists, which students had to complete within a 3-hour session.",
+      "source_id": "doi:10.1145/3641554.3701972",
+      "locator": {
+        "section": "3. Experiment Design"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "The lab consisted of two questions on pointers and linked lists, which students had to complete within a 3-hour session.",
+      "source_id": "doi:10.1145/3641554.3701972",
+      "locator": {
+        "section": "3. Experiment Design"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:bugspotter-test-case-exercises",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "BugSpotter generated debugging exercises",
+  "summary": "Students inspect LLM-generated buggy code and design failing test cases that expose its errors. The exercise asks them to reason from a problem specification, hypothesize faults, and verify those hypotheses instead of repairing a supplied bug directly.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3716640.3716658",
+      "type": "conference_paper",
+      "title": "From Automation to Cognition: Redefining the Roles of Educators and Generative AI in Computing Education",
+      "authors": [
+        "Tony Haoran Feng",
+        "Andrew Luxton-Reilly",
+        "Burkhard C Wünsche",
+        "Paul Denny"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3716640.3716658",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "bugspotter-test-case-exercises",
+      "locator": {
+        "section": "2.3.2 Generating Debugging Exercises"
+      },
+      "evidence_quote": "The tool generates buggy code based on a problem specification and requires students to design failing test cases that reveal the errors."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming and debugging",
+    "course": {
+      "name": "first-year introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "formative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Students inspect LLM-generated buggy code and design failing test cases that expose its errors.",
+    "student_actions": [
+      "Read a problem specification and generated buggy program.",
+      "Hypothesize the cause of errors.",
+      "Design test cases that reveal the bugs.",
+      "Verify the tests against the program."
+    ],
+    "outputs": [
+      {
+        "artifact": "failing test cases",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "debugging analysis",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "The exercise asks them to reason from a problem specification, hypothesize faults, and verify those hypotheses instead of repairing a supplied bug directly."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8ff40b8f621f_from-automation-to-cognition-redefining-the-roles-of-educators-and-generative-ai-in-computing-ed.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The tool generates buggy code based on a problem specification and requires students to design failing test cases that reveal the errors.",
+      "source_id": "doi:10.1145/3716640.3716658",
+      "locator": {
+        "section": "2.3.2 Generating Debugging Exercises"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

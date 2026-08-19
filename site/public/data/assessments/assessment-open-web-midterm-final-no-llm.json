@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:open-web-midterm-final-no-llm",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Open-web midterm and final exams without LLM communication",
+  "summary": "Students complete a midterm and final while allowed to read material on the internet but prohibited from communicating. LLM use was not explicitly allowed, creating a read-only open-web policy intended to exclude conversational AI assistance.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626253.3635511",
+      "type": "conference_paper",
+      "title": "My Learnings from Allowing Large Language Models in Introductory Computer Science Classes",
+      "authors": [
+        "Rasika Bhalerao"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626253.3635511",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "open-web-midterm-final-no-llm",
+      "locator": {
+        "section": "1.2.2 Assignment Instructions"
+      },
+      "evidence_quote": "Students were allowed to read anything from the internet, but 'communicating' was not allowed."
+    }
+  ],
+  "context": {
+    "discipline": "Computer science",
+    "course": {
+      "name": "Intensive introductory computer science, second course",
+      "level": "post-baccalaureate preparation",
+      "level_category": "post_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "students preparing to enter a master's program",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Complete midterm and final exam questions using read-only internet resources.",
+    "student_actions": [
+      "Answer exam questions.",
+      "Look up syntax or other information without communicating online."
+    ],
+    "outputs": [
+      {
+        "artifact": "Exam responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "Students could read from the internet, but communication and explicit LLM use were not allowed."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:java-homework-bounded-llm",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    },
+    {
+      "id": "assessment:weekly-peer-quizzes-llm",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bf928ffa78a3_my-learnings-from-allowing-large-language-models-in-introductory-computer-science-classes.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "Students were allowed to read anything from the internet, but 'communicating' was not allowed.",
+      "source_id": "doi:10.1145/3626253.3635511",
+      "locator": {
+        "section": "1.2.2 Assignment Instructions"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3626253.3635511"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-use-open-book-exams-retakes-or-application-focused-questions",
+      "practice_name": "Use open-book exams, retakes, or application-focused questions",
+      "rationale": "The exam permits read-only use of internet resources.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3626253.3635511",
+          "quote": "Students were allowed to read anything from the internet, but 'communicating' was not allowed.",
+          "locator": {
+            "section": "1.2.2 Assignment Instructions"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "External AI use is not permitted during the assessment."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

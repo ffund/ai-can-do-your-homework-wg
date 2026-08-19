@@ -1,0 +1,204 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ethics-framework-genai-comparison",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Alternating GenAI and non-GenAI ethical-framework analysis",
+  "summary": "Pairs research an assigned ethical framework and a current computing event through stages that explicitly alternate between AI-required and AI-prohibited work. They compare stakeholder analyses and scenarios, evaluate AI omissions and additions, and submit the complete ChatGPT dialogue.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10892995",
+      "type": "conference_paper",
+      "title": "WIP: Generative AI as an Instructional Resource in a Computer Science Ethics Course",
+      "authors": [
+        "Scott Barlowe",
+        "Daniel Aoulou",
+        "Alex Ponce-Castillo"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10892995",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ethics-genai-framework-assignment",
+      "locator": {
+        "section": "III. Methodology, A. Assignment Design and Integration"
+      },
+      "evidence_quote": "Groups were then asked to complete a series of exercises outside of class that alternated between requiring the use of Gen AI and prohibiting the use of Gen AI."
+    }
+  ],
+  "context": {
+    "discipline": "computer ethics",
+    "course": {
+      "name": "Computer Science Ethics",
+      "level": "undergraduate",
+      "institution": "Western Carolina University",
+      "term": "Spring 2024",
+      "delivery_language": "English",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate computer science majors",
+    "cohort_size": 24,
+    "research_sample_size": 22,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "case_based_assessment",
+      "reflection"
+    ],
+    "summary": "Apply an ethical framework and stakeholder analysis manually and with ChatGPT, then compare and evaluate the results.",
+    "student_actions": [
+      "Prompt ChatGPT for a summary of an assigned ethical framework.",
+      "Create a hypothetical scenario and stakeholder list without AI.",
+      "Generate and refine an AI scenario with edge cases and legal effects.",
+      "Find and summarize a recent computing-related news event without AI.",
+      "Compare manual and AI stakeholder analyses.",
+      "Evaluate AI-provided advice and omissions."
+    ],
+    "outputs": [
+      {
+        "artifact": "Ethical-framework scenario and analysis",
+        "required": true
+      },
+      {
+        "artifact": "Current-event stakeholder analysis",
+        "required": true
+      },
+      {
+        "artifact": "Comparative reflection",
+        "required": true
+      },
+      {
+        "artifact": "Complete prompt-response dialogue",
+        "required": true
+      }
+    ],
+    "individual_or_group": "pairs",
+    "group_size": 2
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Permission changes by stage: ChatGPT 3.5 is required for designated activities and prohibited for the paired manual activities."
+    },
+    "policy": [
+      {
+        "scope": "phase",
+        "phase": "With GenAI activities",
+        "permission": "required",
+        "allowed_purposes": [
+          "framework summary",
+          "scenario generation",
+          "stakeholder analysis",
+          "edge-case exploration"
+        ],
+        "transcript_required": true,
+        "validation_required": true
+      },
+      {
+        "scope": "phase",
+        "phase": "Without GenAI activities",
+        "permission": "prohibited",
+        "prohibited_actions": [
+          "Using GenAI to create the student-authored scenario, article summary, or initial stakeholder analysis"
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "model": "GPT-3.5"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Rubric-based grading emphasizing a systematic prompt strategy; detailed weights are not reported.",
+    "criteria": [
+      {
+        "criterion": "Systematic prompting strategy"
+      },
+      {
+        "criterion": "Application of ethical framework"
+      },
+      {
+        "criterion": "Stakeholder analysis"
+      },
+      {
+        "criterion": "Critical comparison and reflection"
+      }
+    ],
+    "assessors": [
+      "course instructors"
+    ]
+  },
+  "evidence": {
+    "study_type": "work-in-progress classroom study",
+    "sample": {
+      "invited": 24,
+      "participating": 22,
+      "unit_of_analysis": "student"
+    },
+    "instruments": [
+      "11-question survey",
+      "analysis of student submissions"
+    ],
+    "reported_results": [
+      "Twelve of thirteen groups identified stakeholders supplied only by GenAI and stakeholders identified only by the group."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-568d50042db7_wip-generative-ai-as-an-instructional-resource-in-a-computer-science-ethics-course.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Groups were then asked to complete a series of exercises outside of class that alternated between requiring the use of Gen AI and prohibiting the use of Gen AI.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892995",
+      "locator": {
+        "section": "III. Methodology, A. Assignment Design and Integration"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Groups were then asked to complete a series of exercises outside of class that alternated between requiring the use of Gen AI and prohibiting the use of Gen AI.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892995",
+      "locator": {
+        "section": "III. Methodology, A. Assignment Design and Integration"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Groups were then asked to complete a series of exercises outside of class that alternated between requiring the use of Gen AI and prohibiting the use of Gen AI.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892995",
+      "locator": {
+        "section": "III. Methodology, A. Assignment Design and Integration"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

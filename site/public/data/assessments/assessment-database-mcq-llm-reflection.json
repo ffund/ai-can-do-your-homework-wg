@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:database-mcq-llm-reflection",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Database MCQ assignment with LLM-guided reflection",
+  "summary": "Students answer multiple-choice questions about database locking protocols with access to a GPT-3 tutor. Half then spend at least five minutes reflecting with an LLM before a related proctored exam two weeks later.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3657604.3662042",
+      "type": "conference_paper",
+      "title": "Supporting Self-Reflection at Scale with Large Language Models: Insights from Randomized Field Experiments in Classrooms",
+      "authors": [
+        "Harsh Kumar",
+        "Ruiwei Xiao",
+        "Benjamin Lawson",
+        "Ilya Musabirov",
+        "Jiakai Shi",
+        "Xinyuan Wang",
+        "Huayin Luo",
+        "Joseph Jay Williams",
+        "Anna N. Rafferty",
+        "John Stamper",
+        "Michael Liut"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3657604.3662042",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "database-mcq-llm-reflection",
+      "locator": {
+        "section": "3.1 Experimental Design"
+      },
+      "evidence_quote": "multiple MCQ questions on the topic of locking protocols"
+    }
+  ],
+  "context": {
+    "discipline": "Databases",
+    "course": {
+      "name": "Introduction to Databases",
+      "level": "upper-year undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "computer science students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Answer database concurrency MCQs and optionally complete guided post-assignment reflection.",
+    "student_actions": [
+      "Solve locking-protocol MCQs with an LLM tutor.",
+      "Discuss understanding, confidence, and misconceptions with a reflection bot when assigned.",
+      "Later answer similar questions in a proctored exam."
+    ],
+    "outputs": [
+      {
+        "artifact": "MCQ responses and reflection dialogue",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-3 supported all students on the assignment and guided post-assignment reflection for the treatment group."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Assignment and later proctored-exam scores were analyzed; detailed course weighting was not reported."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:python-data-analysis-llm-reflection",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-2af0b253bdc2_supporting-self-reflection-at-scale-with-large-language-models-insights-from-randomized-field-ex.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "145 of 218 students completed the assignment and were randomized; exam differences were not statistically significant, while reflection-group confidence increased modestly."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "multiple MCQ questions on the topic of locking protocols",
+      "source_id": "doi:10.1145/3657604.3662042",
+      "locator": {
+        "section": "3.1 Experimental Design"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3657604.3662042"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "MCQ responses and reflection dialogue"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

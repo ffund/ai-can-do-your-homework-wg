@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:novice-help-seeking-programming-task",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Novice programming task with web-search and GenAI choices",
+  "summary": "Novice programmers work on a programming problem while deciding whether to seek help through web search or generative AI. The research task captures tool-choice intentions and behavior, allowing comparison of the factors that drive students toward conventional web resources or GenAI support.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3632620.3671112",
+      "type": "conference_paper",
+      "title": "An Investigation of the Drivers of Novice Programmers' Intentions to Use Web Search and GenAI",
+      "authors": [
+        "James Skripchuk",
+        "John Bacher",
+        "Thomas Price"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3632620.3671112",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "novice-help-seeking-programming-task"
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "not_reported",
+      "level": "introductory",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve a programming problem while choosing between web-search and GenAI help resources.",
+    "student_actions": [
+      "Attempt a programming task.",
+      "Choose and use available help resources."
+    ],
+    "outputs": [
+      {
+        "artifact": "Programming-task solution",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GenAI is one of the help resources available during the research task."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Help seeking while solving the programming task"
+        ],
+        "disclosure_required": "not_applicable"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bd67d5dea1b4_an-investigation-of-the-drivers-of-novice-programmers-intentions-to-use-web-search-and-genai.pdf"
+  }
+}
+

@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:software-competence-open-web",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Constructively aligned open-web software-development assessment",
+  "summary": "Students demonstrate software-development competences in an open-web assessment designed around intended learning outcomes rather than restricted resource recall. They may consult online resources during the task, reflecting professional software practice while the assessment targets application and problem solving.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/cseet62301.2024.10662997",
+      "type": "conference_paper",
+      "title": "Assessing Software Development Competences Constructively Aligned in an Open-Web Format",
+      "authors": [
+        "Axel Böttcher",
+        "Veronika Thurner"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CSEET62301.2024.10662997",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "software-competence-open-web"
+    }
+  ],
+  "context": {
+    "discipline": "software development",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Demonstrate software-development competence in an open-web assessment aligned with course learning outcomes.",
+    "student_actions": [
+      "Solve applied software-development tasks.",
+      "Consult web resources as needed and produce assessed responses."
+    ],
+    "outputs": [
+      {
+        "artifact": "Software-development assessment responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "unknown",
+      "setting": "open_web"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "unknown",
+      "external_ai_use_permitted": "unknown",
+      "description": "The assessment permits web resources; the paper does not establish a distinct rule for generative AI."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "disclosure_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Constructive alignment links assessment tasks to intended software-development competences."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-997a5de960f8_assessing-software-development-competences-constructively-aligned-in-an-open-web-format.pdf"
+  }
+}
+
+

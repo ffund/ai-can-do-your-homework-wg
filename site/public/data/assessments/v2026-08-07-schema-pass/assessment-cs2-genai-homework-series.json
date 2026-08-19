@@ -1,0 +1,189 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs2-genai-homework-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "GenAI-integrated data structures and algorithms homework",
+  "summary": "CS2 students complete six individual programming homeworks and a distinct GenAI activity in each one. Tasks include comparing AI and student solutions, AI-assisted debugging and optimization, and validating AI-generated implementations or algorithm ideas.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10892822",
+      "type": "conference_paper",
+      "title": "Integrating Generative AI with Data Structures and Algorithm Analysis Course Homework",
+      "authors": [
+        "Cong Pu"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10892822",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs2-genai-homework-series",
+      "locator": {
+        "section": "V. Redesigned Course Homework"
+      },
+      "evidence_quote": "The redesigned course homework was composed of three components: 80% Data structures and algorithms implementation; 10% Program testing; 10% Exploiting generative AI."
+    }
+  ],
+  "context": {
+    "discipline": "data structures and algorithm analysis",
+    "course": {
+      "name": "Data Structures and Algorithm Analysis",
+      "level": "CS2",
+      "institution": "Oklahoma State University",
+      "term": "Fall 2023",
+      "delivery_language": "English",
+      "level_category": "post_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "sophomore and junior undergraduate students",
+    "cohort_size": 61,
+    "research_sample_size": 47,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "assignment"
+    ],
+    "summary": "Implement and test data structures and algorithms, then complete an assigned GenAI comparison, debugging, optimization, generation, or validation activity.",
+    "student_actions": [
+      "Implement required algorithms and data structures individually.",
+      "Test the implementation.",
+      "Use GenAI for the specified activity.",
+      "Capture the AI response.",
+      "Compare, verify, or summarize the AI output in at least 50 words."
+    ],
+    "outputs": [
+      {
+        "artifact": "Six programming homework submissions",
+        "required": true
+      },
+      {
+        "artifact": "Testing evidence",
+        "required": true
+      },
+      {
+        "artifact": "Screenshots of GenAI responses",
+        "required": true
+      },
+      {
+        "artifact": "Comparisons or validation summaries",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "timing": {
+      "mode": "asynchronous",
+      "deadline": "Two weeks for each homework"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students must use a GenAI system for a designated activity and compare or validate its output."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "solution comparison",
+          "debugging",
+          "code generation",
+          "optimization",
+          "algorithm ideation"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Bing AI",
+      "Bard"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Each redesigned homework allocates 80% to implementation, 10% to testing, and 10% to GenAI use.",
+    "criteria": [
+      {
+        "criterion": "Data structure and algorithm implementation",
+        "weight_percent": 80
+      },
+      {
+        "criterion": "Program testing",
+        "weight_percent": 10
+      },
+      {
+        "criterion": "GenAI activity and critical comparison",
+        "weight_percent": 10
+      }
+    ],
+    "assessors": [
+      "course instructor"
+    ]
+  },
+  "evidence": {
+    "study_type": "implemented redesign with perception survey",
+    "sample": {
+      "invited": 61,
+      "participating": 47,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "85.1% agreed or strongly agreed that GenAI helped them understand testing and debugging.",
+      "74.5% agreed or strongly agreed that GenAI helped with efficient data-structure and algorithm implementation."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-17263c48b5b6_integrating-generative-ai-with-data-structures-and-algorithm-analysis-course-homework.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The redesigned course homework was composed of three components: 80% Data structures and algorithms implementation; 10% Program testing; 10% Exploiting generative AI.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892822",
+      "locator": {
+        "section": "V. Redesigned Course Homework"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "The redesigned course homework was composed of three components: 80% Data structures and algorithms implementation; 10% Program testing; 10% Exploiting generative AI.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892822",
+      "locator": {
+        "section": "V. Redesigned Course Homework"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "The redesigned course homework was composed of three components: 80% Data structures and algorithms implementation; 10% Program testing; 10% Exploiting generative AI.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892822",
+      "locator": {
+        "section": "V. Redesigned Course Homework"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

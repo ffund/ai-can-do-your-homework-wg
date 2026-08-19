@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:uml-java-chatgpt-experiment",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "UML design and Java implementation task with optional ChatGPT",
+  "summary": "Create a UML diagram and implement its design in Java, with the experimental group allowed ChatGPT 3.5 and other online resources before a closed-book post-evaluation. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3639474.3640076",
+      "type": "conference_paper",
+      "title": "Does ChatGPT Help With Introductory Programming?An Experiment of Students Using ChatGPT in CS1",
+      "authors": [
+        "Xue, Yuankai",
+        "Chen, Hanlin",
+        "Bai, Gina R.",
+        "Tairas, Robert",
+        "Huang, Yu"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3639474.3640076",
+      "url": "https://doi.org/10.1145/3639474.3640076",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "uml-java-chatgpt-experiment",
+      "locator": {
+        "section": "Study Design"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory object-oriented programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate novices",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate novices",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "design_task"
+    ],
+    "summary": "Create a UML diagram and implement its design in Java, with the experimental group allowed ChatGPT 3.5 and other online resources before a closed-book post-evaluation.",
+    "student_actions": [
+      "Create a UML diagram and implement its design in Java, with the experimental group allowed ChatGPT 3.5 and other online resources before a closed-book post-evaluation."
+    ],
+    "outputs": [
+      {
+        "artifact": "UML diagram, Java program, and post-evaluation responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT 3.5"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-3a5e77f8b87f_does-chatgpt-help-with-introductory-programming-an-experiment-of-students-using-chatgpt-in-cs1.pdf"
+  }
+}
+

@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs1-llm-image-collage-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Copilot-assisted image collage project",
+  "summary": "Write a Python program that filters and combines images into a collage, using Copilot-assisted decomposition, testing, and debugging. Students use GenAI while producing the assessed work.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653584",
+      "type": "conference_paper",
+      "title": "CS1-LLM: Integrating LLMs into CS1 Instruction",
+      "authors": [
+        "Vadaparty, Annapurna",
+        "Zingaro, Daniel",
+        "Smith IV, David H.",
+        "Padala, Mounika",
+        "Alvarado, Christine",
+        "Gorson Benario, Jamie",
+        "Porter, Leo"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653584",
+      "url": "https://doi.org/10.1145/3649217.3653584",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs1-llm-image-collage-project",
+      "locator": {
+        "section": "5.4 Assessments - Projects"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python and image manipulation",
+    "course": {
+      "name": "CS1-LLM",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Write a Python program that filters and combines images into a collage, using Copilot-assisted decomposition, testing, and debugging.",
+    "student_actions": [
+      "Write a Python program that filters and combines images into a collage, using Copilot-assisted decomposition, testing, and debugging."
+    ],
+    "outputs": [
+      {
+        "artifact": "Code, images, function diagram, and five-minute explanation video",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use GenAI while producing the assessed work."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "GitHub Copilot, VS Code, and PIL"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-1657f74af9c5_cs1-llm-integrating-llms-into-cs1-instruction.pdf"
+  }
+}
+

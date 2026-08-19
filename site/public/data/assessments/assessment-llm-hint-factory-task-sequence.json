@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:llm-hint-factory-task-sequence",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "LLM Hint Factory programming task sequence",
+  "summary": "Novice programmers complete a pre-test, three programming tasks, and a post-test while requesting four levels of GPT-generated hints. Students can move from orientation and instrumental guidance to worked examples and exact next-step code when they need more support.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613905.3650937",
+      "type": "conference_paper",
+      "title": "Exploring How Multiple Levels of GPT-Generated Programming Hints Support or Disappoint Novices",
+      "authors": [
+        "Ruiwei Xiao",
+        "Xinying Hou",
+        "John Stamper"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3613905.3650937",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "llm-hint-factory-task-sequence",
+      "locator": {
+        "section": "4. Method"
+      },
+      "evidence_quote": "We conducted a user study with 12 novice programming learners to complete three programming learning tasks with pre- and post-test using the LLM Hint Factory."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "not_reported",
+      "level": "novice undergraduate and graduate",
+      "level_category": "mixed",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "novice undergraduate and graduate",
+    "learner_level_category": "mixed",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Novice programmers complete a pre-test, three programming tasks, and a post-test while requesting four levels of GPT-generated hints.",
+    "student_actions": [
+      "Attempt three programming tasks.",
+      "Request hints on demand.",
+      "Navigate among four levels of hint specificity.",
+      "Complete pre- and post-tests."
+    ],
+    "outputs": [
+      {
+        "artifact": "program solutions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "hint interaction logs",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "pre-test and post-test responses",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students can move from orientation and instrumental guidance to worked examples and exact next-step code when they need more support."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f85c32d67704_exploring-how-multiple-levels-of-gpt-generated-programming-hints-support-or-disappoint-novices.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "We conducted a user study with 12 novice programming learners to complete three programming learning tasks with pre- and post-test using the LLM Hint Factory.",
+      "source_id": "doi:10.1145/3613905.3650937",
+      "locator": {
+        "section": "4. Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "We conducted a user study with 12 novice programming learners to complete three programming learning tasks with pre- and post-test using the LLM Hint Factory.",
+      "source_id": "doi:10.1145/3613905.3650937",
+      "locator": {
+        "section": "4. Method"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3613905.3650937"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "hint interaction logs"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

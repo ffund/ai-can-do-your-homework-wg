@@ -1,0 +1,121 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:embedded-ai-next-step-java-hints",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Embedded AI next-step hints for stuck novice Java programmers",
+  "summary": "When a novice becomes stuck during an open-ended Java programming task, an expert-designed tool can submit the current code snapshot to an LLM and return one concise next-step hint. The hint is intended to identify the most serious obstacle and support progress without exposing the task solution.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1145/3737885",
+      "type": "journal_article",
+      "title": "Howzat? Appealing to Expert Judgement for Evaluating Human and AI Next-Step Hints for Novice Programmers",
+      "authors": [
+        "Neil C. C. Brown",
+        "Pierre Weill-Tessier",
+        "Juho Leinonen",
+        "Paul Denny",
+        "Michael Kölling"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3737885",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "embedded-ai-next-step-java-hints",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "evidence_quote": "it may be best for a tool, such as an Integrated Development Environment (IDE), to provide the prompt on behalf of the student, in order to generate a hint"
+    }
+  ],
+  "context": {
+    "discipline": "introductory Java programming",
+    "course": {
+      "name": "not_reported",
+      "level": "first year",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice programmers aged approximately 16-18",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "exercise"
+    ],
+    "summary": "Continue an open-ended Java task with an automatically generated next-step hint based only on the current code snapshot.",
+    "student_actions": [
+      "Develop Java code until help is needed.",
+      "Request and interpret a next-step hint.",
+      "Revise the code without being given the complete solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "Revised Java program",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "unknown",
+      "description": "A tool, rather than the novice, constructs the LLM prompt and displays an expert-designed next-step hint."
+    },
+    "policy": [
+      {
+        "scope": "component",
+        "permission": "optional",
+        "allowed_purposes": [
+          "Receive one concrete next-step suggestion"
+        ],
+        "prohibited_actions": [
+          "Receive the complete answer"
+        ],
+        "validation_required": true
+      }
+    ],
+    "assessment_system_role": [
+      "Infer the likely task from code and generate a pedagogical next-step hint"
+    ],
+    "tools": [
+      "GPT-4",
+      "GPT-3.5",
+      "Gemini",
+      "Mixtral-8x7B"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-c93dfbe3fb3d_howzat-appealing-to-expert-judgement-for-evaluating-human-and-ai-next-step-hints-for-novice-prog.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "it may be best for a tool, such as an Integrated Development Environment (IDE), to provide the prompt on behalf of the student, in order to generate a hint",
+      "source_id": "doi:10.1145/3737885",
+      "locator": {
+        "section": "1 Introduction"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

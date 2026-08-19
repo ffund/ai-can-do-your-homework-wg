@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:intermediate-data-science-assignment-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Intermediate data-science assignment series",
+  "summary": "Students complete three intermediate data-science assignments using supplied datasets and progressive multi-step questions, but with less programmatic and column detail than the introductory series. Researchers benchmarked both raw and engineered prompts to identify the contextual knowledge students must obtain from course materials.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630874",
+      "type": "conference_paper",
+      "title": "Implications of ChatGPT for Data Science Education",
+      "authors": [
+        "Yiyin Shen",
+        "Xinyi Ai",
+        "Adalbert Gerald Soosai Raj",
+        "Rogers Jeffrey Leo John",
+        "Meenakshi Syamkumar"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630874",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "intermediate-data-science-assignment-series",
+      "locator": {
+        "section": "3 Method"
+      },
+      "evidence_quote": "course 2 assignments typically only provide a brief description of the dataset(s) and do not provide descriptions for columns"
+    }
+  ],
+  "context": {
+    "discipline": "intermediate data science",
+    "course": {
+      "name": "Course 2",
+      "level": "intermediate undergraduate",
+      "level_category": "post_introductory",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "problem_set"
+    ],
+    "summary": "Complete progressive dataset-analysis questions while deriving missing implementation details from lectures, labs, and dataset exploration.",
+    "student_actions": [
+      "Explore supplied datasets.",
+      "Process and visualize data.",
+      "Implement statistical and machine-learning analyses using course knowledge."
+    ],
+    "outputs": [
+      {
+        "artifact": "Data-science code and analysis responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers benchmarked ChatGPT-3.5 with raw and engineered prompts; student AI permission is not reported."
+    },
+    "assessment_system_role": [
+      "Research benchmark of assignment solvability"
+    ],
+    "tools": [
+      "ChatGPT with GPT-3.5"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Generated benchmark solutions were checked against student-facing tests and ground-truth outputs."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:intro-data-science-assignment-series",
+      "relationship": "compared_with"
+    },
+    {
+      "id": "assessment:advanced-data-science-assignment-series",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-b369f0eb072d_implications-of-chatgpt-for-data-science-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "course 2 assignments typically only provide a brief description of the dataset(s) and do not provide descriptions for columns",
+      "source_id": "doi:10.1145/3626252.3630874",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

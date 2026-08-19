@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:data-visualization-design-redesign",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Static visualization design and redesign with ChatGPT",
+  "summary": "Create a static visualization from enrollment data, redesign Nightingale's Coxcomb chart, justify design choices, and integrate both into a website. Students interact with a GenAI system for assistance or feedback while completing the assessment.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/vl/hcc60511.2024.00022",
+      "type": "conference_paper",
+      "title": "ChatGPT in Data Visualization Education: A Student Perspective",
+      "authors": [
+        "Kim, Nam Wook",
+        "Ko, Hyung-Kwon",
+        "Myers, Grace",
+        "Bach, Benjamin"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/vl/hcc60511.2024.00022",
+      "url": "https://doi.org/10.1109/vl/hcc60511.2024.00022",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "data-visualization-design-redesign",
+      "locator": {
+        "section": "III-C Task Assignments, Assignment 1"
+      }
+    }
+  ],
+  "context": {
+    "discipline": "data visualization",
+    "course": {
+      "name": "Interdisciplinary project-oriented data visualization",
+      "level": "upper-level undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "upper-level undergraduate",
+    "learner_level_category": "advanced",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "design_task"
+    ],
+    "summary": "Create a static visualization from enrollment data, redesign Nightingale's Coxcomb chart, justify design choices, and integrate both into a website.",
+    "student_actions": [
+      "Create a static visualization from enrollment data, redesign Nightingale's Coxcomb chart, justify design choices, and integrate both into a website."
+    ],
+    "outputs": [
+      {
+        "artifact": "Website with two static visualizations and design rationale",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students interact with a GenAI system for assistance or feedback while completing the assessment."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": "not_reported",
+        "citation_required": "not_reported",
+        "transcript_required": "not_reported",
+        "validation_required": "not_reported"
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5705ba117b27_chatgpt-in-data-visualization-education-a-student-perspective.pdf"
+  }
+}
+
+

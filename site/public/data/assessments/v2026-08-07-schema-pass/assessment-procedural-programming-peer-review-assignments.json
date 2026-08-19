@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:procedural-programming-peer-review-assignments",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Weekly programming assignments with peer review and GenAI use",
+  "summary": "Students solve weekly procedural-programming assignments, submit them in Moodle, and review peers' work. Students independently chose whether and how to use GenAI for generating, tracing, completing, or checking solutions; assignment and review points gate eligibility for the final exam.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3699538.3699580",
+      "type": "conference_paper",
+      "title": "Novice Learners of Programming and Generative AI - Prior Knowledge Matters",
+      "authors": [
+        "Natalie Kiesler",
+        "Ingo Scholz",
+        "Jens Albrecht",
+        "Friedhelm Stappert",
+        "Uwe Wienkop"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3699538.3699580",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "procedural-programming-peer-review-assignments",
+      "locator": {
+        "section": "2 Pilot Study"
+      },
+      "evidence_quote": "Students have to solve weekly assignments and submit them via Moodle; a peer-review process follows."
+    }
+  ],
+  "context": {
+    "discipline": "C# programming",
+    "course": {
+      "name": "Procedural Programming",
+      "level": "first-semester undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice students across computing and applied-science programs",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "homework",
+      "peer_assessment"
+    ],
+    "summary": "Complete weekly C# programming assignments and peer reviews.",
+    "student_actions": [
+      "Develop and submit assignment solutions.",
+      "Review and provide feedback on peers' submissions.",
+      "Optionally use GenAI while solving or reviewing."
+    ],
+    "outputs": [
+      {
+        "artifact": "C# solutions and peer feedback",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students reported several actual GenAI strategies, but the paper does not state a formal permission policy."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Students earned points for solutions and peer feedback; a threshold was required to sit the final exam."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4d25587d1c1a_novice-learners-of-programming-and-generative-ai-prior-knowledge-matters.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "166 of roughly 350 students completed the survey linking GenAI-use patterns, prior experience, and exam outcomes."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students have to solve weekly assignments and submit them via Moodle; a peer-review process follows.",
+      "source_id": "doi:10.1145/3699538.3699580",
+      "locator": {
+        "section": "2 Pilot Study"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

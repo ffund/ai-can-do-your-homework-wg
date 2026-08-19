@@ -1,0 +1,208 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:sql-challenge-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Challenge ChatGPT with student-authored SQL exercises",
+  "summary": "Pairs invent SQL queries and equivalent natural-language questions, prompt ChatGPT to solve them, and try to expose model failures. For each exercise they submit the schema, question, AI solution, their own solution, and a critical error analysis.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701932",
+      "type": "conference_paper",
+      "title": "A Critical Approach to ChatGPT: An Experience in SQL Learning",
+      "authors": [
+        "Laura Farinetti",
+        "Luca Cagliero"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701932",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "sql-chatgpt-challenge",
+      "locator": {
+        "section": "3. Activity design and description"
+      },
+      "evidence_quote": "Students of both groups worked in teams of two, and the activity lasted three hours."
+    }
+  ],
+  "context": {
+    "discipline": "databases and SQL",
+    "course": {
+      "name": "Two undergraduate database courses",
+      "level": "second- and third-year undergraduate",
+      "institution": "Politecnico di Torino",
+      "delivery_language": "not_reported",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "B.S. Computer Engineering and Management Engineering students",
+    "cohort_size": 452,
+    "research_sample_size": 166,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": 15
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Create increasingly difficult text-to-SQL exercises, solve them, ask ChatGPT to solve them, and analyze any syntactic or semantic failures.",
+    "student_actions": [
+      "Invent SQL queries of varying complexity.",
+      "Write equivalent natural-language questions.",
+      "Construct prompts containing schema information.",
+      "Submit each prompt to ChatGPT 3.5 Turbo.",
+      "Solve each exercise independently.",
+      "Critically evaluate ChatGPT's solution."
+    ],
+    "outputs": [
+      {
+        "artifact": "Database schema and natural-language question",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT-generated SQL query",
+        "required": true
+      },
+      {
+        "artifact": "Student-authored SQL query",
+        "required": true
+      },
+      {
+        "artifact": "Critical comments on model errors",
+        "required": true
+      }
+    ],
+    "individual_or_group": "pairs",
+    "group_size": 2,
+    "duration_minutes": 180,
+    "delivery": {
+      "modality": "in_person",
+      "setting": "lab",
+      "platforms": [
+        "ChatGPT 3.5 Turbo",
+        "Moodle"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students are explicitly required to challenge ChatGPT and analyze its SQL solutions."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "text-to-SQL generation",
+          "model benchmarking"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "model": "GPT-3.5 Turbo"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "For the Computer Engineering group, this was one of three critical-thinking activities jointly worth 15% of the final grade; it was voluntary and ungraded for the Management Engineering group.",
+    "criteria": [
+      {
+        "criterion": "Clarity and feasibility of the exercise"
+      },
+      {
+        "criterion": "Correctness of student SQL"
+      },
+      {
+        "criterion": "Quality of analysis of ChatGPT output"
+      }
+    ],
+    "assessors": [
+      "course instructors"
+    ]
+  },
+  "evidence": {
+    "study_type": "comparative classroom study",
+    "sample": {
+      "participating": 166,
+      "unit_of_analysis": "student and submitted SQL exercise"
+    },
+    "reported_results": [
+      "Students submitted 142 complete, non-trivial exercises.",
+      "Students generally outperformed ChatGPT, with the performance gap increasing for harder queries."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-35f4dcb34ff1_a-critical-approach-to-chatgpt-an-experience-in-sql-learning.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "Students of both groups worked in teams of two, and the activity lasted three hours.",
+      "source_id": "doi:10.1145/3641554.3701932",
+      "locator": {
+        "section": "3. Activity design and description"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701932"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "An AI interaction transcript is required.",
+      "Validation of AI output is required."
+    ],
+    "process_evidence": [
+      "ChatGPT-generated SQL query"
+    ]
+  },
+  "implementation": {
+    "platforms": [
+      "ChatGPT 3.5 Turbo",
+      "Moodle"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

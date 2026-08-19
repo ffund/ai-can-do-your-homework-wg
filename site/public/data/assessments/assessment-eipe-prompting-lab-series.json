@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:eipe-prompting-lab-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Code explanation and prompting lab tasks",
+  "summary": "Students complete eight Explain-in-Plain-English tasks across two C programming labs by describing obfuscated functions to an LLM. They iteratively revise each description until generated code passes tests, with a 20-attempt limit and about 1% course credit.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649217.3653587",
+      "type": "conference_paper",
+      "title": "Explaining Code with a Purpose: An Integrated Approach for Developing Code Comprehension and Prompting Skills",
+      "authors": [
+        "Paul Denny",
+        "David H. Smith",
+        "Max Fowler",
+        "James Prather",
+        "Brett A. Becker",
+        "Juho Leinonen"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649217.3653587",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "eipe-prompting-lab-series",
+      "locator": {
+        "section": "3.1 Code Explanation Tasks"
+      },
+      "evidence_quote": "Both Lab A and Lab B included four new code explanation tasks."
+    }
+  ],
+  "context": {
+    "discipline": "C programming",
+    "course": {
+      "name": "introductory programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exercise"
+    ],
+    "summary": "Students complete eight Explain-in-Plain-English tasks across two C programming labs by describing obfuscated functions to an LLM.",
+    "student_actions": [
+      "Read an obfuscated C function.",
+      "Describe the function's purpose in natural language.",
+      "Inspect LLM-generated code and test results.",
+      "Revise the prompt until the generated code is equivalent."
+    ],
+    "outputs": [
+      {
+        "artifact": "natural-language prompts",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "LLM-generated code",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "test results",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "They iteratively revise each description until generated code passes tests, with a 20-attempt limit and about 1% course credit."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-65fd99aabf2c_explaining-code-with-a-purpose-an-integrated-approach-for-developing-code-comprehension-and-prom.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "Both Lab A and Lab B included four new code explanation tasks.",
+      "source_id": "doi:10.1145/3649217.3653587",
+      "locator": {
+        "section": "3.1 Code Explanation Tasks"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3649217.3653587"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "natural-language prompts"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

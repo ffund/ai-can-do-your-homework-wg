@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:code-in-place-style-feedback",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Code in Place assignments with AI style feedback",
+  "summary": "Students submit Python programs in a large introductory course and receive automated feedback on code style. An AI feedback system evaluates qualities that ordinary correctness tests do not capture, giving students timely comments intended to help them revise toward readable, elegant code.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630773",
+      "type": "conference_paper",
+      "title": "AI Teaches the Art of Elegant Coding: Timely, Fair, and Helpful Style Feedback in a Global Course",
+      "authors": [
+        "Juliette Woodrow",
+        "Ali Malik",
+        "Chris Piech"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630773",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "code-in-place-style-feedback"
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "Code in Place",
+      "level": "introductory",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "novice programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "exercise"
+    ],
+    "summary": "Submit Python code and use automated style comments to improve its readability and elegance.",
+    "student_actions": [
+      "Write and submit Python code.",
+      "Review AI-generated style feedback and revise code."
+    ],
+    "outputs": [
+      {
+        "artifact": "Python program",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "delivery": {
+      "modality": "online",
+      "setting": "take_home"
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Students receive and may act on AI-generated style feedback."
+    },
+    "assessment_system_role": [
+      "Evaluate submitted code style and generate comments."
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-bb61423c342c_ai-teaches-the-art-of-elegant-coding-timely-fair-and-helpful-style-feedback-in-a-global-course.pdf"
+  },
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3626252.3630773"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  },
+  "evidence_excerpts": []
+}

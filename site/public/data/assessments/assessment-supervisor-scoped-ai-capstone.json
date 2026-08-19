@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:supervisor-scoped-ai-capstone",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "Individual engineering capstone with supervisor-scoped GenAI use",
+  "summary": "Final-year electrical and computer engineering students complete individual, design-focused capstone projects. Each supervisor documents project-specific GenAI permissions, which may cover research, code, data, analysis, editing, planning, or prediction; students must still justify and validate engineering decisions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893028",
+      "type": "conference_paper",
+      "title": "WIP Productive Uses of Generative AI: Preliminary Findings from an Electrical and Computer Engineering Capstone Course",
+      "authors": [
+        "Crista Mohammed",
+        "Wayne Sarjusingh"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893028",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "ece-capstone-supervisor-ai-policy",
+      "locator": {
+        "section": "III. Teaching Context"
+      },
+      "evidence_quote": "The policy permits use as specified by project supervisors. This permitted use is itemized by supervisors and becomes part of the project's documentation."
+    }
+  ],
+  "context": {
+    "discipline": "electrical and computer engineering",
+    "course": {
+      "name": "senior capstone engineering project",
+      "level": "final-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "final-year undergraduate students",
+    "cohort_size": 38,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "capstone",
+      "project"
+    ],
+    "summary": "Complete an individual engineering design project under a supervisor-defined GenAI policy.",
+    "student_actions": [
+      "Plan and execute an individual engineering design project.",
+      "Use GenAI only for tasks approved by the supervisor.",
+      "Validate AI outputs and explain project work when required."
+    ],
+    "outputs": [
+      {
+        "artifact": "Capstone project and documentation",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": "unknown",
+      "description": "Permission varies by project and supervisor; 21 of 38 projects used GenAI."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "unknown",
+        "allowed_purposes": [
+          "supervisor-approved project tasks"
+        ],
+        "disclosure_required": true,
+        "validation_required": true
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-890a3975cb0a_wip-productive-uses-of-generative-ai-preliminary-findings-from-an-electrical-and-computer-engineering.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "The policy permits use as specified by project supervisors. This permitted use is itemized by supervisors and becomes part of the project's documentation.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893028",
+      "locator": {
+        "section": "III. Teaching Context"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/FIE61694.2024.10893028"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "Supervisors itemize permitted AI use in project documentation.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/FIE61694.2024.10893028",
+          "quote": "The policy permits use as specified by project supervisors. This permitted use is itemized by supervisors and becomes part of the project's documentation.",
+          "locator": {
+            "section": "III. Teaching Context"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required.",
+      "Validation of AI output is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:natural-language-prompting-labs",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Explain-in-Plain-English and Prompt Problem lab tasks",
+  "summary": "Engineering students complete 14 natural-language programming tasks across four weighted labs. They either describe supplied code so an LLM can reproduce it or infer a task from a visual specification and prompt an LLM to generate code, which is automatically tested.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3649165.3690125",
+      "type": "conference_paper",
+      "title": "Integrating Natural Language Prompting Tasks in Introductory Programming Courses",
+      "authors": [
+        "Chris Kerslake",
+        "Paul Denny",
+        "David H. Smith IV",
+        "James Prather",
+        "Juho Leinonen",
+        "Andrew Luxton-Reilly",
+        "Stephen MacNeil"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3649165.3690125",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "natural-language-prompting-labs",
+      "locator": {
+        "section": "3.3. Natural Language Tasks"
+      },
+      "evidence_quote": "Eight Explain in Plain English tasks were included in Labs 8 and 10, and six Prompt Problem tasks were included in Labs 9 and 12."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming for engineering",
+    "course": {
+      "name": "Anonymized introductory programming course",
+      "level": "introductory undergraduate",
+      "delivery_language": "English",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "undergraduate engineering students",
+    "cohort_size": 861,
+    "research_sample_size": 726,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "practice"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": 24
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exercise"
+    ],
+    "summary": "Write natural-language prompts from code fragments or visual specifications, then use automated LLM generation and testing to evaluate whether the prompt captures the intended behavior.",
+    "student_actions": [
+      "Read obfuscated C code and describe its purpose in plain English.",
+      "Infer computational tasks from visual input/output examples.",
+      "Write prompts for GPT-3.5.",
+      "Inspect generated code and test outcomes.",
+      "Revise prompts over multiple attempts."
+    ],
+    "outputs": [
+      {
+        "artifact": "Eight Explain-in-Plain-English prompts",
+        "required": true
+      },
+      {
+        "artifact": "Six visual Prompt Problem prompts",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "question_or_item_count": 14,
+    "delivery": {
+      "modality": "online",
+      "setting": "lab",
+      "platforms": [
+        "PrairieLearn",
+        "custom Prompt Problem tool",
+        "GPT-3.5"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "Student prompts are sent to GPT-3.5, and the generated code is executed against instructor tests."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "generation of functionally equivalent code"
+        ],
+        "validation_required": true,
+        "disclosure_required": false,
+        "transcript_required": false
+      }
+    ],
+    "tools": [
+      {
+        "name": "GPT-3.5",
+        "provider": "OpenAI"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "The labs contribute to a 24% weekly-lab category; generated code is automatically judged with test cases.",
+    "criteria": [
+      {
+        "criterion": "Functional equivalence of generated code"
+      }
+    ],
+    "feedback": "Students see generated code and test results."
+  },
+  "evidence": {
+    "study_type": "large-course experience report",
+    "sample": {
+      "invited": 861,
+      "analyzed": 726,
+      "unit_of_analysis": "student"
+    },
+    "reported_results": [
+      "Final success rates were approximately 99% or higher across student difficulty groups.",
+      "Performance gaps on prompting tasks were smaller than gaps on invigilated programming exams."
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-8e3ba6ca76b8_integrating-natural-language-prompting-tasks-in-introductory-programming-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "Eight Explain in Plain English tasks were included in Labs 8 and 10, and six Prompt Problem tasks were included in Labs 9 and 12.",
+      "source_id": "doi:10.1145/3649165.3690125",
+      "locator": {
+        "section": "3.3. Natural Language Tasks"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

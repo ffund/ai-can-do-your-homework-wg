@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:cs2-invigilated-programming-tests-codex",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CS2 invigilated programming tests",
+  "summary": "Students complete two invigilated CS2 programming tests by implementing functions in CodeRunner. Codex was evaluated offline against the same prompts and grading scheme, showing the assessments' susceptibility to AI-generated code while student AI use in the tests was not permitted by the invigilated setting.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3576123.3576134",
+      "type": "conference_paper",
+      "title": "My AI Wants to Know if This Will Be on the Exam: Testing OpenAI’s Codex on CS2 Programming Exercises",
+      "authors": [
+        "James Finnie-Ansley",
+        "Paul Denny",
+        "Andrew Luxton-Reilly",
+        "Eddie Antonio Santos",
+        "James Prather",
+        "Brett A. Becker"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3576123.3576134",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "cs2-invigilated-programming-tests-codex",
+      "locator": {
+        "section": "3 Method"
+      },
+      "evidence_quote": "students answering the same questions under invigilated test conditions"
+    }
+  ],
+  "context": {
+    "discipline": "Intermediate programming",
+    "course": {
+      "name": "CS2",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate CS2 students",
+    "learner_level_category": "post_introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exam"
+    ],
+    "summary": "Solve 26 intermediate programming questions across two invigilated tests.",
+    "student_actions": [
+      "Implement functions from problem statements and starter code.",
+      "Use visible tests and resubmit within the assessment rules."
+    ],
+    "outputs": [
+      {
+        "artifact": "Submitted source code",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "Students completed the tests under invigilated conditions; Codex was evaluated separately by researchers."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "CodeRunner used all-or-nothing correctness and repeated-attempt penalties up to 50%."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:cs1-lab-tests-codex",
+      "relationship": "compared_with",
+      "description": "Distinct assessment reported in the same source."
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-22543ce0ba6a_my-ai-wants-to-know-if-this-will-be-on-the-exam-testing-openais-codex-on-cs2-programming-exercis.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Scores from 264 students who completed both 2019 tests were compared with simulated Codex performance."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "students answering the same questions under invigilated test conditions",
+      "source_id": "doi:10.1145/3576123.3576134",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3576123.3576134"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "External AI use is not permitted during the assessment."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

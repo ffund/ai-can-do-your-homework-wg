@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:codetutor-supported-programming-coursework",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "CodeTutor-supported introductory programming coursework",
+  "summary": "Entry-level students use CodeTutor during a semester of programming coursework, including assignments and exam preparation. The GPT-3.5 assistant answers questions about syntax, debugging, and task completion, while a control group completes the same course without the tool.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3657604.3662036",
+      "type": "conference_paper",
+      "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
+      "authors": [
+        "Wenhan Lyu",
+        "Yimeng Wang",
+        "Tingting (Rachel) Chung",
+        "Yifan Sun",
+        "Yixuan Zhang"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3657604.3662036",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "codetutor-supported-programming-coursework",
+      "locator": {
+        "section": "3. Method"
+      },
+      "evidence_quote": "We conducted a semester-long, between-subjects study with 50 students using CodeTutor."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "entry-level computer science course",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "exercise"
+    ],
+    "summary": "Entry-level students use CodeTutor during a semester of programming coursework, including assignments and exam preparation.",
+    "student_actions": [
+      "Complete course programming assignments.",
+      "Ask CodeTutor for programming assistance when desired.",
+      "Evaluate and apply the assistant's suggestions."
+    ],
+    "outputs": [
+      {
+        "artifact": "programming submissions",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "CodeTutor conversation logs",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "The GPT-3.5 assistant answers questions about syntax, debugging, and task completion, while a control group completes the same course without the tool."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9d0e0978a014_evaluating-the-effectiveness-of-llms-in-introductory-computer-science-education-a-semester-long.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "We conducted a semester-long, between-subjects study with 50 students using CodeTutor.",
+      "source_id": "doi:10.1145/3657604.3662036",
+      "locator": {
+        "section": "3. Method"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3657604.3662036"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

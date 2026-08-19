@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:django-task-board-ai-prohibited",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "AI-prohibited Django task-board exercise",
+  "summary": "Novice software engineering students have two hours to implement a Django task board with creation and status-update features. The task permits documentation, videos, and forums but explicitly prohibits ChatGPT, Copilot, Gemini, and other LLM tools.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/conisoft63288.2024.00048",
+      "type": "conference_paper",
+      "title": "Exploring LLM Tools Through the Eyes of Industry Experts and Novice Programmers",
+      "authors": [
+        "Claudia Tona",
+        "Reyes Juárez-Ramírez",
+        "Samantha Jiménez",
+        "Mayra Durán"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/conisoft63288.2024.00048",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "django-task-board-ai-prohibited",
+      "locator": {
+        "section": "III.B Process"
+      },
+      "evidence_quote": "At no time is it allowed to use LLM tools such as ChatGPT, Copilot, Gemini, etc."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and Django",
+    "course": {
+      "name": "software development",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "project"
+    ],
+    "summary": "Novice software engineering students have two hours to implement a Django task board with creation and status-update features.",
+    "student_actions": [
+      "Implement a Django task board within two hours.",
+      "Create tasks and update their workflow status.",
+      "Use non-AI online references when needed."
+    ],
+    "outputs": [
+      {
+        "artifact": "Django task-board application",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "The task permits documentation, videos, and forums but explicitly prohibits ChatGPT, Copilot, Gemini, and other LLM tools."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-380e38520395_exploring-llm-tools-through-the-eyes-of-industry-experts-and-novice-programmers.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "At no time is it allowed to use LLM tools such as ChatGPT, Copilot, Gemini, etc.",
+      "source_id": "doi:10.1109/conisoft63288.2024.00048",
+      "locator": {
+        "section": "III.B Process"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

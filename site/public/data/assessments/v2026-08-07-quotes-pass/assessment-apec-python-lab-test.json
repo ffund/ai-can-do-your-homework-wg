@@ -1,0 +1,121 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:apec-python-lab-test",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "APEC Python fundamentals lab test",
+  "summary": "After two months of either ChatGPT-based APEC instruction or conventional lectures and labs, novice students complete the same 30-minute Python lab test. They implement a function that computes list statistics, print the results, and handle errors without using ChatGPT during the test.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3723178.3723268",
+      "type": "conference_paper",
+      "title": "Generative AI for Programming Education: Can ChatGPT Facilitate the Acquisition of Fundamental Programming Skills for Novices?",
+      "authors": [
+        "Shakib Sadat Shanto",
+        "Zishan Ahmed",
+        "Akinul Islam Jony"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3723178.3723268",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "apec-python-lab-test",
+      "locator": {
+        "section": "5 Empirical Study"
+      },
+      "evidence_quote": "The lab test was 30 minutes in duration."
+    }
+  ],
+  "context": {
+    "discipline": "introductory Python programming",
+    "course": {
+      "name": "not_reported",
+      "level": "introductory",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "undergraduate students with no prior programming knowledge",
+    "research_sample_size": 20,
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "exam"
+    ],
+    "summary": "Implement and debug a Python function that computes and returns the sum, average, minimum, and maximum of a list, then print the results and handle errors.",
+    "student_actions": [
+      "Define a function that accepts a list of numbers.",
+      "Compute and return list statistics.",
+      "Call the function and print each result.",
+      "Handle errors with try and except blocks."
+    ],
+    "outputs": [
+      {
+        "artifact": "Submitted Python program",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual",
+    "duration_minutes": 30,
+    "delivery": {
+      "modality": "in_person",
+      "setting": "lab",
+      "platforms": [
+        "Python 3.8",
+        "PyCharm Community Edition"
+      ]
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": false,
+      "description": "One group learned through the APEC ChatGPT framework, but both groups completed the post-intervention lab test in the same desktop environment without reported ChatGPT access."
+    },
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "The researchers compared programming performance on the submitted lab-test program between the two instructional groups."
+  },
+  "evidence": {
+    "study_type": "two-group post-intervention comparison",
+    "sample": {
+      "participating": 20,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fd3926ed7511_generative-ai-for-programming-education-can-chatgpt-facilitate-the-acquisition-of-fundamental-pr.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "The lab test was 30 minutes in duration.",
+      "source_id": "doi:10.1145/3723178.3723268",
+      "locator": {
+        "section": "5 Empirical Study"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

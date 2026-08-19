@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-assisted-user-stories",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "AI-assisted user stories from fictional feedback",
+  "summary": "Software-engineering students transform five fictional feedback statements about a social-media application into user stories. The AI-assisted variant requires ChatGPT 3.5 and permits students to revise its drafts; each story must include a Definition of Done and traceability to source feedback.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/CSEET62301.2024.10662994",
+      "type": "conference_paper",
+      "title": "Using Generative AI to Create User Stories in the Software Engineering Classroom",
+      "authors": [
+        "Allan Brockenbrough",
+        "Dominic Salinas"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/CSEET62301.2024.10662994",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "fictional-feedback-user-stories-ai-variant",
+      "locator": {
+        "section": "II. Methodology"
+      },
+      "evidence_quote": "Group A was informed to work without ChatGPT, while Group B was required to use ChatGPT."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering",
+    "course": {
+      "name": "undergraduate software engineering",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "design_task"
+    ],
+    "summary": "Create user stories from five overlapping feedback statements, including a Definition of Done and source traceability.",
+    "student_actions": [
+      "Prompt ChatGPT with the provided request.",
+      "Review and revise generated user stories.",
+      "Combine overlapping feedback where appropriate.",
+      "Add a Definition of Done and identify source statements."
+    ],
+    "outputs": [
+      {
+        "artifact": "Set of user stories",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students in this variant must use ChatGPT and may revise its response."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT 3.5"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Two professors applied a nine-property expanded INVEST rubric and reached consensus.",
+    "criteria": [
+      {
+        "criterion": "Independent"
+      },
+      {
+        "criterion": "Negotiable"
+      },
+      {
+        "criterion": "Valuable"
+      },
+      {
+        "criterion": "Estimable"
+      },
+      {
+        "criterion": "Small"
+      },
+      {
+        "criterion": "Testable"
+      },
+      {
+        "criterion": "Structured"
+      },
+      {
+        "criterion": "Traceable"
+      },
+      {
+        "criterion": "Grammatical"
+      }
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9a78fde6990f_using-generative-ai-to-create-user-stories-in-the-software-engineering-classroom.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "Group A was informed to work without ChatGPT, while Group B was required to use ChatGPT.",
+      "source_id": "doi:10.1109/CSEET62301.2024.10662994",
+      "locator": {
+        "section": "II. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/CSEET62301.2024.10662994"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The two conditions explicitly require one group to avoid ChatGPT and the other to use it.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1109/CSEET62301.2024.10662994",
+          "quote": "Group A was informed to work without ChatGPT, while Group B was required to use ChatGPT.",
+          "locator": {
+            "section": "II. Methodology"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "controls": [
+      "Validation of AI output is required."
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

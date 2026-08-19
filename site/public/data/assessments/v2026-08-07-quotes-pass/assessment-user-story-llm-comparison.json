@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:user-story-llm-comparison",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Paired user-story and acceptance-test assignments",
+  "summary": "Students transform social-media user feedback into user stories in two individual assignments: first without AI, then with ChatGPT 3.5. For the AI-assisted task they create one prompt per story, include context and INVEST criteria, re-prompt as needed, and edit the output.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641555.3705183",
+      "type": "conference_paper",
+      "title": "Exploring LLMs Impact on Student-Created User Stories and Acceptance Testing in Software Development",
+      "authors": [
+        "Allan Brockenbrough",
+        "Henry Feild",
+        "Dominic Salinas"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641555.3705183",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "user-story-llm-comparison",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "Students were asked to generate user stories for two assignments: one without LLM assistance and one with LLM assistance."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and requirements",
+    "course": {
+      "name": "upper-level software engineering",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "design_task"
+    ],
+    "summary": "Students transform social-media user feedback into user stories in two individual assignments: first without AI, then with ChatGPT 3.5.",
+    "student_actions": [
+      "Group related user feedback.",
+      "Write INVEST-aligned user stories and acceptance criteria without AI.",
+      "Repeat with different feedback using ChatGPT.",
+      "Analyze and edit AI output."
+    ],
+    "outputs": [
+      {
+        "artifact": "two sets of user stories",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "acceptance criteria",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "student-created prompts",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "For the AI-assisted task they create one prompt per story, include context and INVEST criteria, re-prompt as needed, and edit the output."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-9f93ee525de7_exploring-llms-impact-on-student-created-user-stories-and-acceptance-testing-in-software-develop.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were asked to generate user stories for two assignments: one without LLM assistance and one with LLM assistance.",
+      "source_id": "doi:10.1145/3641555.3705183",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students were asked to generate user stories for two assignments: one without LLM assistance and one with LLM assistance.",
+      "source_id": "doi:10.1145/3641555.3705183",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-bookstore-database",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Bookstore database development with ChatGPT",
+  "summary": "Junior database students translate a normalized bookstore model into a MySQL schema, populate it, and write retrieval queries. ChatGPT is permitted for schema, sample-data, and query support; students include a report section describing their interactions and assessing the tool's usefulness.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE58773.2023.10342970",
+      "type": "conference_paper",
+      "title": "Work-in-Progress: Integrating Generative AI with Evidence-based Learning Strategies in Computer Science and Engineering Education",
+      "authors": [
+        "Paula Lauren",
+        "Paul Watta"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/FIE58773.2023.10342970",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "bookstore-database-chatgpt",
+      "locator": {
+        "section": "III.A Computer Science: Introduction to Database Systems"
+      },
+      "evidence_quote": "Students were permitted to use ChatGPT to see if it can assist in writing the SQL schema, assistance with generating sample data ... and assistance with writing queries."
+    }
+  ],
+  "context": {
+    "discipline": "database systems",
+    "course": {
+      "name": "MCS 3543 Introduction to Database Systems",
+      "level": "junior undergraduate",
+      "institution": "Lawrence Technological University",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "junior undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Build and query a MySQL bookstore database from a provided logical model and assess ChatGPT's support.",
+    "student_actions": [
+      "Write the SQL schema.",
+      "Generate and insert sample data.",
+      "Build the database and write retrieval queries.",
+      "Describe ChatGPT interactions and assess usefulness."
+    ],
+    "outputs": [
+      {
+        "artifact": "MySQL bookstore database and queries",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT-use reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": true,
+        "disclosure_artifact": "report subsection"
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:chatgpt-web-api-interface",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fbb063de92dd_work-in-progress-integrating-generative-ai-with-evidence-based-learning-strategies-in-computer-s.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Students were permitted to use ChatGPT to see if it can assist in writing the SQL schema, assistance with generating sample data ... and assistance with writing queries.",
+      "source_id": "doi:10.1109/FIE58773.2023.10342970",
+      "locator": {
+        "section": "III.A Computer Science: Introduction to Database Systems"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Students were permitted to use ChatGPT to see if it can assist in writing the SQL schema, assistance with generating sample data ... and assistance with writing queries.",
+      "source_id": "doi:10.1109/FIE58773.2023.10342970",
+      "locator": {
+        "section": "III.A Computer Science: Introduction to Database Systems"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Students were permitted to use ChatGPT to see if it can assist in writing the SQL schema, assistance with generating sample data ... and assistance with writing queries.",
+      "source_id": "doi:10.1109/FIE58773.2023.10342970",
+      "locator": {
+        "section": "III.A Computer Science: Introduction to Database Systems"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

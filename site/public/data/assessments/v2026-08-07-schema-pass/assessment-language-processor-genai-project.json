@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:language-processor-genai-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "GenAI-integrated language processor project",
+  "summary": "The paper proposes integrating GenAI across the staged construction of a language processor, with students using it for lexical, syntactic, and semantic components while checking generated artifacts. The design treats GenAI output as material to analyze and validate rather than a final submission.",
+  "implementation_status": "proposed",
+  "sources": [
+    {
+      "id": "doi:10.1109/educon60312.2024.10578869",
+      "type": "conference_paper",
+      "title": "Experiences and Proposals of Use of Generative AI in Advanced Software Courses",
+      "authors": [
+        "Daniel Palacios-Alonso",
+        "Jaime Urquiza-Fuentes",
+        "J. Ángel Velázquez-Iturbide",
+        "Julio Guillén-García"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/educon60312.2024.10578869",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "language-processor-genai-project",
+      "locator": {
+        "section": "III.C Language Processors"
+      },
+      "evidence_quote": "For the language processors course, a proposal of use of generative artificial intelligence is presented, broken down into the parts of a typical language processor."
+    }
+  ],
+  "context": {
+    "discipline": "compiler and language processor construction",
+    "course": {
+      "name": "Language Processors",
+      "level": "advanced undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "advanced undergraduate",
+    "learner_level_category": "advanced",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "assignment"
+    ],
+    "summary": "The paper proposes integrating GenAI across the staged construction of a language processor, with students using it for lexical, syntactic, and semantic components while checking generated artifacts.",
+    "student_actions": [
+      "Construct the components of a language processor.",
+      "Use GenAI during specified development stages.",
+      "Inspect and validate generated code and explanations."
+    ],
+    "outputs": [
+      {
+        "artifact": "language processor implementation",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "validated AI-generated artifacts",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "The design treats GenAI output as material to analyze and validate rather than a final submission."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-4b0912f0a8cb_experiences-and-proposals-of-use-of-generative-ai-in-advanced-software-courses.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "For the language processors course, a proposal of use of generative artificial intelligence is presented, broken down into the parts of a typical language processor.",
+      "source_id": "doi:10.1109/educon60312.2024.10578869",
+      "locator": {
+        "section": "III.C Language Processors"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "For the language processors course, a proposal of use of generative artificial intelligence is presented, broken down into the parts of a typical language processor.",
+      "source_id": "doi:10.1109/educon60312.2024.10578869",
+      "locator": {
+        "section": "III.C Language Processors"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "For the language processors course, a proposal of use of generative artificial intelligence is presented, broken down into the parts of a typical language processor.",
+      "source_id": "doi:10.1109/educon60312.2024.10578869",
+      "locator": {
+        "section": "III.C Language Processors"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

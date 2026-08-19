@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:genai-text-mining-cure",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Text-mining CURE research project with GenAI",
+  "summary": "Students complete a four-week course-based undergraduate research experience in text mining. After prompt-engineering guidance, they use ChatGPT for literature review, coding and technical problems, and concept clarification while producing a code repository, research paper, and peer reviews.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893139",
+      "type": "conference_paper",
+      "title": "Work-in-Progress: Course-based Undergraduate Research Experience (CURE) with Generative AI in a Computer Science Course",
+      "authors": [
+        "Paula Lauren"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893139",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "text-mining-cure-genai",
+      "locator": {
+        "section": "II. Course Overview"
+      },
+      "evidence_quote": "Embedded in the course is a course-based research experience over four weeks, which involves a research overview, research problem and literature review, research design and methods, and research paper construction."
+    }
+  ],
+  "context": {
+    "discipline": "text mining and analytics",
+    "course": {
+      "name": "text mining and analytics course",
+      "level": "undergraduate",
+      "term": "Fall 2023",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "cohort_size": 15,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "peer_assessment"
+    ],
+    "summary": "Conduct a four-week text-mining research project with GenAI support and communicate the work in code, a paper, and peer reviews.",
+    "student_actions": [
+      "Define a research problem and review literature.",
+      "Design and conduct a text-mining study.",
+      "Use ChatGPT for literature, coding, technical, and conceptual support.",
+      "Write a research paper and maintain a code repository.",
+      "Review up to three classmates' papers."
+    ],
+    "outputs": [
+      {
+        "artifact": "Research paper",
+        "required": true
+      },
+      {
+        "artifact": "Code repository",
+        "required": true
+      },
+      {
+        "artifact": "Up to three peer reviews",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "Students use ChatGPT after instruction in prompting and critical review of factual output."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "allowed_purposes": [
+          "literature review",
+          "coding support",
+          "technical support",
+          "concept clarification"
+        ],
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-26c508a4b219_work-in-progress-course-based-undergraduate-research-experience-cure-with-generative-ai-in-a-computer.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Embedded in the course is a course-based research experience over four weeks, which involves a research overview, research problem and literature review, research design and methods, and research paper construction.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893139",
+      "locator": {
+        "section": "II. Course Overview"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "Embedded in the course is a course-based research experience over four weeks, which involves a research overview, research problem and literature review, research design and methods, and research paper construction.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893139",
+      "locator": {
+        "section": "II. Course Overview"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+

@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:technical-instructions-usability-study",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Technical-instructions writing and blinded usability study",
+  "summary": "Undergraduate teams write instructions for first-time Google Docs or Slides users, then test student- and ChatGPT-authored instruction sets without knowing their source. They submit instructions, usability notes, exit surveys, and a learning-assessment survey.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641237.3691687",
+      "type": "conference_paper",
+      "title": "Inviting ChatGPT into Technical Writing Classes: Opportunities, Challenges, and Student Perceptions",
+      "authors": [
+        "Imari Cheyne Tetu"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3641237.3691687",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "technical-instructions-usability-study",
+      "locator": {
+        "section": "2 Study design"
+      },
+      "evidence_quote": "In the first classroom visit, students were randomly divided into teams of 3-5 to write a set of instructions."
+    }
+  ],
+  "context": {
+    "discipline": "technical and professional writing",
+    "course": {
+      "name": "Professional and Public Writing and Experience Architecture courses",
+      "level": "200-, 300-, and 400-level undergraduate",
+      "institution": "Michigan State University",
+      "term": "not_reported",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "cohort_size": 73,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "research_only"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "peer_assessment"
+    ],
+    "summary": "Write audience-centered software instructions and conduct blinded usability tests of human- and AI-authored documents.",
+    "student_actions": [
+      "Write instructions for a first-time Google Docs or Slides user.",
+      "Rotate through user-tester, facilitator, and note-taker roles.",
+      "Test three or four instruction sets and identify usability problems.",
+      "Reflect on instruction writing and usability testing."
+    ],
+    "outputs": [
+      {
+        "artifact": "Team-authored instruction set",
+        "required": true
+      },
+      {
+        "artifact": "Usability-test notes",
+        "required": true
+      },
+      {
+        "artifact": "Exit survey after each test",
+        "required": true
+      },
+      {
+        "artifact": "Learning-assessment survey",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": {
+      "minimum": 3,
+      "maximum": 5
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": false,
+      "description": "Students could not use additional resources while drafting. During testing, they critiqued documents that could be ChatGPT-authored without being told the source."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "prohibited",
+        "prohibited_actions": [
+          "Use additional resources during the instruction-writing session"
+        ],
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "model": "GPT-3.5"
+      }
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "evidence": {
+    "study_type": "classroom usability study",
+    "sample": {
+      "participating": 73,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-af6f057be1cc_inviting-chatgpt-into-technical-writing-classes-opportunities-challenges-and-student-perceptions.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In the first classroom visit, students were randomly divided into teams of 3-5 to write a set of instructions.",
+      "source_id": "doi:10.1145/3641237.3691687",
+      "locator": {
+        "section": "2 Study design"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "In the first classroom visit, students were randomly divided into teams of 3-5 to write a set of instructions.",
+      "source_id": "doi:10.1145/3641237.3691687",
+      "locator": {
+        "section": "2 Study design"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

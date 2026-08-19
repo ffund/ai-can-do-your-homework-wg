@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:ai-permitted-text-adventure-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Open-ended C text-adventure project with optional AI",
+  "summary": "Second-year electrical engineering students build an open-ended text-adventure game in C over three or four weeks. AI is allowed for the project but prohibited on weekly work; students must submit prompts and responses and record an eight-to-ten-minute code walkthrough and game demonstration.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10892956",
+      "type": "conference_paper",
+      "title": "Work in Progress: Integration of AI Tools on an Open-Ended Computer Programming Project",
+      "authors": [
+        "Emily Hammond",
+        "Courtney Faber"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10892956",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "c-text-adventure-project",
+      "locator": {
+        "section": "III. Innovative Practice"
+      },
+      "evidence_quote": "Their task was to implement a text-based adventure game ... Students could earn an 85% by completing the minimum qualifications."
+    }
+  ],
+  "context": {
+    "discipline": "introductory C programming",
+    "course": {
+      "name": "200-level introduction to programming",
+      "level": "second year",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "primarily second-year electrical engineering students",
+    "cohort_size": 35,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Build a map-based text adventure in C with movement, interactions, state tracking, and a win condition, then explain and demonstrate it on video.",
+    "student_actions": [
+      "Design and implement an open-ended text-adventure game in C.",
+      "Use functions, structs, arrays, comments, and course concepts.",
+      "Document all AI prompts and responses if AI is used.",
+      "Record a code walkthrough and game demonstration."
+    ],
+    "outputs": [
+      {
+        "artifact": "C text-adventure game",
+        "required": true
+      },
+      {
+        "artifact": "AI interaction documentation",
+        "required": "unknown"
+      },
+      {
+        "artifact": "Eight-to-ten-minute demonstration video",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "AI is optional for projects and prohibited for weekly assignments."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "disclosure_required": true,
+        "transcript_required": true
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "A rubric awards up to 85% for minimum requirements and 15% for a second map and work beyond the base brief.",
+    "criteria": [
+      {
+        "criterion": "Required gameplay and map features"
+      },
+      {
+        "criterion": "Use of C course concepts"
+      },
+      {
+        "criterion": "At least ten functions"
+      },
+      {
+        "criterion": "Comments and explanation"
+      },
+      {
+        "criterion": "Work beyond minimum requirements",
+        "weight_percent": 15
+      }
+    ]
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-136aa9377ea6_work-in-progress-integration-of-ai-tools-on-an-open-ended-computer-programming-project.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Their task was to implement a text-based adventure game ... Students could earn an 85% by completing the minimum qualifications.",
+      "source_id": "doi:10.1109/FIE61694.2024.10892956",
+      "locator": {
+        "section": "III. Innovative Practice"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

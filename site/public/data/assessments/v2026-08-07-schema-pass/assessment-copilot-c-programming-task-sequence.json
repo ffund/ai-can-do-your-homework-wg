@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:copilot-c-programming-task-sequence",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Copilot-assisted and AI-free C programming tasks",
+  "summary": "Graduate students complete low-level C programming tasks under both GitHub Copilot-assisted and independent conditions. The sequence measures routine coding, pointer and memory-management work, debugging, and whether students can solve later tasks without AI support.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/educon62633.2025.11016517",
+      "type": "conference_paper",
+      "title": "Evaluating the Impact of Assistive AI Tools on Learning Outcomes and Ethical Considerations in Programming Education",
+      "authors": [
+        "Seong Min Park",
+        "Marco Ho",
+        "Michael Pin-Chuan Lin",
+        "Jeeho Ryoo"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/educon62633.2025.11016517",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "copilot-c-programming-task-sequence",
+      "locator": {
+        "section": "IV. Methodology"
+      },
+      "evidence_quote": "The control group completed programming tasks without AI assistance, while the experimental group used Copilot during the tasks."
+    }
+  ],
+  "context": {
+    "discipline": "C and low-level programming",
+    "course": {
+      "name": "prerequisite Assembly Programming",
+      "level": "graduate",
+      "level_category": "graduate",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "graduate",
+    "learner_level_category": "graduate",
+    "learner_level_category_basis": "reported"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "lab"
+    ],
+    "summary": "Graduate students complete low-level C programming tasks under both GitHub Copilot-assisted and independent conditions.",
+    "student_actions": [
+      "Implement C programming tasks with Copilot assistance.",
+      "Complete C programming tasks without AI assistance.",
+      "Debug memory-management and pointer errors."
+    ],
+    "outputs": [
+      {
+        "artifact": "C programs",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "task performance measures",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "The sequence measures routine coding, pointer and memory-management work, debugging, and whether students can solve later tasks without AI support."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-5acf682ae964_evaluating-the-impact-of-assistive-ai-tools-on-learning-outcomes-and-ethical-considerations-in-p.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "The control group completed programming tasks without AI assistance, while the experimental group used Copilot during the tasks.",
+      "source_id": "doi:10.1109/educon62633.2025.11016517",
+      "locator": {
+        "section": "IV. Methodology"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+

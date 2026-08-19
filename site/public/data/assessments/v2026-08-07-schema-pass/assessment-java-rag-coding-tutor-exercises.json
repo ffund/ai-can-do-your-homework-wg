@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:java-rag-coding-tutor-exercises",
+  "record_type": "assessment",
+  "record_granularity": "assessment_component",
+  "title": "Java programming exercises with a RAG coding tutor",
+  "summary": "Students solve Java programming tasks while consulting an accessible coding tutor backed by an open-source LLM and retrieval-augmented generation. The tutor grounds responses in selected course material and provides assignment support without serving as the submitted artifact.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/educon62633.2025.11016497",
+      "type": "conference_paper",
+      "title": "Accessible and Reliable AI Coding Tutors: Augmenting Large Language Models with Retrieval-Augmented Generation for Java Programming",
+      "authors": [
+        "Guiu Puigcercos i Vilar",
+        "Parvez Rashid",
+        "Navid Hashemi Tonekaboni"
+      ],
+      "year": 2025,
+      "identifier": "10.1109/EDUCON62633.2025.11016497",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-rag-coding-tutor-exercises"
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "not_reported",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "exercise",
+      "assignment"
+    ],
+    "summary": "Solve Java programming tasks with optional help from a course-grounded RAG tutor.",
+    "student_actions": [
+      "Develop Java solutions.",
+      "Ask the tutor for explanations or programming guidance."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java program",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The reported tutor is available while students work on Java programming tasks."
+    },
+    "assessment_system_role": [
+      "Provide course-grounded programming assistance."
+    ],
+    "tools": [
+      "open-source LLM",
+      "retrieval-augmented generation"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-b4c035c10498_accessible-and-reliable-ai-coding-tutors-augmenting-large-language-models-with-retrieval-augment.pdf"
+  }
+}
+

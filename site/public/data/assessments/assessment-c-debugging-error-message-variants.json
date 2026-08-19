@@ -1,0 +1,120 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:c-debugging-error-message-variants",
+  "record_type": "assessment",
+  "record_granularity": "assessment_variant",
+  "title": "C debugging tasks with three error-message variants",
+  "summary": "Students debug six faulty C programs in a within-subjects lab study. Each task presents either a stock GCC message, an expert-written explanation, or a pre-generated GPT-4 explanation; external AI tools are prohibited during the exercise.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3689535.3689554",
+      "type": "conference_paper",
+      "title": "Not the Silver Bullet: LLM-enhanced Programming Error Messages are Ineffective in Practice",
+      "authors": [
+        "Eddie Antonio Santos",
+        "Brett A. Becker"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3689535.3689554",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "c-debugging-error-message-variants",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "evidence_quote": "students were tasked to fix six buggy C programs"
+    }
+  ],
+  "context": {
+    "discipline": "C programming and debugging",
+    "course": {
+      "name": "Second-semester CS1 programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "novice undergraduate programmers",
+    "learner_level_category": "introductory",
+    "learner_level_category_basis": "inferred"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Fix six C programs that each contain a compile-time error.",
+    "student_actions": [
+      "Inspect the assigned error message or explanation.",
+      "Edit and run the program until the compiler error is fixed.",
+      "Submit the corrected program or skip after five minutes."
+    ],
+    "outputs": [
+      {
+        "artifact": "Corrected C programs",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": false,
+      "description": "Two of six tasks displayed a GPT-4-generated error explanation; students could not use ChatGPT or Copilot themselves."
+    }
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-070b6129dc60_not-the-silver-bullet-llm-enhanced-programming-error-messages-are-ineffective-in-practice.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "106 students completed all six tasks in a scheduled lab; GPT-4 was faster than GCC on only one task, while handwritten explanations performed best."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "students were tasked to fix six buggy C programs",
+      "source_id": "doi:10.1145/3689535.3689554",
+      "locator": {
+        "section": "3 Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3689535.3689554"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

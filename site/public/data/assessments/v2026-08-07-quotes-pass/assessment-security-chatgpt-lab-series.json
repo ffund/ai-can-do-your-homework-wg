@@ -1,0 +1,120 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:security-chatgpt-lab-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Security and ChatGPT lab series",
+  "summary": "Upper-level information-security students use ChatGPT across laboratory tasks on phishing, access control, cryptography, host hardening, and web security. Students generate security artifacts, inspect AI-assisted attacks and defenses, and consider legal and ethical implications.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/ISEC61299.2024.10664905",
+      "type": "conference_paper",
+      "title": "Teaching Security in the Era of Generative AI: A Course Design of Security + ChatGPT",
+      "authors": [
+        "Yang Wang",
+        "Margaret McCoey",
+        "Qian Hu",
+        "Maryam Jalalitabar"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/ISEC61299.2024.10664905",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "security-chatgpt-labs",
+      "locator": {
+        "section": "IV. The Design of the Information Security Course"
+      },
+      "evidence_quote": "In the second lab, students use ChatGPT to craft an email ... resulting a phishing email as a proof-of-concept."
+    }
+  ],
+  "context": {
+    "discipline": "information security",
+    "course": {
+      "name": "Information Security",
+      "level": "junior or senior undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "junior or senior undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab"
+    ],
+    "summary": "Complete a sequence of hands-on security labs that use ChatGPT for offensive, defensive, and automation tasks.",
+    "student_actions": [
+      "Craft and detect phishing emails with ChatGPT.",
+      "Generate a BYOD policy with password and multifactor-authentication requirements.",
+      "Use ChatGPT for cryptographic operations and flaw detection.",
+      "Request host-hardening advice.",
+      "Generate web and port-scanning code and inspect JavaScript for security issues."
+    ],
+    "outputs": [
+      {
+        "artifact": "Security lab artifacts and analyses",
+        "required": "unknown"
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Students use ChatGPT to generate and inspect offensive and defensive security artifacts."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fd83b0f593c5_teaching-security-in-the-era-of-generative-ai-a-course-design-of-security-chatgpt.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In the second lab, students use ChatGPT to craft an email ... resulting a phishing email as a proof-of-concept.",
+      "source_id": "doi:10.1109/ISEC61299.2024.10664905",
+      "locator": {
+        "section": "IV. The Design of the Information Security Course"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "In the second lab, students use ChatGPT to craft an email ... resulting a phishing email as a proof-of-concept.",
+      "source_id": "doi:10.1109/ISEC61299.2024.10664905",
+      "locator": {
+        "section": "IV. The Design of the Information Security Course"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

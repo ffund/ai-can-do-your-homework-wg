@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:art-code-review-cycle",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Peer and ART code-review cycle",
+  "summary": "CS2 through advanced students bring a prior Java object-oriented assignment into a seven-phase code-review activity. They review peers, annotate an undisclosed GPT-generated review of their own code, reflect on its usefulness, then conduct a second peer review to apply what they learned.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE61694.2024.10893407",
+      "type": "conference_paper",
+      "title": "WIP: ARTful Insights from a Pilot Study on GPT-Based Automatic Code Reviews in Undergraduate Computer Science Programs",
+      "authors": [
+        "Aaron S. Crandall",
+        "Bryan J. Fischer",
+        "Johannah L. Crandall"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/FIE61694.2024.10893407",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "art-code-review-cycle",
+      "locator": {
+        "table": "Table I"
+      },
+      "evidence_quote": "The study had seven phases ... asking them to perform code reviews, reading an ART-derived review on their own code, and then performing another code review with writing reflections."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and Java programming",
+    "course": {
+      "name": "CS2/3 and CS4+",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate students",
+    "research_sample_size": 5,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "peer_assessment",
+      "reflection"
+    ],
+    "summary": "Write two GitHub-style peer code reviews around an intervention in which students annotate and evaluate an AI review of their own Java code.",
+    "student_actions": [
+      "Review a peer's Java assignment in a pull request.",
+      "Annotate AI review suggestions as usable, understandable but unusable, or not understood.",
+      "Reflect on the review.",
+      "Review a second peer project and explain changes in approach."
+    ],
+    "outputs": [
+      {
+        "artifact": "Two peer code reviews",
+        "required": true
+      },
+      {
+        "artifact": "Annotated ART review and reflections",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required"
+      }
+    ],
+    "tools": [
+      "Automatic Review Tool (ART)"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-cf8bcb671a52_wip-artful-insights-from-a-pilot-study-on-gpt-based-automatic-code-reviews-in-undergraduate-comp.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "The study had seven phases ... asking them to perform code reviews, reading an ART-derived review on their own code, and then performing another code review with writing reflections.",
+      "source_id": "doi:10.1109/FIE61694.2024.10893407",
+      "locator": {
+        "table": "Table I"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/FIE61694.2024.10893407"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "Annotated ART review and reflections"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

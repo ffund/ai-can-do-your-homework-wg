@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:car-dealership-chatgpt-project",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "ChatGPT-supported C# car-dealership project",
+  "summary": "First-year students build a four-phase C# GUI application for a fictional car dealership using object-oriented programming, collections, files, and complex search conditions. ChatGPT is optional, but every student submits a phase-by-phase declaration describing use, comprehension, changes, and learning.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/tale56641.2023.10398297",
+      "type": "conference_paper",
+      "title": "Explicitly Introducing ChatGPT into First-year Programming Practice: Challenges and Impact",
+      "authors": [
+        "Minjie Hu",
+        "Tony Assadi",
+        "Hamid Mahroeian"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/tale56641.2023.10398297",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "car-dealership-chatgpt-project",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "evidence_quote": "This assignment required students to develop a C# GUI project for pseudo-car-dealership business application using object-oriented programming."
+    }
+  ],
+  "context": {
+    "discipline": "C# object-oriented programming",
+    "course": {
+      "name": "first-year programming",
+      "level": "first-year undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-year undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "assignment"
+    ],
+    "summary": "First-year students build a four-phase C# GUI application for a fictional car dealership using object-oriented programming, collections, files, and complex search conditions.",
+    "student_actions": [
+      "Build a C# GUI business application in four phases.",
+      "Optionally use ChatGPT after decomposing the project.",
+      "Evaluate and integrate generated code.",
+      "Complete the mandatory ethical-use declaration."
+    ],
+    "outputs": [
+      {
+        "artifact": "C# GUI application",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "testing documentation",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "ChatGPT declaration form",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT is optional, but every student submits a phase-by-phase declaration describing use, comprehension, changes, and learning."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-3b5589201979_explicitly-introducing-chatgpt-into-first-year-programming-practice-challenges-and-impact.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "This assignment required students to develop a C# GUI project for pseudo-car-dealership business application using object-oriented programming.",
+      "source_id": "doi:10.1109/tale56641.2023.10398297",
+      "locator": {
+        "section": "III. Methodology"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/tale56641.2023.10398297"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "ChatGPT declaration form"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

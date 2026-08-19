@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:portuguese-oop-test-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Portuguese Java OOP inheritance and polymorphism tests",
+  "summary": "Second-year computer engineering students complete Portuguese-language Java tests requiring several interacting classes, inheritance, composition, polymorphism, and prescribed design conventions. Six authentic versions were benchmarked with GPT-3, but the student assessments themselves use automated tests and code-quality rules rather than a reported student-facing AI role.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3587102.3588814",
+      "type": "conference_paper",
+      "title": "GPT-3 vs Object Oriented Programming Assignments: An Experience Report",
+      "authors": [
+        "Bruno Pereira Cipriano",
+        "Pedro Alves"
+      ],
+      "year": 2023,
+      "identifier": "10.1145/3587102.3588814",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "portuguese-oop-test-series",
+      "locator": {
+        "section": "4 The Assignments"
+      },
+      "evidence_quote": "we analyzed 6 assignments that have been used in our course as tests focused on inheritance and polymorphism"
+    }
+  ],
+  "context": {
+    "discipline": "Java object-oriented programming",
+    "course": {
+      "name": "Object Oriented Design and Programming",
+      "level": "second-year undergraduate",
+      "institution": "Lusófona University",
+      "delivery_language": "Portuguese",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "second-year computer engineering students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "exam"
+    ],
+    "summary": "Implement a multi-class Java system from a Portuguese business-domain specification while meeting functional and object-oriented design requirements.",
+    "student_actions": [
+      "Design and implement related Java classes.",
+      "Apply inheritance, composition, encapsulation, and polymorphism.",
+      "Submit code to the Drop Project automated assessment tool."
+    ],
+    "outputs": [
+      {
+        "artifact": "Multi-class Java program",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers tested GPT-3 against six authentic assessments; the paper does not establish permitted student AI use for those tests."
+    },
+    "assessment_system_role": [
+      "research benchmark of assessment solvability"
+    ],
+    "tools": [
+      {
+        "name": "OpenAI Playground",
+        "model": "text-davinci-003"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Drop Project unit tests plus code-quality rules, including penalties for explicit type testing such as instanceof or getClass()."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-41525116fd5e_gpt-3-vs-object-oriented-programming-assignments-an-experience-report.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "we analyzed 6 assignments that have been used in our course as tests focused on inheritance and polymorphism",
+      "source_id": "doi:10.1145/3587102.3588814",
+      "locator": {
+        "section": "4 The Assignments"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "we analyzed 6 assignments that have been used in our course as tests focused on inheritance and polymorphism",
+      "source_id": "doi:10.1145/3587102.3588814",
+      "locator": {
+        "section": "4 The Assignments"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

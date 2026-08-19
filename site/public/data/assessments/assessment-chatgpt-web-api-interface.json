@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:chatgpt-web-api-interface",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Java web-API interface with ChatGPT",
+  "summary": "Senior electrical and computer engineering students select a web API and build a Java interface that retrieves, parses, and displays its data. Instructors encourage ChatGPT at every stage; students also prepare a presentation and tutorial and report how they used the tool.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/FIE58773.2023.10342970",
+      "type": "conference_paper",
+      "title": "Work-in-Progress: Integrating Generative AI with Evidence-based Learning Strategies in Computer Science and Engineering Education",
+      "authors": [
+        "Paula Lauren",
+        "Paul Watta"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/FIE58773.2023.10342970",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "java-web-api-chatgpt",
+      "locator": {
+        "section": "III.B Engineering: Mobile Application Development Course"
+      },
+      "evidence_quote": "Students were encouraged to use ChatGPT for each step in the process."
+    }
+  ],
+  "context": {
+    "discipline": "mobile application development",
+    "course": {
+      "name": "ECE 435 Introduction to Mobile/Smart Devices and Technology",
+      "level": "senior undergraduate",
+      "institution": "University of Michigan-Dearborn",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "senior undergraduate students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Build a maintainable Java user interface for a selected web API and teach colleagues how it works.",
+    "student_actions": [
+      "Select a suitable web API.",
+      "Write helper and API-access classes.",
+      "Parse responses and build a user interface.",
+      "Prepare a presentation and written tutorial.",
+      "Report ChatGPT interactions and usefulness."
+    ],
+    "outputs": [
+      {
+        "artifact": "Java web-API application",
+        "required": true
+      },
+      {
+        "artifact": "Presentation and tutorial",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT-use reflection",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "permitted",
+        "disclosure_required": true,
+        "disclosure_artifact": "report section"
+      }
+    ],
+    "tools": [
+      "ChatGPT"
+    ]
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:chatgpt-bookstore-database",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-fbb063de92dd_work-in-progress-integrating-generative-ai-with-evidence-based-learning-strategies-in-computer-s.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "ai_policy",
+      "quote": "Students were encouraged to use ChatGPT for each step in the process.",
+      "source_id": "doi:10.1109/FIE58773.2023.10342970",
+      "locator": {
+        "section": "III.B Engineering: Mobile Application Development Course"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "moderate",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome."
+    ],
+    "limitations": [
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1109/FIE58773.2023.10342970"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "authenticity_integrity": {
+    "controls": [
+      "AI-use disclosure is required."
+    ],
+    "process_evidence": [
+      "ChatGPT-use reflection"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

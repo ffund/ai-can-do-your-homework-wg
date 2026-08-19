@@ -1,0 +1,217 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:idlelib-go-to-definition-copilot",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Large-code-base feature assignment with GitHub Copilot",
+  "summary": "Students add a Go to Definition feature to Python's 24,000-line idlelib code base after instruction on GitHub Copilot. They must use and document Copilot features, retain a process journal, and submit the complete chat transcript as process evidence.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3641554.3701800",
+      "type": "conference_paper",
+      "title": "Students' Use of GitHub Copilot for Working with Large Code Bases",
+      "authors": [
+        "Anshul Shah",
+        "Anya Chernova",
+        "Elena Tomson",
+        "Leo Porter",
+        "William G. Griswold",
+        "Adalbert Gerald Soosai Raj"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3641554.3701800",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "idlelib-go-to-definition-copilot",
+      "locator": {
+        "section": "3.2 Programming Task"
+      },
+      "evidence_quote": "add a 'Go to Definition' feature to the idlelib IDE"
+    }
+  ],
+  "context": {
+    "discipline": "Software engineering and Python",
+    "course": {
+      "name": "Working with Large Code Bases",
+      "level": "upper-division undergraduate",
+      "level_category": "advanced",
+      "level_category_basis": "inferred"
+    },
+    "learner_level": "mostly third- and fourth-year computer science students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "research_only"
+    ],
+    "mandatory": true
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "Add context-menu navigation from a method use to its definition in idlelib.",
+    "student_actions": [
+      "Find and understand relevant code.",
+      "Use Copilot chat, explanation, fix, test, documentation, or generation features.",
+      "Implement and test the feature.",
+      "Document feature use and submit the chat transcript."
+    ],
+    "outputs": [
+      {
+        "artifact": "idlelib code changes, process journal, and Copilot transcript",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GitHub Copilot use was required and explicitly taught; the process journal had to account for seven Copilot features."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Full credit required submission of the process journal and chat transcript; the feature rubric was not reported."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-a918274db112_students-use-of-github-copilot-for-working-with-large-code-bases.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "48 process journals and 47 chat transcripts were analyzed; 63% attempted a one-shot whole-feature prompt."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "add a 'Go to Definition' feature to the idlelib IDE",
+      "source_id": "doi:10.1145/3641554.3701800",
+      "locator": {
+        "section": "3.2 Programming Task"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "Similar to the course taught by Shah et al., students worked on the open-source idlelib code base throughout the term. The code base is written in Python and contains 24,000 lines of code (including test code).",
+      "source_id": "doi:10.1145/3641554.3701800",
+      "locator": {
+        "section": "3.2 Programming Task"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "Halfway through the term, we assigned a task for students to complete with the help of GitHub Copilot.",
+      "source_id": "doi:10.1145/3641554.3701800",
+      "locator": {
+        "section": "3.2 Programming Task"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "As students completed the programming task, they were required to maintain a process journal.",
+      "source_id": "doi:10.1145/3641554.3701800",
+      "locator": {
+        "section": "3.3 Data Collection and Analysis"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "assessment_description",
+      "quote": "We required students to upload the full chat transcript of their GitHub Copilot chat session during the programming task.",
+      "source_id": "doi:10.1145/3641554.3701800",
+      "locator": {
+        "section": "3.3 Data Collection and Analysis"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3641554.3701800"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-collect-process-evidence",
+      "practice_name": "Collect process evidence",
+      "rationale": "Students must submit a process journal and full Copilot chat transcript.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701800",
+          "quote": "As students completed the programming task, they were required to maintain a process journal.",
+          "locator": {
+            "section": "3.3 Data Collection and Analysis"
+          }
+        },
+        {
+          "source_id": "doi:10.1145/3641554.3701800",
+          "quote": "We required students to upload the full chat transcript of their GitHub Copilot chat session during the programming task.",
+          "locator": {
+            "section": "3.3 Data Collection and Analysis"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    },
+    {
+      "practice_id": "workshop-use-ai-for-ambitious-authentic-projects",
+      "practice_name": "Use AI for ambitious authentic projects",
+      "rationale": "Students use Copilot while modifying a 24,000-line open-source codebase.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3641554.3701800",
+          "quote": "Similar to the course taught by Shah et al., students worked on the open-source idlelib code base throughout the term. The code base is written in Python and contains 24,000 lines of code (including test code).",
+          "locator": {
+            "section": "3.2 Programming Task"
+          }
+        },
+        {
+          "source_id": "doi:10.1145/3641554.3701800",
+          "quote": "Halfway through the term, we assigned a task for students to complete with the help of GitHub Copilot.",
+          "locator": {
+            "section": "3.2 Programming Task"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "authenticity_integrity": {
+    "process_evidence": [
+      "idlelib code changes, process journal, and Copilot transcript"
+    ]
+  },
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

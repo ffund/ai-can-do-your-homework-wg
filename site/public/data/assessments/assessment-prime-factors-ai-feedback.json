@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:prime-factors-ai-feedback",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Prime Factors assignment with automatic GPT-4 feedback",
+  "summary": "CS1 students solve the Prime Factors programming assignment in Athene and receive GPT-4 feedback after every submission. The prompt asks the model for a next-step hint without code, while Athene also reports compiler, runtime, and failed-test information.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3613905.3647967",
+      "type": "conference_paper",
+      "title": "Enhancing Programming Error Messages in Real Time with Generative AI",
+      "authors": [
+        "Bailey Kimmel",
+        "Austin Lee Geisert",
+        "Lily Yaro",
+        "Brendan Gipson",
+        "Ronald Taylor Hotchkiss",
+        "Sidney Kwame Osae-Asante",
+        "Hunter Vaught",
+        "Grant Wininger",
+        "Chase Yamaguchi"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3613905.3647967",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "prime-factors-ai-feedback",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "evidence_quote": "The plugin was integrated into one assignment, 'Prime Factors'."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "formative",
+      "summative"
+    ],
+    "mandatory": "not_reported",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment"
+    ],
+    "summary": "CS1 students solve the Prime Factors programming assignment in Athene and receive GPT-4 feedback after every submission.",
+    "student_actions": [
+      "Write and submit a solution to the Prime Factors problem.",
+      "Review automated test results and AI feedback.",
+      "Revise and resubmit the program."
+    ],
+    "outputs": [
+      {
+        "artifact": "source-code submissions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "The prompt asks the model for a next-step hint without code, while Athene also reports compiler, runtime, and failed-test information."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-250f61dc914d_enhancing-programming-error-messages-in-real-time-with-generative-ai.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "source_context",
+      "quote": "The plugin was integrated into one assignment, 'Prime Factors'.",
+      "source_id": "doi:10.1145/3613905.3647967",
+      "locator": {
+        "section": "3. Methodology"
+      },
+      "supports": "Source-reported detail",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3613905.3647967"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

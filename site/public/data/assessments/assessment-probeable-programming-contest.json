@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:probeable-programming-contest",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Probeable programming-with-AI contest",
+  "summary": "Students or teams solve five beginner programming problems whose specifications deliberately omit key details. AI tools are allowed, but students must identify ambiguity, query an input-output oracle, and use hidden-test verifiers to produce robust solutions.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3632620.3671108",
+      "type": "conference_paper",
+      "title": "Probeable Problems for Beginner-level Programming-with-AI Contests",
+      "authors": [
+        "Mrigank Pawagi",
+        "Viraj Kumar"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3632620.3671108",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "probeable-programming-contest",
+      "locator": {
+        "section": "3 Study Context"
+      },
+      "evidence_quote": "they were allowed to use AI code-generation tools"
+    }
+  ],
+  "context": {
+    "discipline": "Programming and requirements analysis",
+    "course": {
+      "name": "Beginner programming contest",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate computer science students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "summative"
+    ],
+    "mandatory": false
+  },
+  "assessment": {
+    "type": [
+      "other"
+    ],
+    "summary": "Implement functions from incomplete specifications during a 90-minute contest.",
+    "student_actions": [
+      "Identify missing requirements.",
+      "Probe an oracle with chosen inputs.",
+      "Optionally use AI code-generation tools.",
+      "Submit code, use a verifier, and make a final submission."
+    ],
+    "outputs": [
+      {
+        "artifact": "Program solutions",
+        "required": true
+      }
+    ],
+    "individual_or_group": "varies"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "ChatGPT, Codeium, and GitHub Copilot were explicitly permitted; omitted details prevented direct AI-only solutions."
+    }
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Submissions were evaluated by targeted and unrestricted hidden tests for omitted requirements."
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e5c64c3d3c9a_probeable-problems-for-beginner-level-programming-with-ai-contests.pdf"
+  },
+  "evidence": {
+    "study_type": "full-text reported empirical study",
+    "reported_results": [
+      "Twenty-six consenting teams comprising 67 students participated."
+    ]
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "they were allowed to use AI code-generation tools",
+      "source_id": "doi:10.1145/3632620.3671108",
+      "locator": {
+        "section": "3 Study Context"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "strong",
+    "basis": [
+      "Catalogue extraction was verified against the full source text.",
+      "The record includes an exact source quotation supporting the assessment, AI policy, grading, verification, or a reported outcome.",
+      "The record includes source-reported results."
+    ],
+    "limitations": [
+      "The classification covers evidence represented in this record and does not establish effectiveness beyond the reported source context."
+    ],
+    "source_ids": [
+      "doi:10.1145/3632620.3671108"
+    ]
+  },
+  "workshop_practice_mappings": [
+    {
+      "practice_id": "workshop-clearly-communicate-permitted-and-prohibited-ai-uses",
+      "practice_name": "Clearly communicate permitted and prohibited AI uses",
+      "rationale": "The assessment states the applicable AI-use condition.",
+      "supporting_passages": [
+        {
+          "source_id": "doi:10.1145/3632620.3671108",
+          "quote": "they were allowed to use AI code-generation tools",
+          "locator": {
+            "section": "3 Study Context"
+          }
+        }
+      ],
+      "match_status": "candidate"
+    }
+  ],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

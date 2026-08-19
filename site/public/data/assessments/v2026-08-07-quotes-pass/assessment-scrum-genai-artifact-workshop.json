@@ -1,0 +1,112 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:scrum-genai-artifact-workshop",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "GenAI-assisted Scrum artifact workshop",
+  "summary": "Fourth-year software engineering students work in groups during a two-hour workshop to prompt ChatGPT or Bard for a product vision, epics, values, user stories, and related Scrum artifacts. Groups analyze and compare the outputs after the instructor checks them for errors and hallucinations.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/ithet61869.2024.10837605",
+      "type": "conference_paper",
+      "title": "Enhancing Student Learning in Scrum Projects with Generative AI Assistance",
+      "authors": [
+        "Meryem Boubakri",
+        "Khalid Nafil"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/ithet61869.2024.10837605",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "scrum-genai-artifact-workshop",
+      "locator": {
+        "section": "V. Pedagogical Scenario"
+      },
+      "evidence_quote": "During a dedicated two-hour session, the instructor introduced a series of prompts to guide the students' interactions with the AI tools."
+    }
+  ],
+  "context": {
+    "discipline": "software engineering and Scrum",
+    "course": {
+      "name": "Scrum course",
+      "level": "fourth-year engineering",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "fourth-year engineering",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "practice",
+      "research_only"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "lab",
+      "project"
+    ],
+    "summary": "Fourth-year software engineering students work in groups during a two-hour workshop to prompt ChatGPT or Bard for a product vision, epics, values, user stories, and related Scrum artifacts.",
+    "student_actions": [
+      "Run instructor-provided prompts in ChatGPT or Bard.",
+      "Generate and examine Scrum project artifacts.",
+      "Discuss results within the group and across the class."
+    ],
+    "outputs": [
+      {
+        "artifact": "AI-generated Scrum artifacts",
+        "required": "not_reported"
+      },
+      {
+        "artifact": "group analysis and discussion",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "group"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Groups analyze and compare the outputs after the instructor checks them for errors and hallucinations."
+    }
+  },
+  "grading": {
+    "status": "not_reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-ba85af807655_enhancing-student-learning-in-scrum-projects-with-generative-ai-assistance.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "During a dedicated two-hour session, the instructor introduced a series of prompts to guide the students' interactions with the AI tools.",
+      "source_id": "doi:10.1109/ithet61869.2024.10837605",
+      "locator": {
+        "section": "V. Pedagogical Scenario"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "ai_policy",
+      "quote": "During a dedicated two-hour session, the instructor introduced a series of prompts to guide the students' interactions with the AI tools.",
+      "source_id": "doi:10.1109/ithet61869.2024.10837605",
+      "locator": {
+        "section": "V. Pedagogical Scenario"
+      },
+      "supports": "GenAI design",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:context-aware-programming-tutor-tasks",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Programming tasks with history-based AI feedback",
+  "summary": "First-semester programming students choose a Processing task and solve it in an intelligent tutoring system. They can compare GPT-4o feedback based on their current code with feedback based on their full code history, select the more useful response, and rate it.",
+  "implementation_status": "piloted",
+  "sources": [
+    {
+      "id": "doi:10.1145/3723010.3723034",
+      "type": "conference_paper",
+      "title": "The Power of Context: An LLM-based Programming Tutor with Focused and Proactive Feedback",
+      "authors": [
+        "Moritz Mueller",
+        "Corinna List",
+        "Michael Kipp"
+      ],
+      "year": 2025,
+      "identifier": "10.1145/3723010.3723034",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "context-feedback-programming-tasks",
+      "locator": {
+        "section": "4 User Testing"
+      },
+      "evidence_quote": "Participants then selected one of three programming tasks, each addressing different requirements."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "Fundamentals of Programming",
+      "level": "first-semester bachelor",
+      "institution": "Technical University of Applied Sciences Augsburg",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "first-semester undergraduate students",
+    "research_sample_size": 10,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "research_only",
+      "practice"
+    ],
+    "mandatory": false,
+    "course_grade_weight_percent": "not_applicable"
+  },
+  "assessment": {
+    "type": [
+      "exercise"
+    ],
+    "summary": "Solve a prime-number, graphical-pattern, or Fibonacci task in Processing while requesting and comparing two forms of AI feedback.",
+    "student_actions": [
+      "Choose one of three programming tasks.",
+      "Write and run Processing code.",
+      "Request feedback when needed.",
+      "Compare history-based and current-state feedback and select the preferred version."
+    ],
+    "outputs": [
+      {
+        "artifact": "Processing program",
+        "required": true
+      },
+      {
+        "artifact": "Feedback preference and usefulness ratings",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "interacts_with_ai",
+      "external_ai_use_permitted": true,
+      "description": "GPT-4o gives code-free guidance based on either the current submission or the student's execution history."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required"
+      }
+    ],
+    "tools": [
+      "GPT-4o"
+    ]
+  },
+  "grading": {
+    "status": "not_applicable"
+  },
+  "evidence": {
+    "study_type": "user test",
+    "sample": {
+      "participating": 10,
+      "analyzed": 9,
+      "unit_of_analysis": "student"
+    }
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-dbd30c17ba86_the-power-of-context-an-llm-based-programming-tutor-with-focused-and-proactive-feedback.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "Participants then selected one of three programming tasks, each addressing different requirements.",
+      "source_id": "doi:10.1145/3723010.3723034",
+      "locator": {
+        "section": "4 User Testing"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

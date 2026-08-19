@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:intro-data-science-assignment-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Introductory data-science progressive assignment series",
+  "summary": "Students complete four introductory data-science assignments with detailed dataset and column descriptions and progressive questions covering processing, visualization, statistics, and machine learning. Researchers tested raw prompts with ChatGPT, but the authentic student assessments do not report a student-facing AI role.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3626252.3630874",
+      "type": "conference_paper",
+      "title": "Implications of ChatGPT for Data Science Education",
+      "authors": [
+        "Yiyin Shen",
+        "Xinyi Ai",
+        "Adalbert Gerald Soosai Raj",
+        "Rogers Jeffrey Leo John",
+        "Meenakshi Syamkumar"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3626252.3630874",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "intro-data-science-assignment-series",
+      "locator": {
+        "section": "3 Method"
+      },
+      "evidence_quote": "We evaluated four assignments each from course 1 and course 3 and three assignments from course 2."
+    }
+  ],
+  "context": {
+    "discipline": "introductory data science",
+    "course": {
+      "name": "Course 1",
+      "level": "introductory undergraduate",
+      "level_category": "introductory",
+      "level_category_basis": "reported"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative",
+      "formative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "problem_set"
+    ],
+    "summary": "Analyze supplied datasets through progressive questions on cleaning, transformation, visualization, statistical summary, and machine learning.",
+    "student_actions": [
+      "Load and transform supplied datasets.",
+      "Create visualizations and statistical summaries.",
+      "Implement requested data-analysis or machine-learning steps."
+    ],
+    "outputs": [
+      {
+        "artifact": "Data-science code and analysis responses",
+        "required": true
+      }
+    ],
+    "individual_or_group": "unknown"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "no_ai",
+      "external_ai_use_permitted": "not_reported",
+      "description": "Researchers benchmarked ChatGPT-3.5 on raw assignment prompts; student AI permission is not reported."
+    },
+    "assessment_system_role": [
+      "Research benchmark of assignment solvability"
+    ],
+    "tools": [
+      "ChatGPT with GPT-3.5"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Generated benchmark solutions were checked against the same tests and ground-truth outputs used for student submissions."
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:intermediate-data-science-assignment-series",
+      "relationship": "compared_with"
+    },
+    {
+      "id": "assessment:advanced-data-science-assignment-series",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-b369f0eb072d_implications-of-chatgpt-for-data-science-education.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "context",
+      "quote": "We evaluated four assignments each from course 1 and course 3 and three assignments from course 2.",
+      "source_id": "doi:10.1145/3626252.3630874",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    }
+  ],
+  "evidence_quality": {
+    "classification": "limited",
+    "basis": [
+      "Catalogue extraction was verified against the full source text."
+    ],
+    "limitations": [
+      "Stored quotations provide context or deployment detail but do not directly support a substantive assessment, policy, grading, verification, or outcome claim.",
+      "The record does not include an extracted source-reported result."
+    ],
+    "source_ids": [
+      "doi:10.1145/3626252.3630874"
+    ]
+  },
+  "workshop_practice_mappings": [],
+  "workshop_practice_mapping_review": {
+    "status": "candidate_pass",
+    "method": "LLM-assisted catalogue-wide direct-evidence review of all 59 workshop practices",
+    "recorded_at": "2026-08-19",
+    "notes": "This pass considered every canonical record. All mappings remain candidates; this status does not imply independent human confirmation."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:3r-genai-programming-assignment",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "3R-graded GenAI-assisted Java assignment example",
+  "summary": "In a proposed programming example, students may use ChatGPT to generate a Java program but must report its use, attach the original output, make meaningful code contributions, and reflect on learning. The 3R rubric places 80% of its process weight on revision, so superficial renaming or comments sharply reduce the final grade.",
+  "implementation_status": "designed",
+  "sources": [
+    {
+      "id": "doi:10.1109/TALE56641.2023.10398408",
+      "type": "conference_paper",
+      "title": "Grading Generative AI-based Assignments Using a 3R Framework",
+      "authors": [
+        "Henry C. B. Chan"
+      ],
+      "year": 2023,
+      "identifier": "10.1109/TALE56641.2023.10398408",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "3r-genai-programming-example",
+      "locator": {
+        "section": "III. Case Discussion"
+      },
+      "evidence_quote": "The second case is about a programming assignment (e.g., students are asked to write a Java program)."
+    }
+  ],
+  "context": {
+    "discipline": "Java programming",
+    "course": {
+      "name": "not_reported",
+      "level": "higher education",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "higher-education students",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": "unknown",
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "assignment",
+      "reflection"
+    ],
+    "summary": "Develop a Java program with optional ChatGPT assistance and document, substantially revise, and reflect on generated code.",
+    "student_actions": [
+      "Report how GenAI was used and summarize its output.",
+      "Improve generated statements and add original code.",
+      "Reflect specifically on learning."
+    ],
+    "outputs": [
+      {
+        "artifact": "Final Java program",
+        "required": true
+      },
+      {
+        "artifact": "Original GenAI output",
+        "required": "unknown"
+      },
+      {
+        "artifact": "3R report form",
+        "required": true
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "uses_ai",
+      "external_ai_use_permitted": true,
+      "description": "GenAI is optional, but use triggers reporting, attachment, substantial revision, and reflection requirements."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "optional",
+        "disclosure_required": true,
+        "disclosure_artifact": "3R report form",
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "other GenAI tools"
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "method": "Program grade multiplied by a proportion term derived from the 3R rubric.",
+    "criteria": [
+      {
+        "criterion": "Report",
+        "weight_percent": 10
+      },
+      {
+        "criterion": "Revise",
+        "weight_percent": 80
+      },
+      {
+        "criterion": "Reflect",
+        "weight_percent": 10
+      }
+    ]
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:3r-genai-essay-assignment",
+      "relationship": "compared_with"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-f63e1397246c_grading-generative-ai-based-assignments-using-a-3r-framework.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "The second case is about a programming assignment (e.g., students are asked to write a Java program).",
+      "source_id": "doi:10.1109/TALE56641.2023.10398408",
+      "locator": {
+        "section": "III. Case Discussion"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+

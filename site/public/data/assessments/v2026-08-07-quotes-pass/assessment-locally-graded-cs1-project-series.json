@@ -1,0 +1,117 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:locally-graded-cs1-project-series",
+  "record_type": "assessment",
+  "record_granularity": "assessment_series",
+  "title": "Nine CS1 programming projects evaluated by local LLMs",
+  "summary": "A cohort of 124 CS1 students completes nine semester programming projects that teaching assistants grade with assignment context and rubrics. The paper retrospectively tests nine locally hosted language models against those grades; students did not receive the experimental AI grades.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1109/fie61694.2024.10892816",
+      "type": "conference_paper",
+      "title": "Exploring the Potential of Locally Run Large Language (AI) Models for Automated Grading in Introductory Computer Science Courses",
+      "authors": [
+        "Samuel B Mazzone",
+        "Jack Forden",
+        "Dennis Brylow"
+      ],
+      "year": 2024,
+      "identifier": "10.1109/fie61694.2024.10892816",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "locally-graded-cs1-project-series",
+      "locator": {
+        "section": "III. Method"
+      },
+      "evidence_quote": "We present a two-phase analysis, leveraging real grading data from a semester length, introductory CS1 course with 124 students and nine programming projects."
+    }
+  ],
+  "context": {
+    "discipline": "introductory programming",
+    "course": {
+      "name": "CS1",
+      "level": "undergraduate",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "undergraduate",
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "assignment"
+    ],
+    "summary": "A cohort of 124 CS1 students completes nine semester programming projects that teaching assistants grade with assignment context and rubrics.",
+    "student_actions": [
+      "Complete nine programming projects across the semester.",
+      "Submit source code for grading."
+    ],
+    "outputs": [
+      {
+        "artifact": "nine programming project submissions",
+        "required": "not_reported"
+      }
+    ],
+    "individual_or_group": "individual"
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "ai_not_student_facing",
+      "external_ai_use_permitted": false,
+      "description": "The paper retrospectively tests nine locally hosted language models against those grades; students did not receive the experimental AI grades."
+    }
+  },
+  "grading": {
+    "status": "reported"
+  },
+  "related_assessments": [],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-e35704458dc7_exploring-the-potential-of-locally-run-large-language-ai-models-for-automated-grading-in-introdu.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "We present a two-phase analysis, leveraging real grading data from a semester length, introductory CS1 course with 124 students and nine programming projects.",
+      "source_id": "doi:10.1109/fie61694.2024.10892816",
+      "locator": {
+        "section": "III. Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    },
+    {
+      "kind": "context",
+      "quote": "We present a two-phase analysis, leveraging real grading data from a semester length, introductory CS1 course with 124 students and nine programming projects.",
+      "source_id": "doi:10.1109/fie61694.2024.10892816",
+      "locator": {
+        "section": "III. Method"
+      },
+      "supports": "Course and learner context",
+      "context": "authors_report"
+    },
+    {
+      "kind": "grading",
+      "quote": "We present a two-phase analysis, leveraging real grading data from a semester length, introductory CS1 course with 124 students and nine programming projects.",
+      "source_id": "doi:10.1109/fie61694.2024.10892816",
+      "locator": {
+        "section": "III. Method"
+      },
+      "supports": "Grading and stakes",
+      "context": "authors_report"
+    }
+  ]
+}
+
+

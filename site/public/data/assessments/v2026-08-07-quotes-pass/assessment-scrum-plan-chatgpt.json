@@ -1,0 +1,158 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assessment:scrum-plan-chatgpt",
+  "record_type": "assessment",
+  "record_granularity": "single_assessment",
+  "title": "Scrum transformation with documented ChatGPT support",
+  "summary": "Teams transform their earlier traditional project plan into Scrum artifacts including user stories, product and sprint backlogs, Definition of Done, MVP, roles, and sprint events. ChatGPT supports ideation and critique, but teams must document every interaction, revise generated material, and defend their own artifacts in person.",
+  "implementation_status": "implemented",
+  "sources": [
+    {
+      "id": "doi:10.1145/3701625.3701684",
+      "type": "conference_paper",
+      "title": "Integrating ChatGPT in Project Management Education: Benefits and Challenges in the Academic Environment",
+      "authors": [
+        "Ana Carolina Oran",
+        "Letícia Braga Montenegro",
+        "Hellmut Alencar Schuster",
+        "José Carlos Duarte",
+        "Williamson Silva",
+        "Rayfran Rocha Lima"
+      ],
+      "year": 2024,
+      "identifier": "10.1145/3701625.3701684",
+      "relationship_to_assessment": "primary_report",
+      "source_assessment_id": "scrum-plan-chatgpt",
+      "locator": {
+        "section": "3 Method"
+      },
+      "evidence_quote": "In the second practical assignment, the students were tasked with transforming the planning developed in the previous assignment into agile artifacts using SCRUM."
+    }
+  ],
+  "context": {
+    "discipline": "software project management",
+    "course": {
+      "name": "Project Management",
+      "level": "sixth-semester undergraduate",
+      "institution": "Federal University of Amazonas",
+      "level_category": "unknown",
+      "level_category_basis": "unknown"
+    },
+    "learner_level": "software engineering undergraduates",
+    "cohort_size": 35,
+    "learner_level_category": "unknown",
+    "learner_level_category_basis": "unknown"
+  },
+  "purpose_and_stakes": {
+    "purposes": [
+      "summative"
+    ],
+    "mandatory": true,
+    "course_grade_weight_percent": "not_reported"
+  },
+  "assessment": {
+    "type": [
+      "project",
+      "presentation"
+    ],
+    "summary": "Transform a traditional project plan into a complete set of Scrum artifacts and defend the work with documented ChatGPT support.",
+    "student_actions": [
+      "Create user stories, backlogs, Definition of Done, MVP, roles, and sprint schedules.",
+      "Use ChatGPT for references and critical analysis.",
+      "Document prompts, outputs, and revisions.",
+      "Defend all artifacts in person."
+    ],
+    "inputs": [
+      {
+        "description": "Team's prior PMBOK-aligned project plan",
+        "provided_by": "student",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "artifact": "Scrum planning artifacts",
+        "required": true
+      },
+      {
+        "artifact": "ChatGPT prompts, responses, and modification record",
+        "required": true
+      },
+      {
+        "artifact": "In-person artifact defense",
+        "required": true
+      }
+    ],
+    "individual_or_group": "group",
+    "group_size": {
+      "minimum": 4,
+      "maximum": 5
+    }
+  },
+  "genai": {
+    "student_role": {
+      "during_assessment": "evaluates_ai_output",
+      "external_ai_use_permitted": true,
+      "description": "Teams use ChatGPT for agile-planning support but must revise, document, and defend their own work."
+    },
+    "policy": [
+      {
+        "scope": "assessment",
+        "permission": "required",
+        "allowed_purposes": [
+          "Idea generation",
+          "Draft Scrum artifacts",
+          "Critical analysis"
+        ],
+        "prohibited_actions": [
+          "Submit ChatGPT artifacts unchanged"
+        ],
+        "disclosure_required": true,
+        "transcript_required": true,
+        "validation_required": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "model": "3.5"
+      }
+    ]
+  },
+  "grading": {
+    "status": "reported",
+    "assessors": [
+      "professor",
+      "course monitors"
+    ],
+    "process": [
+      "Teams defend every artifact during an in-person presentation."
+    ]
+  },
+  "related_assessments": [
+    {
+      "id": "assessment:pmbok-plan-chatgpt",
+      "relationship": "follows"
+    }
+  ],
+  "provenance": {
+    "status": "full_text_verified",
+    "extraction_method": "Full PDF read from pdftotext output.",
+    "recorded_at": "2026-08-06",
+    "notes": "PDF: work-d32548f417ce_integrating-chatgpt-in-project-management-education-benefits-and-challenges-in-the-academic-envi.pdf"
+  },
+  "evidence_excerpts": [
+    {
+      "kind": "assessment_description",
+      "quote": "In the second practical assignment, the students were tasked with transforming the planning developed in the previous assignment into agile artifacts using SCRUM.",
+      "source_id": "doi:10.1145/3701625.3701684",
+      "locator": {
+        "section": "3 Method"
+      },
+      "supports": "What students do",
+      "context": "authors_report"
+    }
+  ]
+}
+
+
